@@ -1,7 +1,7 @@
 ---
 title: ConstraintCollection
 second_title: GroupDocs.Assembly for Java API Reference
-description: Represents a collection of constraints for a com.groupdocs.assembly.system.data.DataTable.
+description: Represents a collection of constraints for a .
 type: docs
 weight: 11
 url: /java/com.groupdocs.assembly.system.data/constraintcollection/
@@ -15,15 +15,15 @@ java.lang.Iterable
 public final class ConstraintCollection implements Iterable
 ```
 
-Represents a collection of constraints for a com.groupdocs.assembly.system.data.DataTable.
+Represents a collection of constraints for a [DataTable](../../com.groupdocs.assembly.system.data/datatable).
 ## Methods
 
 | Method | Description |
 | --- | --- |
-| [get(String name)](#get-java.lang.String-) | Gets the com.groupdocs.assembly.system.data.Constraint from the collection with the specified name. |
-| [get(int index)](#get-int-) | Gets the com.groupdocs.assembly.system.data.Constraint from the collection at the specified index. |
-| [add(Constraint constraint)](#add-com.groupdocs.assembly.system.data.Constraint-) | Adds the specified com.groupdocs.assembly.system.data.Constraint object to the collection. |
-| [remove(Constraint constraint)](#remove-com.groupdocs.assembly.system.data.Constraint-) | Removes the specified com.groupdocs.assembly.system.data.Constraint from the collection. |
+| [get(String name)](#get-java.lang.String-) | Gets the [Constraint](../../com.groupdocs.assembly.system.data/constraint) from the collection with the specified name. |
+| [get(int index)](#get-int-) | Gets the [Constraint](../../com.groupdocs.assembly.system.data/constraint) from the collection at the specified index. |
+| [add(Constraint constraint)](#add-com.groupdocs.assembly.system.data.Constraint-) | Adds the specified [Constraint](../../com.groupdocs.assembly.system.data/constraint) object to the collection. |
+| [remove(Constraint constraint)](#remove-com.groupdocs.assembly.system.data.Constraint-) | Removes the specified [Constraint](../../com.groupdocs.assembly.system.data/constraint) from the collection. |
 | [contains(Constraint cc)](#contains-com.groupdocs.assembly.system.data.Constraint-) | Indicates whether the Constraint object specified by name exists in the collection. |
 | [getCount()](#getCount--) | Gets the total number of elements in a collection. |
 | [iterator()](#iterator--) |  |
@@ -33,22 +33,22 @@ public final Constraint get(String name)
 ```
 
 
-Gets the com.groupdocs.assembly.system.data.Constraint from the collection with the specified name.
+Gets the [Constraint](../../com.groupdocs.assembly.system.data/constraint) from the collection with the specified name.
 
 **Parameters:**
 | Parameter | Type | Description |
 | --- | --- | --- |
-| name | java.lang.String | The com.groupdocs.assembly.system.data.Constraint\#getConstraintName() / com.groupdocs.assembly.system.data.Constraint\#setConstraintName(java.lang.String) of the constraint to return. |
+| name | java.lang.String | The [Constraint\#getConstraintName--](../../com.groupdocs.assembly.system.data/constraint\#getConstraintName--) / [Constraint\#setConstraintName-java.lang.String-](../../com.groupdocs.assembly.system.data/constraint\#setConstraintName-java.lang.String-) of the constraint to return. |
 
 **Returns:**
-[Constraint](../../com.groupdocs.assembly.system.data/constraint) - The com.groupdocs.assembly.system.data.Constraint with the specified name; otherwise a null value if the com.groupdocs.assembly.system.data.Constraint does not exist.
+[Constraint](../../com.groupdocs.assembly.system.data/constraint) - The [Constraint](../../com.groupdocs.assembly.system.data/constraint) with the specified name; otherwise a null value if the [Constraint](../../com.groupdocs.assembly.system.data/constraint) does not exist.
 ### get(int index) {#get-int-}
 ```
 public final Constraint get(int index)
 ```
 
 
-Gets the com.groupdocs.assembly.system.data.Constraint from the collection at the specified index.
+Gets the [Constraint](../../com.groupdocs.assembly.system.data/constraint) from the collection at the specified index.
 
 **Parameters:**
 | Parameter | Type | Description |
@@ -56,14 +56,14 @@ Gets the com.groupdocs.assembly.system.data.Constraint from the collection at th
 | index | int | The index of the constraint to return. |
 
 **Returns:**
-[Constraint](../../com.groupdocs.assembly.system.data/constraint) - The com.groupdocs.assembly.system.data.Constraint at the specified index.
+[Constraint](../../com.groupdocs.assembly.system.data/constraint) - The [Constraint](../../com.groupdocs.assembly.system.data/constraint) at the specified index.
 ### add(Constraint constraint) {#add-com.groupdocs.assembly.system.data.Constraint-}
 ```
 public final void add(Constraint constraint)
 ```
 
 
-Adds the specified com.groupdocs.assembly.system.data.Constraint object to the collection.
+Adds the specified [Constraint](../../com.groupdocs.assembly.system.data/constraint) object to the collection.
 
 **Parameters:**
 | Parameter | Type | Description |
@@ -76,12 +76,12 @@ public final void remove(Constraint constraint)
 ```
 
 
-Removes the specified com.groupdocs.assembly.system.data.Constraint from the collection.
+Removes the specified [Constraint](../../com.groupdocs.assembly.system.data/constraint) from the collection.
 
 **Parameters:**
 | Parameter | Type | Description |
 | --- | --- | --- |
-| constraint | [Constraint](../../com.groupdocs.assembly.system.data/constraint) | The com.groupdocs.assembly.system.data.Constraint to remove. |
+| constraint | [Constraint](../../com.groupdocs.assembly.system.data/constraint) | The [Constraint](../../com.groupdocs.assembly.system.data/constraint) to remove. |
 
 ### contains(Constraint cc) {#contains-com.groupdocs.assembly.system.data.Constraint-}
 ```

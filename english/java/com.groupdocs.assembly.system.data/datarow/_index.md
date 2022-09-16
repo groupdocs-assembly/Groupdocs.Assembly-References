@@ -1,7 +1,7 @@
 ---
 title: DataRow
 second_title: GroupDocs.Assembly for Java API Reference
-description: Represents a row of data in a com.groupdocs.assembly.system.data.DataTable.
+description: Represents a row of data in a .
 type: docs
 weight: 20
 url: /java/com.groupdocs.assembly.system.data/datarow/
@@ -12,7 +12,7 @@ java.lang.Object
 public class DataRow
 ```
 
-Represents a row of data in a com.groupdocs.assembly.system.data.DataTable.
+Represents a row of data in a [DataTable](../../com.groupdocs.assembly.system.data/datatable).
 ## Methods
 
 | Method | Description |
@@ -20,21 +20,21 @@ Represents a row of data in a com.groupdocs.assembly.system.data.DataTable.
 | [readFrom(ResultSet resultSet)](#readFrom-java.sql.ResultSet-) | Reads values from the java.sql.ResultSet |
 | [get(int columnIndex)](#get-int-) | Gets the data stored in the column specified by index. |
 | [get(String columnName)](#get-java.lang.String-) | Gets the data stored in the column specified by name. |
-| [get(DataColumn column)](#get-com.groupdocs.assembly.system.data.DataColumn-) | Gets the data stored in the specified com.groupdocs.assembly.system.data.DataColumn. |
-| [getTable()](#getTable--) | Gets the com.groupdocs.assembly.system.data.DataTable for which this row has a schema. |
-| [getChildRows(DataRelation relation)](#getChildRows-com.groupdocs.assembly.system.data.DataRelation-) | Gets the child rows of this com.groupdocs.assembly.system.data.DataRow using the specified com.groupdocs.assembly.system.data.DataRelation. |
-| [getParentRow(DataRelation relation)](#getParentRow-com.groupdocs.assembly.system.data.DataRelation-) | Gets the parent row of a com.groupdocs.assembly.system.data.DataRow using the specified com.groupdocs.assembly.system.data.DataRelation. |
-| [getParentRows(DataRelation relation)](#getParentRows-com.groupdocs.assembly.system.data.DataRelation-) | Gets the parent rows of a com.groupdocs.assembly.system.data.DataRow using the specified com.groupdocs.assembly.system.data.DataRelation. |
+| [get(DataColumn column)](#get-com.groupdocs.assembly.system.data.DataColumn-) | Gets the data stored in the specified [DataColumn](../../com.groupdocs.assembly.system.data/datacolumn). |
+| [getTable()](#getTable--) | Gets the [DataTable](../../com.groupdocs.assembly.system.data/datatable) for which this row has a schema. |
+| [getChildRows(DataRelation relation)](#getChildRows-com.groupdocs.assembly.system.data.DataRelation-) | Gets the child rows of this [DataRow](../../com.groupdocs.assembly.system.data/datarow) using the specified [DataRelation](../../com.groupdocs.assembly.system.data/datarelation). |
+| [getParentRow(DataRelation relation)](#getParentRow-com.groupdocs.assembly.system.data.DataRelation-) | Gets the parent row of a [DataRow](../../com.groupdocs.assembly.system.data/datarow) using the specified [DataRelation](../../com.groupdocs.assembly.system.data/datarelation). |
+| [getParentRows(DataRelation relation)](#getParentRows-com.groupdocs.assembly.system.data.DataRelation-) | Gets the parent rows of a [DataRow](../../com.groupdocs.assembly.system.data/datarow) using the specified [DataRelation](../../com.groupdocs.assembly.system.data/datarelation). |
 | [set(int value, Object columnIndex)](#set-int-java.lang.Object-) | Sets the data stored in the column specified by index. |
 | [set(String value, Object columnName)](#set-java.lang.String-java.lang.Object-) | Sets the data stored in the column specified by name. |
-| [set(DataColumn value, Object column)](#set-com.groupdocs.assembly.system.data.DataColumn-java.lang.Object-) | Sets the data stored in the specified com.groupdocs.assembly.system.data.DataColumn. |
-| [getRowState()](#getRowState--) | Gets the current state of the row with regard to its relationship to the com.groupdocs.assembly.system.data.DataRowCollection. |
+| [set(DataColumn value, Object column)](#set-com.groupdocs.assembly.system.data.DataColumn-java.lang.Object-) | Sets the data stored in the specified [DataColumn](../../com.groupdocs.assembly.system.data/datacolumn). |
+| [getRowState()](#getRowState--) | Gets the current state of the row with regard to its relationship to the [DataRowCollection](../../com.groupdocs.assembly.system.data/datarowcollection). |
 | [setRowState(int state)](#setRowState-int-) |  |
-| [delete()](#delete--) | Deletes the com.groupdocs.assembly.system.data.DataRow. |
+| [delete()](#delete--) | Deletes the [DataRow](../../com.groupdocs.assembly.system.data/datarow). |
 | [setOriginalValue(String columnName, Object data)](#setOriginalValue-java.lang.String-java.lang.Object-) |  |
 | [getOriginalValue(String columnName)](#getOriginalValue-java.lang.String-) |  |
 | [getItemArray()](#getItemArray--) | Gets all the values for this row through an array. |
-| [setItemArray(Object[] value)](#setItemArray-java.lang.Object---) | Sets all the values for this row through an array. |
+| [setItemArray(Object value)](#setItemArray-java.lang.Object---) | Sets all the values for this row through an array. |
 | [getKeyValues(DataKey childKey)](#getKeyValues-com.groupdocs.assembly.system.data.DataKey-) |  |
 | [remove(int index)](#remove-int-) |  |
 | [toString()](#toString--) |  |
@@ -89,12 +89,12 @@ public Object get(DataColumn column)
 ```
 
 
-Gets the data stored in the specified com.groupdocs.assembly.system.data.DataColumn.
+Gets the data stored in the specified [DataColumn](../../com.groupdocs.assembly.system.data/datacolumn).
 
 **Parameters:**
 | Parameter | Type | Description |
 | --- | --- | --- |
-| column | [DataColumn](../../com.groupdocs.assembly.system.data/datacolumn) | A com.groupdocs.assembly.system.data.DataColumn that contains the data. |
+| column | [DataColumn](../../com.groupdocs.assembly.system.data/datacolumn) | A [DataColumn](../../com.groupdocs.assembly.system.data/datacolumn) that contains the data. |
 
 **Returns:**
 java.lang.Object - An java.lang.Object that contains the data.
@@ -104,55 +104,55 @@ public DataTable getTable()
 ```
 
 
-Gets the com.groupdocs.assembly.system.data.DataTable for which this row has a schema.
+Gets the [DataTable](../../com.groupdocs.assembly.system.data/datatable) for which this row has a schema.
 
 **Returns:**
-[DataTable](../../com.groupdocs.assembly.system.data/datatable) - The com.groupdocs.assembly.system.data.DataTable to which this row belongs.
+[DataTable](../../com.groupdocs.assembly.system.data/datatable) - The [DataTable](../../com.groupdocs.assembly.system.data/datatable) to which this row belongs.
 ### getChildRows(DataRelation relation) {#getChildRows-com.groupdocs.assembly.system.data.DataRelation-}
 ```
 public DataRow[] getChildRows(DataRelation relation)
 ```
 
 
-Gets the child rows of this com.groupdocs.assembly.system.data.DataRow using the specified com.groupdocs.assembly.system.data.DataRelation.
+Gets the child rows of this [DataRow](../../com.groupdocs.assembly.system.data/datarow) using the specified [DataRelation](../../com.groupdocs.assembly.system.data/datarelation).
 
 **Parameters:**
 | Parameter | Type | Description |
 | --- | --- | --- |
-| relation | [DataRelation](../../com.groupdocs.assembly.system.data/datarelation) | The com.groupdocs.assembly.system.data.DataRelation to use. |
+| relation | [DataRelation](../../com.groupdocs.assembly.system.data/datarelation) | The [DataRelation](../../com.groupdocs.assembly.system.data/datarelation) to use. |
 
 **Returns:**
-com.groupdocs.assembly.system.data.DataRow[] - An array of com.groupdocs.assembly.system.data.DataRow objects or an array of length zero.
+com.groupdocs.assembly.system.data.DataRow[] - An array of [DataRow](../../com.groupdocs.assembly.system.data/datarow) objects or an array of length zero.
 ### getParentRow(DataRelation relation) {#getParentRow-com.groupdocs.assembly.system.data.DataRelation-}
 ```
 public DataRow getParentRow(DataRelation relation)
 ```
 
 
-Gets the parent row of a com.groupdocs.assembly.system.data.DataRow using the specified com.groupdocs.assembly.system.data.DataRelation.
+Gets the parent row of a [DataRow](../../com.groupdocs.assembly.system.data/datarow) using the specified [DataRelation](../../com.groupdocs.assembly.system.data/datarelation).
 
 **Parameters:**
 | Parameter | Type | Description |
 | --- | --- | --- |
-| relation | [DataRelation](../../com.groupdocs.assembly.system.data/datarelation) | The com.groupdocs.assembly.system.data.DataRelation to use. |
+| relation | [DataRelation](../../com.groupdocs.assembly.system.data/datarelation) | The [DataRelation](../../com.groupdocs.assembly.system.data/datarelation) to use. |
 
 **Returns:**
-[DataRow](../../com.groupdocs.assembly.system.data/datarow) - The parent com.groupdocs.assembly.system.data.DataRow of the current row.
+[DataRow](../../com.groupdocs.assembly.system.data/datarow) - The parent [DataRow](../../com.groupdocs.assembly.system.data/datarow) of the current row.
 ### getParentRows(DataRelation relation) {#getParentRows-com.groupdocs.assembly.system.data.DataRelation-}
 ```
 public DataRow[] getParentRows(DataRelation relation)
 ```
 
 
-Gets the parent rows of a com.groupdocs.assembly.system.data.DataRow using the specified com.groupdocs.assembly.system.data.DataRelation.
+Gets the parent rows of a [DataRow](../../com.groupdocs.assembly.system.data/datarow) using the specified [DataRelation](../../com.groupdocs.assembly.system.data/datarelation).
 
 **Parameters:**
 | Parameter | Type | Description |
 | --- | --- | --- |
-| relation | [DataRelation](../../com.groupdocs.assembly.system.data/datarelation) | The com.groupdocs.assembly.system.data.DataRelation to use. |
+| relation | [DataRelation](../../com.groupdocs.assembly.system.data/datarelation) | The [DataRelation](../../com.groupdocs.assembly.system.data/datarelation) to use. |
 
 **Returns:**
-com.groupdocs.assembly.system.data.DataRow[] - An array of com.groupdocs.assembly.system.data.DataRow objects or an array of length zero.
+com.groupdocs.assembly.system.data.DataRow[] - An array of [DataRow](../../com.groupdocs.assembly.system.data/datarow) objects or an array of length zero.
 ### set(int value, Object columnIndex) {#set-int-java.lang.Object-}
 ```
 public void set(int value, Object columnIndex)
@@ -187,13 +187,13 @@ public void set(DataColumn value, Object column)
 ```
 
 
-Sets the data stored in the specified com.groupdocs.assembly.system.data.DataColumn.
+Sets the data stored in the specified [DataColumn](../../com.groupdocs.assembly.system.data/datacolumn).
 
 **Parameters:**
 | Parameter | Type | Description |
 | --- | --- | --- |
 | value | [DataColumn](../../com.groupdocs.assembly.system.data/datacolumn) | An java.lang.Object that contains the data. |
-| column | java.lang.Object | A com.groupdocs.assembly.system.data.DataColumn that contains the data. |
+| column | java.lang.Object | A [DataColumn](../../com.groupdocs.assembly.system.data/datacolumn) that contains the data. |
 
 ### getRowState() {#getRowState--}
 ```
@@ -201,10 +201,10 @@ public int getRowState()
 ```
 
 
-Gets the current state of the row with regard to its relationship to the com.groupdocs.assembly.system.data.DataRowCollection.
+Gets the current state of the row with regard to its relationship to the [DataRowCollection](../../com.groupdocs.assembly.system.data/datarowcollection).
 
 **Returns:**
-int - One of the com.groupdocs.assembly.system.data.DataRowState values. The returned value is a bitwise combination of com.groupdocs.assembly.system.data.DataRowState constants.
+int - One of the [DataRowState](../../com.groupdocs.assembly.system.data/datarowstate) values. The returned value is a bitwise combination of [DataRowState](../../com.groupdocs.assembly.system.data/datarowstate) constants.
 ### setRowState(int state) {#setRowState-int-}
 ```
 public void setRowState(int state)
@@ -224,7 +224,7 @@ public void delete()
 ```
 
 
-Deletes the com.groupdocs.assembly.system.data.DataRow.
+Deletes the [DataRow](../../com.groupdocs.assembly.system.data/datarow).
 
 ### setOriginalValue(String columnName, Object data) {#setOriginalValue-java.lang.String-java.lang.Object-}
 ```
@@ -265,9 +265,9 @@ Gets all the values for this row through an array.
 
 **Returns:**
 java.lang.Object[] - An array of type java.lang.Object.
-### setItemArray(Object[] value) {#setItemArray-java.lang.Object---}
+### setItemArray(Object value) {#setItemArray-java.lang.Object---}
 ```
-public void setItemArray(Object[] value)
+public void setItemArray(Object value)
 ```
 
 
@@ -276,7 +276,7 @@ Sets all the values for this row through an array.
 **Parameters:**
 | Parameter | Type | Description |
 | --- | --- | --- |
-| value | java.lang.Object[] | An array of type java.lang.Object. |
+| value | java.lang.Object | An array of type java.lang.Object. |
 
 ### getKeyValues(DataKey childKey) {#getKeyValues-com.groupdocs.assembly.system.data.DataKey-}
 ```

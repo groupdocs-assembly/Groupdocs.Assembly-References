@@ -1,7 +1,7 @@
 ---
 title: DocumentTableRelationCollection
 second_title: GroupDocs.Assembly for Java API Reference
-description: Represents the collection of com.groupdocs.assembly.DocumentTableRelation objects of a single com.groupdocs.assembly.DocumentTableSet instance.
+description: Represents the collection of  objects of a single  instance.
 type: docs
 weight: 23
 url: /java/com.groupdocs.assembly/documenttablerelationcollection/
@@ -15,27 +15,27 @@ java.lang.Iterable
 public class DocumentTableRelationCollection implements Iterable
 ```
 
-Represents the collection of com.groupdocs.assembly.DocumentTableRelation objects of a single com.groupdocs.assembly.DocumentTableSet instance.
+Represents the collection of [DocumentTableRelation](../../com.groupdocs.assembly/documenttablerelation) objects of a single [DocumentTableSet](../../com.groupdocs.assembly/documenttableset) instance.
 ## Methods
 
 | Method | Description |
 | --- | --- |
-| [add(DocumentTableColumn parentColumn, DocumentTableColumn childColumn)](#add-com.groupdocs.assembly.DocumentTableColumn-com.groupdocs.assembly.DocumentTableColumn-) | Creates a com.groupdocs.assembly.DocumentTableRelation object for the specified parent and child columns, and adds it to the collection. |
+| [add(DocumentTableColumn parentColumn, DocumentTableColumn childColumn)](#add-com.groupdocs.assembly.DocumentTableColumn-com.groupdocs.assembly.DocumentTableColumn-) | Creates a [DocumentTableRelation](../../com.groupdocs.assembly/documenttablerelation) object for the specified parent and child columns, and adds it to the collection. |
 | [remove(DocumentTableRelation relation)](#remove-com.groupdocs.assembly.DocumentTableRelation-) | Removes the specified relation from the collection. |
 | [removeAt(int index)](#removeAt-int-) | Removes the relation at the specified index from the collection. |
 | [clear()](#clear--) | Clears the collection of any relations. |
-| [iterator()](#iterator--) | Returns an enumerator to iterate com.groupdocs.assembly.DocumentTableRelation objects of this collection. |
+| [iterator()](#iterator--) | Returns an enumerator to iterate [DocumentTableRelation](../../com.groupdocs.assembly/documenttablerelation) objects of this collection. |
 | [contains(DocumentTableRelation relation)](#contains-com.groupdocs.assembly.DocumentTableRelation-) | Returns a value indicating whether this collection contains the specified relation. |
 | [indexOf(DocumentTableRelation relation)](#indexOf-com.groupdocs.assembly.DocumentTableRelation-) | Returns the index of the specified relation within this collection. |
-| [get(int index)](#get-int-) | Gets a com.groupdocs.assembly.DocumentTableRelation instance from the collection at the specified index. |
-| [getCount()](#getCount--) | Gets the total number of com.groupdocs.assembly.DocumentTableRelation objects in the collection. |
+| [get(int index)](#get-int-) | Gets a [DocumentTableRelation](../../com.groupdocs.assembly/documenttablerelation) instance from the collection at the specified index. |
+| [getCount()](#getCount--) | Gets the total number of [DocumentTableRelation](../../com.groupdocs.assembly/documenttablerelation) objects in the collection. |
 ### add(DocumentTableColumn parentColumn, DocumentTableColumn childColumn) {#add-com.groupdocs.assembly.DocumentTableColumn-com.groupdocs.assembly.DocumentTableColumn-}
 ```
 public DocumentTableRelation add(DocumentTableColumn parentColumn, DocumentTableColumn childColumn)
 ```
 
 
-Creates a com.groupdocs.assembly.DocumentTableRelation object for the specified parent and child columns, and adds it to the collection.
+Creates a [DocumentTableRelation](../../com.groupdocs.assembly/documenttablerelation) object for the specified parent and child columns, and adds it to the collection.
 
 **Parameters:**
 | Parameter | Type | Description |
@@ -85,10 +85,10 @@ public Iterator iterator()
 ```
 
 
-Returns an enumerator to iterate com.groupdocs.assembly.DocumentTableRelation objects of this collection.
+Returns an enumerator to iterate [DocumentTableRelation](../../com.groupdocs.assembly/documenttablerelation) objects of this collection.
 
 **Returns:**
-java.util.Iterator - An enumerator to iterate com.groupdocs.assembly.DocumentTableRelation objects of this collection.
+java.util.Iterator - An enumerator to iterate [DocumentTableRelation](../../com.groupdocs.assembly/documenttablerelation) objects of this collection.
 ### contains(DocumentTableRelation relation) {#contains-com.groupdocs.assembly.DocumentTableRelation-}
 ```
 public boolean contains(DocumentTableRelation relation)
@@ -125,7 +125,7 @@ public DocumentTableRelation get(int index)
 ```
 
 
-Gets a com.groupdocs.assembly.DocumentTableRelation instance from the collection at the specified index.
+Gets a [DocumentTableRelation](../../com.groupdocs.assembly/documenttablerelation) instance from the collection at the specified index.
 
 **Parameters:**
 | Parameter | Type | Description |
@@ -133,14 +133,14 @@ Gets a com.groupdocs.assembly.DocumentTableRelation instance from the collection
 | index | int | The zero-based index of the relation to return. |
 
 **Returns:**
-[DocumentTableRelation](../../com.groupdocs.assembly/documenttablerelation) - A com.groupdocs.assembly.DocumentTableRelation instance from the collection at the specified index.
+[DocumentTableRelation](../../com.groupdocs.assembly/documenttablerelation) - A [DocumentTableRelation](../../com.groupdocs.assembly/documenttablerelation) instance from the collection at the specified index.
 ### getCount() {#getCount--}
 ```
 public int getCount()
 ```
 
 
-Gets the total number of com.groupdocs.assembly.DocumentTableRelation objects in the collection.
+Gets the total number of [DocumentTableRelation](../../com.groupdocs.assembly/documenttablerelation) objects in the collection.
 
 **Returns:**
-int - The total number of com.groupdocs.assembly.DocumentTableRelation objects in the collection.
+int - The total number of [DocumentTableRelation](../../com.groupdocs.assembly/documenttablerelation) objects in the collection.

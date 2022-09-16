@@ -17,14 +17,14 @@ Represents the exception that is thrown when incorrectly trying to create or acc
 
 | Constructor | Description |
 | --- | --- |
-| [InvalidConstraintException(String s)](#InvalidConstraintException-java.lang.String-) | Initializes a new instance of the com.groupdocs.assembly.system.data.InvalidConstraintException class with the specified string. |
+| [InvalidConstraintException(String s)](#InvalidConstraintException-java.lang.String-) | Initializes a new instance of the [InvalidConstraintException](../../com.groupdocs.assembly.system.data/invalidconstraintexception) class with the specified string. |
 ### InvalidConstraintException(String s) {#InvalidConstraintException-java.lang.String-}
 ```
 public InvalidConstraintException(String s)
 ```
 
 
-Initializes a new instance of the com.groupdocs.assembly.system.data.InvalidConstraintException class with the specified string.
+Initializes a new instance of the [InvalidConstraintException](../../com.groupdocs.assembly.system.data/invalidconstraintexception) class with the specified string.
 
 **Parameters:**
 | Parameter | Type | Description |

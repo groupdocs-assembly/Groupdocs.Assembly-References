@@ -17,14 +17,14 @@ Represents the exception that is thrown when attempting an action that violates 
 
 | Constructor | Description |
 | --- | --- |
-| [ConstraintException(String s)](#ConstraintException-java.lang.String-) | Initializes a new instance of the com.groupdocs.assembly.system.data.ConstraintException class with the specified string. |
+| [ConstraintException(String s)](#ConstraintException-java.lang.String-) | Initializes a new instance of the [ConstraintException](../../com.groupdocs.assembly.system.data/constraintexception) class with the specified string. |
 ### ConstraintException(String s) {#ConstraintException-java.lang.String-}
 ```
 public ConstraintException(String s)
 ```
 
 
-Initializes a new instance of the com.groupdocs.assembly.system.data.ConstraintException class with the specified string.
+Initializes a new instance of the [ConstraintException](../../com.groupdocs.assembly.system.data/constraintexception) class with the specified string.
 
 **Parameters:**
 | Parameter | Type | Description |

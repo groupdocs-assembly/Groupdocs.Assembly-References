@@ -20,8 +20,8 @@ Represents one table of in-memory data.
 
 | Constructor | Description |
 | --- | --- |
-| [DataTable()](#DataTable--) | Initializes a new instance of the com.groupdocs.assembly.system.data.DataTable class with no arguments. |
-| [DataTable(String tableName)](#DataTable-java.lang.String-) | Initializes a new instance of the com.groupdocs.assembly.system.data.DataTable class with the specified table name. |
+| [DataTable()](#DataTable--) | Initializes a new instance of the [DataTable](../../com.groupdocs.assembly.system.data/datatable) class with no arguments. |
+| [DataTable(String tableName)](#DataTable-java.lang.String-) | Initializes a new instance of the [DataTable](../../com.groupdocs.assembly.system.data/datatable) class with the specified table name. |
 | [DataTable(ResultSet resultSet)](#DataTable-java.sql.ResultSet-) | Creates an object by wrapping the specified ResultSet. |
 | [DataTable(ResultSet resultSet, String tableName)](#DataTable-java.sql.ResultSet-java.lang.String-) | Creates an object by wrapping the specified ResultSet. |
 ## Methods
@@ -29,27 +29,27 @@ Represents one table of in-memory data.
 | Method | Description |
 | --- | --- |
 | [close()](#close--) |  |
-| [getTableName()](#getTableName--) | Gets the name of the com.groupdocs.assembly.system.data.DataTable. |
-| [setTableName(String value)](#setTableName-java.lang.String-) | Sets the name of the com.groupdocs.assembly.system.data.DataTable. |
+| [getTableName()](#getTableName--) | Gets the name of the [DataTable](../../com.groupdocs.assembly.system.data/datatable). |
+| [setTableName(String value)](#setTableName-java.lang.String-) | Sets the name of the [DataTable](../../com.groupdocs.assembly.system.data/datatable). |
 | [containsColumn(String columnName)](#containsColumn-java.lang.String-) | Check whether the given column exists or not |
 | [getColumnsCount()](#getColumnsCount--) |  |
 | [getColumnName(int index)](#getColumnName-int-) | Analog for .Net DataTable.Columns[i].ColumnName |
 | [getResultSet()](#getResultSet--) | Returns the underlying Java ResultSet object. |
-| [getDataSet()](#getDataSet--) | Gets the com.groupdocs.assembly.system.data.DataSet to which this table belongs. |
-| [getChildRelations()](#getChildRelations--) | Gets the collection of child relations for this com.groupdocs.assembly.system.data.DataTable. |
-| [getParentRelations()](#getParentRelations--) | Gets the collection of parent relations for this com.groupdocs.assembly.system.data.DataTable. |
+| [getDataSet()](#getDataSet--) | Gets the [DataSet](../../com.groupdocs.assembly.system.data/dataset) to which this table belongs. |
+| [getChildRelations()](#getChildRelations--) | Gets the collection of child relations for this [DataTable](../../com.groupdocs.assembly.system.data/datatable). |
+| [getParentRelations()](#getParentRelations--) | Gets the collection of parent relations for this [DataTable](../../com.groupdocs.assembly.system.data/datatable). |
 | [getRows()](#getRows--) | Gets the collection of rows that belong to this table. |
 | [getColumns()](#getColumns--) | Gets the collection of columns that belong to this table. |
-| [newRow()](#newRow--) | Creates a new com.groupdocs.assembly.system.data.DataRow with the same schema as the table. |
+| [newRow()](#newRow--) | Creates a new [DataRow](../../com.groupdocs.assembly.system.data/datarow) with the same schema as the table. |
 | [getConstraints()](#getConstraints--) | Gets the collection of constraints maintained by this table. |
 | [getPrimaryKey()](#getPrimaryKey--) | Gets an array of columns that function as primary keys for the data table. |
-| [setPrimaryKey(DataColumn[] value)](#setPrimaryKey-com.groupdocs.assembly.system.data.DataColumn---) | Sets an array of columns that function as primary keys for the data table. |
-| [getNamespace()](#getNamespace--) | Gets the namespace for the XML representation of the data stored in the com.groupdocs.assembly.system.data.DataTable. |
-| [setNamespace(String value)](#setNamespace-java.lang.String-) | Sets the namespace for the XML representation of the data stored in the com.groupdocs.assembly.system.data.DataTable. |
+| [setPrimaryKey(DataColumn value)](#setPrimaryKey-com.groupdocs.assembly.system.data.DataColumn---) | Sets an array of columns that function as primary keys for the data table. |
+| [getNamespace()](#getNamespace--) | Gets the namespace for the XML representation of the data stored in the [DataTable](../../com.groupdocs.assembly.system.data/datatable). |
+| [setNamespace(String value)](#setNamespace-java.lang.String-) | Sets the namespace for the XML representation of the data stored in the [DataTable](../../com.groupdocs.assembly.system.data/datatable). |
 | [getEnforceConstraints()](#getEnforceConstraints--) |  |
 | [setEnforceConstraints(boolean enforceConstraints)](#setEnforceConstraints-boolean-) |  |
 | [refresh()](#refresh--) | Reloads all the data from ResultSet if it is present. |
-| [acceptChanges()](#acceptChanges--) | Commits all the changes made to this table since the last time com.groupdocs.assembly.system.data.DataTable\#acceptChanges() was called. |
+| [acceptChanges()](#acceptChanges--) | Commits all the changes made to this table since the last time [DataTable\#acceptChanges--](../../com.groupdocs.assembly.system.data/datatable\#acceptChanges--) was called. |
 | [addEventListener(DataTableEventListener listener)](#addEventListener-com.groupdocs.assembly.system.data.DataTableEventListener-) |  |
 | [clearEventListneers()](#clearEventListneers--) |  |
 | [onDataRowChanged(DataRow row)](#onDataRowChanged-com.groupdocs.assembly.system.data.DataRow-) |  |
@@ -63,7 +63,7 @@ public DataTable()
 ```
 
 
-Initializes a new instance of the com.groupdocs.assembly.system.data.DataTable class with no arguments.
+Initializes a new instance of the [DataTable](../../com.groupdocs.assembly.system.data/datatable) class with no arguments.
 
 ### DataTable(String tableName) {#DataTable-java.lang.String-}
 ```
@@ -71,12 +71,12 @@ public DataTable(String tableName)
 ```
 
 
-Initializes a new instance of the com.groupdocs.assembly.system.data.DataTable class with the specified table name.
+Initializes a new instance of the [DataTable](../../com.groupdocs.assembly.system.data/datatable) class with the specified table name.
 
 **Parameters:**
 | Parameter | Type | Description |
 | --- | --- | --- |
-| tableName | java.lang.String | The name to give the table. If  tableName  is null or an empty string, a default name is given when added to the com.groupdocs.assembly.system.data.DataTableCollection. |
+| tableName | java.lang.String | The name to give the table. If  tableName  is null or an empty string, a default name is given when added to the [DataTableCollection](../../com.groupdocs.assembly.system.data/datatablecollection). |
 
 ### DataTable(ResultSet resultSet) {#DataTable-java.sql.ResultSet-}
 ```
@@ -119,22 +119,22 @@ public String getTableName()
 ```
 
 
-Gets the name of the com.groupdocs.assembly.system.data.DataTable.
+Gets the name of the [DataTable](../../com.groupdocs.assembly.system.data/datatable).
 
 **Returns:**
-java.lang.String - The name of the com.groupdocs.assembly.system.data.DataTable.
+java.lang.String - The name of the [DataTable](../../com.groupdocs.assembly.system.data/datatable).
 ### setTableName(String value) {#setTableName-java.lang.String-}
 ```
 public void setTableName(String value)
 ```
 
 
-Sets the name of the com.groupdocs.assembly.system.data.DataTable.
+Sets the name of the [DataTable](../../com.groupdocs.assembly.system.data/datatable).
 
 **Parameters:**
 | Parameter | Type | Description |
 | --- | --- | --- |
-| value | java.lang.String | The name of the com.groupdocs.assembly.system.data.DataTable. |
+| value | java.lang.String | The name of the [DataTable](../../com.groupdocs.assembly.system.data/datatable). |
 
 ### containsColumn(String columnName) {#containsColumn-java.lang.String-}
 ```
@@ -192,30 +192,30 @@ public DataSet getDataSet()
 ```
 
 
-Gets the com.groupdocs.assembly.system.data.DataSet to which this table belongs.
+Gets the [DataSet](../../com.groupdocs.assembly.system.data/dataset) to which this table belongs.
 
 **Returns:**
-[DataSet](../../com.groupdocs.assembly.system.data/dataset) - The com.groupdocs.assembly.system.data.DataSet to which this table belongs.
+[DataSet](../../com.groupdocs.assembly.system.data/dataset) - The [DataSet](../../com.groupdocs.assembly.system.data/dataset) to which this table belongs.
 ### getChildRelations() {#getChildRelations--}
 ```
 public DataRelationCollection getChildRelations()
 ```
 
 
-Gets the collection of child relations for this com.groupdocs.assembly.system.data.DataTable.
+Gets the collection of child relations for this [DataTable](../../com.groupdocs.assembly.system.data/datatable).
 
 **Returns:**
-[DataRelationCollection](../../com.groupdocs.assembly.system.data/datarelationcollection) - A com.groupdocs.assembly.system.data.DataRelationCollection that contains the child relations for the table. An empty collection is returned if no com.groupdocs.assembly.system.data.DataRelation objects exist.
+[DataRelationCollection](../../com.groupdocs.assembly.system.data/datarelationcollection) - A [DataRelationCollection](../../com.groupdocs.assembly.system.data/datarelationcollection) that contains the child relations for the table. An empty collection is returned if no [DataRelation](../../com.groupdocs.assembly.system.data/datarelation) objects exist.
 ### getParentRelations() {#getParentRelations--}
 ```
 public DataRelationCollection getParentRelations()
 ```
 
 
-Gets the collection of parent relations for this com.groupdocs.assembly.system.data.DataTable.
+Gets the collection of parent relations for this [DataTable](../../com.groupdocs.assembly.system.data/datatable).
 
 **Returns:**
-[DataRelationCollection](../../com.groupdocs.assembly.system.data/datarelationcollection) - A com.groupdocs.assembly.system.data.DataRelationCollection that contains the parent relations for the table. An empty collection is returned if no com.groupdocs.assembly.system.data.DataRelation objects exist.
+[DataRelationCollection](../../com.groupdocs.assembly.system.data/datarelationcollection) - A [DataRelationCollection](../../com.groupdocs.assembly.system.data/datarelationcollection) that contains the parent relations for the table. An empty collection is returned if no [DataRelation](../../com.groupdocs.assembly.system.data/datarelation) objects exist.
 ### getRows() {#getRows--}
 ```
 public DataRowCollection getRows()
@@ -225,7 +225,7 @@ public DataRowCollection getRows()
 Gets the collection of rows that belong to this table.
 
 **Returns:**
-[DataRowCollection](../../com.groupdocs.assembly.system.data/datarowcollection) - A com.groupdocs.assembly.system.data.DataRowCollection that contains com.groupdocs.assembly.system.data.DataRow objects; otherwise a null value if no com.groupdocs.assembly.system.data.DataRow objects exist.
+[DataRowCollection](../../com.groupdocs.assembly.system.data/datarowcollection) - A [DataRowCollection](../../com.groupdocs.assembly.system.data/datarowcollection) that contains [DataRow](../../com.groupdocs.assembly.system.data/datarow) objects; otherwise a null value if no [DataRow](../../com.groupdocs.assembly.system.data/datarow) objects exist.
 ### getColumns() {#getColumns--}
 ```
 public DataColumnCollection getColumns()
@@ -235,17 +235,17 @@ public DataColumnCollection getColumns()
 Gets the collection of columns that belong to this table.
 
 **Returns:**
-[DataColumnCollection](../../com.groupdocs.assembly.system.data/datacolumncollection) - A com.groupdocs.assembly.system.data.DataColumnCollection that contains the collection of com.groupdocs.assembly.system.data.DataColumn objects for the table. An empty collection is returned if no com.groupdocs.assembly.system.data.DataColumn objects exist.
+[DataColumnCollection](../../com.groupdocs.assembly.system.data/datacolumncollection) - A [DataColumnCollection](../../com.groupdocs.assembly.system.data/datacolumncollection) that contains the collection of [DataColumn](../../com.groupdocs.assembly.system.data/datacolumn) objects for the table. An empty collection is returned if no [DataColumn](../../com.groupdocs.assembly.system.data/datacolumn) objects exist.
 ### newRow() {#newRow--}
 ```
 public DataRow newRow()
 ```
 
 
-Creates a new com.groupdocs.assembly.system.data.DataRow with the same schema as the table.
+Creates a new [DataRow](../../com.groupdocs.assembly.system.data/datarow) with the same schema as the table.
 
 **Returns:**
-[DataRow](../../com.groupdocs.assembly.system.data/datarow) - A com.groupdocs.assembly.system.data.DataRow with the same schema as the com.groupdocs.assembly.system.data.DataTable.
+[DataRow](../../com.groupdocs.assembly.system.data/datarow) - A [DataRow](../../com.groupdocs.assembly.system.data/datarow) with the same schema as the [DataTable](../../com.groupdocs.assembly.system.data/datatable).
 ### getConstraints() {#getConstraints--}
 ```
 public ConstraintCollection getConstraints()
@@ -255,7 +255,7 @@ public ConstraintCollection getConstraints()
 Gets the collection of constraints maintained by this table.
 
 **Returns:**
-[ConstraintCollection](../../com.groupdocs.assembly.system.data/constraintcollection) - A com.groupdocs.assembly.system.data.ConstraintCollection that contains the collection of com.groupdocs.assembly.system.data.Constraint objects for the table. An empty collection is returned if no com.groupdocs.assembly.system.data.Constraint objects exist.
+[ConstraintCollection](../../com.groupdocs.assembly.system.data/constraintcollection) - A [ConstraintCollection](../../com.groupdocs.assembly.system.data/constraintcollection) that contains the collection of [Constraint](../../com.groupdocs.assembly.system.data/constraint) objects for the table. An empty collection is returned if no [Constraint](../../com.groupdocs.assembly.system.data/constraint) objects exist.
 ### getPrimaryKey() {#getPrimaryKey--}
 ```
 public DataColumn[] getPrimaryKey()
@@ -265,10 +265,10 @@ public DataColumn[] getPrimaryKey()
 Gets an array of columns that function as primary keys for the data table.
 
 **Returns:**
-com.groupdocs.assembly.system.data.DataColumn[] - An array of com.groupdocs.assembly.system.data.DataColumn objects.
-### setPrimaryKey(DataColumn[] value) {#setPrimaryKey-com.groupdocs.assembly.system.data.DataColumn---}
+com.groupdocs.assembly.system.data.DataColumn[] - An array of [DataColumn](../../com.groupdocs.assembly.system.data/datacolumn) objects.
+### setPrimaryKey(DataColumn value) {#setPrimaryKey-com.groupdocs.assembly.system.data.DataColumn---}
 ```
-public void setPrimaryKey(DataColumn[] value)
+public void setPrimaryKey(DataColumn value)
 ```
 
 
@@ -277,7 +277,7 @@ Sets an array of columns that function as primary keys for the data table.
 **Parameters:**
 | Parameter | Type | Description |
 | --- | --- | --- |
-| value | com.groupdocs.assembly.system.data.DataColumn[] | An array of com.groupdocs.assembly.system.data.DataColumn objects. |
+| value | [DataColumn\[\]](../../com.groupdocs.assembly.system.data/datacolumn) | An array of [DataColumn](../../com.groupdocs.assembly.system.data/datacolumn) objects. |
 
 ### getNamespace() {#getNamespace--}
 ```
@@ -285,22 +285,22 @@ public String getNamespace()
 ```
 
 
-Gets the namespace for the XML representation of the data stored in the com.groupdocs.assembly.system.data.DataTable.
+Gets the namespace for the XML representation of the data stored in the [DataTable](../../com.groupdocs.assembly.system.data/datatable).
 
 **Returns:**
-java.lang.String - The namespace of the com.groupdocs.assembly.system.data.DataTable.
+java.lang.String - The namespace of the [DataTable](../../com.groupdocs.assembly.system.data/datatable).
 ### setNamespace(String value) {#setNamespace-java.lang.String-}
 ```
 public void setNamespace(String value)
 ```
 
 
-Sets the namespace for the XML representation of the data stored in the com.groupdocs.assembly.system.data.DataTable.
+Sets the namespace for the XML representation of the data stored in the [DataTable](../../com.groupdocs.assembly.system.data/datatable).
 
 **Parameters:**
 | Parameter | Type | Description |
 | --- | --- | --- |
-| value | java.lang.String | The namespace of the com.groupdocs.assembly.system.data.DataTable. |
+| value | java.lang.String | The namespace of the [DataTable](../../com.groupdocs.assembly.system.data/datatable). |
 
 ### getEnforceConstraints() {#getEnforceConstraints--}
 ```
@@ -339,7 +339,7 @@ public void acceptChanges()
 ```
 
 
-Commits all the changes made to this table since the last time com.groupdocs.assembly.system.data.DataTable\#acceptChanges() was called.
+Commits all the changes made to this table since the last time [DataTable\#acceptChanges--](../../com.groupdocs.assembly.system.data/datatable\#acceptChanges--) was called.
 
 ### addEventListener(DataTableEventListener listener) {#addEventListener-com.groupdocs.assembly.system.data.DataTableEventListener-}
 ```

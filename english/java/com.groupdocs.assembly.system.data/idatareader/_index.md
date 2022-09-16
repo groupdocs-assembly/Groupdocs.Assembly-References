@@ -17,12 +17,12 @@ Provides a means of reading one or more forward-only streams of result sets obta
 
 | Method | Description |
 | --- | --- |
-| [read()](#read--) | Advances the com.groupdocs.assembly.system.data.IDataReader to the next record. |
+| [read()](#read--) | Advances the [IDataReader](../../com.groupdocs.assembly.system.data/idatareader) to the next record. |
 | [getDepth()](#getDepth--) | Gets a value indicating the depth of nesting for the current row. |
 | [isClosed()](#isClosed--) | Gets a value indicating whether the data reader is closed. |
 | [getRecordsAffected()](#getRecordsAffected--) | Gets the number of rows changed, inserted, or deleted by execution of the SQL statement. |
-| [close()](#close--) | Closes the com.groupdocs.assembly.system.data.IDataReader Object. |
-| [getSchemaTable()](#getSchemaTable--) | Returns a com.groupdocs.assembly.system.data.DataTable that describes the column metadata of the com.groupdocs.assembly.system.data.IDataReader. |
+| [close()](#close--) | Closes the [IDataReader](../../com.groupdocs.assembly.system.data/idatareader) Object. |
+| [getSchemaTable()](#getSchemaTable--) | Returns a [DataTable](../../com.groupdocs.assembly.system.data/datatable) that describes the column metadata of the [IDataReader](../../com.groupdocs.assembly.system.data/idatareader). |
 | [nextResult()](#nextResult--) | Advances the data reader to the next result, when reading the results of batch SQL statements. |
 ### read() {#read--}
 ```
@@ -30,7 +30,7 @@ public abstract boolean read()
 ```
 
 
-Advances the com.groupdocs.assembly.system.data.IDataReader to the next record.
+Advances the [IDataReader](../../com.groupdocs.assembly.system.data/idatareader) to the next record.
 
 **Returns:**
 boolean - true if there are more rows; otherwise, false.
@@ -70,7 +70,7 @@ public abstract void close()
 ```
 
 
-Closes the com.groupdocs.assembly.system.data.IDataReader Object.
+Closes the [IDataReader](../../com.groupdocs.assembly.system.data/idatareader) Object.
 
 ### getSchemaTable() {#getSchemaTable--}
 ```
@@ -78,10 +78,10 @@ public abstract DataTable getSchemaTable()
 ```
 
 
-Returns a com.groupdocs.assembly.system.data.DataTable that describes the column metadata of the com.groupdocs.assembly.system.data.IDataReader.
+Returns a [DataTable](../../com.groupdocs.assembly.system.data/datatable) that describes the column metadata of the [IDataReader](../../com.groupdocs.assembly.system.data/idatareader).
 
 **Returns:**
-[DataTable](../../com.groupdocs.assembly.system.data/datatable) - A com.groupdocs.assembly.system.data.DataTable that describes the column metadata.
+[DataTable](../../com.groupdocs.assembly.system.data/datatable) - A [DataTable](../../com.groupdocs.assembly.system.data/datatable) that describes the column metadata.
 ### nextResult() {#nextResult--}
 ```
 public abstract boolean nextResult()

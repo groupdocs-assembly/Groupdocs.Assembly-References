@@ -1,7 +1,7 @@
 ---
 title: DataRelationCollection
 second_title: GroupDocs.Assembly for Java API Reference
-description: Represents the collection of com.groupdocs.assembly.system.data.DataRelation objects for this com.groupdocs.assembly.system.data.DataSet.
+description: Represents the collection of  objects for this .
 type: docs
 weight: 19
 url: /java/com.groupdocs.assembly.system.data/datarelationcollection/
@@ -15,23 +15,23 @@ java.lang.Iterable
 public final class DataRelationCollection implements Iterable
 ```
 
-Represents the collection of com.groupdocs.assembly.system.data.DataRelation objects for this com.groupdocs.assembly.system.data.DataSet.
+Represents the collection of [DataRelation](../../com.groupdocs.assembly.system.data/datarelation) objects for this [DataSet](../../com.groupdocs.assembly.system.data/dataset).
 ## Methods
 
 | Method | Description |
 | --- | --- |
-| [add(DataRelation relation)](#add-com.groupdocs.assembly.system.data.DataRelation-) | Adds a com.groupdocs.assembly.system.data.DataRelation to the com.groupdocs.assembly.system.data.DataRelationCollection. |
+| [add(DataRelation relation)](#add-com.groupdocs.assembly.system.data.DataRelation-) | Adds a [DataRelation](../../com.groupdocs.assembly.system.data/datarelation) to the [DataRelationCollection](../../com.groupdocs.assembly.system.data/datarelationcollection). |
 | [add(DataTable parentTable, DataTable childTable, String parentColumnName, String childColumnName)](#add-com.groupdocs.assembly.system.data.DataTable-com.groupdocs.assembly.system.data.DataTable-java.lang.String-java.lang.String-) | Adds a relation to the collection. |
-| [add(DataTable parentTable, DataTable childTable, String[] parentColumnNames, String[] childColumnNames)](#add-com.groupdocs.assembly.system.data.DataTable-com.groupdocs.assembly.system.data.DataTable-java.lang.String---java.lang.String---) | Adds a relation to the collection. |
-| [add(String name, DataColumn parentColumn, DataColumn childColumn, boolean createConstraints)](#add-java.lang.String-com.groupdocs.assembly.system.data.DataColumn-com.groupdocs.assembly.system.data.DataColumn-boolean-) | Creates a com.groupdocs.assembly.system.data.DataRelation with the specified name, parent and child columns, with optional constraints according to the value of the  createConstraints  parameter, and adds it to the collection. |
-| [add(DataColumn parentColumn, DataColumn childColumn)](#add-com.groupdocs.assembly.system.data.DataColumn-com.groupdocs.assembly.system.data.DataColumn-) | Creates a com.groupdocs.assembly.system.data.DataRelation with a specified parent and child column, and adds it to the collection. |
-| [add(String name, DataColumn parentColumn, DataColumn childColumn)](#add-java.lang.String-com.groupdocs.assembly.system.data.DataColumn-com.groupdocs.assembly.system.data.DataColumn-) | Creates a com.groupdocs.assembly.system.data.DataRelation with the specified name, and parent and child columns, and adds it to the collection. |
+| [add(DataTable parentTable, DataTable childTable, String parentColumnNames, String childColumnNames)](#add-com.groupdocs.assembly.system.data.DataTable-com.groupdocs.assembly.system.data.DataTable-java.lang.String---java.lang.String---) | Adds a relation to the collection. |
+| [add(String name, DataColumn parentColumn, DataColumn childColumn, boolean createConstraints)](#add-java.lang.String-com.groupdocs.assembly.system.data.DataColumn-com.groupdocs.assembly.system.data.DataColumn-boolean-) | Creates a [DataRelation](../../com.groupdocs.assembly.system.data/datarelation) with the specified name, parent and child columns, with optional constraints according to the value of the  createConstraints  parameter, and adds it to the collection. |
+| [add(DataColumn parentColumn, DataColumn childColumn)](#add-com.groupdocs.assembly.system.data.DataColumn-com.groupdocs.assembly.system.data.DataColumn-) | Creates a [DataRelation](../../com.groupdocs.assembly.system.data/datarelation) with a specified parent and child column, and adds it to the collection. |
+| [add(String name, DataColumn parentColumn, DataColumn childColumn)](#add-java.lang.String-com.groupdocs.assembly.system.data.DataColumn-com.groupdocs.assembly.system.data.DataColumn-) | Creates a [DataRelation](../../com.groupdocs.assembly.system.data/datarelation) with the specified name, and parent and child columns, and adds it to the collection. |
 | [iterator()](#iterator--) |  |
 | [getCount()](#getCount--) |  |
 | [contains(DataRelation relation)](#contains-com.groupdocs.assembly.system.data.DataRelation-) | Verifies whether a DataRelation with the specific name (case insensitive) exists in the collection. |
-| [indexOf(DataRelation relation)](#indexOf-com.groupdocs.assembly.system.data.DataRelation-) | Gets the index of the specified com.groupdocs.assembly.system.data.DataRelation object. |
-| [get(String name)](#get-java.lang.String-) | Gets the com.groupdocs.assembly.system.data.DataRelation object specified by name. |
-| [get(int index)](#get-int-) | Gets the com.groupdocs.assembly.system.data.DataRelation object at the specified index. |
+| [indexOf(DataRelation relation)](#indexOf-com.groupdocs.assembly.system.data.DataRelation-) | Gets the index of the specified [DataRelation](../../com.groupdocs.assembly.system.data/datarelation) object. |
+| [get(String name)](#get-java.lang.String-) | Gets the [DataRelation](../../com.groupdocs.assembly.system.data/datarelation) object specified by name. |
+| [get(int index)](#get-int-) | Gets the [DataRelation](../../com.groupdocs.assembly.system.data/datarelation) object at the specified index. |
 | [removeAt(int index)](#removeAt-int-) | Removes the relation at the specified index from the collection. |
 | [clear()](#clear--) | Clears the collection of any relations. |
 ### add(DataRelation relation) {#add-com.groupdocs.assembly.system.data.DataRelation-}
@@ -40,7 +40,7 @@ public final void add(DataRelation relation)
 ```
 
 
-Adds a com.groupdocs.assembly.system.data.DataRelation to the com.groupdocs.assembly.system.data.DataRelationCollection.
+Adds a [DataRelation](../../com.groupdocs.assembly.system.data/datarelation) to the [DataRelationCollection](../../com.groupdocs.assembly.system.data/datarelationcollection).
 
 **Parameters:**
 | Parameter | Type | Description |
@@ -63,9 +63,9 @@ Adds a relation to the collection. Performs no checks on the duplication etc.
 | parentColumnName | java.lang.String | The parent column's name of the relation. |
 | childColumnName | java.lang.String | The child column's name of the relation. |
 
-### add(DataTable parentTable, DataTable childTable, String[] parentColumnNames, String[] childColumnNames) {#add-com.groupdocs.assembly.system.data.DataTable-com.groupdocs.assembly.system.data.DataTable-java.lang.String---java.lang.String---}
+### add(DataTable parentTable, DataTable childTable, String parentColumnNames, String childColumnNames) {#add-com.groupdocs.assembly.system.data.DataTable-com.groupdocs.assembly.system.data.DataTable-java.lang.String---java.lang.String---}
 ```
-public final void add(DataTable parentTable, DataTable childTable, String[] parentColumnNames, String[] childColumnNames)
+public final void add(DataTable parentTable, DataTable childTable, String parentColumnNames, String childColumnNames)
 ```
 
 
@@ -76,8 +76,8 @@ Adds a relation to the collection. Performs no checks on the duplication etc.
 | --- | --- | --- |
 | parentTable | [DataTable](../../com.groupdocs.assembly.system.data/datatable) | The parent table of the relation. |
 | childTable | [DataTable](../../com.groupdocs.assembly.system.data/datatable) | The child table of the relation. |
-| parentColumnNames | java.lang.String[] | The array of parent column's name of the relation. |
-| childColumnNames | java.lang.String[] | The array of child column's name of the relation. |
+| parentColumnNames | java.lang.String | The array of parent column's name of the relation. |
+| childColumnNames | java.lang.String | The array of child column's name of the relation. |
 
 ### add(String name, DataColumn parentColumn, DataColumn childColumn, boolean createConstraints) {#add-java.lang.String-com.groupdocs.assembly.system.data.DataColumn-com.groupdocs.assembly.system.data.DataColumn-boolean-}
 ```
@@ -85,7 +85,7 @@ public final void add(String name, DataColumn parentColumn, DataColumn childColu
 ```
 
 
-Creates a com.groupdocs.assembly.system.data.DataRelation with the specified name, parent and child columns, with optional constraints according to the value of the  createConstraints  parameter, and adds it to the collection.
+Creates a [DataRelation](../../com.groupdocs.assembly.system.data/datarelation) with the specified name, parent and child columns, with optional constraints according to the value of the  createConstraints  parameter, and adds it to the collection.
 
 **Parameters:**
 | Parameter | Type | Description |
@@ -101,7 +101,7 @@ public final void add(DataColumn parentColumn, DataColumn childColumn)
 ```
 
 
-Creates a com.groupdocs.assembly.system.data.DataRelation with a specified parent and child column, and adds it to the collection.
+Creates a [DataRelation](../../com.groupdocs.assembly.system.data/datarelation) with a specified parent and child column, and adds it to the collection.
 
 **Parameters:**
 | Parameter | Type | Description |
@@ -115,7 +115,7 @@ public final void add(String name, DataColumn parentColumn, DataColumn childColu
 ```
 
 
-Creates a com.groupdocs.assembly.system.data.DataRelation with the specified name, and parent and child columns, and adds it to the collection.
+Creates a [DataRelation](../../com.groupdocs.assembly.system.data/datarelation) with the specified name, and parent and child columns, and adds it to the collection.
 
 **Parameters:**
 | Parameter | Type | Description |
@@ -165,7 +165,7 @@ public final int indexOf(DataRelation relation)
 ```
 
 
-Gets the index of the specified com.groupdocs.assembly.system.data.DataRelation object.
+Gets the index of the specified [DataRelation](../../com.groupdocs.assembly.system.data/datarelation) object.
 
 **Parameters:**
 | Parameter | Type | Description |
@@ -180,7 +180,7 @@ public final DataRelation get(String name)
 ```
 
 
-Gets the com.groupdocs.assembly.system.data.DataRelation object specified by name.
+Gets the [DataRelation](../../com.groupdocs.assembly.system.data/datarelation) object specified by name.
 
 **Parameters:**
 | Parameter | Type | Description |
@@ -188,14 +188,14 @@ Gets the com.groupdocs.assembly.system.data.DataRelation object specified by nam
 | name | java.lang.String | The name of the relation to find. |
 
 **Returns:**
-[DataRelation](../../com.groupdocs.assembly.system.data/datarelation) - The named com.groupdocs.assembly.system.data.DataRelation, or a null value if the specified com.groupdocs.assembly.system.data.DataRelation does not exist.
+[DataRelation](../../com.groupdocs.assembly.system.data/datarelation) - The named [DataRelation](../../com.groupdocs.assembly.system.data/datarelation), or a null value if the specified [DataRelation](../../com.groupdocs.assembly.system.data/datarelation) does not exist.
 ### get(int index) {#get-int-}
 ```
 public final DataRelation get(int index)
 ```
 
 
-Gets the com.groupdocs.assembly.system.data.DataRelation object at the specified index.
+Gets the [DataRelation](../../com.groupdocs.assembly.system.data/datarelation) object at the specified index.
 
 **Parameters:**
 | Parameter | Type | Description |
@@ -203,7 +203,7 @@ Gets the com.groupdocs.assembly.system.data.DataRelation object at the specified
 | index | int | The zero-based index to find. |
 
 **Returns:**
-[DataRelation](../../com.groupdocs.assembly.system.data/datarelation) - The com.groupdocs.assembly.system.data.DataRelation, or a null value if the specified com.groupdocs.assembly.system.data.DataRelation does not exist.
+[DataRelation](../../com.groupdocs.assembly.system.data/datarelation) - The [DataRelation](../../com.groupdocs.assembly.system.data/datarelation), or a null value if the specified [DataRelation](../../com.groupdocs.assembly.system.data/datarelation) does not exist.
 ### removeAt(int index) {#removeAt-int-}
 ```
 public final void removeAt(int index)

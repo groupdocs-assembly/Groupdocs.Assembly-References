@@ -12,7 +12,7 @@ java.lang.Object
 public class CsvDataLoadOptions
 ```
 
-Represents options for parsing CSV data. An instance of this class can be passed into constructors of com.groupdocs.assembly.CsvDataSource.
+Represents options for parsing CSV data. An instance of this class can be passed into constructors of [CsvDataSource](../../com.groupdocs.assembly/csvdatasource).
 ## Constructors
 
 | Constructor | Description |

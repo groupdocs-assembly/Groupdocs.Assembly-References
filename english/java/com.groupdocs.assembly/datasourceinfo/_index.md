@@ -46,18 +46,18 @@ Creates a new instance of this class with the data source object specified.
 
 The data source object can be of one of the following types:
 
- *  com.groupdocs.assembly.XmlDataSource
- *  com.groupdocs.assembly.JsonDataSource
- *  com.groupdocs.assembly.CsvDataSource
- *  com.groupdocs.assembly.DocumentTableSet
- *  com.groupdocs.assembly.DocumentTable
- *  com.groupdocs.assembly.system.data.DataSet
- *  com.groupdocs.assembly.system.data.DataTable
- *  com.groupdocs.assembly.system.data.DataRow
- *  com.groupdocs.assembly.system.data.IDataReader
- *  com.groupdocs.assembly.system.data.IDataRecord
- *  com.groupdocs.assembly.system.data.DataView
- *  com.groupdocs.assembly.system.data.DataRowView
+ *  [XmlDataSource](../../com.groupdocs.assembly/xmldatasource)
+ *  [JsonDataSource](../../com.groupdocs.assembly/jsondatasource)
+ *  [CsvDataSource](../../com.groupdocs.assembly/csvdatasource)
+ *  [DocumentTableSet](../../com.groupdocs.assembly/documenttableset)
+ *  [DocumentTable](../../com.groupdocs.assembly/documenttable)
+ *  [DataSet](../../com.groupdocs.assembly.system.data/dataset)
+ *  [DataTable](../../com.groupdocs.assembly.system.data/datatable)
+ *  [DataRow](../../com.groupdocs.assembly.system.data/datarow)
+ *  [IDataReader](../../com.groupdocs.assembly.system.data/idatareader)
+ *  [IDataRecord](../../com.groupdocs.assembly.system.data/idatarecord)
+ *  [DataView](../../com.groupdocs.assembly.system.data/dataview)
+ *  [DataRowView](../../com.groupdocs.assembly.system.data/datarowview)
  *  Any other arbitrary Java type
 
 For information on how to work with data sources of different types in template documents, see template syntax reference(https://docs.groupdocs.com/display/assemblyjava/Template+Syntax+-+Part+1+of+2\#TemplateSyntax-Part1of2-UsingDataSources).
@@ -77,18 +77,18 @@ Creates a new instance of this class with the data source object and its name sp
 
 The data source object can be of one of the following types:
 
- *  com.groupdocs.assembly.XmlDataSource
- *  com.groupdocs.assembly.JsonDataSource
- *  com.groupdocs.assembly.CsvDataSource
- *  com.groupdocs.assembly.DocumentTableSet
- *  com.groupdocs.assembly.DocumentTable
- *  com.groupdocs.assembly.system.data.DataSet
- *  com.groupdocs.assembly.system.data.DataTable
- *  com.groupdocs.assembly.system.data.DataRow
- *  com.groupdocs.assembly.system.data.IDataReader
- *  com.groupdocs.assembly.system.data.IDataRecord
- *  com.groupdocs.assembly.system.data.DataView
- *  com.groupdocs.assembly.system.data.DataRowView
+ *  [XmlDataSource](../../com.groupdocs.assembly/xmldatasource)
+ *  [JsonDataSource](../../com.groupdocs.assembly/jsondatasource)
+ *  [CsvDataSource](../../com.groupdocs.assembly/csvdatasource)
+ *  [DocumentTableSet](../../com.groupdocs.assembly/documenttableset)
+ *  [DocumentTable](../../com.groupdocs.assembly/documenttable)
+ *  [DataSet](../../com.groupdocs.assembly.system.data/dataset)
+ *  [DataTable](../../com.groupdocs.assembly.system.data/datatable)
+ *  [DataRow](../../com.groupdocs.assembly.system.data/datarow)
+ *  [IDataReader](../../com.groupdocs.assembly.system.data/idatareader)
+ *  [IDataRecord](../../com.groupdocs.assembly.system.data/idatarecord)
+ *  [DataView](../../com.groupdocs.assembly.system.data/dataview)
+ *  [DataRowView](../../com.groupdocs.assembly.system.data/datarowview)
  *  Any other arbitrary Java type
 
 For information on how to work with data sources of different types in template documents, see template syntax reference(https://docs.groupdocs.com/display/assemblyjava/Template+Syntax+-+Part+1+of+2\#TemplateSyntax-Part1of2-UsingDataSources).
@@ -97,7 +97,7 @@ When the name of the data source object is specified, you can access the data so
 
 When the name of the data source object is null or empty, you can still access members of the data source object in a template document using context object member access (see Template Syntax Reference for more information), but you cannot access the data source object itself.
 
-When passing multiple com.groupdocs.assembly.DataSourceInfo instances to com.groupdocs.assembly.DocumentAssembler, only the name of the first data source object can be null or empty. Names of the rest ones must be specified and unique.
+When passing multiple [DataSourceInfo](../../com.groupdocs.assembly/datasourceinfo) instances to [DocumentAssembler](../../com.groupdocs.assembly/documentassembler), only the name of the first data source object can be null or empty. Names of the rest ones must be specified and unique.
 
 **Parameters:**
 | Parameter | Type | Description |
@@ -115,18 +115,18 @@ Gets the data source object.
 
 The data source object can be of one of the following types:
 
- *  com.groupdocs.assembly.XmlDataSource
- *  com.groupdocs.assembly.JsonDataSource
- *  com.groupdocs.assembly.CsvDataSource
- *  com.groupdocs.assembly.DocumentTableSet
- *  com.groupdocs.assembly.DocumentTable
- *  com.groupdocs.assembly.system.data.DataSet
- *  com.groupdocs.assembly.system.data.DataTable
- *  com.groupdocs.assembly.system.data.DataRow
- *  com.groupdocs.assembly.system.data.IDataReader
- *  com.groupdocs.assembly.system.data.IDataRecord
- *  com.groupdocs.assembly.system.data.DataView
- *  com.groupdocs.assembly.system.data.DataRowView
+ *  [XmlDataSource](../../com.groupdocs.assembly/xmldatasource)
+ *  [JsonDataSource](../../com.groupdocs.assembly/jsondatasource)
+ *  [CsvDataSource](../../com.groupdocs.assembly/csvdatasource)
+ *  [DocumentTableSet](../../com.groupdocs.assembly/documenttableset)
+ *  [DocumentTable](../../com.groupdocs.assembly/documenttable)
+ *  [DataSet](../../com.groupdocs.assembly.system.data/dataset)
+ *  [DataTable](../../com.groupdocs.assembly.system.data/datatable)
+ *  [DataRow](../../com.groupdocs.assembly.system.data/datarow)
+ *  [IDataReader](../../com.groupdocs.assembly.system.data/idatareader)
+ *  [IDataRecord](../../com.groupdocs.assembly.system.data/idatarecord)
+ *  [DataView](../../com.groupdocs.assembly.system.data/dataview)
+ *  [DataRowView](../../com.groupdocs.assembly.system.data/datarowview)
  *  Any other arbitrary Java type
 
 For information on how to work with data sources of different types in template documents, see template syntax reference(https://docs.groupdocs.com/display/assemblyjava/Template+Syntax+-+Part+1+of+2\#TemplateSyntax-Part1of2-UsingDataSources).
@@ -143,18 +143,18 @@ Sets the data source object.
 
 The data source object can be of one of the following types:
 
- *  com.groupdocs.assembly.XmlDataSource
- *  com.groupdocs.assembly.JsonDataSource
- *  com.groupdocs.assembly.CsvDataSource
- *  com.groupdocs.assembly.DocumentTableSet
- *  com.groupdocs.assembly.DocumentTable
- *  com.groupdocs.assembly.system.data.DataSet
- *  com.groupdocs.assembly.system.data.DataTable
- *  com.groupdocs.assembly.system.data.DataRow
- *  com.groupdocs.assembly.system.data.IDataReader
- *  com.groupdocs.assembly.system.data.IDataRecord
- *  com.groupdocs.assembly.system.data.DataView
- *  com.groupdocs.assembly.system.data.DataRowView
+ *  [XmlDataSource](../../com.groupdocs.assembly/xmldatasource)
+ *  [JsonDataSource](../../com.groupdocs.assembly/jsondatasource)
+ *  [CsvDataSource](../../com.groupdocs.assembly/csvdatasource)
+ *  [DocumentTableSet](../../com.groupdocs.assembly/documenttableset)
+ *  [DocumentTable](../../com.groupdocs.assembly/documenttable)
+ *  [DataSet](../../com.groupdocs.assembly.system.data/dataset)
+ *  [DataTable](../../com.groupdocs.assembly.system.data/datatable)
+ *  [DataRow](../../com.groupdocs.assembly.system.data/datarow)
+ *  [IDataReader](../../com.groupdocs.assembly.system.data/idatareader)
+ *  [IDataRecord](../../com.groupdocs.assembly.system.data/idatarecord)
+ *  [DataView](../../com.groupdocs.assembly.system.data/dataview)
+ *  [DataRowView](../../com.groupdocs.assembly.system.data/datarowview)
  *  Any other arbitrary Java type
 
 For information on how to work with data sources of different types in template documents, see template syntax reference(https://docs.groupdocs.com/display/assemblyjava/Template+Syntax+-+Part+1+of+2\#TemplateSyntax-Part1of2-UsingDataSources).
@@ -176,7 +176,7 @@ When the name of the data source object is specified, you can access the data so
 
 When the name of the data source object is null or empty, you can still access members of the data source object in a template document using context object member access (see Template Syntax Reference for more information), but you cannot access the data source object itself.
 
-When passing multiple com.groupdocs.assembly.DataSourceInfo instances to com.groupdocs.assembly.DocumentAssembler, only the name of the first data source object can be null or empty. Names of the rest ones must be specified and unique.
+When passing multiple [DataSourceInfo](../../com.groupdocs.assembly/datasourceinfo) instances to [DocumentAssembler](../../com.groupdocs.assembly/documentassembler), only the name of the first data source object can be null or empty. Names of the rest ones must be specified and unique.
 
 **Returns:**
 java.lang.String - The name of the data source object to be used to access the data source object in a template document.
@@ -192,7 +192,7 @@ When the name of the data source object is specified, you can access the data so
 
 When the name of the data source object is null or empty, you can still access members of the data source object in a template document using context object member access (see Template Syntax Reference for more information), but you cannot access the data source object itself.
 
-When passing multiple com.groupdocs.assembly.DataSourceInfo instances to com.groupdocs.assembly.DocumentAssembler, only the name of the first data source object can be null or empty. Names of the rest ones must be specified and unique.
+When passing multiple [DataSourceInfo](../../com.groupdocs.assembly/datasourceinfo) instances to [DocumentAssembler](../../com.groupdocs.assembly/documentassembler), only the name of the first data source object can be null or empty. Names of the rest ones must be specified and unique.
 
 **Parameters:**
 | Parameter | Type | Description |

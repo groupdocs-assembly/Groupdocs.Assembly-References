@@ -1,7 +1,7 @@
 ---
 title: DocumentTableRelation
 second_title: GroupDocs.Assembly for Java API Reference
-description: Represents a parent-child relationship between two com.groupdocs.assembly.DocumentTable objects.
+description: Represents a parent-child relationship between two  objects.
 type: docs
 weight: 22
 url: /java/com.groupdocs.assembly/documenttablerelation/
@@ -12,7 +12,7 @@ java.lang.Object
 public class DocumentTableRelation
 ```
 
-Represents a parent-child relationship between two com.groupdocs.assembly.DocumentTable objects.
+Represents a parent-child relationship between two [DocumentTable](../../com.groupdocs.assembly/documenttable) objects.
 ## Methods
 
 | Method | Description |

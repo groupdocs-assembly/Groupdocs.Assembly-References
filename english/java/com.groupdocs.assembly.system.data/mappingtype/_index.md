@@ -12,7 +12,7 @@ java.lang.Object
 public class MappingType
 ```
 
-A utility class providing constants. Specifies how a com.groupdocs.assembly.system.data.DataColumn is mapped.
+A utility class providing constants. Specifies how a [DataColumn](../../com.groupdocs.assembly.system.data/datacolumn) is mapped.
 ## Fields
 
 | Field | Description |

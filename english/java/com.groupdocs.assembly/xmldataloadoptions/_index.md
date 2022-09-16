@@ -12,7 +12,7 @@ java.lang.Object
 public class XmlDataLoadOptions
 ```
 
-Represents options for XML data loading. An instance of this class can be passed into constructors of com.groupdocs.assembly.XmlDataSource.
+Represents options for XML data loading. An instance of this class can be passed into constructors of [XmlDataSource](../../com.groupdocs.assembly/xmldatasource).
 ## Constructors
 
 | Constructor | Description |

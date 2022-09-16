@@ -14,14 +14,16 @@ public class Metered
 
 Provides methods to work with metered licensing. In this example, an attempt to set metered public and private keys is made:
 
-```java
+
 ```
+
 
  Metered metered = new Metered();
  metered.setMeteredKey("PublicKey", "PrivateKey");
  
+
 ```
-```
+
 ## Constructors
 
 | Constructor | Description |

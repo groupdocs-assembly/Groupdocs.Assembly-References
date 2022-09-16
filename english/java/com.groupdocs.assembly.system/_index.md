@@ -3,7 +3,7 @@ title: com.groupdocs.assembly.system
 second_title: GroupDocs.Assembly for Java API Reference
 description: Provides types mimicking .NET types of the System namespace in Java.
 type: docs
-weight: 14
+weight: 11
 url: /java/com.groupdocs.assembly.system/
 ---
 

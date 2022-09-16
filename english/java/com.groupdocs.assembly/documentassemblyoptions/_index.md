@@ -12,7 +12,7 @@ java.lang.Object
 public final class DocumentAssemblyOptions
 ```
 
-A utility class providing constants. Specifies options controlling behavior of com.groupdocs.assembly.DocumentAssembler while assembling a document.
+A utility class providing constants. Specifies options controlling behavior of [DocumentAssembler](../../com.groupdocs.assembly/documentassembler) while assembling a document.
 ## Fields
 
 | Field | Description |

@@ -1,7 +1,7 @@
 ---
 title: Constraint
 second_title: GroupDocs.Assembly for Java API Reference
-description: Represents a constraint that can be enforced on one or more com.groupdocs.assembly.system.data.DataColumn objects.
+description: Represents a constraint that can be enforced on one or more  objects.
 type: docs
 weight: 10
 url: /java/com.groupdocs.assembly.system.data/constraint/
@@ -12,7 +12,7 @@ java.lang.Object
 public abstract class Constraint
 ```
 
-Represents a constraint that can be enforced on one or more com.groupdocs.assembly.system.data.DataColumn objects.
+Represents a constraint that can be enforced on one or more [DataColumn](../../com.groupdocs.assembly.system.data/datacolumn) objects.
 ## Constructors
 
 | Constructor | Description |
@@ -22,8 +22,8 @@ Represents a constraint that can be enforced on one or more com.groupdocs.assemb
 
 | Method | Description |
 | --- | --- |
-| [getConstraintName()](#getConstraintName--) | The name of a constraint in the com.groupdocs.assembly.system.data.ConstraintCollection. |
-| [setConstraintName(String value)](#setConstraintName-java.lang.String-) | The name of a constraint in the com.groupdocs.assembly.system.data.ConstraintCollection. |
+| [getConstraintName()](#getConstraintName--) | The name of a constraint in the [ConstraintCollection](../../com.groupdocs.assembly.system.data/constraintcollection). |
+| [setConstraintName(String value)](#setConstraintName-java.lang.String-) | The name of a constraint in the [ConstraintCollection](../../com.groupdocs.assembly.system.data/constraintcollection). |
 ### Constraint() {#Constraint--}
 ```
 public Constraint()
@@ -36,20 +36,20 @@ public String getConstraintName()
 ```
 
 
-The name of a constraint in the com.groupdocs.assembly.system.data.ConstraintCollection.
+The name of a constraint in the [ConstraintCollection](../../com.groupdocs.assembly.system.data/constraintcollection).
 
 **Returns:**
-java.lang.String - The name of the com.groupdocs.assembly.system.data.Constraint.
+java.lang.String - The name of the [Constraint](../../com.groupdocs.assembly.system.data/constraint).
 ### setConstraintName(String value) {#setConstraintName-java.lang.String-}
 ```
 public void setConstraintName(String value)
 ```
 
 
-The name of a constraint in the com.groupdocs.assembly.system.data.ConstraintCollection.
+The name of a constraint in the [ConstraintCollection](../../com.groupdocs.assembly.system.data/constraintcollection).
 
 **Parameters:**
 | Parameter | Type | Description |
 | --- | --- | --- |
-| value | java.lang.String | The name of the com.groupdocs.assembly.system.data.Constraint. |
+| value | java.lang.String | The name of the [Constraint](../../com.groupdocs.assembly.system.data/constraint). |
 

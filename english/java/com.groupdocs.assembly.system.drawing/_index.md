@@ -3,7 +3,7 @@ title: com.groupdocs.assembly.system.drawing
 second_title: GroupDocs.Assembly for Java API Reference
 description: Provides types mimicking .NET types of the System.Drawing namespace in Java.
 type: docs
-weight: 13
+weight: 14
 url: /java/com.groupdocs.assembly.system.drawing/
 ---
 

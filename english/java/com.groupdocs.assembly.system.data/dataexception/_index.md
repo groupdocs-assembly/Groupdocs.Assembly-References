@@ -17,7 +17,7 @@ Represents the exception that is thrown when errors are generated using ADO.NET 
 
 | Constructor | Description |
 | --- | --- |
-| [DataException(String s)](#DataException-java.lang.String-) | Initializes a new instance of the com.groupdocs.assembly.system.data.DataException class with the specified string. |
+| [DataException(String s)](#DataException-java.lang.String-) | Initializes a new instance of the [DataException](../../com.groupdocs.assembly.system.data/dataexception) class with the specified string. |
 | [DataException(Exception ex)](#DataException-java.lang.Exception-) | Initializes a new instance of this class. |
 ### DataException(String s) {#DataException-java.lang.String-}
 ```
@@ -25,7 +25,7 @@ public DataException(String s)
 ```
 
 
-Initializes a new instance of the com.groupdocs.assembly.system.data.DataException class with the specified string.
+Initializes a new instance of the [DataException](../../com.groupdocs.assembly.system.data/dataexception) class with the specified string.
 
 **Parameters:**
 | Parameter | Type | Description |

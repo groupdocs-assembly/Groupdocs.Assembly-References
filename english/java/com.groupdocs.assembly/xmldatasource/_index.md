@@ -14,9 +14,9 @@ public class XmlDataSource
 
 Provides access to data of an XML file or stream to be used while assembling a document.
 
-To access data of the corresponding file or stream while assembling a document, pass an instance of this class as a data source to one of com.groupdocs.assembly.DocumentAssembler. assembleDocument overloads.
+To access data of the corresponding file or stream while assembling a document, pass an instance of this class as a data source to one of [DocumentAssembler](../../com.groupdocs.assembly/documentassembler). assembleDocument overloads.
 
-In template documents, if a top-level XML element contains only a list of elements of the same type, an com.groupdocs.assembly.XmlDataSource instance should be treated in the same way as if it was a com.groupdocs.assembly.system.data.DataTable instance. Otherwise, an com.groupdocs.assembly.XmlDataSource instance should be treated in the same way as if it was a com.groupdocs.assembly.system.data.DataRow instance. For more information, see template syntax reference(https://docs.groupdocs.com/display/assemblyjava/Template+Syntax+-+Part+1+of+2\#TemplateSyntax-Part1of2-UsingDataSources).
+In template documents, if a top-level XML element contains only a list of elements of the same type, an [XmlDataSource](../../com.groupdocs.assembly/xmldatasource) instance should be treated in the same way as if it was a [DataTable](../../com.groupdocs.assembly.system.data/datatable) instance. Otherwise, an [XmlDataSource](../../com.groupdocs.assembly/xmldatasource) instance should be treated in the same way as if it was a [DataRow](../../com.groupdocs.assembly.system.data/datarow) instance. For more information, see template syntax reference(https://docs.groupdocs.com/display/assemblyjava/Template+Syntax+-+Part+1+of+2\#TemplateSyntax-Part1of2-UsingDataSources).
 
 When XML Schema Definition is passed to a constructor of this class, data types of values of simple XML elements and attributes are determined according to the schema. So in template documents, you can work with typed values rather than just strings.
 
@@ -30,7 +30,7 @@ When XML Schema Definition is not passed to a constructor of this class, data ty
 
 Note that for automatic recognition of data types to work, string representations of values of simple XML elements and attributes should be formed using invariant culture settings.
 
-To override default behavior of XML data loading, initialize and pass a com.groupdocs.assembly.XmlDataLoadOptions instance to a constructor of this class.
+To override default behavior of XML data loading, initialize and pass a [XmlDataLoadOptions](../../com.groupdocs.assembly/xmldataloadoptions) instance to a constructor of this class.
 ## Constructors
 
 | Constructor | Description |

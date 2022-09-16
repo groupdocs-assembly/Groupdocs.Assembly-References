@@ -1,7 +1,7 @@
 ---
 title: DataColumn
 second_title: GroupDocs.Assembly for Java API Reference
-description: Represents the schema of a column in a com.groupdocs.assembly.system.data.DataTable.
+description: Represents the schema of a column in a .
 type: docs
 weight: 14
 url: /java/com.groupdocs.assembly.system.data/datacolumn/
@@ -12,47 +12,47 @@ java.lang.Object
 public final class DataColumn
 ```
 
-Represents the schema of a column in a com.groupdocs.assembly.system.data.DataTable.
+Represents the schema of a column in a [DataTable](../../com.groupdocs.assembly.system.data/datatable).
 ## Constructors
 
 | Constructor | Description |
 | --- | --- |
-| [DataColumn()](#DataColumn--) | Initializes a new instance of a com.groupdocs.assembly.system.data.DataColumn class as type string. |
-| [DataColumn(String columnName)](#DataColumn-java.lang.String-) | Inititalizes a new instance of the com.groupdocs.assembly.system.data.DataColumn class, as type string, using the specified column name. |
+| [DataColumn()](#DataColumn--) | Initializes a new instance of a [DataColumn](../../com.groupdocs.assembly.system.data/datacolumn) class as type string. |
+| [DataColumn(String columnName)](#DataColumn-java.lang.String-) | Inititalizes a new instance of the [DataColumn](../../com.groupdocs.assembly.system.data/datacolumn) class, as type string, using the specified column name. |
 | [DataColumn(String name, DataTable table)](#DataColumn-java.lang.String-com.groupdocs.assembly.system.data.DataTable-) | Initializes a new instance of the @\{link DataColumn\} class using the specified column name and table it belongs to. |
-| [DataColumn(String columnName, Class dataType)](#DataColumn-java.lang.String-java.lang.Class-) | Inititalizes a new instance of the com.groupdocs.assembly.system.data.DataColumn class using the specified column name and data type. |
-| [DataColumn(String name, Class type, DataTable table)](#DataColumn-java.lang.String-java.lang.Class-com.groupdocs.assembly.system.data.DataTable-) | Initializes a new instance of the com.groupdocs.assembly.system.data.DataColumn class using the specified column name, data type and data table it belongs to. |
+| [DataColumn(String columnName, Class dataType)](#DataColumn-java.lang.String-java.lang.Class-) | Inititalizes a new instance of the [DataColumn](../../com.groupdocs.assembly.system.data/datacolumn) class using the specified column name and data type. |
+| [DataColumn(String name, Class type, DataTable table)](#DataColumn-java.lang.String-java.lang.Class-com.groupdocs.assembly.system.data.DataTable-) | Initializes a new instance of the [DataColumn](../../com.groupdocs.assembly.system.data/datacolumn) class using the specified column name, data type and data table it belongs to. |
 ## Methods
 
 | Method | Description |
 | --- | --- |
-| [getColumnName()](#getColumnName--) | Gets the name of the column in the com.groupdocs.assembly.system.data.DataColumnCollection. |
-| [setColumnName(String value)](#setColumnName-java.lang.String-) | Sets the name of the column in the com.groupdocs.assembly.system.data.DataColumnCollection. |
+| [getColumnName()](#getColumnName--) | Gets the name of the column in the [DataColumnCollection](../../com.groupdocs.assembly.system.data/datacolumncollection). |
+| [setColumnName(String value)](#setColumnName-java.lang.String-) | Sets the name of the column in the [DataColumnCollection](../../com.groupdocs.assembly.system.data/datacolumncollection). |
 | [getAllowDBNull()](#getAllowDBNull--) | Gets a value that indicates whether null values are allowed in this column for rows that belong to the table. |
 | [setAllowDBNull(boolean value)](#setAllowDBNull-boolean-) | Sets a value that indicates whether null values are allowed in this column for rows that belong to the table. |
 | [getDataType()](#getDataType--) | Gets the type of data stored in the column. |
 | [setDataType(Class value)](#setDataType-java.lang.Class-) | Sets the type of data stored in the column. |
 | [setDefaultValue(Object value)](#setDefaultValue-java.lang.Object-) | Sets the default value for the column when you are creating new rows. |
 | [getDefaultValue()](#getDefaultValue--) | Gets the default value for the column when you are creating new rows. |
-| [getOrdinal()](#getOrdinal--) | Gets the position of the column in the com.groupdocs.assembly.system.data.DataColumnCollection collection. |
-| [setOrdinal(int ordinal)](#setOrdinal-int-) | Changes the ordinal or position of the com.groupdocs.assembly.system.data.DataColumn to the specified ordinal or position. |
-| [getColumnMapping()](#getColumnMapping--) | Gets the com.groupdocs.assembly.system.data.MappingType of the column. |
-| [setColumnMapping(int value)](#setColumnMapping-int-) | Sets the com.groupdocs.assembly.system.data.MappingType of the column. |
-| [getNamespace()](#getNamespace--) | Gets the namespace of the com.groupdocs.assembly.system.data.DataColumn. |
-| [setNamespace(String value)](#setNamespace-java.lang.String-) | Sets the namespace of the com.groupdocs.assembly.system.data.DataColumn. |
-| [getPrefix()](#getPrefix--) | Gets an XML prefix that aliases the namespace of the com.groupdocs.assembly.system.data.DataTable. |
-| [setPrefix(String value)](#setPrefix-java.lang.String-) | Sets an XML prefix that aliases the namespace of the com.groupdocs.assembly.system.data.DataTable. |
-| [getTable()](#getTable--) | Gets the com.groupdocs.assembly.system.data.DataTable to which the column belongs to. |
+| [getOrdinal()](#getOrdinal--) | Gets the position of the column in the [DataColumnCollection](../../com.groupdocs.assembly.system.data/datacolumncollection) collection. |
+| [setOrdinal(int ordinal)](#setOrdinal-int-) | Changes the ordinal or position of the [DataColumn](../../com.groupdocs.assembly.system.data/datacolumn) to the specified ordinal or position. |
+| [getColumnMapping()](#getColumnMapping--) | Gets the [MappingType](../../com.groupdocs.assembly.system.data/mappingtype) of the column. |
+| [setColumnMapping(int value)](#setColumnMapping-int-) | Sets the [MappingType](../../com.groupdocs.assembly.system.data/mappingtype) of the column. |
+| [getNamespace()](#getNamespace--) | Gets the namespace of the [DataColumn](../../com.groupdocs.assembly.system.data/datacolumn). |
+| [setNamespace(String value)](#setNamespace-java.lang.String-) | Sets the namespace of the [DataColumn](../../com.groupdocs.assembly.system.data/datacolumn). |
+| [getPrefix()](#getPrefix--) | Gets an XML prefix that aliases the namespace of the [DataTable](../../com.groupdocs.assembly.system.data/datatable). |
+| [setPrefix(String value)](#setPrefix-java.lang.String-) | Sets an XML prefix that aliases the namespace of the [DataTable](../../com.groupdocs.assembly.system.data/datatable). |
+| [getTable()](#getTable--) | Gets the [DataTable](../../com.groupdocs.assembly.system.data/datatable) to which the column belongs to. |
 | [getAutoIncrement()](#getAutoIncrement--) | Gets a value that indicates whether the column automatically increments the value of the column for new rows added to the table. |
 | [setAutoIncrement(boolean value)](#setAutoIncrement-boolean-) | Sets a value that indicates whether the column automatically increments the value of the column for new rows added to the table. |
 | [setMaxLength(int value)](#setMaxLength-int-) | Sets the maximum length of a text column. |
 | [getMaxLength()](#getMaxLength--) | Gets the maximum length of a text column. |
 | [getCaption()](#getCaption--) | Gets the caption for the column. |
 | [setCaption(String value)](#setCaption-java.lang.String-) | Sets the caption for the column. |
-| [getAutoIncrementSeed()](#getAutoIncrementSeed--) | Gets the starting value for a column that has its com.groupdocs.assembly.system.data.DataColumn\#getAutoIncrement() / com.groupdocs.assembly.system.data.DataColumn\#setAutoIncrement(boolean) property set to true. |
-| [setAutoIncrementSeed(long value)](#setAutoIncrementSeed-long-) | Sets the starting value for a column that has its com.groupdocs.assembly.system.data.DataColumn\#getAutoIncrement() / com.groupdocs.assembly.system.data.DataColumn\#setAutoIncrement(boolean) property set to true. |
-| [getAutoIncrementStep()](#getAutoIncrementStep--) | Gets the increment used by a column with its com.groupdocs.assembly.system.data.DataColumn\#getAutoIncrement() / com.groupdocs.assembly.system.data.DataColumn\#setAutoIncrement(boolean) property set to true. |
-| [setAutoIncrementStep(long value)](#setAutoIncrementStep-long-) | Sets the increment used by a column with its com.groupdocs.assembly.system.data.DataColumn\#getAutoIncrement() / com.groupdocs.assembly.system.data.DataColumn\#setAutoIncrement(boolean) property set to true. |
+| [getAutoIncrementSeed()](#getAutoIncrementSeed--) | Gets the starting value for a column that has its [DataColumn\#getAutoIncrement--](../../com.groupdocs.assembly.system.data/datacolumn\#getAutoIncrement--) / [DataColumn\#setAutoIncrement-boolean-](../../com.groupdocs.assembly.system.data/datacolumn\#setAutoIncrement-boolean-) property set to true. |
+| [setAutoIncrementSeed(long value)](#setAutoIncrementSeed-long-) | Sets the starting value for a column that has its [DataColumn\#getAutoIncrement--](../../com.groupdocs.assembly.system.data/datacolumn\#getAutoIncrement--) / [DataColumn\#setAutoIncrement-boolean-](../../com.groupdocs.assembly.system.data/datacolumn\#setAutoIncrement-boolean-) property set to true. |
+| [getAutoIncrementStep()](#getAutoIncrementStep--) | Gets the increment used by a column with its [DataColumn\#getAutoIncrement--](../../com.groupdocs.assembly.system.data/datacolumn\#getAutoIncrement--) / [DataColumn\#setAutoIncrement-boolean-](../../com.groupdocs.assembly.system.data/datacolumn\#setAutoIncrement-boolean-) property set to true. |
+| [setAutoIncrementStep(long value)](#setAutoIncrementStep-long-) | Sets the increment used by a column with its [DataColumn\#getAutoIncrement--](../../com.groupdocs.assembly.system.data/datacolumn\#getAutoIncrement--) / [DataColumn\#setAutoIncrement-boolean-](../../com.groupdocs.assembly.system.data/datacolumn\#setAutoIncrement-boolean-) property set to true. |
 | [setReadOnly(boolean value)](#setReadOnly-boolean-) | Sets a value that indicates whether the column allows for changes as soon as a row has been added to the table. |
 | [isReadOnly()](#isReadOnly--) |  |
 | [getReadOnly()](#getReadOnly--) | Gets a value that indicates whether the column allows for changes as soon as a row has been added to the table. |
@@ -60,15 +60,15 @@ Represents the schema of a column in a com.groupdocs.assembly.system.data.DataTa
 | [isUnique()](#isUnique--) |  |
 | [setUnique(boolean value)](#setUnique-boolean-) | Sets a value that indicates whether the values in each row of the column must be unique. |
 | [getExpression()](#getExpression--) | Gets the expression used to filter rows, calculate the values in a column, or create an aggregate column. |
-| [areColumnSetsTheSame(DataColumn[] columnSet, DataColumn[] compareSet)](#areColumnSetsTheSame-com.groupdocs.assembly.system.data.DataColumn---com.groupdocs.assembly.system.data.DataColumn---) |  |
-| [toString()](#toString--) | Gets the com.groupdocs.assembly.system.data.DataColumn\#getExpression() of the column, if one exists. |
+| [areColumnSetsTheSame(DataColumn columnSet, DataColumn compareSet)](#areColumnSetsTheSame-com.groupdocs.assembly.system.data.DataColumn---com.groupdocs.assembly.system.data.DataColumn---) |  |
+| [toString()](#toString--) | Gets the [DataColumn\#getExpression--](../../com.groupdocs.assembly.system.data/datacolumn\#getExpression--) of the column, if one exists. |
 ### DataColumn() {#DataColumn--}
 ```
 public DataColumn()
 ```
 
 
-Initializes a new instance of a com.groupdocs.assembly.system.data.DataColumn class as type string.
+Initializes a new instance of a [DataColumn](../../com.groupdocs.assembly.system.data/datacolumn) class as type string.
 
 ### DataColumn(String columnName) {#DataColumn-java.lang.String-}
 ```
@@ -76,7 +76,7 @@ public DataColumn(String columnName)
 ```
 
 
-Inititalizes a new instance of the com.groupdocs.assembly.system.data.DataColumn class, as type string, using the specified column name.
+Inititalizes a new instance of the [DataColumn](../../com.groupdocs.assembly.system.data/datacolumn) class, as type string, using the specified column name.
 
 **Parameters:**
 | Parameter | Type | Description |
@@ -103,13 +103,13 @@ public DataColumn(String columnName, Class dataType)
 ```
 
 
-Inititalizes a new instance of the com.groupdocs.assembly.system.data.DataColumn class using the specified column name and data type.
+Inititalizes a new instance of the [DataColumn](../../com.groupdocs.assembly.system.data/datacolumn) class using the specified column name and data type.
 
 **Parameters:**
 | Parameter | Type | Description |
 | --- | --- | --- |
 | columnName | java.lang.String | A string that represents the name of the column to be created. If set to null or an empty string (""), a default name will be specified when added to the columns collection. |
-| dataType | java.lang.Class | A supported com.groupdocs.assembly.system.data.DataColumn\#getDataType() / com.groupdocs.assembly.system.data.DataColumn\#setDataType(java.lang.Class). |
+| dataType | java.lang.Class | A supported [DataColumn\#getDataType--](../../com.groupdocs.assembly.system.data/datacolumn\#getDataType--) / [DataColumn\#setDataType-java.lang.Class-](../../com.groupdocs.assembly.system.data/datacolumn\#setDataType-java.lang.Class-). |
 
 ### DataColumn(String name, Class type, DataTable table) {#DataColumn-java.lang.String-java.lang.Class-com.groupdocs.assembly.system.data.DataTable-}
 ```
@@ -117,7 +117,7 @@ public DataColumn(String name, Class type, DataTable table)
 ```
 
 
-Initializes a new instance of the com.groupdocs.assembly.system.data.DataColumn class using the specified column name, data type and data table it belongs to.
+Initializes a new instance of the [DataColumn](../../com.groupdocs.assembly.system.data/datacolumn) class using the specified column name, data type and data table it belongs to.
 
 **Parameters:**
 | Parameter | Type | Description |
@@ -132,7 +132,7 @@ public final String getColumnName()
 ```
 
 
-Gets the name of the column in the com.groupdocs.assembly.system.data.DataColumnCollection.
+Gets the name of the column in the [DataColumnCollection](../../com.groupdocs.assembly.system.data/datacolumncollection).
 
 **Returns:**
 java.lang.String - The name of the column.
@@ -142,7 +142,7 @@ public final void setColumnName(String value)
 ```
 
 
-Sets the name of the column in the com.groupdocs.assembly.system.data.DataColumnCollection.
+Sets the name of the column in the [DataColumnCollection](../../com.groupdocs.assembly.system.data/datacolumncollection).
 
 **Parameters:**
 | Parameter | Type | Description |
@@ -206,7 +206,7 @@ Sets the default value for the column when you are creating new rows.
 **Parameters:**
 | Parameter | Type | Description |
 | --- | --- | --- |
-| value | java.lang.Object | A value appropriate to the column's com.groupdocs.assembly.system.data.DataColumn\#getDataType() / com.groupdocs.assembly.system.data.DataColumn\#setDataType(java.lang.Class). |
+| value | java.lang.Object | A value appropriate to the column's [DataColumn\#getDataType--](../../com.groupdocs.assembly.system.data/datacolumn\#getDataType--) / [DataColumn\#setDataType-java.lang.Class-](../../com.groupdocs.assembly.system.data/datacolumn\#setDataType-java.lang.Class-). |
 
 ### getDefaultValue() {#getDefaultValue--}
 ```
@@ -217,14 +217,14 @@ public final Object getDefaultValue()
 Gets the default value for the column when you are creating new rows.
 
 **Returns:**
-java.lang.Object - A value appropriate to the column's com.groupdocs.assembly.system.data.DataColumn\#getDataType() / com.groupdocs.assembly.system.data.DataColumn\#setDataType(java.lang.Class).
+java.lang.Object - A value appropriate to the column's [DataColumn\#getDataType--](../../com.groupdocs.assembly.system.data/datacolumn\#getDataType--) / [DataColumn\#setDataType-java.lang.Class-](../../com.groupdocs.assembly.system.data/datacolumn\#setDataType-java.lang.Class-).
 ### getOrdinal() {#getOrdinal--}
 ```
 public final int getOrdinal()
 ```
 
 
-Gets the position of the column in the com.groupdocs.assembly.system.data.DataColumnCollection collection.
+Gets the position of the column in the [DataColumnCollection](../../com.groupdocs.assembly.system.data/datacolumncollection) collection.
 
 **Returns:**
 int - The position of the column. Gets -1 if the column is not a member of a collection.
@@ -234,7 +234,7 @@ public final void setOrdinal(int ordinal)
 ```
 
 
-Changes the ordinal or position of the com.groupdocs.assembly.system.data.DataColumn to the specified ordinal or position.
+Changes the ordinal or position of the [DataColumn](../../com.groupdocs.assembly.system.data/datacolumn) to the specified ordinal or position.
 
 **Parameters:**
 | Parameter | Type | Description |
@@ -247,22 +247,22 @@ public final int getColumnMapping()
 ```
 
 
-Gets the com.groupdocs.assembly.system.data.MappingType of the column.
+Gets the [MappingType](../../com.groupdocs.assembly.system.data/mappingtype) of the column.
 
 **Returns:**
-int - One of the com.groupdocs.assembly.system.data.MappingType values. The returned value is one of com.groupdocs.assembly.system.data.MappingType constants.
+int - One of the [MappingType](../../com.groupdocs.assembly.system.data/mappingtype) values. The returned value is one of [MappingType](../../com.groupdocs.assembly.system.data/mappingtype) constants.
 ### setColumnMapping(int value) {#setColumnMapping-int-}
 ```
 public final void setColumnMapping(int value)
 ```
 
 
-Sets the com.groupdocs.assembly.system.data.MappingType of the column.
+Sets the [MappingType](../../com.groupdocs.assembly.system.data/mappingtype) of the column.
 
 **Parameters:**
 | Parameter | Type | Description |
 | --- | --- | --- |
-| value | int | One of the com.groupdocs.assembly.system.data.MappingType values. The value must be one of com.groupdocs.assembly.system.data.MappingType constants. |
+| value | int | One of the [MappingType](../../com.groupdocs.assembly.system.data/mappingtype) values. The value must be one of [MappingType](../../com.groupdocs.assembly.system.data/mappingtype) constants. |
 
 ### getNamespace() {#getNamespace--}
 ```
@@ -270,22 +270,22 @@ public final String getNamespace()
 ```
 
 
-Gets the namespace of the com.groupdocs.assembly.system.data.DataColumn.
+Gets the namespace of the [DataColumn](../../com.groupdocs.assembly.system.data/datacolumn).
 
 **Returns:**
-java.lang.String - The namespace of the com.groupdocs.assembly.system.data.DataColumn.
+java.lang.String - The namespace of the [DataColumn](../../com.groupdocs.assembly.system.data/datacolumn).
 ### setNamespace(String value) {#setNamespace-java.lang.String-}
 ```
 public final void setNamespace(String value)
 ```
 
 
-Sets the namespace of the com.groupdocs.assembly.system.data.DataColumn.
+Sets the namespace of the [DataColumn](../../com.groupdocs.assembly.system.data/datacolumn).
 
 **Parameters:**
 | Parameter | Type | Description |
 | --- | --- | --- |
-| value | java.lang.String | The namespace of the com.groupdocs.assembly.system.data.DataColumn. |
+| value | java.lang.String | The namespace of the [DataColumn](../../com.groupdocs.assembly.system.data/datacolumn). |
 
 ### getPrefix() {#getPrefix--}
 ```
@@ -293,22 +293,22 @@ public final String getPrefix()
 ```
 
 
-Gets an XML prefix that aliases the namespace of the com.groupdocs.assembly.system.data.DataTable.
+Gets an XML prefix that aliases the namespace of the [DataTable](../../com.groupdocs.assembly.system.data/datatable).
 
 **Returns:**
-java.lang.String - The XML prefix for the com.groupdocs.assembly.system.data.DataTable namespace.
+java.lang.String - The XML prefix for the [DataTable](../../com.groupdocs.assembly.system.data/datatable) namespace.
 ### setPrefix(String value) {#setPrefix-java.lang.String-}
 ```
 public final void setPrefix(String value)
 ```
 
 
-Sets an XML prefix that aliases the namespace of the com.groupdocs.assembly.system.data.DataTable.
+Sets an XML prefix that aliases the namespace of the [DataTable](../../com.groupdocs.assembly.system.data/datatable).
 
 **Parameters:**
 | Parameter | Type | Description |
 | --- | --- | --- |
-| value | java.lang.String | The XML prefix for the com.groupdocs.assembly.system.data.DataTable namespace. |
+| value | java.lang.String | The XML prefix for the [DataTable](../../com.groupdocs.assembly.system.data/datatable) namespace. |
 
 ### getTable() {#getTable--}
 ```
@@ -316,10 +316,10 @@ public final DataTable getTable()
 ```
 
 
-Gets the com.groupdocs.assembly.system.data.DataTable to which the column belongs to.
+Gets the [DataTable](../../com.groupdocs.assembly.system.data/datatable) to which the column belongs to.
 
 **Returns:**
-[DataTable](../../com.groupdocs.assembly.system.data/datatable) - The com.groupdocs.assembly.system.data.DataTable that the com.groupdocs.assembly.system.data.DataColumn belongs to.
+[DataTable](../../com.groupdocs.assembly.system.data/datatable) - The [DataTable](../../com.groupdocs.assembly.system.data/datatable) that the [DataColumn](../../com.groupdocs.assembly.system.data/datacolumn) belongs to.
 ### getAutoIncrement() {#getAutoIncrement--}
 ```
 public final boolean getAutoIncrement()
@@ -375,7 +375,7 @@ public final String getCaption()
 Gets the caption for the column.
 
 **Returns:**
-java.lang.String - The caption of the column. If not set, returns the com.groupdocs.assembly.system.data.DataColumn\#getColumnName() / com.groupdocs.assembly.system.data.DataColumn\#setColumnName(java.lang.String) value.
+java.lang.String - The caption of the column. If not set, returns the [DataColumn\#getColumnName--](../../com.groupdocs.assembly.system.data/datacolumn\#getColumnName--) / [DataColumn\#setColumnName-java.lang.String-](../../com.groupdocs.assembly.system.data/datacolumn\#setColumnName-java.lang.String-) value.
 ### setCaption(String value) {#setCaption-java.lang.String-}
 ```
 public final void setCaption(String value)
@@ -387,7 +387,7 @@ Sets the caption for the column.
 **Parameters:**
 | Parameter | Type | Description |
 | --- | --- | --- |
-| value | java.lang.String | The caption of the column. If not set, returns the com.groupdocs.assembly.system.data.DataColumn\#getColumnName() / com.groupdocs.assembly.system.data.DataColumn\#setColumnName(java.lang.String) value. |
+| value | java.lang.String | The caption of the column. If not set, returns the [DataColumn\#getColumnName--](../../com.groupdocs.assembly.system.data/datacolumn\#getColumnName--) / [DataColumn\#setColumnName-java.lang.String-](../../com.groupdocs.assembly.system.data/datacolumn\#setColumnName-java.lang.String-) value. |
 
 ### getAutoIncrementSeed() {#getAutoIncrementSeed--}
 ```
@@ -395,22 +395,22 @@ public final long getAutoIncrementSeed()
 ```
 
 
-Gets the starting value for a column that has its com.groupdocs.assembly.system.data.DataColumn\#getAutoIncrement() / com.groupdocs.assembly.system.data.DataColumn\#setAutoIncrement(boolean) property set to true.
+Gets the starting value for a column that has its [DataColumn\#getAutoIncrement--](../../com.groupdocs.assembly.system.data/datacolumn\#getAutoIncrement--) / [DataColumn\#setAutoIncrement-boolean-](../../com.groupdocs.assembly.system.data/datacolumn\#setAutoIncrement-boolean-) property set to true.
 
 **Returns:**
-long - The starting value for the com.groupdocs.assembly.system.data.DataColumn\#getAutoIncrement() / com.groupdocs.assembly.system.data.DataColumn\#setAutoIncrement(boolean) feature.
+long - The starting value for the [DataColumn\#getAutoIncrement--](../../com.groupdocs.assembly.system.data/datacolumn\#getAutoIncrement--) / [DataColumn\#setAutoIncrement-boolean-](../../com.groupdocs.assembly.system.data/datacolumn\#setAutoIncrement-boolean-) feature.
 ### setAutoIncrementSeed(long value) {#setAutoIncrementSeed-long-}
 ```
 public final void setAutoIncrementSeed(long value)
 ```
 
 
-Sets the starting value for a column that has its com.groupdocs.assembly.system.data.DataColumn\#getAutoIncrement() / com.groupdocs.assembly.system.data.DataColumn\#setAutoIncrement(boolean) property set to true.
+Sets the starting value for a column that has its [DataColumn\#getAutoIncrement--](../../com.groupdocs.assembly.system.data/datacolumn\#getAutoIncrement--) / [DataColumn\#setAutoIncrement-boolean-](../../com.groupdocs.assembly.system.data/datacolumn\#setAutoIncrement-boolean-) property set to true.
 
 **Parameters:**
 | Parameter | Type | Description |
 | --- | --- | --- |
-| value | long | The starting value for the com.groupdocs.assembly.system.data.DataColumn\#getAutoIncrement() / com.groupdocs.assembly.system.data.DataColumn\#setAutoIncrement(boolean) feature. |
+| value | long | The starting value for the [DataColumn\#getAutoIncrement--](../../com.groupdocs.assembly.system.data/datacolumn\#getAutoIncrement--) / [DataColumn\#setAutoIncrement-boolean-](../../com.groupdocs.assembly.system.data/datacolumn\#setAutoIncrement-boolean-) feature. |
 
 ### getAutoIncrementStep() {#getAutoIncrementStep--}
 ```
@@ -418,7 +418,7 @@ public final long getAutoIncrementStep()
 ```
 
 
-Gets the increment used by a column with its com.groupdocs.assembly.system.data.DataColumn\#getAutoIncrement() / com.groupdocs.assembly.system.data.DataColumn\#setAutoIncrement(boolean) property set to true.
+Gets the increment used by a column with its [DataColumn\#getAutoIncrement--](../../com.groupdocs.assembly.system.data/datacolumn\#getAutoIncrement--) / [DataColumn\#setAutoIncrement-boolean-](../../com.groupdocs.assembly.system.data/datacolumn\#setAutoIncrement-boolean-) property set to true.
 
 **Returns:**
 long - The number by which the value of the column is automatically incremented. The default is 1.
@@ -428,7 +428,7 @@ public final void setAutoIncrementStep(long value)
 ```
 
 
-Sets the increment used by a column with its com.groupdocs.assembly.system.data.DataColumn\#getAutoIncrement() / com.groupdocs.assembly.system.data.DataColumn\#setAutoIncrement(boolean) property set to true.
+Sets the increment used by a column with its [DataColumn\#getAutoIncrement--](../../com.groupdocs.assembly.system.data/datacolumn\#getAutoIncrement--) / [DataColumn\#setAutoIncrement-boolean-](../../com.groupdocs.assembly.system.data/datacolumn\#setAutoIncrement-boolean-) property set to true.
 
 **Parameters:**
 | Parameter | Type | Description |
@@ -510,10 +510,10 @@ public final String getExpression()
 Gets the expression used to filter rows, calculate the values in a column, or create an aggregate column.
 
 **Returns:**
-java.lang.String - An expression to calculate the value of a column, or create an aggregate column. The return type of an expression is determined by the com.groupdocs.assembly.system.data.DataColumn\#getDataType() / com.groupdocs.assembly.system.data.DataColumn\#setDataType(java.lang.Class) of the column.
-### areColumnSetsTheSame(DataColumn[] columnSet, DataColumn[] compareSet) {#areColumnSetsTheSame-com.groupdocs.assembly.system.data.DataColumn---com.groupdocs.assembly.system.data.DataColumn---}
+java.lang.String - An expression to calculate the value of a column, or create an aggregate column. The return type of an expression is determined by the [DataColumn\#getDataType--](../../com.groupdocs.assembly.system.data/datacolumn\#getDataType--) / [DataColumn\#setDataType-java.lang.Class-](../../com.groupdocs.assembly.system.data/datacolumn\#setDataType-java.lang.Class-) of the column.
+### areColumnSetsTheSame(DataColumn columnSet, DataColumn compareSet) {#areColumnSetsTheSame-com.groupdocs.assembly.system.data.DataColumn---com.groupdocs.assembly.system.data.DataColumn---}
 ```
-public static boolean areColumnSetsTheSame(DataColumn[] columnSet, DataColumn[] compareSet)
+public static boolean areColumnSetsTheSame(DataColumn columnSet, DataColumn compareSet)
 ```
 
 
@@ -522,8 +522,8 @@ public static boolean areColumnSetsTheSame(DataColumn[] columnSet, DataColumn[] 
 **Parameters:**
 | Parameter | Type | Description |
 | --- | --- | --- |
-| columnSet | com.groupdocs.assembly.system.data.DataColumn[] |  |
-| compareSet | com.groupdocs.assembly.system.data.DataColumn[] |  |
+| columnSet | [DataColumn\[\]](../../com.groupdocs.assembly.system.data/datacolumn) |  |
+| compareSet | [DataColumn\[\]](../../com.groupdocs.assembly.system.data/datacolumn) |  |
 
 **Returns:**
 boolean
@@ -533,7 +533,7 @@ public final String toString()
 ```
 
 
-Gets the com.groupdocs.assembly.system.data.DataColumn\#getExpression() of the column, if one exists.
+Gets the [DataColumn\#getExpression--](../../com.groupdocs.assembly.system.data/datacolumn\#getExpression--) of the column, if one exists.
 
 **Returns:**
-java.lang.String - The com.groupdocs.assembly.system.data.DataColumn\#getExpression() value, if the property is set; otherwise, the com.groupdocs.assembly.system.data.DataColumn\#getColumnName() / com.groupdocs.assembly.system.data.DataColumn\#setColumnName(java.lang.String) property.
+java.lang.String - The [DataColumn\#getExpression--](../../com.groupdocs.assembly.system.data/datacolumn\#getExpression--) value, if the property is set; otherwise, the [DataColumn\#getColumnName--](../../com.groupdocs.assembly.system.data/datacolumn\#getColumnName--) / [DataColumn\#setColumnName-java.lang.String-](../../com.groupdocs.assembly.system.data/datacolumn\#setColumnName-java.lang.String-) property.

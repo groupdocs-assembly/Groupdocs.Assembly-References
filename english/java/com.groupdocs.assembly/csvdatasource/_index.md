@@ -14,9 +14,9 @@ public class CsvDataSource
 
 Provides access to data of a CSV file or stream to be used while assembling a document.
 
-To access data of the corresponding file or stream while assembling a document, pass an instance of this class as a data source to one of com.groupdocs.assembly.DocumentAssembler. assembleDocument overloads.
+To access data of the corresponding file or stream while assembling a document, pass an instance of this class as a data source to one of [DocumentAssembler](../../com.groupdocs.assembly/documentassembler). assembleDocument overloads.
 
-In template documents, a com.groupdocs.assembly.CsvDataSource instance should be treated in the same way as if it was a com.groupdocs.assembly.system.data.DataTable instance. For more information, see template syntax reference(https://docs.groupdocs.com/display/assemblyjava/Template+Syntax+-+Part+1+of+2\#TemplateSyntax-Part1of2-UsingDataSources).
+In template documents, a [CsvDataSource](../../com.groupdocs.assembly/csvdatasource) instance should be treated in the same way as if it was a [DataTable](../../com.groupdocs.assembly.system.data/datatable) instance. For more information, see template syntax reference(https://docs.groupdocs.com/display/assemblyjava/Template+Syntax+-+Part+1+of+2\#TemplateSyntax-Part1of2-UsingDataSources).
 
 Data types of comma-separated values are determined automatically upon their string representations. So in template documents, you can work with typed values rather than just strings. The engine is capable to automatically recognize values of the following types:
 
@@ -28,7 +28,7 @@ Data types of comma-separated values are determined automatically upon their str
 
 Note that for automatic recognition of data types to work, string representations of comma-separated values should be formed using invariant culture settings.
 
-To override default behavior of CSV data loading, initialize and pass a com.groupdocs.assembly.CsvDataLoadOptions instance to a constructor of this class.
+To override default behavior of CSV data loading, initialize and pass a [CsvDataLoadOptions](../../com.groupdocs.assembly/csvdataloadoptions) instance to a constructor of this class.
 ## Constructors
 
 | Constructor | Description |

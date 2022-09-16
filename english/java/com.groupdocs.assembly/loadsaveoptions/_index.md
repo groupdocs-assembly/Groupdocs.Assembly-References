@@ -48,7 +48,7 @@ Creates a new instance of this class with the specified file format to save an a
 **Parameters:**
 | Parameter | Type | Description |
 | --- | --- | --- |
-| saveFormat | int | A file format to save an assembled document to. The value must be one of com.groupdocs.assembly.FileFormat constants. |
+| saveFormat | int | A file format to save an assembled document to. The value must be one of [FileFormat](../../com.groupdocs.assembly/fileformat) constants. |
 
 ### getSaveFormat() {#getSaveFormat--}
 ```
@@ -56,9 +56,9 @@ public int getSaveFormat()
 ```
 
 
-Gets a file format to save an assembled document to. com.groupdocs.assembly.FileFormat\#UNSPECIFIED is the default.
+Gets a file format to save an assembled document to. [FileFormat\#UNSPECIFIED](../../com.groupdocs.assembly/fileformat\#UNSPECIFIED) is the default.
 
-When the value of this property is not specified, com.groupdocs.assembly.DocumentAssembler behaves as follows:
+When the value of this property is not specified, [DocumentAssembler](../../com.groupdocs.assembly/documentassembler) behaves as follows:
 
 \- When you specify a file path to save an assembled document, the save file format is determined upon file extension from the path.
 
@@ -67,16 +67,16 @@ When the value of this property is not specified, com.groupdocs.assembly.Documen
 Beware that it is not always possible to save an assembled document to any file format using GroupDocs.Assembly. For example, it is impossible to save a document loaded from a Word Processing file format (such as DOCX) to a Spreadsheet file format (such as XLSX). For more information on possible combinations of load and save file formats supported by GroupDocs.Assembly, please check GroupDocs.Assembly online documentation.
 
 **Returns:**
-int - A file format to save an assembled document to. The returned value is one of com.groupdocs.assembly.FileFormat constants.
+int - A file format to save an assembled document to. The returned value is one of [FileFormat](../../com.groupdocs.assembly/fileformat) constants.
 ### setSaveFormat(int value) {#setSaveFormat-int-}
 ```
 public void setSaveFormat(int value)
 ```
 
 
-Sets a file format to save an assembled document to. com.groupdocs.assembly.FileFormat\#UNSPECIFIED is the default.
+Sets a file format to save an assembled document to. [FileFormat\#UNSPECIFIED](../../com.groupdocs.assembly/fileformat\#UNSPECIFIED) is the default.
 
-When the value of this property is not specified, com.groupdocs.assembly.DocumentAssembler behaves as follows:
+When the value of this property is not specified, [DocumentAssembler](../../com.groupdocs.assembly/documentassembler) behaves as follows:
 
 \- When you specify a file path to save an assembled document, the save file format is determined upon file extension from the path.
 
@@ -87,7 +87,7 @@ Beware that it is not always possible to save an assembled document to any file 
 **Parameters:**
 | Parameter | Type | Description |
 | --- | --- | --- |
-| value | int | A file format to save an assembled document to. The value must be one of com.groupdocs.assembly.FileFormat constants. |
+| value | int | A file format to save an assembled document to. The value must be one of [FileFormat](../../com.groupdocs.assembly/fileformat) constants. |
 
 ### getResourceLoadBaseUri() {#getResourceLoadBaseUri--}
 ```

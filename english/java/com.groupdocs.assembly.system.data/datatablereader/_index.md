@@ -1,7 +1,7 @@
 ---
 title: DataTableReader
 second_title: GroupDocs.Assembly for Java API Reference
-description: The com.groupdocs.assembly.system.data.DataTableReader obtains the contents of one or more com.groupdocs.assembly.system.data.DataTable objects in the form of one or more read-only forward-only result sets.
+description: The  obtains the contents of one or more  objects in the form of one or more read-only forward-only result sets.
 type: docs
 weight: 27
 url: /java/com.groupdocs.assembly.system.data/datatablereader/
@@ -12,30 +12,30 @@ java.lang.Object, [com.groupdocs.assembly.system.data.common.DbDataReader](../..
 public final class DataTableReader extends DbDataReader
 ```
 
-The com.groupdocs.assembly.system.data.DataTableReader obtains the contents of one or more com.groupdocs.assembly.system.data.DataTable objects in the form of one or more read-only, forward-only result sets.
+The [DataTableReader](../../com.groupdocs.assembly.system.data/datatablereader) obtains the contents of one or more [DataTable](../../com.groupdocs.assembly.system.data/datatable) objects in the form of one or more read-only, forward-only result sets.
 ## Constructors
 
 | Constructor | Description |
 | --- | --- |
-| [DataTableReader(DataTable dataTable)](#DataTableReader-com.groupdocs.assembly.system.data.DataTable-) | Initializes a new instance of the com.groupdocs.assembly.system.data.DataTableReader class by using data from the supplied com.groupdocs.assembly.system.data.DataTable. |
-| [DataTableReader(DataTable[] dataTables)](#DataTableReader-com.groupdocs.assembly.system.data.DataTable---) | Initializes a new instance of the com.groupdocs.assembly.system.data.DataTableReader class using the supplied array of com.groupdocs.assembly.system.data.DataTable objects. |
+| [DataTableReader(DataTable dataTable)](#DataTableReader-com.groupdocs.assembly.system.data.DataTable-) | Initializes a new instance of the [DataTableReader](../../com.groupdocs.assembly.system.data/datatablereader) class by using data from the supplied [DataTable](../../com.groupdocs.assembly.system.data/datatable). |
+| [DataTableReader(DataTable dataTables)](#DataTableReader-com.groupdocs.assembly.system.data.DataTable---) | Initializes a new instance of the [DataTableReader](../../com.groupdocs.assembly.system.data/datatablereader) class using the supplied array of [DataTable](../../com.groupdocs.assembly.system.data/datatable) objects. |
 ## Methods
 
 | Method | Description |
 | --- | --- |
 | [getFieldCount()](#getFieldCount--) | Returns the number of columns in the current row. |
-| [isClosed()](#isClosed--) | Gets a value that indicates whether the com.groupdocs.assembly.system.data.DataTableReader is closed. |
+| [isClosed()](#isClosed--) | Gets a value that indicates whether the [DataTableReader](../../com.groupdocs.assembly.system.data/datatablereader) is closed. |
 | [get(int ordinal)](#get-int-) | Gets the value of the specified column in its native format given the column ordinal. |
 | [getName(int ordinal)](#getName-int-) | Gets the value of the specified column as a java.lang.String. |
 | [getFieldType(int ordinal)](#getFieldType-int-) | Gets the java.lang.Class that is the data type of the object. |
 | [getValue(int ordinal)](#getValue-int-) | Gets the value of the specified column in its native format. |
-| [read()](#read--) | Advances the com.groupdocs.assembly.system.data.DataTableReader to the next record. |
-| [getDepth()](#getDepth--) | The depth of nesting for the current row of the com.groupdocs.assembly.system.data.DataTableReader. |
+| [read()](#read--) | Advances the [DataTableReader](../../com.groupdocs.assembly.system.data/datatablereader) to the next record. |
+| [getDepth()](#getDepth--) | The depth of nesting for the current row of the [DataTableReader](../../com.groupdocs.assembly.system.data/datatablereader). |
 | [getRecordsAffected()](#getRecordsAffected--) | Gets the number of rows inserted, changed, or deleted by execution of the SQL statement. |
-| [close()](#close--) | Closes the current com.groupdocs.assembly.system.data.DataTableReader. |
-| [getSchemaTable()](#getSchemaTable--) | Returns a com.groupdocs.assembly.system.data.DataTable that describes the column metadata of the com.groupdocs.assembly.system.data.DataTableReader. |
-| [nextResult()](#nextResult--) | Advances the com.groupdocs.assembly.system.data.DataTableReader to the next result set, if any. |
-| [hasRows()](#hasRows--) | Gets a value that indicates whether the com.groupdocs.assembly.system.data.DataTableReader contains one or more rows. |
+| [close()](#close--) | Closes the current [DataTableReader](../../com.groupdocs.assembly.system.data/datatablereader). |
+| [getSchemaTable()](#getSchemaTable--) | Returns a [DataTable](../../com.groupdocs.assembly.system.data/datatable) that describes the column metadata of the [DataTableReader](../../com.groupdocs.assembly.system.data/datatablereader). |
+| [nextResult()](#nextResult--) | Advances the [DataTableReader](../../com.groupdocs.assembly.system.data/datatablereader) to the next result set, if any. |
+| [hasRows()](#hasRows--) | Gets a value that indicates whether the [DataTableReader](../../com.groupdocs.assembly.system.data/datatablereader) contains one or more rows. |
 | [iterator()](#iterator--) | Returns an enumerator that can be used to iterate through the item collection. |
 | [get(String name)](#get-java.lang.String-) | Gets the value of the specified column in its native format given the column name. |
 ### DataTableReader(DataTable dataTable) {#DataTableReader-com.groupdocs.assembly.system.data.DataTable-}
@@ -44,25 +44,25 @@ public DataTableReader(DataTable dataTable)
 ```
 
 
-Initializes a new instance of the com.groupdocs.assembly.system.data.DataTableReader class by using data from the supplied com.groupdocs.assembly.system.data.DataTable.
+Initializes a new instance of the [DataTableReader](../../com.groupdocs.assembly.system.data/datatablereader) class by using data from the supplied [DataTable](../../com.groupdocs.assembly.system.data/datatable).
 
 **Parameters:**
 | Parameter | Type | Description |
 | --- | --- | --- |
-| dataTable | [DataTable](../../com.groupdocs.assembly.system.data/datatable) | The com.groupdocs.assembly.system.data.DataTable from which the new com.groupdocs.assembly.system.data.DataTableReader obtains its result set. |
+| dataTable | [DataTable](../../com.groupdocs.assembly.system.data/datatable) | The [DataTable](../../com.groupdocs.assembly.system.data/datatable) from which the new [DataTableReader](../../com.groupdocs.assembly.system.data/datatablereader) obtains its result set. |
 
-### DataTableReader(DataTable[] dataTables) {#DataTableReader-com.groupdocs.assembly.system.data.DataTable---}
+### DataTableReader(DataTable dataTables) {#DataTableReader-com.groupdocs.assembly.system.data.DataTable---}
 ```
-public DataTableReader(DataTable[] dataTables)
+public DataTableReader(DataTable dataTables)
 ```
 
 
-Initializes a new instance of the com.groupdocs.assembly.system.data.DataTableReader class using the supplied array of com.groupdocs.assembly.system.data.DataTable objects.
+Initializes a new instance of the [DataTableReader](../../com.groupdocs.assembly.system.data/datatablereader) class using the supplied array of [DataTable](../../com.groupdocs.assembly.system.data/datatable) objects.
 
 **Parameters:**
 | Parameter | Type | Description |
 | --- | --- | --- |
-| dataTables | com.groupdocs.assembly.system.data.DataTable[] | The array of com.groupdocs.assembly.system.data.DataTable objects that supplies the results for the new com.groupdocs.assembly.system.data.DataTableReader object. |
+| dataTables | [DataTable\[\]](../../com.groupdocs.assembly.system.data/datatable) | The array of [DataTable](../../com.groupdocs.assembly.system.data/datatable) objects that supplies the results for the new [DataTableReader](../../com.groupdocs.assembly.system.data/datatablereader) object. |
 
 ### getFieldCount() {#getFieldCount--}
 ```
@@ -80,10 +80,10 @@ public final boolean isClosed()
 ```
 
 
-Gets a value that indicates whether the com.groupdocs.assembly.system.data.DataTableReader is closed.
+Gets a value that indicates whether the [DataTableReader](../../com.groupdocs.assembly.system.data/datatablereader) is closed.
 
 **Returns:**
-boolean - Returns true if the com.groupdocs.assembly.system.data.DataTableReader is closed; otherwise, false.
+boolean - Returns true if the [DataTableReader](../../com.groupdocs.assembly.system.data/datatablereader) is closed; otherwise, false.
 ### get(int ordinal) {#get-int-}
 ```
 public final Object get(int ordinal)
@@ -150,7 +150,7 @@ public final boolean read()
 ```
 
 
-Advances the com.groupdocs.assembly.system.data.DataTableReader to the next record.
+Advances the [DataTableReader](../../com.groupdocs.assembly.system.data/datatablereader) to the next record.
 
 **Returns:**
 boolean - true if there was another row to read; otherwise false.
@@ -160,7 +160,7 @@ public final int getDepth()
 ```
 
 
-The depth of nesting for the current row of the com.groupdocs.assembly.system.data.DataTableReader.
+The depth of nesting for the current row of the [DataTableReader](../../com.groupdocs.assembly.system.data/datatablereader).
 
 **Returns:**
 int - The depth of nesting for the current row; always zero.
@@ -173,14 +173,14 @@ public final int getRecordsAffected()
 Gets the number of rows inserted, changed, or deleted by execution of the SQL statement.
 
 **Returns:**
-int - The com.groupdocs.assembly.system.data.DataTableReader does not support this property and always returns 0.
+int - The [DataTableReader](../../com.groupdocs.assembly.system.data/datatablereader) does not support this property and always returns 0.
 ### close() {#close--}
 ```
 public final void close()
 ```
 
 
-Closes the current com.groupdocs.assembly.system.data.DataTableReader.
+Closes the current [DataTableReader](../../com.groupdocs.assembly.system.data/datatablereader).
 
 ### getSchemaTable() {#getSchemaTable--}
 ```
@@ -188,17 +188,17 @@ public final DataTable getSchemaTable()
 ```
 
 
-Returns a com.groupdocs.assembly.system.data.DataTable that describes the column metadata of the com.groupdocs.assembly.system.data.DataTableReader.
+Returns a [DataTable](../../com.groupdocs.assembly.system.data/datatable) that describes the column metadata of the [DataTableReader](../../com.groupdocs.assembly.system.data/datatablereader).
 
 **Returns:**
-[DataTable](../../com.groupdocs.assembly.system.data/datatable) - A com.groupdocs.assembly.system.data.DataTable that describes the column metadata.
+[DataTable](../../com.groupdocs.assembly.system.data/datatable) - A [DataTable](../../com.groupdocs.assembly.system.data/datatable) that describes the column metadata.
 ### nextResult() {#nextResult--}
 ```
 public final boolean nextResult()
 ```
 
 
-Advances the com.groupdocs.assembly.system.data.DataTableReader to the next result set, if any.
+Advances the [DataTableReader](../../com.groupdocs.assembly.system.data/datatablereader) to the next result set, if any.
 
 **Returns:**
 boolean - true if there was another result set; otherwise false.
@@ -208,10 +208,10 @@ public final boolean hasRows()
 ```
 
 
-Gets a value that indicates whether the com.groupdocs.assembly.system.data.DataTableReader contains one or more rows.
+Gets a value that indicates whether the [DataTableReader](../../com.groupdocs.assembly.system.data/datatablereader) contains one or more rows.
 
 **Returns:**
-boolean - true if the com.groupdocs.assembly.system.data.DataTableReader contains one or more rows; otherwise false.
+boolean - true if the [DataTableReader](../../com.groupdocs.assembly.system.data/datatablereader) contains one or more rows; otherwise false.
 ### iterator() {#iterator--}
 ```
 public final Iterator iterator()

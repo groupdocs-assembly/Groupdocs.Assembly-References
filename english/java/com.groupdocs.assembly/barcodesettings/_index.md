@@ -17,8 +17,8 @@ Represents a set of settings controlling barcode generation while assembling a d
 
 | Method | Description |
 | --- | --- |
-| [getGraphicsUnit()](#getGraphicsUnit--) | Gets a graphics unit used to measure com.groupdocs.assembly.BarcodeSettings\#getBaseXDimension() / com.groupdocs.assembly.BarcodeSettings\#setBaseXDimension(float) and com.groupdocs.assembly.BarcodeSettings\#getBaseYDimension() / com.groupdocs.assembly.BarcodeSettings\#setBaseYDimension(float). |
-| [setGraphicsUnit(int value)](#setGraphicsUnit-int-) | Sets a graphics unit used to measure com.groupdocs.assembly.BarcodeSettings\#getBaseXDimension() / com.groupdocs.assembly.BarcodeSettings\#setBaseXDimension(float) and com.groupdocs.assembly.BarcodeSettings\#getBaseYDimension() / com.groupdocs.assembly.BarcodeSettings\#setBaseYDimension(float). |
+| [getGraphicsUnit()](#getGraphicsUnit--) | Gets a graphics unit used to measure [BarcodeSettings\#getBaseXDimension--](../../com.groupdocs.assembly/barcodesettings\#getBaseXDimension--) / [BarcodeSettings\#setBaseXDimension-float-](../../com.groupdocs.assembly/barcodesettings\#setBaseXDimension-float-) and [BarcodeSettings\#getBaseYDimension--](../../com.groupdocs.assembly/barcodesettings\#getBaseYDimension--) / [BarcodeSettings\#setBaseYDimension-float-](../../com.groupdocs.assembly/barcodesettings\#setBaseYDimension-float-). |
+| [setGraphicsUnit(int value)](#setGraphicsUnit-int-) | Sets a graphics unit used to measure [BarcodeSettings\#getBaseXDimension--](../../com.groupdocs.assembly/barcodesettings\#getBaseXDimension--) / [BarcodeSettings\#setBaseXDimension-float-](../../com.groupdocs.assembly/barcodesettings\#setBaseXDimension-float-) and [BarcodeSettings\#getBaseYDimension--](../../com.groupdocs.assembly/barcodesettings\#getBaseYDimension--) / [BarcodeSettings\#setBaseYDimension-float-](../../com.groupdocs.assembly/barcodesettings\#setBaseYDimension-float-). |
 | [getBaseXDimension()](#getBaseXDimension--) | Gets a base x-dimension, that is, the smallest width of the unit of barcode bars and spaces. |
 | [setBaseXDimension(float value)](#setBaseXDimension-float-) | Sets a base x-dimension, that is, the smallest width of the unit of barcode bars and spaces. |
 | [getBaseYDimension()](#getBaseYDimension--) | Gets a base y-dimension, that is, the smallest height of the unit of 2D barcode modules. |
@@ -34,22 +34,22 @@ public int getGraphicsUnit()
 ```
 
 
-Gets a graphics unit used to measure com.groupdocs.assembly.BarcodeSettings\#getBaseXDimension() / com.groupdocs.assembly.BarcodeSettings\#setBaseXDimension(float) and com.groupdocs.assembly.BarcodeSettings\#getBaseYDimension() / com.groupdocs.assembly.BarcodeSettings\#setBaseYDimension(float). The default value is com.groupdocs.assembly.system.drawing.GraphicsUnit\#MILLIMETER.
+Gets a graphics unit used to measure [BarcodeSettings\#getBaseXDimension--](../../com.groupdocs.assembly/barcodesettings\#getBaseXDimension--) / [BarcodeSettings\#setBaseXDimension-float-](../../com.groupdocs.assembly/barcodesettings\#setBaseXDimension-float-) and [BarcodeSettings\#getBaseYDimension--](../../com.groupdocs.assembly/barcodesettings\#getBaseYDimension--) / [BarcodeSettings\#setBaseYDimension-float-](../../com.groupdocs.assembly/barcodesettings\#setBaseYDimension-float-). The default value is [GraphicsUnit\#MILLIMETER](../../com.groupdocs.assembly.system.drawing/graphicsunit\#MILLIMETER).
 
 **Returns:**
-int - A graphics unit used to measure com.groupdocs.assembly.BarcodeSettings\#getBaseXDimension() / com.groupdocs.assembly.BarcodeSettings\#setBaseXDimension(float) and com.groupdocs.assembly.BarcodeSettings\#getBaseYDimension() / com.groupdocs.assembly.BarcodeSettings\#setBaseYDimension(float). The returned value is one of com.groupdocs.assembly.system.drawing.GraphicsUnit constants.
+int - A graphics unit used to measure [BarcodeSettings\#getBaseXDimension--](../../com.groupdocs.assembly/barcodesettings\#getBaseXDimension--) / [BarcodeSettings\#setBaseXDimension-float-](../../com.groupdocs.assembly/barcodesettings\#setBaseXDimension-float-) and [BarcodeSettings\#getBaseYDimension--](../../com.groupdocs.assembly/barcodesettings\#getBaseYDimension--) / [BarcodeSettings\#setBaseYDimension-float-](../../com.groupdocs.assembly/barcodesettings\#setBaseYDimension-float-). The returned value is one of [GraphicsUnit](../../com.groupdocs.assembly.system.drawing/graphicsunit) constants.
 ### setGraphicsUnit(int value) {#setGraphicsUnit-int-}
 ```
 public void setGraphicsUnit(int value)
 ```
 
 
-Sets a graphics unit used to measure com.groupdocs.assembly.BarcodeSettings\#getBaseXDimension() / com.groupdocs.assembly.BarcodeSettings\#setBaseXDimension(float) and com.groupdocs.assembly.BarcodeSettings\#getBaseYDimension() / com.groupdocs.assembly.BarcodeSettings\#setBaseYDimension(float). The default value is com.groupdocs.assembly.system.drawing.GraphicsUnit\#MILLIMETER.
+Sets a graphics unit used to measure [BarcodeSettings\#getBaseXDimension--](../../com.groupdocs.assembly/barcodesettings\#getBaseXDimension--) / [BarcodeSettings\#setBaseXDimension-float-](../../com.groupdocs.assembly/barcodesettings\#setBaseXDimension-float-) and [BarcodeSettings\#getBaseYDimension--](../../com.groupdocs.assembly/barcodesettings\#getBaseYDimension--) / [BarcodeSettings\#setBaseYDimension-float-](../../com.groupdocs.assembly/barcodesettings\#setBaseYDimension-float-). The default value is [GraphicsUnit\#MILLIMETER](../../com.groupdocs.assembly.system.drawing/graphicsunit\#MILLIMETER).
 
 **Parameters:**
 | Parameter | Type | Description |
 | --- | --- | --- |
-| value | int | A graphics unit used to measure com.groupdocs.assembly.BarcodeSettings\#getBaseXDimension() / com.groupdocs.assembly.BarcodeSettings\#setBaseXDimension(float) and com.groupdocs.assembly.BarcodeSettings\#getBaseYDimension() / com.groupdocs.assembly.BarcodeSettings\#setBaseYDimension(float). The value must be one of com.groupdocs.assembly.system.drawing.GraphicsUnit constants. |
+| value | int | A graphics unit used to measure [BarcodeSettings\#getBaseXDimension--](../../com.groupdocs.assembly/barcodesettings\#getBaseXDimension--) / [BarcodeSettings\#setBaseXDimension-float-](../../com.groupdocs.assembly/barcodesettings\#setBaseXDimension-float-) and [BarcodeSettings\#getBaseYDimension--](../../com.groupdocs.assembly/barcodesettings\#getBaseYDimension--) / [BarcodeSettings\#setBaseYDimension-float-](../../com.groupdocs.assembly/barcodesettings\#setBaseYDimension-float-). The value must be one of [GraphicsUnit](../../com.groupdocs.assembly.system.drawing/graphicsunit) constants. |
 
 ### getBaseXDimension() {#getBaseXDimension--}
 ```
@@ -57,7 +57,7 @@ public float getBaseXDimension()
 ```
 
 
-Gets a base x-dimension, that is, the smallest width of the unit of barcode bars and spaces. Measured in com.groupdocs.assembly.BarcodeSettings\#getGraphicsUnit() / com.groupdocs.assembly.BarcodeSettings\#setGraphicsUnit(int). When barcode scaling is applied through a template, an actual x-dimension is calculated upon the base x-dimension and a scaling factor.
+Gets a base x-dimension, that is, the smallest width of the unit of barcode bars and spaces. Measured in [BarcodeSettings\#getGraphicsUnit--](../../com.groupdocs.assembly/barcodesettings\#getGraphicsUnit--) / [BarcodeSettings\#setGraphicsUnit-int-](../../com.groupdocs.assembly/barcodesettings\#setGraphicsUnit-int-). When barcode scaling is applied through a template, an actual x-dimension is calculated upon the base x-dimension and a scaling factor.
 
 **Returns:**
 float - A base x-dimension, that is, the smallest width of the unit of barcode bars and spaces.
@@ -67,7 +67,7 @@ public void setBaseXDimension(float value)
 ```
 
 
-Sets a base x-dimension, that is, the smallest width of the unit of barcode bars and spaces. Measured in com.groupdocs.assembly.BarcodeSettings\#getGraphicsUnit() / com.groupdocs.assembly.BarcodeSettings\#setGraphicsUnit(int). When barcode scaling is applied through a template, an actual x-dimension is calculated upon the base x-dimension and a scaling factor.
+Sets a base x-dimension, that is, the smallest width of the unit of barcode bars and spaces. Measured in [BarcodeSettings\#getGraphicsUnit--](../../com.groupdocs.assembly/barcodesettings\#getGraphicsUnit--) / [BarcodeSettings\#setGraphicsUnit-int-](../../com.groupdocs.assembly/barcodesettings\#setGraphicsUnit-int-). When barcode scaling is applied through a template, an actual x-dimension is calculated upon the base x-dimension and a scaling factor.
 
 **Parameters:**
 | Parameter | Type | Description |
@@ -80,7 +80,7 @@ public float getBaseYDimension()
 ```
 
 
-Gets a base y-dimension, that is, the smallest height of the unit of 2D barcode modules. Measured in com.groupdocs.assembly.BarcodeSettings\#getGraphicsUnit() / com.groupdocs.assembly.BarcodeSettings\#setGraphicsUnit(int).
+Gets a base y-dimension, that is, the smallest height of the unit of 2D barcode modules. Measured in [BarcodeSettings\#getGraphicsUnit--](../../com.groupdocs.assembly/barcodesettings\#getGraphicsUnit--) / [BarcodeSettings\#setGraphicsUnit-int-](../../com.groupdocs.assembly/barcodesettings\#setGraphicsUnit-int-).
 
 Barcodes of some types (such as data matrix) may ignore an y-dimension and use an x-dimension for both width and height units.
 
@@ -94,7 +94,7 @@ public void setBaseYDimension(float value)
 ```
 
 
-Sets a base y-dimension, that is, the smallest height of the unit of 2D barcode modules. Measured in com.groupdocs.assembly.BarcodeSettings\#getGraphicsUnit() / com.groupdocs.assembly.BarcodeSettings\#setGraphicsUnit(int).
+Sets a base y-dimension, that is, the smallest height of the unit of 2D barcode modules. Measured in [BarcodeSettings\#getGraphicsUnit--](../../com.groupdocs.assembly/barcodesettings\#getGraphicsUnit--) / [BarcodeSettings\#setGraphicsUnit-int-](../../com.groupdocs.assembly/barcodesettings\#setGraphicsUnit-int-).
 
 Barcodes of some types (such as data matrix) may ignore an y-dimension and use an x-dimension for both width and height units.
 

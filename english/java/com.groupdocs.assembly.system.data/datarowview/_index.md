@@ -1,7 +1,7 @@
 ---
 title: DataRowView
 second_title: GroupDocs.Assembly for Java API Reference
-description: Represents a customized view of a com.groupdocs.assembly.system.data.DataRow.
+description: Represents a customized view of a .
 type: docs
 weight: 23
 url: /java/com.groupdocs.assembly.system.data/datarowview/
@@ -12,7 +12,7 @@ java.lang.Object
 public class DataRowView
 ```
 
-Represents a customized view of a com.groupdocs.assembly.system.data.DataRow.
+Represents a customized view of a [DataRow](../../com.groupdocs.assembly.system.data/datarow).
 ## Constructors
 
 | Constructor | Description |
@@ -22,7 +22,7 @@ Represents a customized view of a com.groupdocs.assembly.system.data.DataRow.
 
 | Method | Description |
 | --- | --- |
-| [getRow()](#getRow--) | Gets the com.groupdocs.assembly.system.data.DataRow being viewed. |
+| [getRow()](#getRow--) | Gets the [DataRow](../../com.groupdocs.assembly.system.data/datarow) being viewed. |
 ### DataRowView(DataView view, DataRow row) {#DataRowView-com.groupdocs.assembly.system.data.DataView-com.groupdocs.assembly.system.data.DataRow-}
 ```
 public DataRowView(DataView view, DataRow row)
@@ -43,7 +43,7 @@ public DataRow getRow()
 ```
 
 
-Gets the com.groupdocs.assembly.system.data.DataRow being viewed.
+Gets the [DataRow](../../com.groupdocs.assembly.system.data/datarow) being viewed.
 
 **Returns:**
-[DataRow](../../com.groupdocs.assembly.system.data/datarow) - The com.groupdocs.assembly.system.data.DataRow being viewed by the com.groupdocs.assembly.system.data.DataRowView.
+[DataRow](../../com.groupdocs.assembly.system.data/datarow) - The [DataRow](../../com.groupdocs.assembly.system.data/datarow) being viewed by the [DataRowView](../../com.groupdocs.assembly.system.data/datarowview).

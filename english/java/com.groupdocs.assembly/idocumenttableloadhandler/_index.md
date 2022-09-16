@@ -1,7 +1,7 @@
 ---
 title: IDocumentTableLoadHandler
 second_title: GroupDocs.Assembly for Java API Reference
-description: Overrides default loading of com.groupdocs.assembly.DocumentTable objects while creating a com.groupdocs.assembly.DocumentTableSet instance.
+description: Overrides default loading of  objects while creating a  instance.
 type: docs
 weight: 35
 url: /java/com.groupdocs.assembly/idocumenttableloadhandler/
@@ -9,19 +9,19 @@ url: /java/com.groupdocs.assembly/idocumenttableloadhandler/
 public interface IDocumentTableLoadHandler
 ```
 
-Overrides default loading of com.groupdocs.assembly.DocumentTable objects while creating a com.groupdocs.assembly.DocumentTableSet instance. Implement this interface if you want to discard loading of specific com.groupdocs.assembly.DocumentTable objects or provide specific com.groupdocs.assembly.DocumentTableOptions for document tables being loaded.
+Overrides default loading of [DocumentTable](../../com.groupdocs.assembly/documenttable) objects while creating a [DocumentTableSet](../../com.groupdocs.assembly/documenttableset) instance. Implement this interface if you want to discard loading of specific [DocumentTable](../../com.groupdocs.assembly/documenttable) objects or provide specific [DocumentTableOptions](../../com.groupdocs.assembly/documenttableoptions) for document tables being loaded.
 ## Methods
 
 | Method | Description |
 | --- | --- |
-| [handle(DocumentTableLoadArgs args)](#handle-com.groupdocs.assembly.DocumentTableLoadArgs-) | Overrides default loading of a particular com.groupdocs.assembly.DocumentTable object while creating a com.groupdocs.assembly.DocumentTableSet instance. |
+| [handle(DocumentTableLoadArgs args)](#handle-com.groupdocs.assembly.DocumentTableLoadArgs-) | Overrides default loading of a particular [DocumentTable](../../com.groupdocs.assembly/documenttable) object while creating a [DocumentTableSet](../../com.groupdocs.assembly/documenttableset) instance. |
 ### handle(DocumentTableLoadArgs args) {#handle-com.groupdocs.assembly.DocumentTableLoadArgs-}
 ```
 public abstract void handle(DocumentTableLoadArgs args)
 ```
 
 
-Overrides default loading of a particular com.groupdocs.assembly.DocumentTable object while creating a com.groupdocs.assembly.DocumentTableSet instance.
+Overrides default loading of a particular [DocumentTable](../../com.groupdocs.assembly/documenttable) object while creating a [DocumentTableSet](../../com.groupdocs.assembly/documenttableset) instance.
 
 **Parameters:**
 | Parameter | Type | Description |

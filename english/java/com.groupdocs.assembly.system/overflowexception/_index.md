@@ -17,8 +17,8 @@ The exception that is thrown when an arithmetic, casting, or conversion operatio
 
 | Constructor | Description |
 | --- | --- |
-| [OverflowException()](#OverflowException--) | Initializes a new instance of the com.groupdocs.assembly.system.OverflowException class. |
-| [OverflowException(String message)](#OverflowException-java.lang.String-) | Initializes a new instance of the com.groupdocs.assembly.system.OverflowException class with a specified error message. |
+| [OverflowException()](#OverflowException--) | Initializes a new instance of the [OverflowException](../../com.groupdocs.assembly.system/overflowexception) class. |
+| [OverflowException(String message)](#OverflowException-java.lang.String-) | Initializes a new instance of the [OverflowException](../../com.groupdocs.assembly.system/overflowexception) class with a specified error message. |
 | [OverflowException(String message, Throwable cause)](#OverflowException-java.lang.String-java.lang.Throwable-) | Initializes a new instance of this class. |
 ### OverflowException() {#OverflowException--}
 ```
@@ -26,7 +26,7 @@ public OverflowException()
 ```
 
 
-Initializes a new instance of the com.groupdocs.assembly.system.OverflowException class.
+Initializes a new instance of the [OverflowException](../../com.groupdocs.assembly.system/overflowexception) class.
 
 ### OverflowException(String message) {#OverflowException-java.lang.String-}
 ```
@@ -34,7 +34,7 @@ public OverflowException(String message)
 ```
 
 
-Initializes a new instance of the com.groupdocs.assembly.system.OverflowException class with a specified error message.
+Initializes a new instance of the [OverflowException](../../com.groupdocs.assembly.system/overflowexception) class with a specified error message.
 
 **Parameters:**
 | Parameter | Type | Description |
