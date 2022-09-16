@@ -12,7 +12,7 @@ java.lang.Object
 public class DocumentTableLoadArgs
 ```
 
-Provides data for the [IDocumentTableLoadHandler\#handle-com.groupdocs.assembly.DocumentTableLoadArgs-](../../com.groupdocs.assembly/idocumenttableloadhandler\#handle-com.groupdocs.assembly.DocumentTableLoadArgs-) method.
+Provides data for the [IDocumentTableLoadHandler\#handle(com.groupdocs.assembly.DocumentTableLoadArgs)](../../com.groupdocs.assembly/idocumenttableloadhandler\#handle-com.groupdocs.assembly.DocumentTableLoadArgs-) method.
 ## Methods
 
 | Method | Description |
