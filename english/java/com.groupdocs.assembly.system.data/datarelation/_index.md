@@ -17,8 +17,8 @@ Represents a parent/child relationship between two [DataTable](../../com.groupdo
 
 | Constructor | Description |
 | --- | --- |
-| [DataRelation(String relationName, DataTable parentTable, DataTable childTable, String parentColumnNames, String childColumnNames)](#DataRelation-java.lang.String-com.groupdocs.assembly.system.data.DataTable-com.groupdocs.assembly.system.data.DataTable-java.lang.String---java.lang.String---) | Initializes a new instance of the [DataRelation](../../com.groupdocs.assembly.system.data/datarelation) class using the specified name, parent and child tables, matched arrays of parent and child columns. |
-| [DataRelation(String relationName, DataColumn parentColumns, DataColumn childColumns, boolean createConstraints)](#DataRelation-java.lang.String-com.groupdocs.assembly.system.data.DataColumn---com.groupdocs.assembly.system.data.DataColumn---boolean-) | Initializes a new instance of the [DataRelation](../../com.groupdocs.assembly.system.data/datarelation) class using the specified name, matched arrays of parent and child [DataColumn](../../com.groupdocs.assembly.system.data/datacolumn) objects, and value that indicates whether to create constraints. |
+| [DataRelation(String relationName, DataTable parentTable, DataTable childTable, String[] parentColumnNames, String[] childColumnNames)](#DataRelation-java.lang.String-com.groupdocs.assembly.system.data.DataTable-com.groupdocs.assembly.system.data.DataTable-java.lang.String---java.lang.String---) | Initializes a new instance of the [DataRelation](../../com.groupdocs.assembly.system.data/datarelation) class using the specified name, parent and child tables, matched arrays of parent and child columns. |
+| [DataRelation(String relationName, DataColumn[] parentColumns, DataColumn[] childColumns, boolean createConstraints)](#DataRelation-java.lang.String-com.groupdocs.assembly.system.data.DataColumn---com.groupdocs.assembly.system.data.DataColumn---boolean-) | Initializes a new instance of the [DataRelation](../../com.groupdocs.assembly.system.data/datarelation) class using the specified name, matched arrays of parent and child [DataColumn](../../com.groupdocs.assembly.system.data/datacolumn) objects, and value that indicates whether to create constraints. |
 | [DataRelation(String relationName, DataColumn parentColumn, DataColumn childColumn, boolean createConstraints)](#DataRelation-java.lang.String-com.groupdocs.assembly.system.data.DataColumn-com.groupdocs.assembly.system.data.DataColumn-boolean-) | Initializes a new instance of the [DataRelation](../../com.groupdocs.assembly.system.data/datarelation) class using the specified name, parent and child [DataColumn](../../com.groupdocs.assembly.system.data/datacolumn) objects, and a value that indicates whether to create constraints. |
 | [DataRelation(String relationName, DataColumn parentColumn, DataColumn childColumn)](#DataRelation-java.lang.String-com.groupdocs.assembly.system.data.DataColumn-com.groupdocs.assembly.system.data.DataColumn-) | Initializes a new instance of the [DataRelation](../../com.groupdocs.assembly.system.data/datarelation) class using the specified [DataRelation](../../com.groupdocs.assembly.system.data/datarelation) name, and parent and child [DataColumn](../../com.groupdocs.assembly.system.data/datacolumn) objects. |
 ## Methods
@@ -44,9 +44,9 @@ Represents a parent/child relationship between two [DataTable](../../com.groupdo
 | [getDataSet()](#getDataSet--) | Gets the [DataSet](../../com.groupdocs.assembly.system.data/dataset) to which the [DataRelation](../../com.groupdocs.assembly.system.data/datarelation) belongs. |
 | [hashCode()](#hashCode--) |  |
 | [equals(Object obj)](#equals-java.lang.Object-) |  |
-### DataRelation(String relationName, DataTable parentTable, DataTable childTable, String parentColumnNames, String childColumnNames) {#DataRelation-java.lang.String-com.groupdocs.assembly.system.data.DataTable-com.groupdocs.assembly.system.data.DataTable-java.lang.String---java.lang.String---}
+### DataRelation(String relationName, DataTable parentTable, DataTable childTable, String[] parentColumnNames, String[] childColumnNames) {#DataRelation-java.lang.String-com.groupdocs.assembly.system.data.DataTable-com.groupdocs.assembly.system.data.DataTable-java.lang.String---java.lang.String---}
 ```
-public DataRelation(String relationName, DataTable parentTable, DataTable childTable, String parentColumnNames, String childColumnNames)
+public DataRelation(String relationName, DataTable parentTable, DataTable childTable, String[] parentColumnNames, String[] childColumnNames)
 ```
 
 
@@ -58,12 +58,12 @@ Initializes a new instance of the [DataRelation](../../com.groupdocs.assembly.sy
 | relationName | java.lang.String | The name of the DataRelation. If null or an empty string (""), a default name will be given when the created object is added to the DataRelationCollection. |
 | parentTable | [DataTable](../../com.groupdocs.assembly.system.data/datatable) | The parent table in the relationship. |
 | childTable | [DataTable](../../com.groupdocs.assembly.system.data/datatable) | The child table in the relationship. |
-| parentColumnNames | java.lang.String | The parent DataColumn's name in the relationship. |
-| childColumnNames | java.lang.String | The child DataColumn;s in the relationship. |
+| parentColumnNames | java.lang.String[] | The parent DataColumn's name in the relationship. |
+| childColumnNames | java.lang.String[] | The child DataColumn;s in the relationship. |
 
-### DataRelation(String relationName, DataColumn parentColumns, DataColumn childColumns, boolean createConstraints) {#DataRelation-java.lang.String-com.groupdocs.assembly.system.data.DataColumn---com.groupdocs.assembly.system.data.DataColumn---boolean-}
+### DataRelation(String relationName, DataColumn[] parentColumns, DataColumn[] childColumns, boolean createConstraints) {#DataRelation-java.lang.String-com.groupdocs.assembly.system.data.DataColumn---com.groupdocs.assembly.system.data.DataColumn---boolean-}
 ```
-public DataRelation(String relationName, DataColumn parentColumns, DataColumn childColumns, boolean createConstraints)
+public DataRelation(String relationName, DataColumn[] parentColumns, DataColumn[] childColumns, boolean createConstraints)
 ```
 
 

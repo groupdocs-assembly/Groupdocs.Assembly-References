@@ -17,9 +17,9 @@ Represents a restriction on a set of columns in which all values must be unique.
 
 | Constructor | Description |
 | --- | --- |
-| [UniqueConstraint(String name, DataColumn columns, boolean isPrimaryKey)](#UniqueConstraint-java.lang.String-com.groupdocs.assembly.system.data.DataColumn---boolean-) | Initializes a new instance of the [UniqueConstraint](../../com.groupdocs.assembly.system.data/uniqueconstraint) class with the specified name, an array of [DataColumn](../../com.groupdocs.assembly.system.data/datacolumn) objects to constrain, and a value specifying whether the constraint is a primary key. |
-| [UniqueConstraint(DataColumn columns, boolean isPrimaryKey)](#UniqueConstraint-com.groupdocs.assembly.system.data.DataColumn---boolean-) | Initializes a new instance of the [UniqueConstraint](../../com.groupdocs.assembly.system.data/uniqueconstraint) class with an array of [DataColumn](../../com.groupdocs.assembly.system.data/datacolumn) objects to constrain, and a value specifying whether the constraint is a primary key. |
-| [UniqueConstraint(DataColumn columns)](#UniqueConstraint-com.groupdocs.assembly.system.data.DataColumn---) | Initializes a new instance of the [UniqueConstraint](../../com.groupdocs.assembly.system.data/uniqueconstraint) class with the given array of [DataColumn](../../com.groupdocs.assembly.system.data/datacolumn) objects. |
+| [UniqueConstraint(String name, DataColumn[] columns, boolean isPrimaryKey)](#UniqueConstraint-java.lang.String-com.groupdocs.assembly.system.data.DataColumn---boolean-) | Initializes a new instance of the [UniqueConstraint](../../com.groupdocs.assembly.system.data/uniqueconstraint) class with the specified name, an array of [DataColumn](../../com.groupdocs.assembly.system.data/datacolumn) objects to constrain, and a value specifying whether the constraint is a primary key. |
+| [UniqueConstraint(DataColumn[] columns, boolean isPrimaryKey)](#UniqueConstraint-com.groupdocs.assembly.system.data.DataColumn---boolean-) | Initializes a new instance of the [UniqueConstraint](../../com.groupdocs.assembly.system.data/uniqueconstraint) class with an array of [DataColumn](../../com.groupdocs.assembly.system.data/datacolumn) objects to constrain, and a value specifying whether the constraint is a primary key. |
+| [UniqueConstraint(DataColumn[] columns)](#UniqueConstraint-com.groupdocs.assembly.system.data.DataColumn---) | Initializes a new instance of the [UniqueConstraint](../../com.groupdocs.assembly.system.data/uniqueconstraint) class with the given array of [DataColumn](../../com.groupdocs.assembly.system.data/datacolumn) objects. |
 | [UniqueConstraint(DataColumn column)](#UniqueConstraint-com.groupdocs.assembly.system.data.DataColumn-) | Initializes a new instance of the [UniqueConstraint](../../com.groupdocs.assembly.system.data/uniqueconstraint) class with the specified [DataColumn](../../com.groupdocs.assembly.system.data/datacolumn). |
 ## Methods
 
@@ -30,9 +30,9 @@ Represents a restriction on a set of columns in which all values must be unique.
 | [getColumns()](#getColumns--) | Gets the array of columns that this constraint affects. |
 | [isPrimaryKey()](#isPrimaryKey--) | Gets a value indicating whether or not the constraint is on a primary key. |
 | [getTable()](#getTable--) | Gets the table to which this constraint belongs. |
-### UniqueConstraint(String name, DataColumn columns, boolean isPrimaryKey) {#UniqueConstraint-java.lang.String-com.groupdocs.assembly.system.data.DataColumn---boolean-}
+### UniqueConstraint(String name, DataColumn[] columns, boolean isPrimaryKey) {#UniqueConstraint-java.lang.String-com.groupdocs.assembly.system.data.DataColumn---boolean-}
 ```
-public UniqueConstraint(String name, DataColumn columns, boolean isPrimaryKey)
+public UniqueConstraint(String name, DataColumn[] columns, boolean isPrimaryKey)
 ```
 
 
@@ -45,9 +45,9 @@ Initializes a new instance of the [UniqueConstraint](../../com.groupdocs.assembl
 | columns | [DataColumn\[\]](../../com.groupdocs.assembly.system.data/datacolumn) | An array of [DataColumn](../../com.groupdocs.assembly.system.data/datacolumn) objects to constrain. |
 | isPrimaryKey | boolean | true to indicate that the constraint is a primary key; otherwise, false. |
 
-### UniqueConstraint(DataColumn columns, boolean isPrimaryKey) {#UniqueConstraint-com.groupdocs.assembly.system.data.DataColumn---boolean-}
+### UniqueConstraint(DataColumn[] columns, boolean isPrimaryKey) {#UniqueConstraint-com.groupdocs.assembly.system.data.DataColumn---boolean-}
 ```
-public UniqueConstraint(DataColumn columns, boolean isPrimaryKey)
+public UniqueConstraint(DataColumn[] columns, boolean isPrimaryKey)
 ```
 
 
@@ -59,9 +59,9 @@ Initializes a new instance of the [UniqueConstraint](../../com.groupdocs.assembl
 | columns | [DataColumn\[\]](../../com.groupdocs.assembly.system.data/datacolumn) | An array of [DataColumn](../../com.groupdocs.assembly.system.data/datacolumn) objects to constrain. |
 | isPrimaryKey | boolean | true to indicate that the constraint is a primary key; otherwise, false. |
 
-### UniqueConstraint(DataColumn columns) {#UniqueConstraint-com.groupdocs.assembly.system.data.DataColumn---}
+### UniqueConstraint(DataColumn[] columns) {#UniqueConstraint-com.groupdocs.assembly.system.data.DataColumn---}
 ```
-public UniqueConstraint(DataColumn columns)
+public UniqueConstraint(DataColumn[] columns)
 ```
 
 

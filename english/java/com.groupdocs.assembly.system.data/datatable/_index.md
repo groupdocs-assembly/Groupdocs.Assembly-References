@@ -43,13 +43,13 @@ Represents one table of in-memory data.
 | [newRow()](#newRow--) | Creates a new [DataRow](../../com.groupdocs.assembly.system.data/datarow) with the same schema as the table. |
 | [getConstraints()](#getConstraints--) | Gets the collection of constraints maintained by this table. |
 | [getPrimaryKey()](#getPrimaryKey--) | Gets an array of columns that function as primary keys for the data table. |
-| [setPrimaryKey(DataColumn value)](#setPrimaryKey-com.groupdocs.assembly.system.data.DataColumn---) | Sets an array of columns that function as primary keys for the data table. |
+| [setPrimaryKey(DataColumn[] value)](#setPrimaryKey-com.groupdocs.assembly.system.data.DataColumn---) | Sets an array of columns that function as primary keys for the data table. |
 | [getNamespace()](#getNamespace--) | Gets the namespace for the XML representation of the data stored in the [DataTable](../../com.groupdocs.assembly.system.data/datatable). |
 | [setNamespace(String value)](#setNamespace-java.lang.String-) | Sets the namespace for the XML representation of the data stored in the [DataTable](../../com.groupdocs.assembly.system.data/datatable). |
 | [getEnforceConstraints()](#getEnforceConstraints--) |  |
 | [setEnforceConstraints(boolean enforceConstraints)](#setEnforceConstraints-boolean-) |  |
 | [refresh()](#refresh--) | Reloads all the data from ResultSet if it is present. |
-| [acceptChanges()](#acceptChanges--) | Commits all the changes made to this table since the last time acceptChanges() was called. |
+| [acceptChanges()](#acceptChanges--) | Commits all the changes made to this table since the last time [DataTable\#acceptChanges()](../../com.groupdocs.assembly.system.data/datatable\#acceptChanges--) was called. |
 | [addEventListener(DataTableEventListener listener)](#addEventListener-com.groupdocs.assembly.system.data.DataTableEventListener-) |  |
 | [clearEventListneers()](#clearEventListneers--) |  |
 | [onDataRowChanged(DataRow row)](#onDataRowChanged-com.groupdocs.assembly.system.data.DataRow-) |  |
@@ -266,9 +266,9 @@ Gets an array of columns that function as primary keys for the data table.
 
 **Returns:**
 com.groupdocs.assembly.system.data.DataColumn[] - An array of [DataColumn](../../com.groupdocs.assembly.system.data/datacolumn) objects.
-### setPrimaryKey(DataColumn value) {#setPrimaryKey-com.groupdocs.assembly.system.data.DataColumn---}
+### setPrimaryKey(DataColumn[] value) {#setPrimaryKey-com.groupdocs.assembly.system.data.DataColumn---}
 ```
-public void setPrimaryKey(DataColumn value)
+public void setPrimaryKey(DataColumn[] value)
 ```
 
 
@@ -339,7 +339,7 @@ public void acceptChanges()
 ```
 
 
-Commits all the changes made to this table since the last time acceptChanges() was called.
+Commits all the changes made to this table since the last time [DataTable\#acceptChanges()](../../com.groupdocs.assembly.system.data/datatable\#acceptChanges--) was called.
 
 ### addEventListener(DataTableEventListener listener) {#addEventListener-com.groupdocs.assembly.system.data.DataTableEventListener-}
 ```

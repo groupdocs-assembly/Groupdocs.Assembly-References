@@ -17,7 +17,7 @@ Represents an action restriction enforced on a set of columns in a primary key/f
 
 | Constructor | Description |
 | --- | --- |
-| [ForeignKeyConstraint(String constraintName, DataColumn parentColumns, DataColumn childColumns)](#ForeignKeyConstraint-java.lang.String-com.groupdocs.assembly.system.data.DataColumn---com.groupdocs.assembly.system.data.DataColumn---) | Initializes a new instance of the [ForeignKeyConstraint](../../com.groupdocs.assembly.system.data/foreignkeyconstraint) class with the specified name, and arrays of parent and child [DataColumn](../../com.groupdocs.assembly.system.data/datacolumn) objects. |
+| [ForeignKeyConstraint(String constraintName, DataColumn[] parentColumns, DataColumn[] childColumns)](#ForeignKeyConstraint-java.lang.String-com.groupdocs.assembly.system.data.DataColumn---com.groupdocs.assembly.system.data.DataColumn---) | Initializes a new instance of the [ForeignKeyConstraint](../../com.groupdocs.assembly.system.data/foreignkeyconstraint) class with the specified name, and arrays of parent and child [DataColumn](../../com.groupdocs.assembly.system.data/datacolumn) objects. |
 | [ForeignKeyConstraint(DataColumn parentColumn, DataColumn childColumn)](#ForeignKeyConstraint-com.groupdocs.assembly.system.data.DataColumn-com.groupdocs.assembly.system.data.DataColumn-) | Initializes a new instance of the [ForeignKeyConstraint](../../com.groupdocs.assembly.system.data/foreignkeyconstraint) class with the specified parent and child [DataColumn](../../com.groupdocs.assembly.system.data/datacolumn) objects. |
 | [ForeignKeyConstraint(String constraintName, DataColumn parentColumn, DataColumn childColumn)](#ForeignKeyConstraint-java.lang.String-com.groupdocs.assembly.system.data.DataColumn-com.groupdocs.assembly.system.data.DataColumn-) | Initializes a new instance of the [ForeignKeyConstraint](../../com.groupdocs.assembly.system.data/foreignkeyconstraint) class with the specified name, parent and child [DataColumn](../../com.groupdocs.assembly.system.data/datacolumn) objects. |
 ## Methods
@@ -32,9 +32,9 @@ Represents an action restriction enforced on a set of columns in a primary key/f
 | [getRelatedColumns()](#getRelatedColumns--) | The parent columns of this constraint. |
 | [getTable()](#getTable--) | Gets the child table of this constraint. |
 | [getRelatedTable()](#getRelatedTable--) | Gets the parent table of this constraint. |
-### ForeignKeyConstraint(String constraintName, DataColumn parentColumns, DataColumn childColumns) {#ForeignKeyConstraint-java.lang.String-com.groupdocs.assembly.system.data.DataColumn---com.groupdocs.assembly.system.data.DataColumn---}
+### ForeignKeyConstraint(String constraintName, DataColumn[] parentColumns, DataColumn[] childColumns) {#ForeignKeyConstraint-java.lang.String-com.groupdocs.assembly.system.data.DataColumn---com.groupdocs.assembly.system.data.DataColumn---}
 ```
-public ForeignKeyConstraint(String constraintName, DataColumn parentColumns, DataColumn childColumns)
+public ForeignKeyConstraint(String constraintName, DataColumn[] parentColumns, DataColumn[] childColumns)
 ```
 
 

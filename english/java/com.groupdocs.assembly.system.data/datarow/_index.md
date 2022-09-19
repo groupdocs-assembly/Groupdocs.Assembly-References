@@ -34,7 +34,7 @@ Represents a row of data in a [DataTable](../../com.groupdocs.assembly.system.da
 | [setOriginalValue(String columnName, Object data)](#setOriginalValue-java.lang.String-java.lang.Object-) |  |
 | [getOriginalValue(String columnName)](#getOriginalValue-java.lang.String-) |  |
 | [getItemArray()](#getItemArray--) | Gets all the values for this row through an array. |
-| [setItemArray(Object value)](#setItemArray-java.lang.Object---) | Sets all the values for this row through an array. |
+| [setItemArray(Object[] value)](#setItemArray-java.lang.Object---) | Sets all the values for this row through an array. |
 | [getKeyValues(DataKey childKey)](#getKeyValues-com.groupdocs.assembly.system.data.DataKey-) |  |
 | [remove(int index)](#remove-int-) |  |
 | [toString()](#toString--) |  |
@@ -265,9 +265,9 @@ Gets all the values for this row through an array.
 
 **Returns:**
 java.lang.Object[] - An array of type java.lang.Object.
-### setItemArray(Object value) {#setItemArray-java.lang.Object---}
+### setItemArray(Object[] value) {#setItemArray-java.lang.Object---}
 ```
-public void setItemArray(Object value)
+public void setItemArray(Object[] value)
 ```
 
 
@@ -276,7 +276,7 @@ Sets all the values for this row through an array.
 **Parameters:**
 | Parameter | Type | Description |
 | --- | --- | --- |
-| value | java.lang.Object | An array of type java.lang.Object. |
+| value | java.lang.Object[] | An array of type java.lang.Object. |
 
 ### getKeyValues(DataKey childKey) {#getKeyValues-com.groupdocs.assembly.system.data.DataKey-}
 ```

@@ -21,7 +21,7 @@ Represents a collection of rows for a [DataTable](../../com.groupdocs.assembly.s
 | Method | Description |
 | --- | --- |
 | [add(DataRow row)](#add-com.groupdocs.assembly.system.data.DataRow-) | Adds the specified [DataRow](../../com.groupdocs.assembly.system.data/datarow) to the [DataRowCollection](../../com.groupdocs.assembly.system.data/datarowcollection) object. |
-| [add(Object values)](#add-java.lang.Object...-) | Creates a row using specified values and adds it to the [DataRowCollection](../../com.groupdocs.assembly.system.data/datarowcollection). |
+| [add(Object[] values)](#add-java.lang.Object...-) | Creates a row using specified values and adds it to the [DataRowCollection](../../com.groupdocs.assembly.system.data/datarowcollection). |
 | [get(int index)](#get-int-) | Gets the row at the specified index. |
 | [getCount()](#getCount--) | Gets the total number of [DataRow](../../com.groupdocs.assembly.system.data/datarow) objects in this collection. |
 | [iterator()](#iterator--) | Gets an java.util.Iterator for this collection. |
@@ -29,8 +29,8 @@ Represents a collection of rows for a [DataTable](../../com.groupdocs.assembly.s
 | [insertAt(DataRow row, int pos)](#insertAt-com.groupdocs.assembly.system.data.DataRow-int-) | Inserts a new row into the collection at the specified location. |
 | [removeAt(int index)](#removeAt-int-) | Removes the row at the specified index from the collection. |
 | [find(String primaryKeyValue)](#find-java.lang.String-) | Gets the row specified by the primary key value. |
-| [find(Object keys)](#find-java.lang.Object---) | Gets the row that contains the specified primary key values. |
-| [get(Object values)](#get-java.lang.Object---) | Gets the row that contains the specified values. |
+| [find(Object[] keys)](#find-java.lang.Object---) | Gets the row that contains the specified primary key values. |
+| [get(Object[] values)](#get-java.lang.Object---) | Gets the row that contains the specified values. |
 ### add(DataRow row) {#add-com.groupdocs.assembly.system.data.DataRow-}
 ```
 public void add(DataRow row)
@@ -44,9 +44,9 @@ Adds the specified [DataRow](../../com.groupdocs.assembly.system.data/datarow) t
 | --- | --- | --- |
 | row | [DataRow](../../com.groupdocs.assembly.system.data/datarow) | The [DataRow](../../com.groupdocs.assembly.system.data/datarow) to add. |
 
-### add(Object values) {#add-java.lang.Object...-}
+### add(Object[] values) {#add-java.lang.Object...-}
 ```
-public void add(Object values)
+public void add(Object[] values)
 ```
 
 
@@ -55,7 +55,7 @@ Creates a row using specified values and adds it to the [DataRowCollection](../.
 **Parameters:**
 | Parameter | Type | Description |
 | --- | --- | --- |
-| values | java.lang.Object | The array of values that are used to create the new row. |
+| values | java.lang.Object[] | The array of values that are used to create the new row. |
 
 ### get(int index) {#get-int-}
 ```
@@ -142,9 +142,9 @@ Gets the row specified by the primary key value.
 
 **Returns:**
 [DataRow](../../com.groupdocs.assembly.system.data/datarow) - A DataRow that contains the primary key value specified; otherwise a null value if the primary key value does not exist in the DataRowCollection.
-### find(Object keys) {#find-java.lang.Object---}
+### find(Object[] keys) {#find-java.lang.Object---}
 ```
-public DataRow find(Object keys)
+public DataRow find(Object[] keys)
 ```
 
 
@@ -153,13 +153,13 @@ Gets the row that contains the specified primary key values.
 **Parameters:**
 | Parameter | Type | Description |
 | --- | --- | --- |
-| keys | java.lang.Object | An array of primary key values to find. The type of the array is Object. |
+| keys | java.lang.Object[] | An array of primary key values to find. The type of the array is Object. |
 
 **Returns:**
 [DataRow](../../com.groupdocs.assembly.system.data/datarow) - A [DataRow](../../com.groupdocs.assembly.system.data/datarow) object that contains the primary key values specified; otherwise a null value if the primary key value does not exist in the [DataRowCollection](../../com.groupdocs.assembly.system.data/datarowcollection).
-### get(Object values) {#get-java.lang.Object---}
+### get(Object[] values) {#get-java.lang.Object---}
 ```
-public DataRow get(Object values)
+public DataRow get(Object[] values)
 ```
 
 
@@ -168,7 +168,7 @@ Gets the row that contains the specified values. If there is primary key's colum
 **Parameters:**
 | Parameter | Type | Description |
 | --- | --- | --- |
-| values | java.lang.Object | row's data |
+| values | java.lang.Object[] | row's data |
 
 **Returns:**
 [DataRow](../../com.groupdocs.assembly.system.data/datarow) - found row or `null`

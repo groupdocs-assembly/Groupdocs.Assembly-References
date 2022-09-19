@@ -56,7 +56,7 @@ public int getSaveFormat()
 ```
 
 
-Gets a file format to save an assembled document to. UNSPECIFIED is the default.
+Gets a file format to save an assembled document to. [FileFormat\#UNSPECIFIED](../../com.groupdocs.assembly/fileformat\#UNSPECIFIED) is the default.
 
 When the value of this property is not specified, [DocumentAssembler](../../com.groupdocs.assembly/documentassembler) behaves as follows:
 
@@ -74,7 +74,7 @@ public void setSaveFormat(int value)
 ```
 
 
-Sets a file format to save an assembled document to. UNSPECIFIED is the default.
+Sets a file format to save an assembled document to. [FileFormat\#UNSPECIFIED](../../com.groupdocs.assembly/fileformat\#UNSPECIFIED) is the default.
 
 When the value of this property is not specified, [DocumentAssembler](../../com.groupdocs.assembly/documentassembler) behaves as follows:
 

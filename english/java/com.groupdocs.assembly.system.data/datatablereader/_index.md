@@ -18,7 +18,7 @@ The [DataTableReader](../../com.groupdocs.assembly.system.data/datatablereader) 
 | Constructor | Description |
 | --- | --- |
 | [DataTableReader(DataTable dataTable)](#DataTableReader-com.groupdocs.assembly.system.data.DataTable-) | Initializes a new instance of the [DataTableReader](../../com.groupdocs.assembly.system.data/datatablereader) class by using data from the supplied [DataTable](../../com.groupdocs.assembly.system.data/datatable). |
-| [DataTableReader(DataTable dataTables)](#DataTableReader-com.groupdocs.assembly.system.data.DataTable---) | Initializes a new instance of the [DataTableReader](../../com.groupdocs.assembly.system.data/datatablereader) class using the supplied array of [DataTable](../../com.groupdocs.assembly.system.data/datatable) objects. |
+| [DataTableReader(DataTable[] dataTables)](#DataTableReader-com.groupdocs.assembly.system.data.DataTable---) | Initializes a new instance of the [DataTableReader](../../com.groupdocs.assembly.system.data/datatablereader) class using the supplied array of [DataTable](../../com.groupdocs.assembly.system.data/datatable) objects. |
 ## Methods
 
 | Method | Description |
@@ -51,9 +51,9 @@ Initializes a new instance of the [DataTableReader](../../com.groupdocs.assembly
 | --- | --- | --- |
 | dataTable | [DataTable](../../com.groupdocs.assembly.system.data/datatable) | The [DataTable](../../com.groupdocs.assembly.system.data/datatable) from which the new [DataTableReader](../../com.groupdocs.assembly.system.data/datatablereader) obtains its result set. |
 
-### DataTableReader(DataTable dataTables) {#DataTableReader-com.groupdocs.assembly.system.data.DataTable---}
+### DataTableReader(DataTable[] dataTables) {#DataTableReader-com.groupdocs.assembly.system.data.DataTable---}
 ```
-public DataTableReader(DataTable dataTables)
+public DataTableReader(DataTable[] dataTables)
 ```
 
 

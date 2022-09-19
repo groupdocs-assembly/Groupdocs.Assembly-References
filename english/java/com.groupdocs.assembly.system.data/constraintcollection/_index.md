@@ -38,7 +38,7 @@ Gets the [Constraint](../../com.groupdocs.assembly.system.data/constraint) from 
 **Parameters:**
 | Parameter | Type | Description |
 | --- | --- | --- |
-| name | java.lang.String | The getConstraintName() / setConstraintName(java.lang.String) of the constraint to return. |
+| name | java.lang.String | The [Constraint\#getConstraintName()](../../com.groupdocs.assembly.system.data/constraint\#getConstraintName--) / [Constraint\#setConstraintName(java.lang.String)](../../com.groupdocs.assembly.system.data/constraint\#setConstraintName-java.lang.String-) of the constraint to return. |
 
 **Returns:**
 [Constraint](../../com.groupdocs.assembly.system.data/constraint) - The [Constraint](../../com.groupdocs.assembly.system.data/constraint) with the specified name; otherwise a null value if the [Constraint](../../com.groupdocs.assembly.system.data/constraint) does not exist.

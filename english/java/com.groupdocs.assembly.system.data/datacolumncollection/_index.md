@@ -71,8 +71,8 @@ Creates and adds a [DataColumn](../../com.groupdocs.assembly.system.data/datacol
 **Parameters:**
 | Parameter | Type | Description |
 | --- | --- | --- |
-| columnName | java.lang.String | The getColumnName() / setColumnName(java.lang.String) to use when you create the column. |
-| type | java.lang.Class | The getDataType() / setDataType(java.lang.Class) of the new column. |
+| columnName | java.lang.String | The [DataColumn\#getColumnName()](../../com.groupdocs.assembly.system.data/datacolumn\#getColumnName--) / [DataColumn\#setColumnName(java.lang.String)](../../com.groupdocs.assembly.system.data/datacolumn\#setColumnName-java.lang.String-) to use when you create the column. |
+| type | java.lang.Class | The [DataColumn\#getDataType()](../../com.groupdocs.assembly.system.data/datacolumn\#getDataType--) / [DataColumn\#setDataType(java.lang.Class)](../../com.groupdocs.assembly.system.data/datacolumn\#setDataType-java.lang.Class-) of the new column. |
 
 **Returns:**
 [DataColumn](../../com.groupdocs.assembly.system.data/datacolumn) - The newly created [DataColumn](../../com.groupdocs.assembly.system.data/datacolumn).
@@ -151,10 +151,10 @@ Gets the [DataColumn](../../com.groupdocs.assembly.system.data/datacolumn) from 
 **Parameters:**
 | Parameter | Type | Description |
 | --- | --- | --- |
-| name | java.lang.String | The getColumnName() / setColumnName(java.lang.String) of the column to return. |
+| name | java.lang.String | The [DataColumn\#getColumnName()](../../com.groupdocs.assembly.system.data/datacolumn\#getColumnName--) / [DataColumn\#setColumnName(java.lang.String)](../../com.groupdocs.assembly.system.data/datacolumn\#setColumnName-java.lang.String-) of the column to return. |
 
 **Returns:**
-[DataColumn](../../com.groupdocs.assembly.system.data/datacolumn) - The [DataColumn](../../com.groupdocs.assembly.system.data/datacolumn) in the collection with the specified getColumnName() / setColumnName(java.lang.String); otherwise a null value if the [DataColumn](../../com.groupdocs.assembly.system.data/datacolumn) does not exist.
+[DataColumn](../../com.groupdocs.assembly.system.data/datacolumn) - The [DataColumn](../../com.groupdocs.assembly.system.data/datacolumn) in the collection with the specified [DataColumn\#getColumnName()](../../com.groupdocs.assembly.system.data/datacolumn\#getColumnName--) / [DataColumn\#setColumnName(java.lang.String)](../../com.groupdocs.assembly.system.data/datacolumn\#setColumnName-java.lang.String-); otherwise a null value if the [DataColumn](../../com.groupdocs.assembly.system.data/datacolumn) does not exist.
 ### contains(String name) {#contains-java.lang.String-}
 ```
 public final boolean contains(String name)
@@ -166,7 +166,7 @@ Checks whether the collection contains a column with the specified name.
 **Parameters:**
 | Parameter | Type | Description |
 | --- | --- | --- |
-| name | java.lang.String | The getColumnName() / setColumnName(java.lang.String) of the column to look for. |
+| name | java.lang.String | The [DataColumn\#getColumnName()](../../com.groupdocs.assembly.system.data/datacolumn\#getColumnName--) / [DataColumn\#setColumnName(java.lang.String)](../../com.groupdocs.assembly.system.data/datacolumn\#setColumnName-java.lang.String-) of the column to look for. |
 
 **Returns:**
 boolean - true if a column exists with this name; otherwise, false.
