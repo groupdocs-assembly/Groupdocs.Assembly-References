@@ -20,7 +20,7 @@ A utility class providing constants. Indicates the action that occurs when a [Fo
 | [NONE](#NONE) | No action taken on related rows. |
 | [CASCADE](#CASCADE) | Delete or update related rows. |
 | [SET_NULL](#SET-NULL) | Set values in related rows to DBNull. |
-| [SET_DEFAULT](#SET-DEFAULT) | Set values in related rows to the value contained in the [DataColumn\#getDefaultValue()](../../com.groupdocs.assembly.system.data/datacolumn\#getDefaultValue--) / [DataColumn\#setDefaultValue(java.lang.Object)](../../com.groupdocs.assembly.system.data/datacolumn\#setDefaultValue-java.lang.Object-) property. |
+| [SET_DEFAULT](#SET-DEFAULT) | Set values in related rows to the value contained in the getDefaultValue() / setDefaultValue(java.lang.Object) property. |
 ## Methods
 
 | Method | Description |
@@ -57,7 +57,7 @@ public static final Rule SET_DEFAULT
 ```
 
 
-Set values in related rows to the value contained in the [DataColumn\#getDefaultValue()](../../com.groupdocs.assembly.system.data/datacolumn\#getDefaultValue--) / [DataColumn\#setDefaultValue(java.lang.Object)](../../com.groupdocs.assembly.system.data/datacolumn\#setDefaultValue-java.lang.Object-) property.
+Set values in related rows to the value contained in the getDefaultValue() / setDefaultValue(java.lang.Object) property.
 
 ### values() {#values--}
 ```

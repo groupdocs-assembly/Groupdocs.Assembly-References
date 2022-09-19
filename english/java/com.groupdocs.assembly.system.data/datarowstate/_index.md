@@ -20,7 +20,7 @@ Specifies the state of a [DataRow](../../com.groupdocs.assembly.system.data/data
 | [DETACHED](#DETACHED) | Specifies that the row has been created but is not part of any [DataRowCollection](../../com.groupdocs.assembly.system.data/datarowcollection). |
 | [UNCHANGED](#UNCHANGED) | Specifies that the row has not changed. |
 | [ADDED](#ADDED) | Specifies that the row has been added to a [DataRowCollection](../../com.groupdocs.assembly.system.data/datarowcollection). |
-| [DELETED](#DELETED) | Specifies that the row was deleted using the [DataRow\#delete()](../../com.groupdocs.assembly.system.data/datarow\#delete--) method of the [DataRow](../../com.groupdocs.assembly.system.data/datarow). |
+| [DELETED](#DELETED) | Specifies that the row was deleted using the delete() method of the [DataRow](../../com.groupdocs.assembly.system.data/datarow). |
 | [MODIFIED](#MODIFIED) | Specifies that the row has been modified. |
 ### DETACHED {#DETACHED}
 ```
@@ -52,7 +52,7 @@ public static final int DELETED
 ```
 
 
-Specifies that the row was deleted using the [DataRow\#delete()](../../com.groupdocs.assembly.system.data/datarow\#delete--) method of the [DataRow](../../com.groupdocs.assembly.system.data/datarow).
+Specifies that the row was deleted using the delete() method of the [DataRow](../../com.groupdocs.assembly.system.data/datarow).
 
 ### MODIFIED {#MODIFIED}
 ```

@@ -1,7 +1,7 @@
 ---
 title: DocumentTableLoadArgs
 second_title: GroupDocs.Assembly for Java API Reference
-description: Provides data for the  method.
+description: Provides data for the handlecom.groupdocs.assembly.DocumentTableLoadArgs method.
 type: docs
 weight: 20
 url: /java/com.groupdocs.assembly/documenttableloadargs/
@@ -12,7 +12,7 @@ java.lang.Object
 public class DocumentTableLoadArgs
 ```
 
-Provides data for the [IDocumentTableLoadHandler\#handle(com.groupdocs.assembly.DocumentTableLoadArgs)](../../com.groupdocs.assembly/idocumenttableloadhandler\#handle-com.groupdocs.assembly.DocumentTableLoadArgs-) method.
+Provides data for the handle(com.groupdocs.assembly.DocumentTableLoadArgs) method.
 ## Methods
 
 | Method | Description |

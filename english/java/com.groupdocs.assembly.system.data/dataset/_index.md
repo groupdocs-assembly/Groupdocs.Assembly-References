@@ -174,7 +174,7 @@ public void reset()
 ```
 
 
-Resets the [DataSet](../../com.groupdocs.assembly.system.data/dataset) to its original state. Subclasses should override [DataSet\#reset()](../../com.groupdocs.assembly.system.data/dataset\#reset--) to restore a [DataSet](../../com.groupdocs.assembly.system.data/dataset) to its original state.
+Resets the [DataSet](../../com.groupdocs.assembly.system.data/dataset) to its original state. Subclasses should override reset() to restore a [DataSet](../../com.groupdocs.assembly.system.data/dataset) to its original state.
 
 ### readXml(InputStream xmlStream, XmlReadMode mode) {#readXml-java.io.InputStream-com.groupdocs.assembly.system.data.XmlReadMode-}
 ```
