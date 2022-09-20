@@ -56,7 +56,7 @@ Loads a template document from the specified source path, populates the template
 | dataSourceInfos | [DataSourceInfo\[\]](../../com.groupdocs.assembly/datasourceinfo) | Provides information on data source objects to be used. |
 
 **Returns:**
-boolean - A flag indicating whether parsing of the template document was successful. The returned flag makes sense only if a value of the [DocumentAssembler\#getOptions()](../../com.groupdocs.assembly/documentassembler\#getOptions--) / [DocumentAssembler\#setOptions(int)](../../com.groupdocs.assembly/documentassembler\#setOptions-int-) property includes the [DocumentAssemblyOptions\#INLINE\_ERROR\_MESSAGES](../../com.groupdocs.assembly/documentassemblyoptions\#INLINE-ERROR-MESSAGES) option.
+boolean - A flag indicating whether parsing of the template document was successful. The returned flag makes sense only if a value of the [getOptions()](../../com.groupdocs.assembly/documentassembler.getOptions--) / [setOptions(int)](../../com.groupdocs.assembly/documentassembler.setOptions-int-) property includes the [DocumentAssemblyOptions.INLINE\_ERROR\_MESSAGES](../../com.groupdocs.assembly/documentassemblyoptions.INLINE-ERROR-MESSAGES) option.
 ### assembleDocument(String sourcePath, String targetPath, LoadSaveOptions loadSaveOptions, DataSourceInfo[] dataSourceInfos) {#assembleDocument-java.lang.String-java.lang.String-com.groupdocs.assembly.LoadSaveOptions-com.groupdocs.assembly.DataSourceInfo...-}
 ```
 public boolean assembleDocument(String sourcePath, String targetPath, LoadSaveOptions loadSaveOptions, DataSourceInfo[] dataSourceInfos)
@@ -74,7 +74,7 @@ Loads a template document from the specified source path, populates the template
 | dataSourceInfos | [DataSourceInfo\[\]](../../com.groupdocs.assembly/datasourceinfo) | Provides information on data source objects to be used. |
 
 **Returns:**
-boolean - A flag indicating whether parsing of the template document was successful. The returned flag makes sense only if a value of the [DocumentAssembler\#getOptions()](../../com.groupdocs.assembly/documentassembler\#getOptions--) / [DocumentAssembler\#setOptions(int)](../../com.groupdocs.assembly/documentassembler\#setOptions-int-) property includes the [DocumentAssemblyOptions\#INLINE\_ERROR\_MESSAGES](../../com.groupdocs.assembly/documentassemblyoptions\#INLINE-ERROR-MESSAGES) option.
+boolean - A flag indicating whether parsing of the template document was successful. The returned flag makes sense only if a value of the [getOptions()](../../com.groupdocs.assembly/documentassembler.getOptions--) / [setOptions(int)](../../com.groupdocs.assembly/documentassembler.setOptions-int-) property includes the [DocumentAssemblyOptions.INLINE\_ERROR\_MESSAGES](../../com.groupdocs.assembly/documentassemblyoptions.INLINE-ERROR-MESSAGES) option.
 ### assembleDocument(InputStream sourceStream, OutputStream targetStream, DataSourceInfo[] dataSourceInfos) {#assembleDocument-java.io.InputStream-java.io.OutputStream-com.groupdocs.assembly.DataSourceInfo...-}
 ```
 public boolean assembleDocument(InputStream sourceStream, OutputStream targetStream, DataSourceInfo[] dataSourceInfos)
@@ -91,7 +91,7 @@ Loads a template document from the specified source stream, populates the templa
 | dataSourceInfos | [DataSourceInfo\[\]](../../com.groupdocs.assembly/datasourceinfo) | Provides information on data source objects to be used. |
 
 **Returns:**
-boolean - A flag indicating whether parsing of the template document was successful. The returned flag makes sense only if a value of the [DocumentAssembler\#getOptions()](../../com.groupdocs.assembly/documentassembler\#getOptions--) / [DocumentAssembler\#setOptions(int)](../../com.groupdocs.assembly/documentassembler\#setOptions-int-) property includes the [DocumentAssemblyOptions\#INLINE\_ERROR\_MESSAGES](../../com.groupdocs.assembly/documentassemblyoptions\#INLINE-ERROR-MESSAGES) option.
+boolean - A flag indicating whether parsing of the template document was successful. The returned flag makes sense only if a value of the [getOptions()](../../com.groupdocs.assembly/documentassembler.getOptions--) / [setOptions(int)](../../com.groupdocs.assembly/documentassembler.setOptions-int-) property includes the [DocumentAssemblyOptions.INLINE\_ERROR\_MESSAGES](../../com.groupdocs.assembly/documentassemblyoptions.INLINE-ERROR-MESSAGES) option.
 ### assembleDocument(InputStream sourceStream, OutputStream targetStream, LoadSaveOptions loadSaveOptions, DataSourceInfo[] dataSourceInfos) {#assembleDocument-java.io.InputStream-java.io.OutputStream-com.groupdocs.assembly.LoadSaveOptions-com.groupdocs.assembly.DataSourceInfo...-}
 ```
 public boolean assembleDocument(InputStream sourceStream, OutputStream targetStream, LoadSaveOptions loadSaveOptions, DataSourceInfo[] dataSourceInfos)
@@ -109,7 +109,7 @@ Loads a template document from the specified source stream, populates the templa
 | dataSourceInfos | [DataSourceInfo\[\]](../../com.groupdocs.assembly/datasourceinfo) | Provides information on data source objects to be used. |
 
 **Returns:**
-boolean - A flag indicating whether parsing of the template document was successful. The returned flag makes sense only if a value of the [DocumentAssembler\#getOptions()](../../com.groupdocs.assembly/documentassembler\#getOptions--) / [DocumentAssembler\#setOptions(int)](../../com.groupdocs.assembly/documentassembler\#setOptions-int-) property includes the [DocumentAssemblyOptions\#INLINE\_ERROR\_MESSAGES](../../com.groupdocs.assembly/documentassemblyoptions\#INLINE-ERROR-MESSAGES) option.
+boolean - A flag indicating whether parsing of the template document was successful. The returned flag makes sense only if a value of the [getOptions()](../../com.groupdocs.assembly/documentassembler.getOptions--) / [setOptions(int)](../../com.groupdocs.assembly/documentassembler.setOptions-int-) property includes the [DocumentAssemblyOptions.INLINE\_ERROR\_MESSAGES](../../com.groupdocs.assembly/documentassemblyoptions.INLINE-ERROR-MESSAGES) option.
 ### getOptions() {#getOptions--}
 ```
 public int getOptions()

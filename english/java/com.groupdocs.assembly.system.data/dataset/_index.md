@@ -174,7 +174,7 @@ public void reset()
 ```
 
 
-Resets the [DataSet](../../com.groupdocs.assembly.system.data/dataset) to its original state. Subclasses should override [DataSet\#reset()](../../com.groupdocs.assembly.system.data/dataset\#reset--) to restore a [DataSet](../../com.groupdocs.assembly.system.data/dataset) to its original state.
+Resets the [DataSet](../../com.groupdocs.assembly.system.data/dataset) to its original state. Subclasses should override [reset()](../../com.groupdocs.assembly.system.data/dataset.reset--) to restore a [DataSet](../../com.groupdocs.assembly.system.data/dataset) to its original state.
 
 ### readXml(InputStream xmlStream, XmlReadMode mode) {#readXml-java.io.InputStream-com.groupdocs.assembly.system.data.XmlReadMode-}
 ```
@@ -198,7 +198,7 @@ public XmlReadMode readXml(InputStream xmlStream)
 ```
 
 
-Reads XML schema and data into the DataSet using the specified java.io.InputStream. The \#readXml(InputStream, XmlReadMode)\#readXml(InputStream, XmlReadMode) method provides a way to read either data only, or both data and schema into a DataSet from an XML document, whereas the \#readXmlSchema(InputStream)\#readXmlSchema(InputStream) method reads only the schema. To read both data and schema, use one of the `readXML` overloads that includes the mode parameter, and set its value to ReadSchema. If an in-line schema is specified, the in-line schema is used to extend the existing relational structure prior to loading the data. If there are any conflicts (for example, the same column in the same table defined with different data types) an exception is raised.
+Reads XML schema and data into the DataSet using the specified java.io.InputStream. The .readXml(InputStream, XmlReadMode).readXml(InputStream, XmlReadMode) method provides a way to read either data only, or both data and schema into a DataSet from an XML document, whereas the .readXmlSchema(InputStream).readXmlSchema(InputStream) method reads only the schema. To read both data and schema, use one of the `readXML` overloads that includes the mode parameter, and set its value to ReadSchema. If an in-line schema is specified, the in-line schema is used to extend the existing relational structure prior to loading the data. If there are any conflicts (for example, the same column in the same table defined with different data types) an exception is raised.
 
 **Parameters:**
 | Parameter | Type | Description |

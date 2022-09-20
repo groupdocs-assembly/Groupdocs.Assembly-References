@@ -135,7 +135,7 @@ public char getCommentChar()
 ```
 
 
-Gets the character that is used to comment lines of CSV data. The default value is '\#' (number sign).
+Gets the character that is used to comment lines of CSV data. The default value is '.' (number sign).
 
 **Returns:**
 char - The character that is used to comment lines of CSV data.
@@ -145,7 +145,7 @@ public void setCommentChar(char value)
 ```
 
 
-Sets the character that is used to comment lines of CSV data. The default value is '\#' (number sign).
+Sets the character that is used to comment lines of CSV data. The default value is '.' (number sign).
 
 **Parameters:**
 | Parameter | Type | Description |

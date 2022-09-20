@@ -31,13 +31,13 @@ public String getName()
 
 Gets the name of this column used to access the column's data in a template document passed to [DocumentAssembler](../../com.groupdocs.assembly/documentassembler).
 
-If the column's name is read from a document (see [DocumentTableOptions\#getFirstRowContainsColumnNames()](../../com.groupdocs.assembly/documenttableoptions\#getFirstRowContainsColumnNames--) / [DocumentTableOptions\#setFirstRowContainsColumnNames(boolean)](../../com.groupdocs.assembly/documenttableoptions\#setFirstRowContainsColumnNames-boolean-)), the name is automatically corrected so that it to be valid. However, if the column's name is set manually through this property and the name is invalid, an exception is thrown.
+If the column's name is read from a document (see [DocumentTableOptions.getFirstRowContainsColumnNames()](../../com.groupdocs.assembly/documenttableoptions.getFirstRowContainsColumnNames--) / [DocumentTableOptions.setFirstRowContainsColumnNames(boolean)](../../com.groupdocs.assembly/documenttableoptions.setFirstRowContainsColumnNames-boolean-)), the name is automatically corrected so that it to be valid. However, if the column's name is set manually through this property and the name is invalid, an exception is thrown.
 
 The column's name is considered to be valid, if the following conditions are met:
 
  *  The name is not empty.
  *  The name's first character is a letter or underscore.
- *  The rest of the name's characters are letters, underscores, digits, or the following characters: '@', '\#', '$'.
+ *  The rest of the name's characters are letters, underscores, digits, or the following characters: '@', '.', '$'.
  *  The corresponding [DocumentTable](../../com.groupdocs.assembly/documenttable) object does not contain a [DocumentTableColumn](../../com.groupdocs.assembly/documenttablecolumn) instance with the same name.
 
 **Returns:**
@@ -50,13 +50,13 @@ public void setName(String value)
 
 Sets the name of this column used to access the column's data in a template document passed to [DocumentAssembler](../../com.groupdocs.assembly/documentassembler).
 
-If the column's name is read from a document (see [DocumentTableOptions\#getFirstRowContainsColumnNames()](../../com.groupdocs.assembly/documenttableoptions\#getFirstRowContainsColumnNames--) / [DocumentTableOptions\#setFirstRowContainsColumnNames(boolean)](../../com.groupdocs.assembly/documenttableoptions\#setFirstRowContainsColumnNames-boolean-)), the name is automatically corrected so that it to be valid. However, if the column's name is set manually through this property and the name is invalid, an exception is thrown.
+If the column's name is read from a document (see [DocumentTableOptions.getFirstRowContainsColumnNames()](../../com.groupdocs.assembly/documenttableoptions.getFirstRowContainsColumnNames--) / [DocumentTableOptions.setFirstRowContainsColumnNames(boolean)](../../com.groupdocs.assembly/documenttableoptions.setFirstRowContainsColumnNames-boolean-)), the name is automatically corrected so that it to be valid. However, if the column's name is set manually through this property and the name is invalid, an exception is thrown.
 
 The column's name is considered to be valid, if the following conditions are met:
 
  *  The name is not empty.
  *  The name's first character is a letter or underscore.
- *  The rest of the name's characters are letters, underscores, digits, or the following characters: '@', '\#', '$'.
+ *  The rest of the name's characters are letters, underscores, digits, or the following characters: '@', '.', '$'.
  *  The corresponding [DocumentTable](../../com.groupdocs.assembly/documenttable) object does not contain a [DocumentTableColumn](../../com.groupdocs.assembly/documenttablecolumn) instance with the same name.
 
 **Parameters:**

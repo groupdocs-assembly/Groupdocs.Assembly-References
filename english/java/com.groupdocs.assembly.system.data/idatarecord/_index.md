@@ -17,7 +17,7 @@ Provides access to the column values within each row for a DataReader, and is im
 | [getFieldCount()](#getFieldCount--) | Gets the number of columns in the current row. |
 | [get(int i)](#get-int-) | Gets the column located at the specified index. |
 | [getName(int i)](#getName-int-) | Gets the name for the field to find. |
-| [getFieldType(int i)](#getFieldType-int-) | Gets the java.lang.Class information corresponding to the type of java.lang.Object that would be returned from [IDataRecord\#getValue(int)](../../com.groupdocs.assembly.system.data/idatarecord\#getValue-int-). |
+| [getFieldType(int i)](#getFieldType-int-) | Gets the java.lang.Class information corresponding to the type of java.lang.Object that would be returned from [getValue(int)](../../com.groupdocs.assembly.system.data/idatarecord.getValue-int-). |
 | [getValue(int i)](#getValue-int-) | Return the value of the specified field. |
 ### getFieldCount() {#getFieldCount--}
 ```
@@ -65,7 +65,7 @@ public abstract Class getFieldType(int i)
 ```
 
 
-Gets the java.lang.Class information corresponding to the type of java.lang.Object that would be returned from [IDataRecord\#getValue(int)](../../com.groupdocs.assembly.system.data/idatarecord\#getValue-int-).
+Gets the java.lang.Class information corresponding to the type of java.lang.Object that would be returned from [getValue(int)](../../com.groupdocs.assembly.system.data/idatarecord.getValue-int-).
 
 **Parameters:**
 | Parameter | Type | Description |
@@ -73,7 +73,7 @@ Gets the java.lang.Class information corresponding to the type of java.lang.Obje
 | i | int | The index of the field to find. |
 
 **Returns:**
-java.lang.Class - The java.lang.Class information corresponding to the type of java.lang.Object that would be returned from [IDataRecord\#getValue(int)](../../com.groupdocs.assembly.system.data/idatarecord\#getValue-int-).
+java.lang.Class - The java.lang.Class information corresponding to the type of java.lang.Object that would be returned from [getValue(int)](../../com.groupdocs.assembly.system.data/idatarecord.getValue-int-).
 ### getValue(int i) {#getValue-int-}
 ```
 public abstract Object getValue(int i)

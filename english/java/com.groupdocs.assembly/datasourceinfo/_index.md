@@ -60,7 +60,7 @@ The data source object can be of one of the following types:
  *  [DataRowView](../../com.groupdocs.assembly.system.data/datarowview)
  *  Any other arbitrary Java type
 
-For information on how to work with data sources of different types in template documents, see template syntax reference(https://docs.groupdocs.com/display/assemblyjava/Template+Syntax+-+Part+1+of+2\#TemplateSyntax-Part1of2-UsingDataSources).
+For information on how to work with data sources of different types in template documents, see template syntax reference(https://docs.groupdocs.com/display/assemblyjava/Template+Syntax+-+Part+1+of+2.TemplateSyntax-Part1of2-UsingDataSources).
 
 **Parameters:**
 | Parameter | Type | Description |
@@ -91,7 +91,7 @@ The data source object can be of one of the following types:
  *  [DataRowView](../../com.groupdocs.assembly.system.data/datarowview)
  *  Any other arbitrary Java type
 
-For information on how to work with data sources of different types in template documents, see template syntax reference(https://docs.groupdocs.com/display/assemblyjava/Template+Syntax+-+Part+1+of+2\#TemplateSyntax-Part1of2-UsingDataSources).
+For information on how to work with data sources of different types in template documents, see template syntax reference(https://docs.groupdocs.com/display/assemblyjava/Template+Syntax+-+Part+1+of+2.TemplateSyntax-Part1of2-UsingDataSources).
 
 When the name of the data source object is specified, you can access the data source object and its members in a template document using the name.
 
@@ -129,7 +129,7 @@ The data source object can be of one of the following types:
  *  [DataRowView](../../com.groupdocs.assembly.system.data/datarowview)
  *  Any other arbitrary Java type
 
-For information on how to work with data sources of different types in template documents, see template syntax reference(https://docs.groupdocs.com/display/assemblyjava/Template+Syntax+-+Part+1+of+2\#TemplateSyntax-Part1of2-UsingDataSources).
+For information on how to work with data sources of different types in template documents, see template syntax reference(https://docs.groupdocs.com/display/assemblyjava/Template+Syntax+-+Part+1+of+2.TemplateSyntax-Part1of2-UsingDataSources).
 
 **Returns:**
 java.lang.Object - The data source object.
@@ -157,7 +157,7 @@ The data source object can be of one of the following types:
  *  [DataRowView](../../com.groupdocs.assembly.system.data/datarowview)
  *  Any other arbitrary Java type
 
-For information on how to work with data sources of different types in template documents, see template syntax reference(https://docs.groupdocs.com/display/assemblyjava/Template+Syntax+-+Part+1+of+2\#TemplateSyntax-Part1of2-UsingDataSources).
+For information on how to work with data sources of different types in template documents, see template syntax reference(https://docs.groupdocs.com/display/assemblyjava/Template+Syntax+-+Part+1+of+2.TemplateSyntax-Part1of2-UsingDataSources).
 
 **Parameters:**
 | Parameter | Type | Description |

@@ -107,7 +107,7 @@ The table's name is considered to be valid, if the following conditions are met:
 
  *  The name is not empty.
  *  The name's first character is a letter or underscore.
- *  The rest of the name's characters are letters, underscores, digits, or the following characters: '@', '\#', '$'.
+ *  The rest of the name's characters are letters, underscores, digits, or the following characters: '@', '.', '$'.
  *  The corresponding [DocumentTableSet](../../com.groupdocs.assembly/documenttableset) object does not contain a [DocumentTable](../../com.groupdocs.assembly/documenttable) instance with the same name.
 
 **Returns:**
@@ -126,7 +126,7 @@ The table's name is considered to be valid, if the following conditions are met:
 
  *  The name is not empty.
  *  The name's first character is a letter or underscore.
- *  The rest of the name's characters are letters, underscores, digits, or the following characters: '@', '\#', '$'.
+ *  The rest of the name's characters are letters, underscores, digits, or the following characters: '@', '.', '$'.
  *  The corresponding [DocumentTableSet](../../com.groupdocs.assembly/documenttableset) object does not contain a [DocumentTable](../../com.groupdocs.assembly/documenttable) instance with the same name.
 
 **Parameters:**
