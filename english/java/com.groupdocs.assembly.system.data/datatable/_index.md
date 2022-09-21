@@ -49,7 +49,7 @@ Represents one table of in-memory data.
 | [getEnforceConstraints()](#getEnforceConstraints--) |  |
 | [setEnforceConstraints(boolean enforceConstraints)](#setEnforceConstraints-boolean-) |  |
 | [refresh()](#refresh--) | Reloads all the data from ResultSet if it is present. |
-| [acceptChanges()](#acceptChanges--) | Commits all the changes made to this table since the last time [acceptChanges()](../../com.groupdocs.assembly.system.data/datatable.acceptChanges--) was called. |
+| [acceptChanges()](#acceptChanges--) | Commits all the changes made to this table since the last time [acceptChanges()](../../com.groupdocs.assembly.system.data/datatable\#acceptChanges--) was called. |
 | [addEventListener(DataTableEventListener listener)](#addEventListener-com.groupdocs.assembly.system.data.DataTableEventListener-) |  |
 | [clearEventListneers()](#clearEventListneers--) |  |
 | [onDataRowChanged(DataRow row)](#onDataRowChanged-com.groupdocs.assembly.system.data.DataRow-) |  |
@@ -339,7 +339,7 @@ public void acceptChanges()
 ```
 
 
-Commits all the changes made to this table since the last time [acceptChanges()](../../com.groupdocs.assembly.system.data/datatable.acceptChanges--) was called.
+Commits all the changes made to this table since the last time [acceptChanges()](../../com.groupdocs.assembly.system.data/datatable\#acceptChanges--) was called.
 
 ### addEventListener(DataTableEventListener listener) {#addEventListener-com.groupdocs.assembly.system.data.DataTableEventListener-}
 ```
