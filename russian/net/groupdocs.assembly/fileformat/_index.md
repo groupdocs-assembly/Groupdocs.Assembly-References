@@ -1,0 +1,82 @@
+---
+title: FileFormat
+second_title: Справочник по API GroupDocs.Assembly для .NET
+description: Определяет формат файла.
+type: docs
+weight: 220
+url: /ru/net/groupdocs.assembly/fileformat/
+---
+## FileFormat enumeration
+
+Определяет формат файла.
+
+```csharp
+public enum FileFormat
+```
+
+### Ценности
+
+| Имя | Ценность | Описание |
+| --- | --- | --- |
+| Unspecified | `0` | Указывает неустановленное значение. По умолчанию. |
+| Doc | `1` | Указывает формат двоичного документа Microsoft Word 97 – 2007. |
+| Dot | `2` | Указывает формат двоичного шаблона Microsoft Word 97 – 2007. |
+| Docx | `3` | Указывает формат документа Office Open XML WordprocessingML (без макросов). |
+| Docm | `4` | Указывает формат документа Office Open XML WordprocessingML с поддержкой макросов. |
+| Dotx | `5` | Указывает формат шаблона Office Open XML WordprocessingML (без макросов). |
+| Dotm | `6` | Указывает формат шаблона Office Open XML WordprocessingML с поддержкой макросов. |
+| FlatOpc | `7` | Указывает формат Office Open XML WordprocessingML, хранящийся в плоском файле XML вместо ZIP-пакета. |
+| FlatOpcMacroEnabled | `8` | Указывает формат документа Office Open XML WordprocessingML с поддержкой макросов, который хранится в плоском XML-файле вместо ZIP-пакета. |
+| FlatOpcTemplate | `9` | Указывает формат шаблона Office Open XML WordprocessingML (без макросов), который хранится в плоском XML-файле вместо ZIP-пакета. |
+| FlatOpcTemplateMacroEnabled | `10` | Указывает формат шаблона Office Open XML WordprocessingML с поддержкой макросов, который хранится в плоском XML-файле вместо ZIP-пакета. |
+| WordML | `11` | Задает формат Microsoft Word 2003 WordprocessingML. |
+| Odt | `12` | Определяет формат текстового документа ODF. |
+| Ott | `13` | Задает формат шаблона текстового документа ODF. |
+| Xls | `14` | Указывает формат двоичной книги Microsoft Excel 97 – 2007. |
+| Xlsx | `15` | Указывает формат книги Office Open XML SpreadsheetML (без макросов). |
+| Xlsm | `16` | Указывает формат книги Office Open XML SpreadsheetML с поддержкой макросов. |
+| Xltx | `17` | Указывает формат шаблона Office Open XML SpreadsheetML (без макросов). |
+| Xltm | `18` | Указывает формат шаблона Office Open XML SpreadsheetML с поддержкой макросов. |
+| Xlam | `19` | Указывает формат надстройки Office Open XML SpreadsheetML с поддержкой макросов. |
+| Xlsb | `20` | Указывает формат двоичного файла Microsoft Excel 2007 с поддержкой макросов. |
+| SpreadsheetML | `21` | Указывает формат Microsoft Excel 2003 SpreadsheetML. |
+| Ods | `22` | Определяет формат электронной таблицы ODF. |
+| Ppt | `23` | Указывает формат двоичного представления Microsoft PowerPoint 97 – 2007. |
+| Pps | `24` | Задает формат двоичного слайд-шоу Microsoft PowerPoint 97–2007. |
+| Pptx | `25` | Указывает формат презентации Office Open XML PresentationML (без макросов). |
+| Pptm | `26` | Указывает формат презентации Office Open XML PresentationML с поддержкой макросов. |
+| Ppsx | `27` | Указывает формат слайд-шоу Office Open XML PresentationML (без макросов). |
+| Ppsm | `28` | Указывает формат слайд-шоу Office Open XML PresentationML с поддержкой макросов. |
+| Potx | `29` | Указывает формат шаблона Office Open XML PresentationML (без макросов). |
+| Potm | `30` | Указывает формат шаблона Office Open XML PresentationML с поддержкой макросов. |
+| Odp | `31` | Определяет формат представления ODF. |
+| MsgAscii | `32` | Указывает формат сообщения Microsoft Outlook (MSG) с использованием кодировки символов ASCII. |
+| MsgUnicode | `33` | Указывает формат сообщения Microsoft Outlook (MSG) с использованием кодировки символов Unicode. |
+| Eml | `34` | Определяет стандартный формат MIME. |
+| Emlx | `35` | Указывает формат файла программы Apple Mail.app. |
+| Rtf | `36` | Указывает формат RTF. |
+| Text | `37` | Определяет формат простого текста. |
+| Xml | `38` | Задает формат XML общей формы. |
+| Xaml | `39` | Указывает формат расширяемого языка разметки приложений (XAML). |
+| XamlPackage | `40` | Задает формат пакета Extensible Application Markup Language (XAML). |
+| Html | `41` | Задает формат HTML. |
+| Mhtml | `42` | Задает формат MHTML (веб-архив). |
+| Xps | `43` | Указывает формат XPS (XML Paper Specification). |
+| OpenXps | `44` | Задает формат OpenXPS (Ecma-388). |
+| Pdf | `45` | Указывает формат PDF (Adobe Portable Document). |
+| Epub | `46` | Указывает формат IDPF EPUB. |
+| Ps | `47` | Указывает формат PS (PostScript). |
+| Pcl | `48` | Задает формат PCL (язык управления принтером). |
+| Svg | `49` | Задает формат SVG (масштабируемая векторная графика). |
+| Tiff | `50` | Задает формат TIFF. |
+| Markdown | `51` | Указывает формат Markdown. |
+| Pot | `52` | Указывает формат двоичного шаблона Microsoft PowerPoint 97 – 2007. |
+| Otp | `53` | Указывает формат шаблона презентации ODF. |
+| Xlt | `54` | Указывает формат двоичного шаблона Microsoft Excel 97–2007. |
+
+### Смотрите также
+
+* пространство имен [GroupDocs.Assembly](../../groupdocs.assembly)
+* сборка [GroupDocs.Assembly](../../)
+
+<!-- DO NOT EDIT: generated by xmldocmd for GroupDocs.Assembly.dll -->
