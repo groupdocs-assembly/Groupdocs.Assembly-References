@@ -24,10 +24,10 @@ public class KnownTypeSet : IEnumerable
 
 | Name | Description |
 | --- | --- |
-| [Add](../../groupdocs.assembly/knowntypeset/add)(Type) | Adds the specified Type object to the set. Throws ArgumentException in the following cases: |
+| [Add](../../groupdocs.assembly/knowntypeset/add)(Type) | Adds the specified Type object to the set. |
 | [Clear](../../groupdocs.assembly/knowntypeset/clear)() | Removes all items from the set. |
 | [GetEnumerator](../../groupdocs.assembly/knowntypeset/getenumerator)() | Returns An IEnumerator object to iterate over items of the set. |
-| [Remove](../../groupdocs.assembly/knowntypeset/remove)(Type) | Removes the specified Type object from the set. Throws ArgumentException if *type* is null. |
+| [Remove](../../groupdocs.assembly/knowntypeset/remove)(Type) | Removes the specified Type object from the set. |
 
 ### See Also
 

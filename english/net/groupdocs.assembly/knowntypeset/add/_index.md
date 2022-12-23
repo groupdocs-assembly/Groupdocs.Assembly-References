@@ -1,14 +1,16 @@
 ---
 title: Add
 second_title: GroupDocs.Assembly for .NET API Reference
-description: Adds the specified Type object to the set. Throws ArgumentException in the following cases
+description: Adds the specified Type object to the set.
 type: docs
 weight: 20
 url: /net/groupdocs.assembly/knowntypeset/add/
 ---
 ## KnownTypeSet.Add method
 
-Adds the specified Type object to the set. Throws ArgumentException in the following cases:
+Adds the specified Type object to the set.
+
+Throws ArgumentException in the following cases:
 
 - *type* is null.
 
