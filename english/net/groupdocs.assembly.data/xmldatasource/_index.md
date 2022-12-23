@@ -37,11 +37,11 @@ When XML Schema Definition is passed to a constructor of this class, data types 
 
 When XML Schema Definition is not passed to a constructor of this class, data types of values of simple XML elements and attributes are determined automatically upon their string representations. So in template documents, you can work with typed values in this case as well. The engine is capable to automatically recognize values of the following types:
 
-* Nullable
-* Nullable
-* Nullable
-* Nullable
-* String
+* `long?`
+* `double?`
+* `bool?`
+* `DateTime?`
+* `string`
 
 Note that for automatic recognition of data types to work, string representations of values of simple XML elements and attributes should be formed using invariant culture settings.
 

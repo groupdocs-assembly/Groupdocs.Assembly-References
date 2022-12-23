@@ -31,7 +31,9 @@ public void add(Class type)
 ```
 
 
-Adds the specified java.lang.Class object to the set. Throws java.lang.IllegalArgumentException in the following cases:
+Adds the specified java.lang.Class object to the set.
+
+Throws java.lang.IllegalArgumentException in the following cases:
 
 \-  type  is null.
 
@@ -54,7 +56,9 @@ public void remove(Class type)
 ```
 
 
-Removes the specified java.lang.Class object from the set. Throws java.lang.IllegalArgumentException if  type  is null.
+Removes the specified java.lang.Class object from the set.
+
+Throws java.lang.IllegalArgumentException if  type  is null.
 
 **Parameters:**
 | Parameter | Type | Description |

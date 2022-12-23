@@ -31,11 +31,11 @@ In template documents, if a top-level JSON element is an array, a [`JsonDataSour
 
 In template documents, you can work with typed values of JSON elements. For convenience, the engine replaces the set of JSON simple types with the following one:
 
-* Nullable
-* Nullable
-* Nullable
-* Nullable
-* String
+* `long?`
+* `double?`
+* `bool?`
+* `DateTime?`
+* `string`
 
 The engine automatically recognizes values of the extra types upon their JSON representations.
 

@@ -22,6 +22,7 @@ A utility class providing constants. Specifies options controlling behavior of [
 | [UPDATE_FIELDS_AND_FORMULAS](#UPDATE-FIELDS-AND-FORMULAS) | Specifies that fields of result Word Processing documents and formulas of result Spreadsheet documents should be updated by the assembler. |
 | [REMOVE_EMPTY_PARAGRAPHS](#REMOVE-EMPTY-PARAGRAPHS) | Specifies that the assembler should remove paragraphs becoming empty after template syntax tags are removed or replaced with empty values. |
 | [INLINE_ERROR_MESSAGES](#INLINE-ERROR-MESSAGES) | Specifies that the assembler should inline template syntax error messages into output documents. |
+| [USE_SPREADSHEET_DATA_TYPES](#USE-SPREADSHEET-DATA-TYPES) | Relates to Spreadsheet documents only. |
 | [length](#length) |  |
 ## Methods
 
@@ -72,6 +73,14 @@ public static final int INLINE_ERROR_MESSAGES
 
 
 Specifies that the assembler should inline template syntax error messages into output documents. If this option is not set, the assembler throws an exception when encounters a syntax error.
+
+### USE_SPREADSHEET_DATA_TYPES {#USE-SPREADSHEET-DATA-TYPES}
+```
+public static final int USE_SPREADSHEET_DATA_TYPES
+```
+
+
+Relates to Spreadsheet documents only. Specifies that evaluated expression results should be mapped to corresponding Spreadsheet data types, which also affects their default formatting within cells. If this option is not set, expression results are always written as strings by the assembler. This option has no effect when expression results are formatted using template syntax - expression results are always written as strings then as well.
 
 ### length {#length}
 ```

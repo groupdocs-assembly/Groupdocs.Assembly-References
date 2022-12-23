@@ -24,6 +24,7 @@ public enum DocumentAssemblyOptions
 | UpdateFieldsAndFormulas | `2` | Specifies that fields of result Word Processing documents and formulas of result Spreadsheet documents should be updated by the assembler. |
 | RemoveEmptyParagraphs | `4` | Specifies that the assembler should remove paragraphs becoming empty after template syntax tags are removed or replaced with empty values. |
 | InlineErrorMessages | `8` | Specifies that the assembler should inline template syntax error messages into output documents. If this option is not set, the assembler throws an exception when encounters a syntax error. |
+| UseSpreadsheetDataTypes | `10` | Relates to Spreadsheet documents only. Specifies that evaluated expression results should be mapped to corresponding Spreadsheet data types, which also affects their default formatting within cells. If this option is not set, expression results are always written as strings by the assembler. This option has no effect when expression results are formatted using template syntax - expression results are always written as strings then as well. |
 
 ### See Also
 
