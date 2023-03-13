@@ -16,7 +16,7 @@ public string ResourceLoadBaseUri { get; set; }
 
 ### Observaciones
 
-Cuando se carga un documento HTML desde un archivo, la carpeta que lo contiene se usa como URI base de manera predeterminada, lo que no puede suceder cuando se carga un documento HTML desde una secuencia. Establezca esta propiedad para especificar un URI base al cargar un documento HTML desde una transmisión o para anular el URI base predeterminado al cargar un documento HTML desde un archivo.
+Cuando se carga un documento HTML desde un archivo, la carpeta que lo contiene se usa como URI base de manera predeterminada, lo que no puede suceder cuando se carga un documento HTML desde una transmisión. Establezca esta propiedad para especificar un URI base al cargar un documento HTML desde una transmisión o para anular el URI base predeterminado al cargar un documento HTML desde un archivo.
 
 Un valor de esta propiedad se ignora en los siguientes casos:
 

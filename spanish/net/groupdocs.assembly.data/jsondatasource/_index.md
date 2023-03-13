@@ -31,15 +31,15 @@ En los documentos de plantilla, si un elemento JSON de nivel superior es una mat
 
 En documentos de plantilla, puede trabajar con valores escritos de elementos JSON. Para mayor comodidad, el motor reemplaza el conjunto de tipos simples JSON con el siguiente:
 
-* Nullable
-* Nullable
-* Nullable
-* Nullable
-* String
+* `¿largo?`
+* `¿doble?`
+* `bool?`
+* `¿Fecha y hora?`
+* `cadena`
 
 El motor reconoce automáticamente los valores de los tipos adicionales en sus representaciones JSON.
 
-Para anular el comportamiento predeterminado de la carga de datos JSON, inicialice y pase un[`JsonDataLoadOptions`](../jsondataloadoptions) instancia a un constructor de esta clase.
+Para anular el comportamiento predeterminado de la carga de datos JSON, inicialice y pase un[`JsonDataLoadOptions`](../jsondataloadoptions)instancia a un constructor de esta clase.
 
 ### Ver también
 

@@ -1,20 +1,22 @@
 ---
 title: Add
 second_title: Referencia de API de GroupDocs.Assembly para .NET
-description: Agrega lo especificadoType objeto al conjunto. LanzaArgumentException en los siguientes casos
+description: Agrega lo especificadoType objeto al conjunto.
 type: docs
 weight: 20
 url: /es/net/groupdocs.assembly/knowntypeset/add/
 ---
 ## KnownTypeSet.Add method
 
-Agrega lo especificadoType objeto al conjunto. LanzaArgumentException en los siguientes casos:
+Agrega lo especificadoType objeto al conjunto.
+
+LanzaArgumentException en los siguientes casos:
 
 -*type* es nulo.
 
 -*type* representa un tipo vacío.
 
--*type*representa un tipo invisible, es decir, un tipo no público o un tipo anidado público que tiene un tipo externo no público.
+-*type* representa un tipo invisible, es decir, un tipo no público o un tipo anidado público que tiene un tipo externo no público.
 
 -*type* representa un tipo genérico.
 

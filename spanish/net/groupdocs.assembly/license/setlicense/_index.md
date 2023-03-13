@@ -30,7 +30,7 @@ Intenta encontrar la licencia en las siguientes ubicaciones:
 
 4. La carpeta que contiene el ensamblado de entrada (inicio).
 
-5. Un recurso incrustado en el ensamblado de llamada del cliente.
+5. Un recurso incrustado en el ensamblado de llamadas del cliente.
 
 ### Ver también
 

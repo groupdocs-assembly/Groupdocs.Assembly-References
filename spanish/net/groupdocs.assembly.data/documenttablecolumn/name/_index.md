@@ -23,7 +23,7 @@ El nombre de la columna se considera válido si se cumplen las siguientes condic
 * El nombre no está vacío.
 * El primer carácter del nombre es una letra o un guión bajo.
 * El resto de caracteres del nombre son letras, guiones bajos, dígitos o los siguientes caracteres: '@', '#', '$'.
-* El correspondiente[`DocumentTable`](../../documenttable) objeto no contiene un[`DocumentTableColumn`](../../documenttablecolumn)instancia con el mismo nombre.
+* El correspondiente[`DocumentTable`](../../documenttable) objeto no contiene un[`DocumentTableColumn`](../../documenttablecolumn) instancia con el mismo nombre.
 
 ### Ver también
 

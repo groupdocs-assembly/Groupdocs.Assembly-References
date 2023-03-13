@@ -1,14 +1,14 @@
 ---
 title: XmlDataSource
 second_title: Referencia de API de GroupDocs.Assembly para .NET
-description: Proporciona acceso a los datos de un archivo o flujo XML que se usará al ensamblar un documento.
+description: Proporciona acceso a los datos de un archivo o secuencia XML que se usará al ensamblar un documento.
 type: docs
 weight: 180
 url: /es/net/groupdocs.assembly.data/xmldatasource/
 ---
 ## XmlDataSource class
 
-Proporciona acceso a los datos de un archivo o flujo XML que se usará al ensamblar un documento.
+Proporciona acceso a los datos de un archivo o secuencia XML que se usará al ensamblar un documento.
 
 ```csharp
 public class XmlDataSource
@@ -37,11 +37,11 @@ Cuando se pasa la definición de esquema XML a un constructor de esta clase, los
 
 Cuando la definición de esquema XML no se pasa a un constructor de esta clase, los tipos de datos de valores de elementos XML simples y atributos se determinan automáticamente según sus representaciones de cadena. Entonces, en los documentos de plantilla, también puede trabajar con valores escritos en este caso. El motor es capaz de reconocer automáticamente valores de los siguientes tipos:
 
-* Nullable
-* Nullable
-* Nullable
-* Nullable
-* String
+* `¿largo?`
+* `¿doble?`
+* `bool?`
+* `¿Fecha y hora?`
+* `cadena`
 
 Tenga en cuenta que para que funcione el reconocimiento automático de tipos de datos, las representaciones de cadenas de valores de elementos XML simples y atributos deben formarse utilizando configuraciones culturales invariantes.
 

@@ -45,7 +45,7 @@ public DocumentTableColumn this[string name] { get; }
 
 ### Valor_devuelto
 
-A[`DocumentTableColumn`](../../documenttablecolumn) instancia con el nombre especificado de la colección o null si dicha instancia no existe.
+A[`DocumentTableColumn`](../../documenttablecolumn)instancia con el nombre especificado de la colección o null si dicha instancia no existe.
 
 ### Ver también
 

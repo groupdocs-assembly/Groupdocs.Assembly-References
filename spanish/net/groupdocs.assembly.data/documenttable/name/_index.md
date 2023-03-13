@@ -23,7 +23,7 @@ El nombre de la tabla se considera válido si se cumplen las siguientes condicio
 * El nombre no está vacío.
 * El primer carácter del nombre es una letra o un guión bajo.
 * El resto de caracteres del nombre son letras, guiones bajos, dígitos o los siguientes caracteres: '@', '#', '$'.
-* El correspondiente[`DocumentTableSet`](../../documenttableset) objeto no contiene un[`DocumentTable`](../../documenttable)instancia con el mismo nombre.
+* El correspondiente[`DocumentTableSet`](../../documenttableset) objeto no contiene un[`DocumentTable`](../../documenttable) instancia con el mismo nombre.
 
 ### Ver también
 

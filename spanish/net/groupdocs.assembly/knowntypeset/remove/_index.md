@@ -1,14 +1,16 @@
 ---
 title: Remove
 second_title: Referencia de API de GroupDocs.Assembly para .NET
-description: Elimina el especificadoType objeto del conjunto. LanzaArgumentException si type es nulo.
+description: Elimina lo especificadoType objeto del conjunto.
 type: docs
 weight: 50
 url: /es/net/groupdocs.assembly/knowntypeset/remove/
 ---
 ## KnownTypeSet.Remove method
 
-Elimina el especificadoType objeto del conjunto. LanzaArgumentException si *type* es nulo.
+Elimina lo especificadoType objeto del conjunto.
+
+LanzaArgumentException si*type* es nulo.
 
 ```csharp
 public void Remove(Type type)

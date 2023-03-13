@@ -31,15 +31,15 @@ En los documentos de plantilla, un[`CsvDataSource`](../csvdatasource) instancia 
 
 Los tipos de datos de valores separados por comas se determinan automáticamente según sus representaciones de cadena. Entonces, en los documentos template , puede trabajar con valores escritos en lugar de solo cadenas. El motor es capaz de reconocer automáticamente valores de los siguientes tipos:
 
-* Nullable
-* Nullable
-* Nullable
-* Nullable
-* String
+* `¿largo?`
+* `¿doble?`
+* `bool?`
+* `¿Fecha y hora?`
+* `cadena`
 
 Tenga en cuenta que para que funcione el reconocimiento automático de tipos de datos, las representaciones de cadenas de valores separados por comas deben formarse usando configuraciones culturales invariantes.
 
-Para anular el comportamiento predeterminado de la carga de datos CSV, inicialice y pase un[`CsvDataLoadOptions`](../csvdataloadoptions) instancia a un constructor de esta clase.
+Para anular el comportamiento predeterminado de la carga de datos CSV, inicialice y pase un[`CsvDataLoadOptions`](../csvdataloadoptions)instancia a un constructor de esta clase.
 
 ### Ver también
 

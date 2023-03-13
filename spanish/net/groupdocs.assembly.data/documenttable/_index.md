@@ -33,7 +33,7 @@ public class DocumentTable
 
 ### Observaciones
 
-Para documentos de formato de archivo de hoja de cálculo, un[`DocumentTable`](../documenttable)instancia representa una sola hoja. Para documentos de otros formatos de archivo, un[`DocumentTable`](../documenttable) instancia representa una sola tabla.
+Para documentos de formato de archivo de hoja de cálculo, un[`DocumentTable`](../documenttable) instancia representa una sola hoja. Para documentos de otros formatos de archivo, un[`DocumentTable`](../documenttable) instancia representa una sola tabla.
 
 Para acceder a los datos de la tabla correspondiente mientras ensambla un documento, pase una instancia de esta clase como una fuente de datos a uno de[`DocumentAssembler`](../../groupdocs.assembly/documentassembler) .AssembleDocument sobrecargas.
 
