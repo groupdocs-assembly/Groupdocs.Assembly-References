@@ -45,7 +45,7 @@ public DocumentTableColumn this[string name] { get; }
 
 ### Return_Value
 
-A[`DocumentTableColumn`](../../documenttablecolumn) instance avec le nom spécifié de la collection ou null si une telle instance n'existe pas.
+A[`DocumentTableColumn`](../../documenttablecolumn)instance avec le nom spécifié de la collection ou null si une telle instance n'existe pas.
 
 ### Voir également
 

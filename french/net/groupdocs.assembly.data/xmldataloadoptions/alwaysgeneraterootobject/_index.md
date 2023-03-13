@@ -16,7 +16,7 @@ public bool AlwaysGenerateRootObject { get; set; }
 
 ### Remarques
 
-La valeur par défaut est**faux** .
+La valeur par défaut est**FAUX** .
 
 ### Voir également
 

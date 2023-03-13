@@ -33,7 +33,7 @@ public class DocumentTableColumnCollection : IEnumerable
 
 ### Remarques
 
-La collection est remplie automatiquement lors du chargement de la table correspondante à partir d'un document et ne peut pas être modifiée. Cependant, les propriétés de[`DocumentTableColumn`](../documenttablecolumn)les objets contenus dans la collection peuvent être modifiés.
+La collection est remplie automatiquement lors du chargement de la table correspondante à partir d'un document et ne peut pas être modifiée. Cependant, les propriétés de[`DocumentTableColumn`](../documenttablecolumn) les objets contenus dans la collection peuvent être modifiés.
 
 ### Voir également
 

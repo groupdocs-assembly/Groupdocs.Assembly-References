@@ -37,11 +37,11 @@ Lorsque la définition de schéma XML est transmise à un constructeur de cette 
 
 Lorsque la définition de schéma XML n'est pas transmise à un constructeur de cette classe, les types de données des valeurs des éléments XML simples et des attributs sont déterminés automatiquement en fonction de leurs représentations sous forme de chaîne. Ainsi, dans les modèles de documents, vous pouvez également utiliser avec des valeurs typées dans ce cas. Le moteur est capable de reconnaître automatiquement les valeurs des types suivants :
 
-* Nullable
-* Nullable
-* Nullable
-* Nullable
-* String
+* `long?`
+* `double?`
+* `bah ?`
+* `DateHeure ?`
+* `chaîne`
 
 Notez que pour que la reconnaissance automatique des types de données fonctionne, les représentations sous forme de chaîne des valeurs des éléments XML simples et des attributs doivent être formées à l'aide de paramètres de culture invariants.
 

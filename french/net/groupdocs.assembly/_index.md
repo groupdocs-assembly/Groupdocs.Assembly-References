@@ -15,7 +15,7 @@ Fournit des classes pour générer des documents dans des formats de fichiers bu
 | [BarcodeSettings](./barcodesettings) | Représente un ensemble de paramètres contrôlant la génération de codes-barres lors de l'assemblage d'un document. |
 | [DataSourceInfo](./datasourceinfo) | Fournit des informations sur un seul objet de source de données à utiliser pour assembler un document à partir d'un modèle. |
 | [DocumentAssembler](./documentassembler) | Fournit des routines pour remplir les modèles de documents avec des données et un ensemble de paramètres pour contrôler ces routines. |
-| [KnownTypeSet](./knowntypeset) | Représente un ensemble non ordonné (c'est-à-dire une collection d'éléments uniques) contenantType objets dont les noms entièrement ou partiellement qualifiés peuvent être utilisés dans les modèles de document pour invoquer les membres statiques des types correspondants, effectuer des conversions de type, etc. |
+| [KnownTypeSet](./knowntypeset) | Représente un ensemble non ordonné (c'est-à-dire une collection d'éléments uniques) contenantTypeobjets dont les noms entièrement ou partiellement qualifiés peuvent être utilisés dans les modèles de document pour invoquer les membres statiques des types correspondants, effectuer des conversions de type, etc. |
 | [License](./license) | Fournit des méthodes pour autoriser le composant. |
 | [LoadSaveOptions](./loadsaveoptions) | Spécifie des options supplémentaires pour le chargement et l'enregistrement d'un document à assembler. |
 | [Metered](./metered) | Fournit des méthodes pour travailler avec des licences limitées. |

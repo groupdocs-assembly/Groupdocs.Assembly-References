@@ -31,15 +31,15 @@ Dans les modèles de documents, si un élément JSON de niveau supérieur est un
 
 Dans les modèles de documents, vous pouvez travailler avec des valeurs typées d'éléments JSON. Par commodité, le moteur remplace l'ensemble de types simples JSON par le suivant :
 
-* Nullable
-* Nullable
-* Nullable
-* Nullable
-* String
+* `long?`
+* `double?`
+* `bah ?`
+* `DateHeure ?`
+* `chaîne`
 
 Le moteur reconnaît automatiquement les valeurs des types supplémentaires sur leurs représentations JSON.
 
-Pour remplacer le comportement par défaut du chargement des données JSON, initialisez et transmettez un[`JsonDataLoadOptions`](../jsondataloadoptions) instance à un constructeur de cette classe.
+Pour remplacer le comportement par défaut du chargement des données JSON, initialisez et transmettez un[`JsonDataLoadOptions`](../jsondataloadoptions)instance à un constructeur de cette classe.
 
 ### Voir également
 
