@@ -16,7 +16,7 @@ public int IndexInDocument { get; }
 
 ### Примечания
 
-В зависимости от[`DocumentTableOptions`](../../documenttableoptions)указанный, этот индекс может отличаться от индекса this[`DocumentTableColumn`](../../documenttablecolumn) экземпляр в коллекции столбцов соответствующего [`DocumentTable`](../../documenttable) экземпляр.
+В зависимости от[`DocumentTableOptions`](../../documenttableoptions) указанный, этот индекс может отличаться от индекса this[`DocumentTableColumn`](../../documenttablecolumn) экземпляр в коллекции столбцов соответствующего [`DocumentTable`](../../documenttable) экземпляр.
 
 ### Смотрите также
 

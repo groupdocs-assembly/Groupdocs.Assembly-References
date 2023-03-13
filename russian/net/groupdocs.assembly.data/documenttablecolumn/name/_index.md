@@ -23,7 +23,7 @@ public string Name { get; set; }
 * Имя не пустое.
 * Первый символ имени — буква или подчеркивание.
 * Остальные символы имени — это буквы, символы подчеркивания, цифры или следующие символы: '@', '#', '$'.
-* Соответствующий[`DocumentTable`](../../documenttable) объект не содержит[`DocumentTableColumn`](../../documenttablecolumn)экземпляр с тем же именем.
+* Соответствующий[`DocumentTable`](../../documenttable) объект не содержит[`DocumentTableColumn`](../../documenttablecolumn) экземпляр с тем же именем.
 
 ### Смотрите также
 
