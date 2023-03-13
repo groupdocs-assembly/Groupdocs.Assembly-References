@@ -22,12 +22,12 @@ public enum FileFormat
 | Doc | `1` | Specifica il formato del documento binario di Microsoft Word 97 - 2007. |
 | Dot | `2` | Specifica il formato del modello binario di Microsoft Word 97 - 2007. |
 | Docx | `3` | Specifica il formato documento Office Open XML WordprocessingML (senza macro). |
-| Docm | `4` | Specifica il formato documento Office Open XML WordprocessingML con abilitazione macro. |
-| Dotx | `5` | Specifica il formato del modello WordprocessingML di Office Open XML (senza macro). |
-| Dotm | `6` | Specifica il formato del modello abilitato per macro di WordprocessingML di Office Open XML. |
-| FlatOpc | `7` | Specifica il formato WordprocessingML di Office Open XML archiviato in un file XML flat anziché in un pacchetto ZIP. |
-| FlatOpcMacroEnabled | `8` | Specifica il formato documento Office Open XML WordprocessingML con abilitazione macro archiviato in un file XML semplice anziché in un pacchetto ZIP. |
-| FlatOpcTemplate | `9` | Specifica il formato del modello WordprocessingML di Office Open XML (senza macro) archiviato in un file XML semplice anziché in un pacchetto ZIP. |
+| Docm | `4` | Specifica il formato del documento con attivazione macro Office Open XML WordprocessingML. |
+| Dotx | `5` | Specifica il formato Office Open XML WordprocessingML Template (senza macro). |
+| Dotm | `6` | Specifica il formato del modello con attivazione macro Office Open XML WordprocessingML. |
+| FlatOpc | `7` | Specifica il formato Office Open XML WordprocessingML memorizzato in un file XML flat anziché in un pacchetto ZIP. |
+| FlatOpcMacroEnabled | `8` | Specifica il formato del documento con attivazione macro Office Open XML WordprocessingML memorizzato in un file XML flat anziché in un pacchetto ZIP. |
+| FlatOpcTemplate | `9` | Specifica il formato Office Open XML WordprocessingML Template (senza macro) memorizzato in un file XML flat anziché in un pacchetto ZIP. |
 | FlatOpcTemplateMacroEnabled | `10` | Specifica il formato del modello con attivazione macro Office Open XML WordprocessingML memorizzato in un file XML flat anziché in un pacchetto ZIP. |
 | WordML | `11` | Specifica il formato WordprocessingML di Microsoft Word 2003. |
 | Odt | `12` | Specifica il formato del documento di testo ODF. |

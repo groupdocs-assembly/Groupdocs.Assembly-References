@@ -16,7 +16,7 @@ public IEnumerator GetEnumerator()
 
 ### Valore di ritorno
 
-UnIEnumerator oggetto per iterare sugli elementi dell'insieme.
+UNIEnumerator oggetto per iterare sugli elementi dell'insieme.
 
 ### Guarda anche
 

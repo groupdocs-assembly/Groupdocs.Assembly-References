@@ -16,9 +16,9 @@ public string Name { get; set; }
 
 ### Osservazioni
 
-Quando viene specificato il nome dell'oggetto origine dati, è possibile accedere all'oggetto origine dati e ai suoi membri in un documento modello utilizzando il nome.
+Quando viene specificato il nome dell'oggetto origine dati, è possibile accedere all'oggetto origine dati e ai relativi membri in un documento modello utilizzando il nome.
 
-Quando il nome dell'oggetto origine dati è nullo o vuoto, è comunque possibile accedere ai membri dell'oggetto origine dati in un documento modello utilizzando l'accesso ai membri dell'oggetto contesto (consultare Riferimento alla sintassi del modello per ulteriori informazioni), ma non è possibile accedere al oggetto origine dati stesso.
+Quando il nome dell'oggetto origine dati è nullo o vuoto, è comunque possibile accedere ai membri dell'oggetto origine dati in un documento modello utilizzando l'accesso membro oggetto contesto (vedere Riferimento sintassi modello per ulteriori informazioni), ma non è possibile accedere al oggetto origine dati stesso.
 
 Quando si passano multipli[`DataSourceInfo`](../../datasourceinfo) istanze a[`DocumentAssembler`](../../documentassembler) , solo il nome di il primo oggetto origine dati può essere nullo o vuoto. I nomi degli altri devono essere specificati e univoci.
 

@@ -1,14 +1,14 @@
 ---
 title: BaseXDimension
 second_title: Riferimento API GroupDocs.Assembly per .NET
-description: Ottiene o imposta una dimensione x di base ovvero la larghezza più piccola dellunità di barre e spazi del codice a barre. Misurato inGraphicsUnitgroupdocs.assembly/barcodesettings/graphicsunit .
+description: Ottiene o imposta una dimensione x di base ovvero la larghezza minima dellunità di barre e spazi del codice a barre. Misurata inGraphicsUnitgroupdocs.assembly/barcodesettings/graphicsunit .
 type: docs
 weight: 10
 url: /it/net/groupdocs.assembly/barcodesettings/basexdimension/
 ---
 ## BarcodeSettings.BaseXDimension property
 
-Ottiene o imposta una dimensione x di base, ovvero la larghezza più piccola dell'unità di barre e spazi del codice a barre. Misurato in[`GraphicsUnit`](../graphicsunit) .
+Ottiene o imposta una dimensione x di base, ovvero la larghezza minima dell'unità di barre e spazi del codice a barre. Misurata in[`GraphicsUnit`](../graphicsunit) .
 
 ```csharp
 public float BaseXDimension { get; set; }
@@ -16,7 +16,7 @@ public float BaseXDimension { get; set; }
 
 ### Osservazioni
 
-Quando il ridimensionamento del codice a barre viene applicato tramite un modello, viene calcolata una dimensione x effettiva sulla base della dimensione x e un fattore di scala.
+Quando il ridimensionamento del codice a barre viene applicato tramite un modello, una dimensione x effettiva viene calcolata sulla dimensione x di base e un fattore di ridimensionamento.
 
 ### Guarda anche
 

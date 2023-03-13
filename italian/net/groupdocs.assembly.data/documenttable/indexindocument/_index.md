@@ -1,14 +1,14 @@
 ---
 title: IndexInDocument
 second_title: Riferimento API GroupDocs.Assembly per .NET
-description: Ottiene lindice in base zero originale della tabella corrispondente come da documento di origine.
+description: Ottiene lindice in base zero originale della tabella corrispondente in base al documento di origine.
 type: docs
 weight: 30
 url: /it/net/groupdocs.assembly.data/documenttable/indexindocument/
 ---
 ## DocumentTable.IndexInDocument property
 
-Ottiene l'indice in base zero originale della tabella corrispondente come da documento di origine.
+Ottiene l'indice in base zero originale della tabella corrispondente in base al documento di origine.
 
 ```csharp
 public int IndexInDocument { get; }
@@ -16,7 +16,7 @@ public int IndexInDocument { get; }
 
 ### Osservazioni
 
-A seconda di un[`IDocumentTableLoadHandler`](../../idocumenttableloadhandler) implementazione fornita, questo indice può differire da l'indice di questo[`DocumentTable`](../../documenttable) istanza all'interno della raccolta di tabelle del corrispondente [`DocumentTableSet`](../../documenttableset) istanza, se presente.
+A seconda di an[`IDocumentTableLoadHandler`](../../idocumenttableloadhandler) implementazione fornita, questo indice può differire da l'indice di this[`DocumentTable`](../../documenttable) istanza all'interno della raccolta di tabelle del corrispondente[`DocumentTableSet`](../../documenttableset) istanza, se presente.
 
 ### Guarda anche
 

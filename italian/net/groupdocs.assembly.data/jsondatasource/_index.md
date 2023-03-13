@@ -21,7 +21,7 @@ public class JsonDataSource
 | [JsonDataSource](jsondatasource#constructor)(Stream) | Crea una nuova origine dati con i dati di un flusso JSON utilizzando le opzioni predefinite per l'analisi dei dati JSON. |
 | [JsonDataSource](jsondatasource#constructor_2)(string) | Crea una nuova origine dati con i dati di un file JSON utilizzando le opzioni predefinite per l'analisi dei dati JSON. |
 | [JsonDataSource](jsondatasource#constructor_1)(Stream, JsonDataLoadOptions) | Crea una nuova origine dati con i dati di un flusso JSON utilizzando le opzioni specificate per l'analisi dei dati JSON. |
-| [JsonDataSource](jsondatasource#constructor_3)(string, JsonDataLoadOptions) | Crea una nuova origine dati con i dati di un file JSON utilizzando le opzioni specificate per l'analisi dei dati JSON. |
+| [JsonDataSource](jsondatasource#constructor_3)(string, JsonDataLoadOptions) | Crea una nuova origine dati con dati da un file JSON utilizzando le opzioni specificate per l'analisi dei dati JSON. |
 
 ### Osservazioni
 
@@ -31,15 +31,15 @@ Nei documenti modello, se un elemento JSON di primo livello è un array, a[`Json
 
 Nei documenti modello, puoi lavorare con valori tipizzati di elementi JSON. Per comodità, il motore sostituisce l'insieme di tipi semplici JSON con il seguente:
 
-* Nullable
-* Nullable
-* Nullable
-* Nullable
-* String
+* `lungo?`
+* `Doppio?`
+* `bool?`
+* `Appuntamento?`
+* `corda`
 
-Il motore riconosce automaticamente i valori dei tipi extra sulle loro rappresentazioni JSON.
+Il motore riconosce automaticamente i valori dei tipi extra in base alle loro rappresentazioni JSON.
 
-Per sovrascrivere il comportamento predefinito del caricamento dei dati JSON, inizializzare e passare a[`JsonDataLoadOptions`](../jsondataloadoptions) instance a un costruttore di questa classe.
+Per sovrascrivere il comportamento predefinito del caricamento dei dati JSON, inizializza e passa a[`JsonDataLoadOptions`](../jsondataloadoptions)instance a un costruttore di questa classe.
 
 ### Guarda anche
 

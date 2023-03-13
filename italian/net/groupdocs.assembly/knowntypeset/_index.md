@@ -1,14 +1,14 @@
 ---
 title: KnownTypeSet
 second_title: Riferimento API GroupDocs.Assembly per .NET
-description: Rappresenta un insieme non ordinato ovvero una raccolta di elementi univoci contenenteType oggetti i cui nomi completi o parzialmente qualificati possono essere utilizzati allinterno dei modelli di documento per richiamare i membri statici dei tipi corrispondenti eseguire cast di tipi ecc.
+description: Rappresenta un set non ordinato ovvero una raccolta di elementi univoci contenenteTypeoggetti i cui nomi completi o parzialmente qualificati possono essere utilizzati allinterno dei modelli di documento per richiamare i membri statici dei tipi corrispondenti eseguire cast di tipi ecc.
 type: docs
 weight: 230
 url: /it/net/groupdocs.assembly/knowntypeset/
 ---
 ## KnownTypeSet class
 
-Rappresenta un insieme non ordinato (ovvero una raccolta di elementi univoci) contenenteType oggetti i cui nomi completi o parzialmente qualificati possono essere utilizzati all'interno dei modelli di documento per richiamare i membri statici dei tipi corrispondenti, eseguire cast di tipi, ecc.
+Rappresenta un set non ordinato (ovvero una raccolta di elementi univoci) contenenteTypeoggetti i cui nomi completi o parzialmente qualificati possono essere utilizzati all'interno dei modelli di documento per richiamare i membri statici dei tipi corrispondenti, eseguire cast di tipi, ecc.
 
 ```csharp
 public class KnownTypeSet : IEnumerable
@@ -24,10 +24,10 @@ public class KnownTypeSet : IEnumerable
 
 | Nome | Descrizione |
 | --- | --- |
-| [Add](../../groupdocs.assembly/knowntypeset/add)(Type) | Aggiunge il specificatoType opporsi all'insieme. TiriArgumentException in i seguenti casi: |
+| [Add](../../groupdocs.assembly/knowntypeset/add)(Type) | Aggiunge l'elemento specificatoType opporsi al set. |
 | [Clear](../../groupdocs.assembly/knowntypeset/clear)() | Rimuove tutti gli elementi dal set. |
 | [GetEnumerator](../../groupdocs.assembly/knowntypeset/getenumerator)() | Restituisce AnIEnumerator oggetto per scorrere gli elementi dell'insieme. |
-| [Remove](../../groupdocs.assembly/knowntypeset/remove)(Type) | Rimuove l'oggetto specificatoType oggetto dal set. GettaArgumentException se *type* è nullo. |
+| [Remove](../../groupdocs.assembly/knowntypeset/remove)(Type) | Rimuove l'oggetto specificatoType oggetto dal set. |
 
 ### Guarda anche
 

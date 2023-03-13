@@ -1,14 +1,14 @@
 ---
 title: Relations
 second_title: Riferimento API GroupDocs.Assembly per .NET
-description: Ottiene la raccolta delle relazioni padrefiglio definite per le tabelle di documenti di questo set.
+description: Ottiene la raccolta delle relazioni padrefiglio definite per le tabelle dei documenti di questo insieme.
 type: docs
 weight: 20
 url: /it/net/groupdocs.assembly.data/documenttableset/relations/
 ---
 ## DocumentTableSet.Relations property
 
-Ottiene la raccolta delle relazioni padre-figlio definite per le tabelle di documenti di questo set.
+Ottiene la raccolta delle relazioni padre-figlio definite per le tabelle dei documenti di questo insieme.
 
 ```csharp
 public DocumentTableRelationCollection Relations { get; }

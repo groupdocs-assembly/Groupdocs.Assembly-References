@@ -16,7 +16,7 @@ public bool FirstRowContainsColumnNames { get; set; }
 
 ### Osservazioni
 
-Se i nomi delle colonne non sono impostati per essere ottenuti dalla prima riga estratta di una tabella del documento, vengono utilizzati i nomi delle colonne predefinite. Per i documenti dei formati di file Spreadsheet, i nomi di colonna predefiniti sono definiti come A, B, C, ... Z, AA, AB e così via. Per i documenti di altri formati di file , i nomi di colonna predefiniti sono definiti come Colonna1, Colonna2, Colonna3 e così via.
+Se i nomi delle colonne non sono impostati per essere ottenuti dalla prima riga estratta di una tabella del documento, vengono invece utilizzati i nomi delle colonne predefiniti. Per i documenti dei formati di file Spreadsheet, i nomi di colonna predefiniti sono definiti come A, B, C, ... Z, AA, AB e così via. Per i documenti di altri formati di file , i nomi di colonna predefiniti sono definiti come Colonna1, Colonna2, Colonna3 e così via.
 
 ### Guarda anche
 

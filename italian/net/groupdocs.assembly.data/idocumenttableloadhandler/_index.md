@@ -1,14 +1,14 @@
 ---
 title: IDocumentTableLoadHandler
 second_title: Riferimento API GroupDocs.Assembly per .NET
-description: Sostituisce il caricamento predefinito diDocumentTable./documenttable oggetti durante la creazione di aDocumentTableSet./documenttableset istanza.
+description: Sostituisce il caricamento predefinito diDocumentTable./documenttable oggetti durante la creazione di un fileDocumentTableSet./documenttableset istanza.
 type: docs
 weight: 130
 url: /it/net/groupdocs.assembly.data/idocumenttableloadhandler/
 ---
 ## IDocumentTableLoadHandler interface
 
-Sostituisce il caricamento predefinito di[`DocumentTable`](../documenttable) oggetti durante la creazione di a[`DocumentTableSet`](../documenttableset) istanza.
+Sostituisce il caricamento predefinito di[`DocumentTable`](../documenttable) oggetti durante la creazione di un file[`DocumentTableSet`](../documenttableset) istanza.
 
 ```csharp
 public interface IDocumentTableLoadHandler
@@ -22,7 +22,7 @@ public interface IDocumentTableLoadHandler
 
 ### Osservazioni
 
-Implementa questa interfaccia se vuoi eliminare il caricamento di specifici[`DocumentTable`](../documenttable) oggetti o fornire specifici [`DocumentTableOptions`](../documenttableoptions) per le tabelle dei documenti in fase di caricamento.
+Implementa questa interfaccia se vuoi scartare il caricamento di file specifici[`DocumentTable`](../documenttable) oggetti o fornire specifico[`DocumentTableOptions`](../documenttableoptions) per le tabelle dei documenti in fase di caricamento.
 
 ### Guarda anche
 

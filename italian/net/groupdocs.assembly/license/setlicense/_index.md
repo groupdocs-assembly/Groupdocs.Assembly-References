@@ -16,7 +16,7 @@ public void SetLicense(string licenseName)
 
 | Parametro | Tipo | Descrizione |
 | --- | --- | --- |
-| licenseName | String | Può essere un nome file completo o breve o il nome di una risorsa incorporata. Utilizzare una stringa vuota per passare alla modalità di valutazione. |
+| licenseName | String | Può essere un nome file completo o breve o il nome di una risorsa incorporata. Usa una stringa vuota per passare alla modalità di valutazione. |
 
 ### Osservazioni
 
@@ -24,11 +24,11 @@ Tenta di trovare la licenza nelle seguenti posizioni:
 
 1. Percorso esplicito.
 
-2. La cartella che contiene l'assembly del componente GroupDocs.
+2. La cartella che contiene l'assieme del componente GroupDocs.
 
 3. La cartella che contiene l'assembly chiamante del client.
 
-4. La cartella che contiene l'assembly voce (avvio).
+4. La cartella che contiene l'assembly della voce (avvio).
 
 5. Una risorsa incorporata nell'assembly chiamante del client.
 
@@ -54,7 +54,7 @@ public void SetLicense(Stream stream)
 
 ### Osservazioni
 
-Utilizzare questo metodo per caricare una licenza da uno stream.
+Utilizzare questo metodo per caricare una licenza da un flusso.
 
 ### Guarda anche
 

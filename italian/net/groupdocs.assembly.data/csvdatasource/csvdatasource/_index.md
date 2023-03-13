@@ -1,14 +1,14 @@
 ---
 title: CsvDataSource
 second_title: Riferimento API GroupDocs.Assembly per .NET
-description: Crea una nuova origine dati con i dati di un file CSV utilizzando le opzioni predefinite per lanalisi dei dati CSV.
+description: Crea una nuova origine dati con dati da un file CSV utilizzando le opzioni predefinite per lanalisi dei dati CSV.
 type: docs
 weight: 10
 url: /it/net/groupdocs.assembly.data/csvdatasource/csvdatasource/
 ---
 ## CsvDataSource(string) {#constructor_2}
 
-Crea una nuova origine dati con i dati di un file CSV utilizzando le opzioni predefinite per l'analisi dei dati CSV.
+Crea una nuova origine dati con dati da un file CSV utilizzando le opzioni predefinite per l'analisi dei dati CSV.
 
 ```csharp
 public CsvDataSource(string csvPath)
@@ -28,7 +28,7 @@ public CsvDataSource(string csvPath)
 
 ## CsvDataSource(string, CsvDataLoadOptions) {#constructor_3}
 
-Crea una nuova origine dati con i dati di un file CSV utilizzando le opzioni specificate per l'analisi dei dati CSV.
+Crea una nuova origine dati con dati da un file CSV utilizzando le opzioni specificate per l'analisi dei dati CSV.
 
 ```csharp
 public CsvDataSource(string csvPath, CsvDataLoadOptions options)
@@ -50,7 +50,7 @@ public CsvDataSource(string csvPath, CsvDataLoadOptions options)
 
 ## CsvDataSource(Stream) {#constructor}
 
-Crea una nuova origine dati con i dati di un flusso CSV utilizzando le opzioni predefinite per l'analisi dei dati CSV.
+Crea una nuova origine dati con dati da un flusso CSV utilizzando le opzioni predefinite per l'analisi dei dati CSV.
 
 ```csharp
 public CsvDataSource(Stream csvStream)
@@ -70,7 +70,7 @@ public CsvDataSource(Stream csvStream)
 
 ## CsvDataSource(Stream, CsvDataLoadOptions) {#constructor_1}
 
-Crea una nuova origine dati con i dati di un flusso CSV utilizzando le opzioni specificate per l'analisi dei dati CSV.
+Crea una nuova origine dati con dati da un flusso CSV utilizzando le opzioni specificate per l'analisi dei dati CSV.
 
 ```csharp
 public CsvDataSource(Stream csvStream, CsvDataLoadOptions options)

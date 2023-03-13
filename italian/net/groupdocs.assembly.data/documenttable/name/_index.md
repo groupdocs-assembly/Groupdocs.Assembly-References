@@ -16,14 +16,14 @@ public string Name { get; set; }
 
 ### Osservazioni
 
-Se il nome della tabella viene letto da un documento, il nome viene corretto automaticamente in modo che sia valido. Tuttavia, se il nome della tabella viene impostato manualmente tramite questa proprietà e il nome non è valido, viene generata un'eccezione.
+Se il nome della tabella viene letto da un documento, il nome viene automaticamente corretto in modo che sia valido. Tuttavia, se il nome della tabella viene impostato manualmente tramite questa proprietà e il nome non è valido, viene generata un'eccezione.
 
-Il nome della tabella è considerato valido se sono soddisfatte le seguenti condizioni:
+Il nome della tabella è considerato valido, se sono soddisfatte le seguenti condizioni:
 
 * Il nome non è vuoto.
 * Il primo carattere del nome è una lettera o un trattino basso.
 * Il resto dei caratteri del nome sono lettere, trattini bassi, cifre o i seguenti caratteri: '@', '#', '$'.
-* Il corrispondente[`DocumentTableSet`](../../documenttableset) l'oggetto non contiene a[`DocumentTable`](../../documenttable)istanza con lo stesso nome.
+* Il corrispondente[`DocumentTableSet`](../../documenttableset) l'oggetto non contiene a[`DocumentTable`](../../documenttable) istanza con lo stesso nome.
 
 ### Guarda anche
 

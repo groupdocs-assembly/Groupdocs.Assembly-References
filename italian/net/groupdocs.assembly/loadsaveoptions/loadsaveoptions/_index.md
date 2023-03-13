@@ -24,7 +24,7 @@ public LoadSaveOptions()
 
 ## LoadSaveOptions(FileFormat) {#constructor_1}
 
-Crea una nuova istanza di questa classe con il formato file specificato per salvare un documento assemblato in.
+Crea una nuova istanza di questa classe con il formato di file specificato in cui salvare un documento assemblato.
 
 ```csharp
 public LoadSaveOptions(FileFormat saveFormat)

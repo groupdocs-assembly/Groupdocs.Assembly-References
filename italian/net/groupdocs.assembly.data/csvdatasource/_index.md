@@ -18,10 +18,10 @@ public class CsvDataSource
 
 | Nome | Descrizione |
 | --- | --- |
-| [CsvDataSource](csvdatasource#constructor)(Stream) | Crea una nuova origine dati con i dati di un flusso CSV utilizzando le opzioni predefinite per l'analisi dei dati CSV. |
-| [CsvDataSource](csvdatasource#constructor_2)(string) | Crea una nuova origine dati con i dati di un file CSV utilizzando le opzioni predefinite per l'analisi dei dati CSV. |
-| [CsvDataSource](csvdatasource#constructor_1)(Stream, CsvDataLoadOptions) | Crea una nuova origine dati con i dati di un flusso CSV utilizzando le opzioni specificate per l'analisi dei dati CSV. |
-| [CsvDataSource](csvdatasource#constructor_3)(string, CsvDataLoadOptions) | Crea una nuova origine dati con i dati di un file CSV utilizzando le opzioni specificate per l'analisi dei dati CSV. |
+| [CsvDataSource](csvdatasource#constructor)(Stream) | Crea una nuova origine dati con dati da un flusso CSV utilizzando le opzioni predefinite per l'analisi dei dati CSV. |
+| [CsvDataSource](csvdatasource#constructor_2)(string) | Crea una nuova origine dati con dati da un file CSV utilizzando le opzioni predefinite per l'analisi dei dati CSV. |
+| [CsvDataSource](csvdatasource#constructor_1)(Stream, CsvDataLoadOptions) | Crea una nuova origine dati con dati da un flusso CSV utilizzando le opzioni specificate per l'analisi dei dati CSV. |
+| [CsvDataSource](csvdatasource#constructor_3)(string, CsvDataLoadOptions) | Crea una nuova origine dati con dati da un file CSV utilizzando le opzioni specificate per l'analisi dei dati CSV. |
 
 ### Osservazioni
 
@@ -31,15 +31,15 @@ Nei documenti modello, a[`CsvDataSource`](../csvdatasource) instance dovrebbe es
 
 I tipi di dati dei valori separati da virgole vengono determinati automaticamente in base alle loro rappresentazioni di stringa. Quindi nei documenti template , puoi lavorare con valori tipizzati piuttosto che solo stringhe. Il motore è in grado di riconoscere automaticamente i valori dei seguenti tipi:
 
-* Nullable
-* Nullable
-* Nullable
-* Nullable
-* String
+* `lungo?`
+* `Doppio?`
+* `bool?`
+* `Appuntamento?`
+* `corda`
 
 Si noti che affinché il riconoscimento automatico dei tipi di dati funzioni, le rappresentazioni di stringa dei valori separati da virgola devono essere formate utilizzando impostazioni di cultura invarianti.
 
-Per sovrascrivere il comportamento predefinito del caricamento dei dati CSV, inizializzare e passare a[`CsvDataLoadOptions`](../csvdataloadoptions) instance a un costruttore di questa classe.
+Per sovrascrivere il comportamento predefinito del caricamento dei dati CSV, inizializzare e passare a[`CsvDataLoadOptions`](../csvdataloadoptions)instance a un costruttore di questa classe.
 
 ### Guarda anche
 

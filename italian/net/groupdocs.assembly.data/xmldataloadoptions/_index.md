@@ -24,7 +24,7 @@ public class XmlDataLoadOptions
 
 | Nome | Descrizione |
 | --- | --- |
-| [AlwaysGenerateRootObject](../../groupdocs.assembly.data/xmldataloadoptions/alwaysgeneraterootobject) { get; set; } | Ottiene o imposta un flag che indica se un'origine dati generata conterrà sempre un oggetto per un elemento radice XML . Se un elemento radice XML non ha attributi e tutti i suoi elementi figlio hanno lo stesso nome, tale oggetto non viene creato per impostazione predefinita. |
+| [AlwaysGenerateRootObject](../../groupdocs.assembly.data/xmldataloadoptions/alwaysgeneraterootobject) { get; set; } | Ottiene o imposta un flag che indica se un'origine dati generata conterrà sempre un oggetto per un elemento radice XML . Se un elemento radice XML non ha attributi e tutti i suoi elementi figlio hanno gli stessi nomi, tale oggetto non viene creato per impostazione predefinita. |
 
 ### Osservazioni
 

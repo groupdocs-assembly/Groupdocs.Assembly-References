@@ -1,20 +1,22 @@
 ---
 title: Add
 second_title: Riferimento API GroupDocs.Assembly per .NET
-description: Aggiunge il specificatoType opporsi allinsieme. TiriArgumentException in i seguenti casi
+description: Aggiunge lelemento specificatoType opporsi al set.
 type: docs
 weight: 20
 url: /it/net/groupdocs.assembly/knowntypeset/add/
 ---
 ## KnownTypeSet.Add method
 
-Aggiunge il specificatoType opporsi all'insieme. TiriArgumentException in i seguenti casi:
+Aggiunge l'elemento specificatoType opporsi al set.
+
+GettaArgumentException nei seguenti casi:
 
 -*type* è zero.
 
 -*type* rappresenta un tipo vuoto.
 
--*type*rappresenta un tipo invisibile, ovvero un tipo non pubblico o un tipo annidato pubblico che ha un tipo esterno non pubblico.
+-*type* rappresenta un tipo invisibile, ovvero un tipo non pubblico o un tipo annidato pubblico che ha un tipo esterno non pubblico.
 
 -*type* rappresenta un tipo generico.
 

@@ -1,14 +1,14 @@
 ---
 title: AlwaysGenerateRootObject
 second_title: Riferimento API GroupDocs.Assembly per .NET
-description: Ottiene o imposta un flag che indica se unorigine dati generata conterrà sempre un oggetto per un elemento radice XML . Se un elemento radice XML non ha attributi e tutti i suoi elementi figlio hanno lo stesso nome tale oggetto non viene creato per impostazione predefinita.
+description: Ottiene o imposta un flag che indica se unorigine dati generata conterrà sempre un oggetto per un elemento radice XML . Se un elemento radice XML non ha attributi e tutti i suoi elementi figlio hanno gli stessi nomi tale oggetto non viene creato per impostazione predefinita.
 type: docs
 weight: 20
 url: /it/net/groupdocs.assembly.data/xmldataloadoptions/alwaysgeneraterootobject/
 ---
 ## XmlDataLoadOptions.AlwaysGenerateRootObject property
 
-Ottiene o imposta un flag che indica se un'origine dati generata conterrà sempre un oggetto per un elemento radice XML . Se un elemento radice XML non ha attributi e tutti i suoi elementi figlio hanno lo stesso nome, tale oggetto non viene creato per impostazione predefinita.
+Ottiene o imposta un flag che indica se un'origine dati generata conterrà sempre un oggetto per un elemento radice XML . Se un elemento radice XML non ha attributi e tutti i suoi elementi figlio hanno gli stessi nomi, tale oggetto non viene creato per impostazione predefinita.
 
 ```csharp
 public bool AlwaysGenerateRootObject { get; set; }

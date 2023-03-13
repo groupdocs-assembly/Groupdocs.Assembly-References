@@ -48,7 +48,7 @@ public XmlDataSource(Stream xmlStream)
 
 ## XmlDataSource(string, string) {#constructor_6}
 
-Crea una nuova origine dati con i dati di un file XML utilizzando un file XML Schema Definition. Le opzioni predefinite vengono utilizzate per il caricamento dei dati XML.
+Crea una nuova origine dati con dati da un file XML utilizzando un file XML Schema Definition. Le opzioni predefinite vengono utilizzate per il caricamento dei dati XML.
 
 ```csharp
 public XmlDataSource(string xmlPath, string xmlSchemaPath)
@@ -69,7 +69,7 @@ public XmlDataSource(string xmlPath, string xmlSchemaPath)
 
 ## XmlDataSource(Stream, Stream) {#constructor_2}
 
-Crea una nuova origine dati con i dati da un flusso XML utilizzando un flusso XML Schema Definition. Le opzioni predefinite vengono utilizzate per il caricamento dei dati XML.
+Crea una nuova origine dati con i dati di un flusso XML utilizzando un flusso XML Schema Definition. Le opzioni predefinite vengono utilizzate per il caricamento dei dati XML.
 
 ```csharp
 public XmlDataSource(Stream xmlStream, Stream xmlSchemaStream)
@@ -90,7 +90,7 @@ public XmlDataSource(Stream xmlStream, Stream xmlSchemaStream)
 
 ## XmlDataSource(string, XmlDataLoadOptions) {#constructor_5}
 
-Crea una nuova origine dati con i dati di un file XML utilizzando le opzioni specificate per il caricamento dei dati XML.
+Crea una nuova origine dati con dati da un file XML utilizzando le opzioni specificate per il caricamento dei dati XML.
 
 ```csharp
 public XmlDataSource(string xmlPath, XmlDataLoadOptions options)
@@ -112,7 +112,7 @@ public XmlDataSource(string xmlPath, XmlDataLoadOptions options)
 
 ## XmlDataSource(Stream, XmlDataLoadOptions) {#constructor_1}
 
-Crea una nuova origine dati con i dati da un flusso XML utilizzando le opzioni specificate per il caricamento dei dati XML.
+Crea una nuova origine dati con dati da un flusso XML utilizzando le opzioni specificate per il caricamento dei dati XML.
 
 ```csharp
 public XmlDataSource(Stream xmlStream, XmlDataLoadOptions options)

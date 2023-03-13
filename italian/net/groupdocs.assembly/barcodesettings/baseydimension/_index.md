@@ -1,14 +1,14 @@
 ---
 title: BaseYDimension
 second_title: Riferimento API GroupDocs.Assembly per .NET
-description: Ottiene o imposta una dimensione y di base ovvero laltezza più piccola dellunità dei moduli di codici a barre 2D. Misurato inGraphicsUnitgroupdocs.assembly/barcodesettings/graphicsunit .
+description: Ottiene o imposta una dimensione y di base ovvero laltezza minima dellunità di moduli di codici a barre 2D. Misurata inGraphicsUnitgroupdocs.assembly/barcodesettings/graphicsunit .
 type: docs
 weight: 20
 url: /it/net/groupdocs.assembly/barcodesettings/baseydimension/
 ---
 ## BarcodeSettings.BaseYDimension property
 
-Ottiene o imposta una dimensione y di base, ovvero l'altezza più piccola dell'unità dei moduli di codici a barre 2D. Misurato in[`GraphicsUnit`](../graphicsunit) .
+Ottiene o imposta una dimensione y di base, ovvero l'altezza minima dell'unità di moduli di codici a barre 2D. Misurata in[`GraphicsUnit`](../graphicsunit) .
 
 ```csharp
 public float BaseYDimension { get; set; }

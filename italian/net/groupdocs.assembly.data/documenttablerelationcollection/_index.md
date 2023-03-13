@@ -31,7 +31,7 @@ public class DocumentTableRelationCollection : IEnumerable
 | [GetEnumerator](../../groupdocs.assembly.data/documenttablerelationcollection/getenumerator)() | Restituisce un enumeratore da iterare[`DocumentTableRelation`](../documenttablerelation) oggetti di questa collezione. |
 | [IndexOf](../../groupdocs.assembly.data/documenttablerelationcollection/indexof)(DocumentTableRelation) | Restituisce l'indice della relazione specificata all'interno di questa raccolta. |
 | [Remove](../../groupdocs.assembly.data/documenttablerelationcollection/remove)(DocumentTableRelation) | Rimuove la relazione specificata dalla raccolta. |
-| [RemoveAt](../../groupdocs.assembly.data/documenttablerelationcollection/removeat)(int) | Rimuove la relazione in corrispondenza dell'indice specificato dalla raccolta. |
+| [RemoveAt](../../groupdocs.assembly.data/documenttablerelationcollection/removeat)(int) | Rimuove la relazione all'indice specificato dalla raccolta. |
 
 ### Guarda anche
 

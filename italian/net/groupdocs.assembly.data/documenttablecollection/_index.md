@@ -33,7 +33,7 @@ public class DocumentTableCollection : IEnumerable
 
 ### Osservazioni
 
-La raccolta viene compilata automaticamente durante il caricamento delle tabelle corrispondenti da un documento e non può essere modificata. Tuttavia, le proprietà di[`DocumentTable`](../documenttable)gli oggetti contenuti all'interno della collezione possono essere modificati.
+La raccolta viene compilata automaticamente durante il caricamento delle tabelle corrispondenti da un documento e non può essere modificata. Tuttavia, le proprietà di[`DocumentTable`](../documenttable) gli oggetti contenuti all'interno della collezione possono essere modificati.
 
 ### Guarda anche
 

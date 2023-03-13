@@ -1,14 +1,16 @@
 ---
 title: Remove
 second_title: Riferimento API GroupDocs.Assembly per .NET
-description: Rimuove loggetto specificatoType oggetto dal set. GettaArgumentException se type è nullo.
+description: Rimuove loggetto specificatoType oggetto dal set.
 type: docs
 weight: 50
 url: /it/net/groupdocs.assembly/knowntypeset/remove/
 ---
 ## KnownTypeSet.Remove method
 
-Rimuove l'oggetto specificatoType oggetto dal set. GettaArgumentException se *type* è nullo.
+Rimuove l'oggetto specificatoType oggetto dal set.
+
+GettaArgumentException Se*type* è zero.
 
 ```csharp
 public void Remove(Type type)

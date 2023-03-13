@@ -28,7 +28,7 @@ public JsonDataSource(string jsonPath)
 
 ## JsonDataSource(string, JsonDataLoadOptions) {#constructor_3}
 
-Crea una nuova origine dati con i dati di un file JSON utilizzando le opzioni specificate per l'analisi dei dati JSON.
+Crea una nuova origine dati con dati da un file JSON utilizzando le opzioni specificate per l'analisi dei dati JSON.
 
 ```csharp
 public JsonDataSource(string jsonPath, JsonDataLoadOptions options)

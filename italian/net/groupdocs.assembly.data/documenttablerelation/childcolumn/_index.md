@@ -1,14 +1,14 @@
 ---
 title: ChildColumn
 second_title: Riferimento API GroupDocs.Assembly per .NET
-description: Ottiene la colonna figlia di questa relazione.
+description: Ottiene la colonna figlio di questa relazione.
 type: docs
 weight: 10
 url: /it/net/groupdocs.assembly.data/documenttablerelation/childcolumn/
 ---
 ## DocumentTableRelation.ChildColumn property
 
-Ottiene la colonna figlia di questa relazione.
+Ottiene la colonna figlio di questa relazione.
 
 ```csharp
 public DocumentTableColumn ChildColumn { get; }
