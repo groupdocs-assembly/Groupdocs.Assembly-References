@@ -1,14 +1,16 @@
 ---
 title: Remove
 second_title: .NET API Başvurusu için GroupDocs.Assembly
-description: Belirtilenleri kaldırırType kümeden nesne. AtarArgumentException if type null.
+description: Belirtilenleri kaldırırType kümeden nesne.
 type: docs
 weight: 50
 url: /tr/net/groupdocs.assembly/knowntypeset/remove/
 ---
 ## KnownTypeSet.Remove method
 
-Belirtilenleri kaldırırType kümeden nesne. AtarArgumentException if *type* null.
+Belirtilenleri kaldırırType kümeden nesne.
+
+AtarArgumentException eğer*type* boş.
 
 ```csharp
 public void Remove(Type type)

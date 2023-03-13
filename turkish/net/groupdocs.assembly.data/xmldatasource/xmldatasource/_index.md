@@ -48,7 +48,7 @@ public XmlDataSource(Stream xmlStream)
 
 ## XmlDataSource(string, string) {#constructor_6}
 
-Bir XML Şema Tanımı dosyası kullanarak bir XML dosyasındaki verilerle yeni bir veri kaynağı oluşturur. XML verilerinin yüklenmesi için varsayılan options kullanılır.
+Bir XML Şema Tanımı dosyası kullanarak bir XML dosyasındaki verilerle yeni bir veri kaynağı oluşturur. Varsayılan options , XML veri yüklemesi için kullanılır.
 
 ```csharp
 public XmlDataSource(string xmlPath, string xmlSchemaPath)
@@ -69,7 +69,7 @@ public XmlDataSource(string xmlPath, string xmlSchemaPath)
 
 ## XmlDataSource(Stream, Stream) {#constructor_2}
 
-Bir XML Şema Tanımı akışı kullanarak bir XML akışından gelen verilerle yeni bir veri kaynağı oluşturur. XML verilerinin yüklenmesi için varsayılan options kullanılır.
+XML Şema Tanımı akışını kullanarak bir XML akışından alınan verilerle yeni bir veri kaynağı oluşturur. Varsayılan options , XML veri yüklemesi için kullanılır.
 
 ```csharp
 public XmlDataSource(Stream xmlStream, Stream xmlSchemaStream)
@@ -90,7 +90,7 @@ public XmlDataSource(Stream xmlStream, Stream xmlSchemaStream)
 
 ## XmlDataSource(string, XmlDataLoadOptions) {#constructor_5}
 
-Belirtilen XML veri yükleme seçeneklerini kullanarak bir XML dosyasındaki verilerle yeni bir veri kaynağı oluşturur.
+XML veri yükleme için belirtilen seçenekleri kullanarak bir XML dosyasındaki verilerle yeni bir veri kaynağı oluşturur.
 
 ```csharp
 public XmlDataSource(string xmlPath, XmlDataLoadOptions options)
@@ -112,7 +112,7 @@ public XmlDataSource(string xmlPath, XmlDataLoadOptions options)
 
 ## XmlDataSource(Stream, XmlDataLoadOptions) {#constructor_1}
 
-Belirtilen XML veri yükleme seçeneklerini kullanarak bir XML akışındaki verilerle yeni bir veri kaynağı oluşturur.
+XML veri yükleme için belirtilen seçenekleri kullanarak bir XML akışındaki verilerle yeni bir veri kaynağı oluşturur.
 
 ```csharp
 public XmlDataSource(Stream xmlStream, XmlDataLoadOptions options)
@@ -157,7 +157,7 @@ public XmlDataSource(string xmlPath, string xmlSchemaPath, XmlDataLoadOptions op
 
 ## XmlDataSource(Stream, Stream, XmlDataLoadOptions) {#constructor_3}
 
-Bir XML Şema Tanımı akışı kullanarak bir XML akışından gelen verilerle yeni bir veri kaynağı oluşturur. Belirtilen seçenekleri, XML verilerinin yüklenmesi için kullanılır.
+XML Şema Tanımı akışını kullanarak bir XML akışından alınan verilerle yeni bir veri kaynağı oluşturur. Belirtilen seçenekleri, XML verilerinin yüklenmesi için kullanılır.
 
 ```csharp
 public XmlDataSource(Stream xmlStream, Stream xmlSchemaStream, XmlDataLoadOptions options)

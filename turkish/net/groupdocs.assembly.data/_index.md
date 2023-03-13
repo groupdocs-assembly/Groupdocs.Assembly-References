@@ -13,15 +13,15 @@ Bir belgeyi bir araya getirirken kullanılacak harici belgelerin verilerine eri�
 | Sınıf | Tanım |
 | --- | --- |
 | [CsvDataLoadOptions](./csvdataloadoptions) | CSV verilerini ayrıştırma seçeneklerini temsil eder. |
-| [CsvDataSource](./csvdatasource) | Bir belgeyi birleştirirken kullanılacak bir CSV dosyası veya akışının verilerine erişim sağlar. |
+| [CsvDataSource](./csvdatasource) | Bir belgeyi bir araya getirirken kullanılacak bir CSV dosyasının veya akışın verilerine erişim sağlar. |
 | [DocumentTable](./documenttable) | Bir belgeyi birleştirirken kullanılmak üzere harici bir belgede bulunan tek bir tablonun (veya elektronik tablonun) verilerine erişim sağlar. |
-| [DocumentTableCollection](./documenttablecollection) | Şunların salt okunur bir koleksiyonunu temsil eder:[`DocumentTable`](../groupdocs.assembly.data/documenttable) belirli bir nesnenin[`DocumentTableSet`](../groupdocs.assembly.data/documenttableset) örnek. |
+| [DocumentTableCollection](./documenttablecollection) | Salt okunur bir koleksiyonu temsil eder.[`DocumentTable`](../groupdocs.assembly.data/documenttable) belirli bir nesne[`DocumentTableSet`](../groupdocs.assembly.data/documenttableset) örneği. |
 | [DocumentTableColumn](./documenttablecolumn) | Belirli bir tek sütunu temsil eder[`DocumentTable`](../groupdocs.assembly.data/documenttable) nesne. |
-| [DocumentTableColumnCollection](./documenttablecolumncollection) | Şunların salt okunur bir koleksiyonunu temsil eder:[`DocumentTableColumn`](../groupdocs.assembly.data/documenttablecolumn) belirli bir nesnesi[`DocumentTable`](../groupdocs.assembly.data/documenttable) örnek. |
-| [DocumentTableLoadArgs](./documenttableloadargs) | için veri sağlar[`Handle`](../groupdocs.assembly.data/idocumenttableloadhandler/handle) yöntem. |
+| [DocumentTableColumnCollection](./documenttablecolumncollection) | Salt okunur bir koleksiyonu temsil eder.[`DocumentTableColumn`](../groupdocs.assembly.data/documenttablecolumn) belirli bir nesnesi[`DocumentTable`](../groupdocs.assembly.data/documenttable) örnek. |
+| [DocumentTableLoadArgs](./documenttableloadargs) | Şunun için veri sağlar:[`Handle`](../groupdocs.assembly.data/idocumenttableloadhandler/handle)yöntem. |
 | [DocumentTableOptions](./documenttableoptions) | Bir belge tablosundan veri çıkarmayı kontrol etmek için bir dizi seçenek sağlar. |
 | [DocumentTableRelation](./documenttablerelation) | İki kişi arasındaki üst-alt ilişkisini temsil eder[`DocumentTable`](../groupdocs.assembly.data/documenttable) nesneler. |
-| [DocumentTableRelationCollection](./documenttablerelationcollection) | koleksiyonunu temsil eder[`DocumentTableRelation`](../groupdocs.assembly.data/documenttablerelation) tek bir nesne[`DocumentTableSet`](../groupdocs.assembly.data/documenttableset) örnek. |
+| [DocumentTableRelationCollection](./documenttablerelationcollection) | koleksiyonunu temsil eder[`DocumentTableRelation`](../groupdocs.assembly.data/documenttablerelation) tek bir nesne[`DocumentTableSet`](../groupdocs.assembly.data/documenttableset) örneği. |
 | [DocumentTableSet](./documenttableset) | Bir belgeyi birleştirirken kullanılmak üzere harici bir belgede bulunan birden çok tablonun (veya elektronik tabloların) verilerine erişim sağlar. Ayrıca, belge tabloları için ebeveyn-çocuk ilişkilerinin tanımlanmasını sağlar, böylece şablon belgelerdeki ilgili verilere erişimi basitleştirir. |
 | [JsonDataLoadOptions](./jsondataloadoptions) | JSON verilerini ayrıştırma seçeneklerini temsil eder. |
 | [JsonDataSource](./jsondatasource) | Bir belgeyi bir araya getirirken kullanılacak bir JSON dosyasının veya akışın verilerine erişim sağlar. |
@@ -31,7 +31,7 @@ Bir belgeyi bir araya getirirken kullanılacak harici belgelerin verilerine eri�
 
 | Arayüz | Tanım |
 | --- | --- |
-| [IDocumentTableLoadHandler](./idocumenttableloadhandler) | Varsayılan yüklemeyi geçersiz kılar[`DocumentTable`](../groupdocs.assembly.data/documenttable) oluştururken nesneleri[`DocumentTableSet`](../groupdocs.assembly.data/documenttableset) örnek. |
+| [IDocumentTableLoadHandler](./idocumenttableloadhandler) | Varsayılan yüklemeyi geçersiz kılar[`DocumentTable`](../groupdocs.assembly.data/documenttable) oluştururken nesneleri[`DocumentTableSet`](../groupdocs.assembly.data/documenttableset) örneği. |
 ## numaralandırma
 
 | numaralandırma | Tanım |

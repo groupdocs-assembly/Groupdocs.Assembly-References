@@ -1,14 +1,14 @@
 ---
 title: Tables
 second_title: .NET API Başvurusu için GroupDocs.Assembly
-description: Şunların koleksiyonunu alırDocumentTablegroupdocs.assembly.data/documenttable bu kümenin tablolarını temsil eden nesneler.
+description: Koleksiyonunu alırDocumentTablegroupdocs.assembly.data/documenttable bu kümenin tablolarını temsil eden nesneler.
 type: docs
 weight: 30
 url: /tr/net/groupdocs.assembly.data/documenttableset/tables/
 ---
 ## DocumentTableSet.Tables property
 
-Şunların koleksiyonunu alır:[`DocumentTable`](../../documenttable) bu kümenin tablolarını temsil eden nesneler.
+Koleksiyonunu alır[`DocumentTable`](../../documenttable) bu kümenin tablolarını temsil eden nesneler.
 
 ```csharp
 public DocumentTableCollection Tables { get; }

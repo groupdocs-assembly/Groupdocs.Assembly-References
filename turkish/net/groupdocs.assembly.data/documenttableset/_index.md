@@ -28,7 +28,7 @@ public class DocumentTableSet
 | İsim | Tanım |
 | --- | --- |
 | [Relations](../../groupdocs.assembly.data/documenttableset/relations) { get; } | Bu kümenin belge tabloları için tanımlanan ebeveyn-çocuk ilişkileri koleksiyonunu alır. |
-| [Tables](../../groupdocs.assembly.data/documenttableset/tables) { get; } | Şunların koleksiyonunu alır:[`DocumentTable`](../documenttable) bu kümenin tablolarını temsil eden nesneler. |
+| [Tables](../../groupdocs.assembly.data/documenttableset/tables) { get; } | Koleksiyonunu alır[`DocumentTable`](../documenttable) bu kümenin tablolarını temsil eden nesneler. |
 
 ### Notlar
 
@@ -36,7 +36,7 @@ Elektronik Tablo dosya biçimlerindeki belgeler için, bir[`DocumentTableSet`](.
 
 Bir belgeyi bir araya getirirken ilgili tabloların verilerine erişmek için, bu sınıfın bir örneğini veri kaynağı olarak aşağıdakilerden birine iletin[`DocumentAssembler`](../../groupdocs.assembly/documentassembler) .AssembleDocument aşırı yüklemeler.
 
-Şablon belgelerinde, bir[`DocumentTableSet`](../documenttableset) örneğe, sanki o was a gibi davranılmalıdır.DataSet misal. Daha fazla bilgi için şablon sözdizimi referansına bakın.
+Şablon belgelerinde bir[`DocumentTableSet`](../documenttableset) örnek was a gibi aynı şekilde ele alınmalıdır.DataSet misal. Daha fazla bilgi için şablon sözdizimi referansına bakın.
 
 ### Ayrıca bakınız
 

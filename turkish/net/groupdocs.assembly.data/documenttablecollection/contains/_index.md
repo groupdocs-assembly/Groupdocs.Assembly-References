@@ -40,7 +40,7 @@ public bool Contains(DocumentTable table)
 
 | Parametre | Tip | Tanım |
 | --- | --- | --- |
-| table | DocumentTable | Aranacak bir masa. |
+| table | DocumentTable | Aranacak bir tablo. |
 
 ### Geri dönüş değeri
 

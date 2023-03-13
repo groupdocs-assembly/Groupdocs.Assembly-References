@@ -1,14 +1,14 @@
 ---
 title: BaseXDimension
 second_title: .NET API Başvurusu için GroupDocs.Assembly
-description: Bir temel xboyutunu yani barkod çubukları ve boşlukları biriminin en küçük genişliğini alır veya ayarlar. ÖlçülenGraphicsUnitgroupdocs.assembly/barcodesettings/graphicsunit .
+description: Temel x boyutunu yani barkod çubukları ve boşluk biriminin en küçük genişliğini alır veya ayarlar. ÖlçülenGraphicsUnitgroupdocs.assembly/barcodesettings/graphicsunit .
 type: docs
 weight: 10
 url: /tr/net/groupdocs.assembly/barcodesettings/basexdimension/
 ---
 ## BarcodeSettings.BaseXDimension property
 
-Bir temel x-boyutunu, yani barkod çubukları ve boşlukları biriminin en küçük genişliğini alır veya ayarlar. Ölçülen[`GraphicsUnit`](../graphicsunit) .
+Temel x boyutunu, yani barkod çubukları ve boşluk biriminin en küçük genişliğini alır veya ayarlar. Ölçülen[`GraphicsUnit`](../graphicsunit) .
 
 ```csharp
 public float BaseXDimension { get; set; }
@@ -16,7 +16,7 @@ public float BaseXDimension { get; set; }
 
 ### Notlar
 
-Bir şablon aracılığıyla barkod ölçeklendirme uygulandığında, temel x-boyutu ve bir ölçeklendirme faktörü üzerinden gerçek bir x-boyutu hesaplanır.
+Barkod ölçeklendirme bir şablon aracılığıyla uygulandığında, temel x boyutu ve bir ölçeklendirme faktörü temelinde gerçek bir x boyutu hesaplanır.
 
 ### Ayrıca bakınız
 

@@ -20,28 +20,28 @@ public class XmlDataSource
 | --- | --- |
 | [XmlDataSource](xmldatasource#constructor)(Stream) | XML veri yükleme için varsayılan seçenekleri kullanarak bir XML akışındaki verilerle yeni bir veri kaynağı oluşturur. |
 | [XmlDataSource](xmldatasource#constructor_4)(string) | XML veri yükleme için varsayılan seçenekleri kullanarak bir XML dosyasındaki verilerle yeni bir veri kaynağı oluşturur. |
-| [XmlDataSource](xmldatasource#constructor_2)(Stream, Stream) | Bir XML Şema Tanımı akışı kullanarak bir XML akışından gelen verilerle yeni bir veri kaynağı oluşturur. XML verilerinin yüklenmesi için varsayılan options kullanılır. |
-| [XmlDataSource](xmldatasource#constructor_1)(Stream, XmlDataLoadOptions) | Belirtilen XML veri yükleme seçeneklerini kullanarak bir XML akışındaki verilerle yeni bir veri kaynağı oluşturur. |
-| [XmlDataSource](xmldatasource#constructor_6)(string, string) | Bir XML Şema Tanımı dosyası kullanarak bir XML dosyasındaki verilerle yeni bir veri kaynağı oluşturur. XML verilerinin yüklenmesi için varsayılan options kullanılır. |
-| [XmlDataSource](xmldatasource#constructor_5)(string, XmlDataLoadOptions) | Belirtilen XML veri yükleme seçeneklerini kullanarak bir XML dosyasındaki verilerle yeni bir veri kaynağı oluşturur. |
-| [XmlDataSource](xmldatasource#constructor_3)(Stream, Stream, XmlDataLoadOptions) | Bir XML Şema Tanımı akışı kullanarak bir XML akışından gelen verilerle yeni bir veri kaynağı oluşturur. Belirtilen seçenekleri, XML verilerinin yüklenmesi için kullanılır. |
+| [XmlDataSource](xmldatasource#constructor_2)(Stream, Stream) | XML Şema Tanımı akışını kullanarak bir XML akışından alınan verilerle yeni bir veri kaynağı oluşturur. Varsayılan options , XML veri yüklemesi için kullanılır. |
+| [XmlDataSource](xmldatasource#constructor_1)(Stream, XmlDataLoadOptions) | XML veri yükleme için belirtilen seçenekleri kullanarak bir XML akışındaki verilerle yeni bir veri kaynağı oluşturur. |
+| [XmlDataSource](xmldatasource#constructor_6)(string, string) | Bir XML Şema Tanımı dosyası kullanarak bir XML dosyasındaki verilerle yeni bir veri kaynağı oluşturur. Varsayılan options , XML veri yüklemesi için kullanılır. |
+| [XmlDataSource](xmldatasource#constructor_5)(string, XmlDataLoadOptions) | XML veri yükleme için belirtilen seçenekleri kullanarak bir XML dosyasındaki verilerle yeni bir veri kaynağı oluşturur. |
+| [XmlDataSource](xmldatasource#constructor_3)(Stream, Stream, XmlDataLoadOptions) | XML Şema Tanımı akışını kullanarak bir XML akışından alınan verilerle yeni bir veri kaynağı oluşturur. Belirtilen seçenekleri, XML verilerinin yüklenmesi için kullanılır. |
 | [XmlDataSource](xmldatasource#constructor_7)(string, string, XmlDataLoadOptions) | Bir XML Şema Tanımı dosyası kullanarak bir XML dosyasındaki verilerle yeni bir veri kaynağı oluşturur. Belirtilen seçenekleri, XML verilerinin yüklenmesi için kullanılır. |
 
 ### Notlar
 
-Bir belgeyi birleştirirken ilgili dosyanın veya akışın verilerine erişmek için, bu sınıfın bir örneğini veri kaynağı olarak as aşağıdakilerden birine iletin[`DocumentAssembler`](../../groupdocs.assembly/documentassembler) .AssembleDocument aşırı yükler.
+Bir belgeyi bir araya getirirken ilgili dosyanın veya akışın verilerine erişmek için, bu sınıfın bir örneğini as bir veri kaynağından birine iletin.[`DocumentAssembler`](../../groupdocs.assembly/documentassembler) .AssembleDocument aşırı yüklemeler.
 
-Şablon belgelerinde, bir üst düzey XML öğesi yalnızca aynı türden öğelerin bir listesini içeriyorsa, an[`XmlDataSource`](../xmldatasource) örnek, a olduğu gibi ele alınmalıdır.DataTable misal. Aksi takdirde, bir[`XmlDataSource`](../xmldatasource) örnek, ile aynı şekilde ele alınmalıdır.DataRowmisal. Daha fazla bilgi için, şablon sözdizimi referansına bakın (https://docs.groupdocs.com/display/assemblynet/Template+Syntax+-+Part+1+of+2#TemplateSyntax-Part1of2-UsingDataSources).
+Şablon belgelerinde, bir üst düzey XML öğesi yalnızca aynı türden öğelerin bir listesini içeriyorsa, an[`XmlDataSource`](../xmldatasource) örnek, a olduğu gibi ele alınmalıdır.DataTable misal. Aksi takdirde, bir[`XmlDataSource`](../xmldatasource) örnek, ile aynı şekilde ele alınmalıdır.DataRowmisal. Daha fazla bilgi için şablon sözdizimi referansına bakın (https://docs.groupdocs.com/display/assemblynet/Template+Syntax+-+Part+1+of+2#TemplateSyntax-Part1of2-UsingDataSources).
 
-Bu sınıfın bir yapıcısına XML Schema Definition iletildiğinde, basit XML öğelerinin değerlerinin veri türleri ve öznitelikler şemaya göre belirlenir. Böylece şablon belgelerde, yalnızca dizeler yerine yazılan değerlerle çalışabilirsiniz.
+XML Şema Tanımı bu sınıfın bir oluşturucusuna iletildiğinde, basit XML öğelerinin değerlerinin veri türleri ve nitelikler şemaya göre belirlenir. Böylece şablon belgelerinde, yalnızca dizeler yerine yazılan değerlerle çalışabilirsiniz.
 
-XML Schema Definition bu sınıfın bir yapıcısına iletilmediğinde, basit XML öğelerinin değerlerinin veri türleri ve öznitelikleri, dize temsillerine göre otomatik olarak belirlenir. Yani şablon belgelerde, bu durumda da yazılan değerlerle çalışabilirsiniz. Motor, aşağıdaki türlerin değerlerini otomatik olarak tanıyabilir:
+XML Şema Tanımı bu sınıfın bir oluşturucusuna iletilmediğinde, basit XML öğelerinin değerlerinin veri türleri ve nitelikler, dize temsillerine göre otomatik olarak belirlenir. Yani şablon belgelerinde, bu durumda da yazılan değerlerle çalışabilirsiniz. Motor, aşağıdaki türlerdeki değerleri otomatik olarak tanıyabilir:
 
-* Nullable
-* Nullable
-* Nullable
-* Nullable
-* String
+* `uzun?`
+* `çift?`
+* `bool?`
+* `TarihSaat?`
+* `sicim`
 
 Veri türlerinin otomatik olarak tanınmasının çalışması için, basit XML öğelerinin değerlerinin dize gösterimlerinin ve özniteliklerin değişmez kültür ayarları kullanılarak oluşturulması gerektiğini unutmayın.
 

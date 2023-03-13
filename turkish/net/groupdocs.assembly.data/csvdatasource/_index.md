@@ -1,14 +1,14 @@
 ---
 title: CsvDataSource
 second_title: .NET API Başvurusu için GroupDocs.Assembly
-description: Bir belgeyi birleştirirken kullanılacak bir CSV dosyası veya akışının verilerine erişim sağlar.
+description: Bir belgeyi bir araya getirirken kullanılacak bir CSV dosyasının veya akışın verilerine erişim sağlar.
 type: docs
 weight: 30
 url: /tr/net/groupdocs.assembly.data/csvdatasource/
 ---
 ## CsvDataSource class
 
-Bir belgeyi birleştirirken kullanılacak bir CSV dosyası veya akışının verilerine erişim sağlar.
+Bir belgeyi bir araya getirirken kullanılacak bir CSV dosyasının veya akışın verilerine erişim sağlar.
 
 ```csharp
 public class CsvDataSource
@@ -25,21 +25,21 @@ public class CsvDataSource
 
 ### Notlar
 
-Bir belgeyi birleştirirken ilgili dosyanın veya akışın verilerine erişmek için, bu sınıfın bir örneğini veri kaynağı olarak as aşağıdakilerden birine iletin[`DocumentAssembler`](../../groupdocs.assembly/documentassembler) .AssembleDocument aşırı yükler.
+Bir belgeyi bir araya getirirken ilgili dosyanın veya akışın verilerine erişmek için, bu sınıfın bir örneğini as bir veri kaynağından birine iletin.[`DocumentAssembler`](../../groupdocs.assembly/documentassembler) .AssembleDocument aşırı yüklemeler.
 
-Şablon belgelerinde, bir[`CsvDataSource`](../csvdatasource) örneğe, sanki o was a gibi davranılmalıdır.DataTablemisal. Daha fazla bilgi için şablon sözdizimi başvurusuna bakın (https://docs.groupdocs.com/display/assemblynet/Template+Syntax+-+Part+1+of+2#TemplateSyntax-Part1of2-UsingDataSources).
+Şablon belgelerinde bir[`CsvDataSource`](../csvdatasource) örnek was a gibi aynı şekilde ele alınmalıdır.DataTablemisal. Daha fazla bilgi için şablon sözdizimi referansı 'ye bakın (https://docs.groupdocs.com/display/assemblynet/Template+Syntax+-+Part+1+of+2#TemplateSyntax-Part1of2-UsingDataSources).
 
-Virgülle ayrılmış değerlerin veri türleri, dize gösterimlerine göre otomatik olarak belirlenir. Yani template belgelerinde sadece dizeler yerine yazılan değerlerle çalışabilirsiniz. Motor, aşağıdaki türlerin değerlerini otomatik olarak tanıyabilir:
+Virgülle ayrılmış değerlerin veri türleri, dize gösterimlerine göre otomatik olarak belirlenir. Böylece, template belgelerinde, yalnızca dizeler yerine yazılan değerlerle çalışabilirsiniz. Motor, aşağıdaki türlerin değerlerini otomatik olarak tanıyabilir:
 
-* Nullable
-* Nullable
-* Nullable
-* Nullable
-* String
+* `uzun?`
+* `çift?`
+* `bool?`
+* `TarihSaat?`
+* `sicim`
 
 Veri türlerinin otomatik olarak tanınmasının çalışması için, virgülle ayrılmış değerlerin dize temsillerinin değişmez kültür ayarları kullanılarak oluşturulması gerektiğini unutmayın.
 
-CSV veri yüklemesinin varsayılan davranışını geçersiz kılmak için, bir[`CsvDataLoadOptions`](../csvdataloadoptions) instance bu sınıfın bir yapıcısına.
+CSV veri yüklemesinin varsayılan davranışını geçersiz kılmak için bir[`CsvDataLoadOptions`](../csvdataloadoptions)instance bu sınıfın yapıcısına.
 
 ### Ayrıca bakınız
 

@@ -58,7 +58,7 @@ public JsonDataSource(Stream jsonStream)
 
 | Parametre | Tip | Tanım |
 | --- | --- | --- |
-| jsonStream | Stream | Veri kaynağı olarak kullanılacak JSON verilerinin akışı. |
+| jsonStream | Stream | Veri kaynağı olarak kullanılacak JSON veri akışı. |
 
 ### Ayrıca bakınız
 
@@ -70,7 +70,7 @@ public JsonDataSource(Stream jsonStream)
 
 ## JsonDataSource(Stream, JsonDataLoadOptions) {#constructor_1}
 
-JSON verilerini ayrıştırmak için belirtilen seçenekleri kullanarak bir JSON akışındaki verilerle yeni bir veri kaynağı oluşturur.
+JSON verilerini ayrıştırmak için belirtilen seçenekleri kullanarak bir JSON akışından alınan verilerle yeni bir veri kaynağı oluşturur.
 
 ```csharp
 public JsonDataSource(Stream jsonStream, JsonDataLoadOptions options)
@@ -78,7 +78,7 @@ public JsonDataSource(Stream jsonStream, JsonDataLoadOptions options)
 
 | Parametre | Tip | Tanım |
 | --- | --- | --- |
-| jsonStream | Stream | Veri kaynağı olarak kullanılacak JSON verilerinin akışı. |
+| jsonStream | Stream | Veri kaynağı olarak kullanılacak JSON veri akışı. |
 | options | JsonDataLoadOptions | JSON verilerini ayrıştırma seçenekleri. |
 
 ### Ayrıca bakınız

@@ -1,14 +1,14 @@
 ---
 title: DocumentTableColumnCollection
 second_title: .NET API Başvurusu için GroupDocs.Assembly
-description: Şunların salt okunur bir koleksiyonunu temsil ederDocumentTableColumn./documenttablecolumn belirli bir nesnesiDocumentTable./documenttable örnek.
+description: Salt okunur bir koleksiyonu temsil eder.DocumentTableColumn./documenttablecolumn belirli bir nesnesiDocumentTable./documenttable örnek.
 type: docs
 weight: 70
 url: /tr/net/groupdocs.assembly.data/documenttablecolumncollection/
 ---
 ## DocumentTableColumnCollection class
 
-Şunların salt okunur bir koleksiyonunu temsil eder:[`DocumentTableColumn`](../documenttablecolumn) belirli bir nesnesi[`DocumentTable`](../documenttable) örnek.
+Salt okunur bir koleksiyonu temsil eder.[`DocumentTableColumn`](../documenttablecolumn) belirli bir nesnesi[`DocumentTable`](../documenttable) örnek.
 
 ```csharp
 public class DocumentTableColumnCollection : IEnumerable
@@ -19,7 +19,7 @@ public class DocumentTableColumnCollection : IEnumerable
 | İsim | Tanım |
 | --- | --- |
 | [Count](../../groupdocs.assembly.data/documenttablecolumncollection/count) { get; } | Toplam sayısını alır[`DocumentTableColumn`](../documenttablecolumn) koleksiyondaki nesneler. |
-| [Item](../../groupdocs.assembly.data/documenttablecolumncollection/item) { get; } | [`DocumentTableColumn`](../documenttablecolumn) belirtilen dizindeki koleksiyondan örnek. (2 indexers) |
+| [Item](../../groupdocs.assembly.data/documenttablecolumncollection/item) { get; } | Bir alır[`DocumentTableColumn`](../documenttablecolumn) belirtilen index. adresindeki koleksiyondan örnek (2 indexers) |
 
 ## yöntemler
 
@@ -27,13 +27,13 @@ public class DocumentTableColumnCollection : IEnumerable
 | --- | --- |
 | [Contains](../../groupdocs.assembly.data/documenttablecolumncollection/contains#contains)(DocumentTableColumn) | Bu koleksiyonun belirtilen sütunu içerip içermediğini gösteren bir değer döndürür. |
 | [Contains](../../groupdocs.assembly.data/documenttablecolumncollection/contains#contains_1)(string) | Bu koleksiyonun belirtilen ada sahip bir sütun içerip içermediğini gösteren bir değer döndürür. |
-| [GetEnumerator](../../groupdocs.assembly.data/documenttablecolumncollection/getenumerator)() | Yinelenecek bir numaralandırıcı döndürür[`DocumentTableColumn`](../documenttablecolumn) bu koleksiyonun nesneleri. |
+| [GetEnumerator](../../groupdocs.assembly.data/documenttablecolumncollection/getenumerator)() | Yinelemek için bir numaralandırıcı döndürür[`DocumentTableColumn`](../documenttablecolumn) bu koleksiyonun nesneleri. |
 | [IndexOf](../../groupdocs.assembly.data/documenttablecolumncollection/indexof#indexof)(DocumentTableColumn) | Bu koleksiyondaki belirtilen sütunun dizinini döndürür. |
 | [IndexOf](../../groupdocs.assembly.data/documenttablecolumncollection/indexof#indexof_1)(string) | Bu koleksiyonda belirtilen ada sahip bir sütunun dizinini döndürür. |
 
 ### Notlar
 
-Koleksiyon, ilgili tablo bir belgeden yüklenirken otomatik olarak doldurulur ve değiştirilemez. Ancak, özellikleri[`DocumentTableColumn`](../documenttablecolumn)koleksiyonda bulunan nesneler değiştirilebilir.
+Koleksiyon, ilgili tablo bir belgeden yüklenirken otomatik olarak doldurulur ve değiştirilemez. Ancak, özellikleri[`DocumentTableColumn`](../documenttablecolumn) koleksiyon içinde bulunan nesneler değiştirilebilir.
 
 ### Ayrıca bakınız
 

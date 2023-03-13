@@ -1,14 +1,14 @@
 ---
 title: IsLoaded
 second_title: .NET API Başvurusu için GroupDocs.Assembly
-description: Karşılık gelen belge tablosunun yüklenip yüklenmeyeceğini belirten bir değer alır veya ayarlar. Varsayılan değer truedur.
+description: Karşılık gelen belge tablosunun yüklenip yüklenmeyeceğini gösteren bir değer alır veya ayarlar. Varsayılan değer truedur.
 type: docs
 weight: 10
 url: /tr/net/groupdocs.assembly.data/documenttableloadargs/isloaded/
 ---
 ## DocumentTableLoadArgs.IsLoaded property
 
-Karşılık gelen belge tablosunun yüklenip yüklenmeyeceğini belirten bir değer alır veya ayarlar. Varsayılan değer true'dur.
+Karşılık gelen belge tablosunun yüklenip yüklenmeyeceğini gösteren bir değer alır veya ayarlar. Varsayılan değer true'dur.
 
 ```csharp
 public bool IsLoaded { get; set; }

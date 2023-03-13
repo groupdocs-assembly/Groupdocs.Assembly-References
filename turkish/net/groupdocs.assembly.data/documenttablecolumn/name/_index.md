@@ -23,7 +23,7 @@ Aşağıdaki koşullar karşılanırsa sütunun adı geçerli kabul edilir:
 * Ad boş değil.
 * Adın ilk karakteri bir harf veya alt çizgidir.
 * Adın geri kalan karakterleri harfler, alt çizgiler, rakamlar veya şu karakterlerdir: '@', '#', '$'.
-* İlgili[`DocumentTable`](../../documenttable) nesne içermiyor[`DocumentTableColumn`](../../documenttablecolumn)aynı ada sahip örneği.
+* Karşılık gelen[`DocumentTable`](../../documenttable) nesne bir içermiyor[`DocumentTableColumn`](../../documenttablecolumn) aynı ada sahip örnek .
 
 ### Ayrıca bakınız
 

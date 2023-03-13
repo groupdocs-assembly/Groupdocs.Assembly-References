@@ -27,17 +27,17 @@ public class DocumentTable
 
 | İsim | Tanım |
 | --- | --- |
-| [Columns](../../groupdocs.assembly.data/documenttable/columns) { get; } | Şunların koleksiyonunu alır:[`DocumentTableColumn`](../documenttablecolumn) karşılık gelen tablonun sütunlarını temsil eden nesneler. |
-| [IndexInDocument](../../groupdocs.assembly.data/documenttable/indexindocument) { get; } | Kaynak belgeye göre ilgili tablonun orijinal sıfır tabanlı dizinini alır. |
-| [Name](../../groupdocs.assembly.data/documenttable/name) { get; set; } | 'ye iletilen bir şablon belgesindeki tablo verilerine erişmek için kullanılan bu tablonun adını alır veya ayarlar[`DocumentAssembler`](../../groupdocs.assembly/documentassembler) . |
+| [Columns](../../groupdocs.assembly.data/documenttable/columns) { get; } | Koleksiyonunu alır[`DocumentTableColumn`](../documenttablecolumn) ilgili tablonun sütunlarını temsil eden nesneler. |
+| [IndexInDocument](../../groupdocs.assembly.data/documenttable/indexindocument) { get; } | Kaynak belgeye göre karşılık gelen tablonun orijinal sıfır tabanlı dizinini alır. |
+| [Name](../../groupdocs.assembly.data/documenttable/name) { get; set; } | 'ye iletilen bir şablon belgedeki tablonun verilerine erişmek için kullanılan bu tablonun adını alır veya ayarlar[`DocumentAssembler`](../../groupdocs.assembly/documentassembler) . |
 
 ### Notlar
 
-Elektronik Tablo dosya biçimlerindeki belgeler için, bir[`DocumentTable`](../documenttable)örnek, tek bir sayfayı temsil eder. Diğer dosya biçimlerindeki belgeler için, bir[`DocumentTable`](../documenttable) örnek, tek bir tabloyu temsil eder.
+Elektronik Tablo dosya biçimlerindeki belgeler için, bir[`DocumentTable`](../documenttable) örnek, tek bir sayfayı temsil eder. Diğer dosya biçimlerindeki belgeler için, bir[`DocumentTable`](../documenttable) örnek, tek bir tabloyu temsil eder.
 
 Bir belgeyi bir araya getirirken ilgili tablonun verilerine erişmek için, bu sınıfın bir örneğini veri kaynağı olarak aşağıdakilerden birine iletin[`DocumentAssembler`](../../groupdocs.assembly/documentassembler) .AssembleDocument aşırı yüklemeler.
 
-Şablon belgelerinde, bir[`DocumentTable`](../documenttable) örneğe, sanki o was a gibi davranılmalıdır.DataTable misal. Daha fazla bilgi için şablon sözdizimi referansına bakın.
+Şablon belgelerinde bir[`DocumentTable`](../documenttable) örnek was a gibi aynı şekilde ele alınmalıdır.DataTable misal. Daha fazla bilgi için şablon sözdizimi referansına bakın.
 
 ### Ayrıca bakınız
 

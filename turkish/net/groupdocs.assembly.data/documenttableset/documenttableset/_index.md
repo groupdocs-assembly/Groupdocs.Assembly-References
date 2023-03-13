@@ -37,7 +37,7 @@ public DocumentTableSet(string documentPath, IDocumentTableLoadHandler loadHandl
 | Parametre | Tip | Tanım |
 | --- | --- | --- |
 | documentPath | String | Erişilecek tabloları içeren bir belgenin yolu. |
-| loadHandler | IDocumentTableLoadHandler | bir[`IDocumentTableLoadHandler`](../../idocumenttableloadhandler)belge tablolarının nasıl yüklendiğini kontrol eden uygulama. |
+| loadHandler | IDocumentTableLoadHandler | Bir[`IDocumentTableLoadHandler`](../../idocumenttableloadhandler)belge tablolarının nasıl yüklendiğini kontrol eden uygulama. |
 
 ### Ayrıca bakınız
 
@@ -79,7 +79,7 @@ public DocumentTableSet(Stream documentStream, IDocumentTableLoadHandler loadHan
 | Parametre | Tip | Tanım |
 | --- | --- | --- |
 | documentStream | Stream | Erişilecek tablolar içeren bir belge içeren akış. |
-| loadHandler | IDocumentTableLoadHandler | bir[`IDocumentTableLoadHandler`](../../idocumenttableloadhandler)belge tablolarının nasıl yüklendiğini kontrol eden uygulama. |
+| loadHandler | IDocumentTableLoadHandler | Bir[`IDocumentTableLoadHandler`](../../idocumenttableloadhandler)belge tablolarının nasıl yüklendiğini kontrol eden uygulama. |
 
 ### Ayrıca bakınız
 

@@ -1,14 +1,14 @@
 ---
 title: Columns
 second_title: .NET API Başvurusu için GroupDocs.Assembly
-description: Şunların koleksiyonunu alırDocumentTableColumngroupdocs.assembly.data/documenttablecolumn karşılık gelen tablonun sütunlarını temsil eden nesneler.
+description: Koleksiyonunu alırDocumentTableColumngroupdocs.assembly.data/documenttablecolumn ilgili tablonun sütunlarını temsil eden nesneler.
 type: docs
 weight: 20
 url: /tr/net/groupdocs.assembly.data/documenttable/columns/
 ---
 ## DocumentTable.Columns property
 
-Şunların koleksiyonunu alır:[`DocumentTableColumn`](../../documenttablecolumn) karşılık gelen tablonun sütunlarını temsil eden nesneler.
+Koleksiyonunu alır[`DocumentTableColumn`](../../documenttablecolumn) ilgili tablonun sütunlarını temsil eden nesneler.
 
 ```csharp
 public DocumentTableColumnCollection Columns { get; }

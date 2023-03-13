@@ -1,14 +1,14 @@
 ---
 title: BaseYDimension
 second_title: .NET API Başvurusu için GroupDocs.Assembly
-description: Bir temel y boyutunu yani 2B barkod modüllerinin biriminin en küçük yüksekliğini alır veya ayarlar. ÖlçülenGraphicsUnitgroupdocs.assembly/barcodesettings/graphicsunit .
+description: Temel y boyutunu yani 2B barkod modüllerinin biriminin en küçük yüksekliğini alır veya ayarlar. ÖlçülenGraphicsUnitgroupdocs.assembly/barcodesettings/graphicsunit .
 type: docs
 weight: 20
 url: /tr/net/groupdocs.assembly/barcodesettings/baseydimension/
 ---
 ## BarcodeSettings.BaseYDimension property
 
-Bir temel y boyutunu, yani 2B barkod modüllerinin biriminin en küçük yüksekliğini alır veya ayarlar. Ölçülen[`GraphicsUnit`](../graphicsunit) .
+Temel y boyutunu, yani 2B barkod modüllerinin biriminin en küçük yüksekliğini alır veya ayarlar. Ölçülen[`GraphicsUnit`](../graphicsunit) .
 
 ```csharp
 public float BaseYDimension { get; set; }

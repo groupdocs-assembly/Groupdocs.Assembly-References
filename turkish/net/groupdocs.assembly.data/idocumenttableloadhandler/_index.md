@@ -1,14 +1,14 @@
 ---
 title: IDocumentTableLoadHandler
 second_title: .NET API Başvurusu için GroupDocs.Assembly
-description: Varsayılan yüklemeyi geçersiz kılarDocumentTable./documenttable oluştururken nesneleriDocumentTableSet./documenttableset örnek.
+description: Varsayılan yüklemeyi geçersiz kılarDocumentTable./documenttable oluştururken nesneleriDocumentTableSet./documenttableset örneği.
 type: docs
 weight: 130
 url: /tr/net/groupdocs.assembly.data/idocumenttableloadhandler/
 ---
 ## IDocumentTableLoadHandler interface
 
-Varsayılan yüklemeyi geçersiz kılar[`DocumentTable`](../documenttable) oluştururken nesneleri[`DocumentTableSet`](../documenttableset) örnek.
+Varsayılan yüklemeyi geçersiz kılar[`DocumentTable`](../documenttable) oluştururken nesneleri[`DocumentTableSet`](../documenttableset) örneği.
 
 ```csharp
 public interface IDocumentTableLoadHandler

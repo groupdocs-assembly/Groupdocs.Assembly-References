@@ -16,7 +16,7 @@ public char CommentChar { get; set; }
 
 ### Notlar
 
-Varsayılan değer '#' (sayı işaretidir).
+Varsayılan değer '#' (sayı işareti) şeklindedir.
 
 ### Ayrıca bakınız
 

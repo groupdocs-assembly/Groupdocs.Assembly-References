@@ -26,8 +26,8 @@ public class LoadSaveOptions
 | İsim | Tanım |
 | --- | --- |
 | [ResourceLoadBaseUri](../../groupdocs.assembly/loadsaveoptions/resourceloadbaseuri) { get; set; } | Toplanacak ve HTML olmayan bir biçimde kaydedilecek bir HTML şablon belgesi yüklerken harici kaynak dosyalarının göreli URI'lerini mutlak olanlara çözümlemek için bir temel URI alır veya ayarlar. Varsayılan değer boş bir dizedir. |
-| [ResourceSaveFolder](../../groupdocs.assembly/loadsaveoptions/resourcesavefolder) { get; set; } | HTML olmayan biçiminden yüklenen birleştirilmiş bir belge HTML'ye kaydedilirken harici kaynak dosyalarını depolamak için bir klasör yolunu alır veya ayarlar. Varsayılan değer boş bir dizedir. |
-| [SaveFormat](../../groupdocs.assembly/loadsaveoptions/saveformat) { get; set; } | Birleştirilmiş bir belgenin kaydedileceği dosya biçimini alır veya ayarlar.Unspecified varsayılandır. |
+| [ResourceSaveFolder](../../groupdocs.assembly/loadsaveoptions/resourcesavefolder) { get; set; } | HTML olmayan bir biçiminden yüklenen birleştirilmiş bir belge HTML'ye kaydedilirken, harici kaynak dosyalarını depolamak için bir klasörün yolunu alır veya ayarlar. Varsayılan değer boş bir dizedir. |
+| [SaveFormat](../../groupdocs.assembly/loadsaveoptions/saveformat) { get; set; } | Birleştirilmiş bir belgeyi kaydetmek için bir dosya formatı alır veya ayarlar.Unspecified varsayılandır. |
 
 ### Ayrıca bakınız
 
