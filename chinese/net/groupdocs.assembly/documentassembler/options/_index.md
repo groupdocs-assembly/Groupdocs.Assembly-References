@@ -1,14 +1,14 @@
 ---
 title: Options
 second_title: GroupDocs.Assembly for .NET API 参考
-description: 获取或设置一组控制此行为的标志DocumentAssemblergroupdocs.assembly/documentassembler组装文档时的实例 
+description: 获取或设置一组控制此行为的标志DocumentAssemblergroupdocs.assembly/documentassembler汇编文档时实例 .
 type: docs
 weight: 40
 url: /zh/net/groupdocs.assembly/documentassembler/options/
 ---
 ## DocumentAssembler.Options property
 
-获取或设置一组控制此行为的标志[`DocumentAssembler`](../../documentassembler)组装文档时的实例 。
+获取或设置一组控制此行为的标志[`DocumentAssembler`](../../documentassembler)汇编文档时实例 .
 
 ```csharp
 public DocumentAssemblyOptions Options { get; set; }

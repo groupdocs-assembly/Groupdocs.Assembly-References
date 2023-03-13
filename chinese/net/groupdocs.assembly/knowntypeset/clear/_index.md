@@ -1,14 +1,14 @@
 ---
 title: Clear
 second_title: GroupDocs.Assembly for .NET API 参考
-description: 从集合中移除所有项目
+description: 从集合中删除所有项目
 type: docs
 weight: 30
 url: /zh/net/groupdocs.assembly/knowntypeset/clear/
 ---
 ## KnownTypeSet.Clear method
 
-从集合中移除所有项目。
+从集合中删除所有项目。
 
 ```csharp
 public void Clear()

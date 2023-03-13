@@ -1,14 +1,14 @@
 ---
 title: IDocumentTableLoadHandler
 second_title: GroupDocs.Assembly for .NET API 参考
-description: 覆盖默认加载DocumentTable./documenttable在创建对象时DocumentTableSet./documenttableset 实例.
+description: 覆盖默认加载DocumentTable./documenttable创建对象时DocumentTableSet./documenttableset 实例.
 type: docs
 weight: 130
 url: /zh/net/groupdocs.assembly.data/idocumenttableloadhandler/
 ---
 ## IDocumentTableLoadHandler interface
 
-覆盖默认加载[`DocumentTable`](../documenttable)在创建对象时[`DocumentTableSet`](../documenttableset) 实例.
+覆盖默认加载[`DocumentTable`](../documenttable)创建对象时[`DocumentTableSet`](../documenttableset) 实例.
 
 ```csharp
 public interface IDocumentTableLoadHandler
@@ -18,11 +18,11 @@ public interface IDocumentTableLoadHandler
 
 | 姓名 | 描述 |
 | --- | --- |
-| [Handle](../../groupdocs.assembly.data/idocumenttableloadhandler/handle)(DocumentTableLoadArgs) | 覆盖特定的默认加载[`DocumentTable`](../documenttable)创建 时的对象[`DocumentTableSet`](../documenttableset)实例. |
+| [Handle](../../groupdocs.assembly.data/idocumenttableloadhandler/handle)(DocumentTableLoadArgs) | 覆盖特定的默认加载[`DocumentTable`](../documenttable)创建 a 时的对象[`DocumentTableSet`](../documenttableset)实例. |
 
 ### 评论
 
-如果你想放弃特定的加载，实现这个接口[`DocumentTable`](../documenttable)对象或提供 特定[`DocumentTableOptions`](../documenttableoptions)对于正在加载的文档表。
+如果你想放弃特定的加载实现这个接口[`DocumentTable`](../documenttable)对象或提供 具体[`DocumentTableOptions`](../documenttableoptions)对于正在加载的文档表。
 
 ### 也可以看看
 

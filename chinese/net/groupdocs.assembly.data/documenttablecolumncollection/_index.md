@@ -1,14 +1,14 @@
 ---
 title: DocumentTableColumnCollection
 second_title: GroupDocs.Assembly for .NET API 参考
-description: 表示只读集合DocumentTableColumn./documenttablecolumn特定 的对象DocumentTable./documenttable实例.
+description: 代表一个只读集合DocumentTableColumn./documenttablecolumn特定 的对象DocumentTable./documenttable实例.
 type: docs
 weight: 70
 url: /zh/net/groupdocs.assembly.data/documenttablecolumncollection/
 ---
 ## DocumentTableColumnCollection class
 
-表示只读集合[`DocumentTableColumn`](../documenttablecolumn)特定 的对象[`DocumentTable`](../documenttable)实例.
+代表一个只读集合[`DocumentTableColumn`](../documenttablecolumn)特定 的对象[`DocumentTable`](../documenttable)实例.
 
 ```csharp
 public class DocumentTableColumnCollection : IEnumerable
@@ -18,8 +18,8 @@ public class DocumentTableColumnCollection : IEnumerable
 
 | 姓名 | 描述 |
 | --- | --- |
-| [Count](../../groupdocs.assembly.data/documenttablecolumncollection/count) { get; } | 获取总数[`DocumentTableColumn`](../documenttablecolumn)集合中的对象。 |
-| [Item](../../groupdocs.assembly.data/documenttablecolumncollection/item) { get; } | 得到一个[`DocumentTableColumn`](../documenttablecolumn)指定索引处的集合中的实例。 (2 indexers) |
+| [Count](../../groupdocs.assembly.data/documenttablecolumncollection/count) { get; } | 获取总数[`DocumentTableColumn`](../documenttablecolumn)集合中的对象. |
+| [Item](../../groupdocs.assembly.data/documenttablecolumncollection/item) { get; } | 得到一个[`DocumentTableColumn`](../documenttablecolumn)来自指定索引处集合的实例. (2 indexers) |
 
 ## 方法
 
@@ -27,13 +27,13 @@ public class DocumentTableColumnCollection : IEnumerable
 | --- | --- |
 | [Contains](../../groupdocs.assembly.data/documenttablecolumncollection/contains#contains)(DocumentTableColumn) | 返回一个值，指示此集合是否包含指定的列。 |
 | [Contains](../../groupdocs.assembly.data/documenttablecolumncollection/contains#contains_1)(string) | 返回一个值，指示此集合是否包含具有指定名称的列。 |
-| [GetEnumerator](../../groupdocs.assembly.data/documenttablecolumncollection/getenumerator)() | 返回一个枚举器进行迭代[`DocumentTableColumn`](../documenttablecolumn)此集合的对象。 |
+| [GetEnumerator](../../groupdocs.assembly.data/documenttablecolumncollection/getenumerator)() | 返回一个枚举器进行迭代[`DocumentTableColumn`](../documenttablecolumn)此集合的对象. |
 | [IndexOf](../../groupdocs.assembly.data/documenttablecolumncollection/indexof#indexof)(DocumentTableColumn) | 返回此集合中指定列的索引。 |
 | [IndexOf](../../groupdocs.assembly.data/documenttablecolumncollection/indexof#indexof_1)(string) | 返回此集合中具有指定名称的列的索引。 |
 
 ### 评论
 
-集合在从文档加载对应表时自动填充，不能修改。 但是，[`DocumentTableColumn`](../documenttablecolumn)可以修改集合中包含的对象。
+集合在从文档加载相应表格时自动填充，无法修改。 但是，属性[`DocumentTableColumn`](../documenttablecolumn)可以修改集合中包含的对象。
 
 ### 也可以看看
 

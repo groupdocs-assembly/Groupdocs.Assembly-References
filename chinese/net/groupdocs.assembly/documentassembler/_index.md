@@ -1,14 +1,14 @@
 ---
 title: DocumentAssembler
 second_title: GroupDocs.Assembly for .NET API 参考
-description: 提供用数据和一组设置填充模板文档的例程来控制这些例程
+description: 提供用数据填充模板文档的例程和一组控制这些例程的设置
 type: docs
 weight: 200
 url: /zh/net/groupdocs.assembly/documentassembler/
 ---
 ## DocumentAssembler class
 
-提供用数据和一组设置填充模板文档的例程来控制这些例程。
+提供用数据填充模板文档的例程和一组控制这些例程的设置。
 
 ```csharp
 public class DocumentAssembler
@@ -18,16 +18,16 @@ public class DocumentAssembler
 
 | 姓名 | 描述 |
 | --- | --- |
-| [DocumentAssembler](documentassembler)() | 初始化这个类的一个新实例。 |
+| [DocumentAssembler](documentassembler)() | 初始化此类的新实例。 |
 
 ## 特性
 
 | 姓名 | 描述 |
 | --- | --- |
-| [BarcodeSettings](../../groupdocs.assembly/documentassembler/barcodesettings) { get; } | 在组装文档时获取一组控制条码生成的设置。 |
-| [KnownTypes](../../groupdocs.assembly/documentassembler/knowntypes) { get; } | 获取一个无序集合（即唯一项的集合），其中包含Type对象 可以在此 汇编程序实例处理的文档模板中使用完全或部分限定名称来调用相应类型的静态成员、执行类型转换等。 |
-| [Options](../../groupdocs.assembly/documentassembler/options) { get; set; } | 获取或设置一组控制此行为的标志[`DocumentAssembler`](../documentassembler)组装文档时的实例 。 |
-| static [UseReflectionOptimization](../../groupdocs.assembly/documentassembler/usereflectionoptimization) { get; set; } | 获取或设置一个值，该值指示通过反射 API 执行的自定义类型成员的调用是否使用动态类生成进行了 优化。默认值为真。 |
+| [BarcodeSettings](../../groupdocs.assembly/documentassembler/barcodesettings) { get; } | 获取一组控制条形码生成的设置，同时组装文档。 |
+| [KnownTypes](../../groupdocs.assembly/documentassembler/knowntypes) { get; } | 获取包含的无序集合（即唯一项的集合）Type对象 其完全或部分限定名称可以在此 汇编程序实例处理的文档模板中使用，以调用相应类型的静态成员，执行类型转换等。 |
+| [Options](../../groupdocs.assembly/documentassembler/options) { get; set; } | 获取或设置一组控制此行为的标志[`DocumentAssembler`](../documentassembler)汇编文档时实例 . |
+| static [UseReflectionOptimization](../../groupdocs.assembly/documentassembler/usereflectionoptimization) { get; set; } | 获取或设置一个值，该值指示通过反射 API 执行的自定义类型成员的调用是否 使用动态类生成进行了优化。默认值为 true. |
 
 ## 方法
 

@@ -16,7 +16,7 @@ public int IndexOf(string name)
 
 | 范围 | 类型 | 描述 |
 | --- | --- | --- |
-| name | String | 要查找的列的不区分大小写的名称。 |
+| name | String | 要查找的列的名称，不区分大小写。 |
 
 ### 返回值
 
@@ -44,7 +44,7 @@ public int IndexOf(DocumentTableColumn column)
 
 ### 返回值
 
-指定列的从零开始的索引，如果该列在此集合中不存在，则为 -1。
+指定列的从零开始的索引，如果此集合中不存在该列，则为 -1。
 
 ### 也可以看看
 

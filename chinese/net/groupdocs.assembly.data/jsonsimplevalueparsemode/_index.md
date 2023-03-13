@@ -1,14 +1,14 @@
 ---
 title: JsonSimpleValueParseMode
 second_title: GroupDocs.Assembly for .NET API 参考
-description: 指定在加载 JSON 时解析 JSON 简单值null布尔值数字整数和字符串的模式 这种模式不影响日期时间值的解析
+description: 指定在加载 JSON 时解析 JSON 简单值空值布尔值数字整数和字符串的模式 这种模式不影响日期时间值的解析
 type: docs
 weight: 160
 url: /zh/net/groupdocs.assembly.data/jsonsimplevalueparsemode/
 ---
 ## JsonSimpleValueParseMode enumeration
 
-指定在加载 JSON 时解析 JSON 简单值（null、布尔值、数字、整数和字符串）的模式。 这种模式不影响日期时间值的解析。
+指定在加载 JSON 时解析 JSON 简单值（空值、布尔值、数字、整数和字符串）的模式。 这种模式不影响日期时间值的解析。
 
 ```csharp
 public enum JsonSimpleValueParseMode
@@ -18,8 +18,8 @@ public enum JsonSimpleValueParseMode
 
 | 姓名 | 价值 | 描述 |
 | --- | --- | --- |
-| Loose | `0` | 指定在解析其字符串表示时确定 JSON 简单值类型的模式。 例如，JSON 片段 '{ prop: "123" }' 中的 'prop' 类型在此模式下被确定为整数。 |
-| Strict | `1` | 指定 JSON 简单值的类型由 JSON 表示法本身确定的模式。 例如，JSON 片段 '{ prop: "123" }' 中的 'prop' 类型在此模式下确定为字符串。 |
+| Loose | `0` | 指定在解析其字符串表示时确定 JSON 简单值类型的模式。 例如，在该模式下，JSON 片段 '{prop: "123" }' 中的 'prop' 类型被确定为整数。 |
+| Strict | `1` | 指定从 JSON 表示法本身确定 JSON 简单值类型的模式。 例如，在这种模式下，JSON 片段 '{ prop: "123" }' 中的 'prop' 类型被确定为字符串。 |
 
 ### 也可以看看
 

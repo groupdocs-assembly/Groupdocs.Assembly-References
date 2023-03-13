@@ -18,10 +18,10 @@ public class DocumentTableColumn
 
 | 姓名 | 描述 |
 | --- | --- |
-| [AllowsNull](../../groupdocs.assembly.data/documenttablecolumn/allowsnull) { get; } | 获取一个值，该值指示该列中的单元格是否包含空值。 |
-| [IndexInDocument](../../groupdocs.assembly.data/documenttablecolumn/indexindocument) { get; } | 根据源文档获取对应表列的原始从零开始的索引。 |
-| [Name](../../groupdocs.assembly.data/documenttablecolumn/name) { get; set; } | 获取或设置此列的名称，用于访问传递给的模板文档中的列数据 [`DocumentAssembler`](../../groupdocs.assembly/documentassembler). |
-| [Type](../../groupdocs.assembly.data/documenttablecolumn/type) { get; set; } | 获取或设置该列单元格值的类型。 |
+| [AllowsNull](../../groupdocs.assembly.data/documenttablecolumn/allowsnull) { get; } | 获取一个值，指示此列中的单元格是否包含空值。 |
+| [IndexInDocument](../../groupdocs.assembly.data/documenttablecolumn/indexindocument) { get; } | 根据源文档获取相应表列的原始从零开始的索引。 |
+| [Name](../../groupdocs.assembly.data/documenttablecolumn/name) { get; set; } | 获取或设置此列的名称，用于访问传递给 的模板文档中的列数据[`DocumentAssembler`](../../groupdocs.assembly/documentassembler). |
+| [Type](../../groupdocs.assembly.data/documenttablecolumn/type) { get; set; } | 获取或设置此列中单元格值的类型。 |
 
 ### 也可以看看
 

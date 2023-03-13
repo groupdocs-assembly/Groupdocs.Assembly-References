@@ -18,7 +18,7 @@ public class DataSourceInfo
 
 | 姓名 | 描述 |
 | --- | --- |
-| [DataSourceInfo](datasourceinfo#constructor)() | 创建此类的新实例，但未指定任何属性。 |
+| [DataSourceInfo](datasourceinfo#constructor)() | 创建此类的新实例，不指定任何属性。 |
 | [DataSourceInfo](datasourceinfo#constructor_1)(object) | 使用指定的数据源对象创建此类的新实例。 |
 | [DataSourceInfo](datasourceinfo#constructor_2)(object, string) | 使用指定的数据源对象及其名称创建此类的新实例。 |
 
@@ -27,7 +27,7 @@ public class DataSourceInfo
 | 姓名 | 描述 |
 | --- | --- |
 | [DataSource](../../groupdocs.assembly/datasourceinfo/datasource) { get; set; } | 获取或设置数据源对象。 |
-| [Name](../../groupdocs.assembly/datasourceinfo/name) { get; set; } | 获取或设置用于访问模板文档中的数据源对象的数据源对象的名称。 |
+| [Name](../../groupdocs.assembly/datasourceinfo/name) { get; set; } | 获取或设置数据源对象的名称，用于访问模板文档中的数据源对象。 |
 
 ### 也可以看看
 

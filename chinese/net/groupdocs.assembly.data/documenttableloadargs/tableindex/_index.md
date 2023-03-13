@@ -1,14 +1,14 @@
 ---
 title: TableIndex
 second_title: GroupDocs.Assembly for .NET API 参考
-description: 获取要加载的对应文档表的从零开始的索引
+description: 获取对应待加载文档表的从零开始的索引
 type: docs
 weight: 30
 url: /zh/net/groupdocs.assembly.data/documenttableloadargs/tableindex/
 ---
 ## DocumentTableLoadArgs.TableIndex property
 
-获取要加载的对应文档表的从零开始的索引。
+获取对应待加载文档表的从零开始的索引。
 
 ```csharp
 public int TableIndex { get; }

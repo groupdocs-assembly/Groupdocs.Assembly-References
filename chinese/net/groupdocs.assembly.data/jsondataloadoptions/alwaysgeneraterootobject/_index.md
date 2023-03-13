@@ -1,14 +1,14 @@
 ---
 title: AlwaysGenerateRootObject
 second_title: GroupDocs.Assembly for .NET API 参考
-description: 获取或设置一个标志指示生成的数据源是否将始终包含 JSON root 元素的对象如果 JSON 根元素包含单个复杂属性则默认情况下不会创建此类对象
+description: 获取或设置一个标志指示生成的数据源是否始终包含 JSON root 元素的对象如果 JSON 根元素包含单个复杂属性则默认情况下不会创建此类对象
 type: docs
 weight: 20
 url: /zh/net/groupdocs.assembly.data/jsondataloadoptions/alwaysgeneraterootobject/
 ---
 ## JsonDataLoadOptions.AlwaysGenerateRootObject property
 
-获取或设置一个标志，指示生成的数据源是否将始终包含 JSON root 元素的对象。如果 JSON 根元素包含单个复杂属性，则默认情况下不会创建此类对象。
+获取或设置一个标志，指示生成的数据源是否始终包含 JSON root 元素的对象。如果 JSON 根元素包含单个复杂属性，则默认情况下不会创建此类对象。
 
 ```csharp
 public bool AlwaysGenerateRootObject { get; set; }

@@ -18,9 +18,9 @@ public class DocumentTableLoadArgs
 
 | 姓名 | 描述 |
 | --- | --- |
-| [IsLoaded](../../groupdocs.assembly.data/documenttableloadargs/isloaded) { get; set; } | 获取或设置是否加载对应的文档表的值。 默认值为true。 |
-| [Options](../../groupdocs.assembly.data/documenttableloadargs/options) { get; set; } | 获取或设置[`DocumentTableOptions`](../documenttableoptions)加载对应的文档表时使用。 默认值为null，表示默认[`DocumentTableOptions`](../documenttableoptions)将被应用。 |
-| [TableIndex](../../groupdocs.assembly.data/documenttableloadargs/tableindex) { get; } | 获取要加载的对应文档表的从零开始的索引。 |
+| [IsLoaded](../../groupdocs.assembly.data/documenttableloadargs/isloaded) { get; set; } | 获取或设置是否加载对应文档表的值。 默认值为true。 |
+| [Options](../../groupdocs.assembly.data/documenttableloadargs/options) { get; set; } | 获取或设置[`DocumentTableOptions`](../documenttableoptions)加载对应的文档表时使用。 默认值为null，表示默认[`DocumentTableOptions`](../documenttableoptions)将被应用. |
+| [TableIndex](../../groupdocs.assembly.data/documenttableloadargs/tableindex) { get; } | 获取对应待加载文档表的从零开始的索引。 |
 
 ### 也可以看看
 

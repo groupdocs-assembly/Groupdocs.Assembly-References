@@ -1,14 +1,14 @@
 ---
 title: BaseXDimension
 second_title: GroupDocs.Assembly for .NET API 参考
-description: 获取或设置一个基本的 x 维度即条码和空格单位的最小宽度 度量单位GraphicsUnitgroupdocs.assembly/barcodesettings/graphicsunit.
+description: 获取或设置一个基本的x维度即条码条和空格单位的最小宽度 测量单位GraphicsUnitgroupdocs.assembly/barcodesettings/graphicsunit.
 type: docs
 weight: 10
 url: /zh/net/groupdocs.assembly/barcodesettings/basexdimension/
 ---
 ## BarcodeSettings.BaseXDimension property
 
-获取或设置一个基本的 x 维度，即条码和空格单位的最小宽度。 度量单位[`GraphicsUnit`](../graphicsunit).
+获取或设置一个基本的x维度，即条码条和空格单位的最小宽度。 测量单位[`GraphicsUnit`](../graphicsunit).
 
 ```csharp
 public float BaseXDimension { get; set; }
@@ -16,7 +16,7 @@ public float BaseXDimension { get; set; }
 
 ### 评论
 
-当通过模板应用条形码缩放时，实际的 x 维度是根据基本 x 维度和缩放因子计算的。
+当通过模板应用条形码缩放时，实际的 x 维度是根据基础 x 维度和缩放因子计算的。
 
 ### 也可以看看
 

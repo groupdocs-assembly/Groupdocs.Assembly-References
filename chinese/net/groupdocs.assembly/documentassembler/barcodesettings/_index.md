@@ -1,14 +1,14 @@
 ---
 title: BarcodeSettings
 second_title: GroupDocs.Assembly for .NET API 参考
-description: 在组装文档时获取一组控制条码生成的设置
+description: 获取一组控制条形码生成的设置同时组装文档
 type: docs
 weight: 20
 url: /zh/net/groupdocs.assembly/documentassembler/barcodesettings/
 ---
 ## DocumentAssembler.BarcodeSettings property
 
-在组装文档时获取一组控制条码生成的设置。
+获取一组控制条形码生成的设置，同时组装文档。
 
 ```csharp
 public BarcodeSettings BarcodeSettings { get; }

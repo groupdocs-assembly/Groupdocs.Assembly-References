@@ -1,14 +1,14 @@
 ---
 title: ResourceSaveFolder
 second_title: GroupDocs.Assembly for .NET API 参考
-description: 获取或设置文件夹路径以存储外部资源文件同时将从非 HTML 格式加载的组装文档保存为 HTML默认值为空字符串
+description: 获取或设置用于存储外部资源文件的文件夹路径同时将从非 HTML 格式加载的组合文档保存为 HTML默认值为空字符串
 type: docs
 weight: 30
 url: /zh/net/groupdocs.assembly/loadsaveoptions/resourcesavefolder/
 ---
 ## LoadSaveOptions.ResourceSaveFolder property
 
-获取或设置文件夹路径以存储外部资源文件，同时将从非 HTML 格式加载的组装文档保存为 HTML。默认值为空字符串。
+获取或设置用于存储外部资源文件的文件夹路径，同时将从非 HTML 格式加载的组合文档保存为 HTML。默认值为空字符串。
 
 ```csharp
 public string ResourceSaveFolder { get; set; }
@@ -16,9 +16,9 @@ public string ResourceSaveFolder { get; set; }
 
 ### 评论
 
-默认情况下，将组合文档保存为 HTML 文件时，外部资源文件存储到与 HTML 文件同名的文件夹 中，不带扩展名，加上“_files”后缀。此文件夹位于 与 HTML 文件相同的文件夹中。但是，在将组合文档保存到 HTML 流时无法做到这一点。 设置此属性以在将组合文档 保存到 HTML 流时指定用于存储外部资源文件的文件夹的路径，或在保存文件时覆盖默认文件夹将文档组装成 HTML 文件。
+默认情况下，将组合文档保存到 HTML 文件时，外部资源文件将存储到与 HTML 文件同名的文件夹 ，但不带扩展名加上“_files”后缀。此文件夹位于 与 HTML 文件相同的文件夹中。但是，在将组装文档保存到 HTML 流时无法执行此操作。 设置此属性以指定文件夹的路径以在将组装文档 保存到 HTML 流时指定用于存储外部资源文件的文件夹，或者在保存文件时覆盖默认文件夹将文档组装成 HTML 文件.
 
-如果保存为 HTML 的组装文档也是从 HTML 加载的，则忽略此属性的值 （不存储外部资源文件，然后不更改指向它们的链接）。
+如果保存到 HTML 的组合文档也是从 HTML 加载的，则忽略此属性的值 （不存储外部资源文件，到它们的链接也不会更改）。
 
 ### 也可以看看
 

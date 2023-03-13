@@ -1,14 +1,14 @@
 ---
 title: MinColumnIndex
 second_title: GroupDocs.Assembly for .NET API 参考
-description: 获取或设置要从文档表中提取的列的最小零基索引 默认值为负表示最小列索引不受限制
+description: 获取或设置要从文档表中提取的列的最小从零开始的索引 默认值为负数即不限制最小列索引
 type: docs
 weight: 50
 url: /zh/net/groupdocs.assembly.data/documenttableoptions/mincolumnindex/
 ---
 ## DocumentTableOptions.MinColumnIndex property
 
-获取或设置要从文档表中提取的列的最小零基索引。 默认值为负，表示最小列索引不受限制。
+获取或设置要从文档表中提取的列的最小从零开始的索引。 默认值为负数，即不限制最小列索引。
 
 ```csharp
 public int MinColumnIndex { get; set; }

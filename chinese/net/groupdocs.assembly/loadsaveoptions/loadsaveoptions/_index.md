@@ -1,14 +1,14 @@
 ---
 title: LoadSaveOptions
 second_title: GroupDocs.Assembly for .NET API 参考
-description: 创建此类的新实例但未指定任何属性
+description: 创建此类的新实例不指定任何属性
 type: docs
 weight: 10
 url: /zh/net/groupdocs.assembly/loadsaveoptions/loadsaveoptions/
 ---
 ## LoadSaveOptions() {#constructor}
 
-创建此类的新实例，但未指定任何属性。
+创建此类的新实例，不指定任何属性。
 
 ```csharp
 public LoadSaveOptions()
@@ -24,7 +24,7 @@ public LoadSaveOptions()
 
 ## LoadSaveOptions(FileFormat) {#constructor_1}
 
-使用指定的文件格式创建此类的新实例，以将组装的文档保存到。
+使用指定的文件格式创建此类的新实例，以将组装的文档保存到.
 
 ```csharp
 public LoadSaveOptions(FileFormat saveFormat)
@@ -32,7 +32,7 @@ public LoadSaveOptions(FileFormat saveFormat)
 
 | 范围 | 类型 | 描述 |
 | --- | --- | --- |
-| saveFormat | FileFormat | 将组合文档保存到的文件格式。 |
+| saveFormat | FileFormat | 一种用于保存组合文档的文件格式。 |
 
 ### 也可以看看
 

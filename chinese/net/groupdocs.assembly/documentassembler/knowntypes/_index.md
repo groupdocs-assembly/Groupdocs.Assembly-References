@@ -1,14 +1,14 @@
 ---
 title: KnownTypes
 second_title: GroupDocs.Assembly for .NET API 参考
-description: 获取一个无序集合即唯一项的集合其中包含Type对象 可以在此 汇编程序实例处理的文档模板中使用完全或部分限定名称来调用相应类型的静态成员执行类型转换等
+description: 获取包含的无序集合即唯一项的集合Type对象 其完全或部分限定名称可以在此 汇编程序实例处理的文档模板中使用以调用相应类型的静态成员执行类型转换等
 type: docs
 weight: 30
 url: /zh/net/groupdocs.assembly/documentassembler/knowntypes/
 ---
 ## DocumentAssembler.KnownTypes property
 
-获取一个无序集合（即唯一项的集合），其中包含Type对象 可以在此 汇编程序实例处理的文档模板中使用完全或部分限定名称来调用相应类型的静态成员、执行类型转换等。
+获取包含的无序集合（即唯一项的集合）Type对象 其完全或部分限定名称可以在此 汇编程序实例处理的文档模板中使用，以调用相应类型的静态成员，执行类型转换等。
 
 ```csharp
 public KnownTypeSet KnownTypes { get; }

@@ -1,14 +1,14 @@
 ---
 title: GetEnumerator
 second_title: GroupDocs.Assembly for .NET API 参考
-description: 返回一个枚举器进行迭代DocumentTablegroupdocs.assembly.data/documenttable此集合的对象
+description: 返回一个枚举器进行迭代DocumentTablegroupdocs.assembly.data/documenttable此集合的对象.
 type: docs
 weight: 40
 url: /zh/net/groupdocs.assembly.data/documenttablecollection/getenumerator/
 ---
 ## DocumentTableCollection.GetEnumerator method
 
-返回一个枚举器进行迭代[`DocumentTable`](../../documenttable)此集合的对象。
+返回一个枚举器进行迭代[`DocumentTable`](../../documenttable)此集合的对象.
 
 ```csharp
 public IEnumerator GetEnumerator()
@@ -16,7 +16,7 @@ public IEnumerator GetEnumerator()
 
 ### 返回值
 
-要迭代的枚举器[`DocumentTable`](../../documenttable)此集合的对象。
+要迭代的枚举器[`DocumentTable`](../../documenttable)此集合的对象.
 
 ### 也可以看看
 

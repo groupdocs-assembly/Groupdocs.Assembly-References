@@ -1,14 +1,14 @@
 ---
 title: DocumentTable
 second_title: GroupDocs.Assembly for .NET API 参考
-description: 使用默认创建此类的新实例DocumentTableOptionsgroupdocs.assembly.data/documenttableoptions.
+description: 使用默认值创建此类的新实例DocumentTableOptionsgroupdocs.assembly.data/documenttableoptions.
 type: docs
 weight: 10
 url: /zh/net/groupdocs.assembly.data/documenttable/documenttable/
 ---
 ## DocumentTable(string, int) {#constructor_2}
 
-使用默认创建此类的新实例[`DocumentTableOptions`](../../documenttableoptions).
+使用默认值创建此类的新实例[`DocumentTableOptions`](../../documenttableoptions).
 
 ```csharp
 public DocumentTable(string documentPath, int indexInDocument)
@@ -52,7 +52,7 @@ public DocumentTable(string documentPath, int indexInDocument, DocumentTableOpti
 
 ## DocumentTable(Stream, int) {#constructor}
 
-使用默认创建此类的新实例[`DocumentTableOptions`](../../documenttableoptions).
+使用默认值创建此类的新实例[`DocumentTableOptions`](../../documenttableoptions).
 
 ```csharp
 public DocumentTable(Stream documentStream, int indexInDocument)
@@ -60,7 +60,7 @@ public DocumentTable(Stream documentStream, int indexInDocument)
 
 | 范围 | 类型 | 描述 |
 | --- | --- | --- |
-| documentStream | Stream | 包含要访问的表的文档的流。 |
+| documentStream | Stream | 包含带有要访问的表的文档的流。 |
 | indexInDocument | Int32 | 文档中表的从零开始的索引。 |
 
 ### 也可以看看
@@ -81,7 +81,7 @@ public DocumentTable(Stream documentStream, int indexInDocument, DocumentTableOp
 
 | 范围 | 类型 | 描述 |
 | --- | --- | --- |
-| documentStream | Stream | 包含要访问的表的文档的流。 |
+| documentStream | Stream | 包含带有要访问的表的文档的流。 |
 | indexInDocument | Int32 | 文档中表的从零开始的索引。 |
 | options | DocumentTableOptions | 一组控制从表中提取数据的选项。如果为空，则应用默认选项。 |
 

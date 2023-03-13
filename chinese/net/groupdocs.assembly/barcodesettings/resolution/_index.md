@@ -1,14 +1,14 @@
 ---
 title: Resolution
 second_title: GroupDocs.Assembly for .NET API 参考
-description: 获取或设置正在生成的条形码图像的水平和垂直分辨率以每英寸点数 为单位默认值为 96.
+description: 获取或设置正在生成的条形码图像的水平和垂直分辨率以每英寸 dots 为单位进行测量默认值为 96.
 type: docs
 weight: 40
 url: /zh/net/groupdocs.assembly/barcodesettings/resolution/
 ---
 ## BarcodeSettings.Resolution property
 
-获取或设置正在生成的条形码图像的水平和垂直分辨率。以每英寸点数 为单位。默认值为 96.
+获取或设置正在生成的条形码图像的水平和垂直分辨率。以每英寸 dots 为单位进行测量。默认值为 96.
 
 ```csharp
 public float Resolution { get; set; }

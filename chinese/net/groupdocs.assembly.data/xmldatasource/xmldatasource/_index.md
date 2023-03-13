@@ -16,7 +16,7 @@ public XmlDataSource(string xmlPath)
 
 | 范围 | 类型 | 描述 |
 | --- | --- | --- |
-| xmlPath | String | 要用作数据源的 XML 文件的路径。 |
+| xmlPath | String | 用作数据源的 XML 文件的路径。 |
 
 ### 也可以看看
 
@@ -28,7 +28,7 @@ public XmlDataSource(string xmlPath)
 
 ## XmlDataSource(Stream) {#constructor}
 
-使用 XML 数据加载的默认选项使用 XML 流中的数据创建新数据源。
+使用 XML 数据加载的默认选项使用来自 XML 流的数据创建新数据源。
 
 ```csharp
 public XmlDataSource(Stream xmlStream)
@@ -36,7 +36,7 @@ public XmlDataSource(Stream xmlStream)
 
 | 范围 | 类型 | 描述 |
 | --- | --- | --- |
-| xmlStream | Stream | 要用作数据源的 XML 数据流。 |
+| xmlStream | Stream | 用作数据源的 XML 数据流。 |
 
 ### 也可以看看
 
@@ -48,7 +48,7 @@ public XmlDataSource(Stream xmlStream)
 
 ## XmlDataSource(string, string) {#constructor_6}
 
-使用 XML 架构定义文件使用 XML 文件中的数据创建新数据源。默认 options 用于 XML 数据加载。
+使用 XML 架构定义文件使用来自 XML 文件的数据创建新数据源。默认 options 用于 XML 数据加载。
 
 ```csharp
 public XmlDataSource(string xmlPath, string xmlSchemaPath)
@@ -56,7 +56,7 @@ public XmlDataSource(string xmlPath, string xmlSchemaPath)
 
 | 范围 | 类型 | 描述 |
 | --- | --- | --- |
-| xmlPath | String | 要用作数据源的 XML 文件的路径。 |
+| xmlPath | String | 用作数据源的 XML 文件的路径。 |
 | xmlSchemaPath | String | 为 XML 文件提供架构的 XML 架构定义文件的路径。 |
 
 ### 也可以看看
@@ -77,7 +77,7 @@ public XmlDataSource(Stream xmlStream, Stream xmlSchemaStream)
 
 | 范围 | 类型 | 描述 |
 | --- | --- | --- |
-| xmlStream | Stream | 要用作数据源的 XML 数据流。 |
+| xmlStream | Stream | 用作数据源的 XML 数据流。 |
 | xmlSchemaStream | Stream | 为 XML 数据提供模式的 XML 模式定义流。 |
 
 ### 也可以看看
@@ -90,7 +90,7 @@ public XmlDataSource(Stream xmlStream, Stream xmlSchemaStream)
 
 ## XmlDataSource(string, XmlDataLoadOptions) {#constructor_5}
 
-使用 XML 数据加载的指定选项使用 XML 文件中的数据创建新数据源。
+使用指定的 XML 数据加载选项使用 XML 文件中的数据创建新数据源。
 
 ```csharp
 public XmlDataSource(string xmlPath, XmlDataLoadOptions options)
@@ -98,8 +98,8 @@ public XmlDataSource(string xmlPath, XmlDataLoadOptions options)
 
 | 范围 | 类型 | 描述 |
 | --- | --- | --- |
-| xmlPath | String | 要用作数据源的 XML 文件的路径。 |
-| options | XmlDataLoadOptions | XML 数据加载的选项。 |
+| xmlPath | String | 用作数据源的 XML 文件的路径。 |
+| options | XmlDataLoadOptions | XML 数据加载选项。 |
 
 ### 也可以看看
 
@@ -112,7 +112,7 @@ public XmlDataSource(string xmlPath, XmlDataLoadOptions options)
 
 ## XmlDataSource(Stream, XmlDataLoadOptions) {#constructor_1}
 
-使用 XML 数据加载的指定选项使用 XML 流中的数据创建新数据源。
+使用指定的 XML 数据加载选项使用来自 XML 流的数据创建新数据源。
 
 ```csharp
 public XmlDataSource(Stream xmlStream, XmlDataLoadOptions options)
@@ -120,8 +120,8 @@ public XmlDataSource(Stream xmlStream, XmlDataLoadOptions options)
 
 | 范围 | 类型 | 描述 |
 | --- | --- | --- |
-| xmlStream | Stream | 要用作数据源的 XML 数据流。 |
-| options | XmlDataLoadOptions | XML 数据加载的选项。 |
+| xmlStream | Stream | 用作数据源的 XML 数据流。 |
+| options | XmlDataLoadOptions | XML 数据加载选项。 |
 
 ### 也可以看看
 
@@ -134,7 +134,7 @@ public XmlDataSource(Stream xmlStream, XmlDataLoadOptions options)
 
 ## XmlDataSource(string, string, XmlDataLoadOptions) {#constructor_7}
 
-使用 XML 架构定义文件使用 XML 文件中的数据创建新数据源。指定的 选项用于加载 XML 数据。
+使用 XML 架构定义文件使用来自 XML 文件的数据创建新数据源。指定的 选项用于加载 XML 数据。
 
 ```csharp
 public XmlDataSource(string xmlPath, string xmlSchemaPath, XmlDataLoadOptions options)
@@ -142,9 +142,9 @@ public XmlDataSource(string xmlPath, string xmlSchemaPath, XmlDataLoadOptions op
 
 | 范围 | 类型 | 描述 |
 | --- | --- | --- |
-| xmlPath | String | 要用作数据源的 XML 文件的路径。 |
+| xmlPath | String | 用作数据源的 XML 文件的路径。 |
 | xmlSchemaPath | String | 为 XML 文件提供架构的 XML 架构定义文件的路径。 |
-| options | XmlDataLoadOptions | XML 数据加载的选项。 |
+| options | XmlDataLoadOptions | XML 数据加载选项。 |
 
 ### 也可以看看
 
@@ -165,9 +165,9 @@ public XmlDataSource(Stream xmlStream, Stream xmlSchemaStream, XmlDataLoadOption
 
 | 范围 | 类型 | 描述 |
 | --- | --- | --- |
-| xmlStream | Stream | 要用作数据源的 XML 数据流。 |
+| xmlStream | Stream | 用作数据源的 XML 数据流。 |
 | xmlSchemaStream | Stream | 为 XML 数据提供模式的 XML 模式定义流。 |
-| options | XmlDataLoadOptions | XML 数据加载的选项。 |
+| options | XmlDataLoadOptions | XML 数据加载选项。 |
 
 ### 也可以看看
 

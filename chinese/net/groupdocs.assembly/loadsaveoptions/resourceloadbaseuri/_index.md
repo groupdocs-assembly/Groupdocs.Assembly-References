@@ -1,14 +1,14 @@
 ---
 title: ResourceLoadBaseUri
 second_title: GroupDocs.Assembly for .NET API 参考
-description: 在加载 HTML 模板文档以组合并保存为非 HTML 格式时获取或设置基本 URI 以将外部资源文件的相对 URI 解析为绝对 URI默认值为空字符串
+description: 获取或设置一个基本 URI以在加载要组装并保存为非 HTML 格式的 HTML 模板文档时将外部资源文件的相对 URI 解析为绝对 URI默认值为空字符串
 type: docs
 weight: 20
 url: /zh/net/groupdocs.assembly/loadsaveoptions/resourceloadbaseuri/
 ---
 ## LoadSaveOptions.ResourceLoadBaseUri property
 
-在加载 HTML 模板文档以组合并保存为非 HTML 格式时，获取或设置基本 URI 以将外部资源文件的相对 URI 解析为绝对 URI。默认值为空字符串。
+获取或设置一个基本 URI，以在加载要组装并保存为非 HTML 格式的 HTML 模板文档时将外部资源文件的相对 URI 解析为绝对 URI。默认值为空字符串。
 
 ```csharp
 public string ResourceLoadBaseUri { get; set; }
@@ -16,11 +16,11 @@ public string ResourceLoadBaseUri { get; set; }
 
 ### 评论
 
-从文件加载 HTML 文档时，其包含的文件夹默认用作基本 URI，从流加载 HTML 文档时不会发生 。设置此属性以在从流中加载 HTML 文档时指定基本 URI，或在从文件中加载 HTML 文档时覆盖默认基本 URI。
+从文件加载 HTML 文档时，其包含的文件夹默认用作基本 URI，这在从流加载 HTML 文档时不会 发生。设置此属性以在从流中加载 HTML 文档时指定基本 URI，或者在从文件中加载 HTML 文档时覆盖默认的基本 URI。
 
-在下列情况下忽略此属性的值：
+在以下情况下忽略此属性的值：
 
-* 正在加载的 HTML 文档包含一个提供基本 URI 的基本 HTML 元素。
+* 正在加载的 HTML 文档包含提供基本 URI 的 BASE HTML 元素。
 * 正在加载的 HTML 文档将被组装并保存为 HTML（不加载外部资源文件并且 相对 URI 不会更改）。
 
 ### 也可以看看

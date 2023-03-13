@@ -1,14 +1,14 @@
 ---
 title: LoadSaveOptions
 second_title: GroupDocs.Assembly for .NET API 参考
-description: 指定加载和保存要组装的文档的附加选项
+description: 指定用于加载和保存要组装的文档的附加选项
 type: docs
 weight: 250
 url: /zh/net/groupdocs.assembly/loadsaveoptions/
 ---
 ## LoadSaveOptions class
 
-指定加载和保存要组装的文档的附加选项。
+指定用于加载和保存要组装的文档的附加选项。
 
 ```csharp
 public class LoadSaveOptions
@@ -18,16 +18,16 @@ public class LoadSaveOptions
 
 | 姓名 | 描述 |
 | --- | --- |
-| [LoadSaveOptions](loadsaveoptions#constructor)() | 创建此类的新实例，但未指定任何属性。 |
-| [LoadSaveOptions](loadsaveoptions#constructor_1)(FileFormat) | 使用指定的文件格式创建此类的新实例，以将组装的文档保存到。 |
+| [LoadSaveOptions](loadsaveoptions#constructor)() | 创建此类的新实例，不指定任何属性。 |
+| [LoadSaveOptions](loadsaveoptions#constructor_1)(FileFormat) | 使用指定的文件格式创建此类的新实例，以将组装的文档保存到. |
 
 ## 特性
 
 | 姓名 | 描述 |
 | --- | --- |
-| [ResourceLoadBaseUri](../../groupdocs.assembly/loadsaveoptions/resourceloadbaseuri) { get; set; } | 在加载 HTML 模板文档以组合并保存为非 HTML 格式时，获取或设置基本 URI 以将外部资源文件的相对 URI 解析为绝对 URI。默认值为空字符串。 |
-| [ResourceSaveFolder](../../groupdocs.assembly/loadsaveoptions/resourcesavefolder) { get; set; } | 获取或设置文件夹路径以存储外部资源文件，同时将从非 HTML 格式加载的组装文档保存为 HTML。默认值为空字符串。 |
-| [SaveFormat](../../groupdocs.assembly/loadsaveoptions/saveformat) { get; set; } | 获取或设置保存组合文档的文件格式。Unspecified是默认值。 |
+| [ResourceLoadBaseUri](../../groupdocs.assembly/loadsaveoptions/resourceloadbaseuri) { get; set; } | 获取或设置一个基本 URI，以在加载要组装并保存为非 HTML 格式的 HTML 模板文档时将外部资源文件的相对 URI 解析为绝对 URI。默认值为空字符串。 |
+| [ResourceSaveFolder](../../groupdocs.assembly/loadsaveoptions/resourcesavefolder) { get; set; } | 获取或设置用于存储外部资源文件的文件夹路径，同时将从非 HTML 格式加载的组合文档保存为 HTML。默认值为空字符串。 |
+| [SaveFormat](../../groupdocs.assembly/loadsaveoptions/saveformat) { get; set; } | 获取或设置用于保存组合文档的文件格式。Unspecified是默认值。 |
 
 ### 也可以看看
 

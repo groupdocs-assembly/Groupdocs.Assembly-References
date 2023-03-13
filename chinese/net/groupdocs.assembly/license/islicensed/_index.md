@@ -1,14 +1,14 @@
 ---
 title: IsLicensed
 second_title: GroupDocs.Assembly for .NET API 参考
-description: 如果已应用有效许可证则返回 true如果组件在评估模式下运行则为 false
+description: 如果已应用有效许可证则返回真如果组件在评估模式下运行则为 false.
 type: docs
 weight: 20
 url: /zh/net/groupdocs.assembly/license/islicensed/
 ---
 ## License.IsLicensed property
 
-如果已应用有效许可证，则返回 true；如果组件在评估模式下运行，则为 false。
+如果已应用有效许可证，则返回真；如果组件在评估模式下运行，则为 false.
 
 ```csharp
 public bool IsLicensed { get; }

@@ -16,7 +16,7 @@ public char Delimiter { get; set; }
 
 ### 评论
 
-默认值为','（逗号）。
+默认值为 ','（逗号）。
 
 ### 也可以看看
 

@@ -1,14 +1,16 @@
 ---
 title: Remove
 second_title: GroupDocs.Assembly for .NET API 参考
-description: 删除指定的Type集合中的对象投掷ArgumentExceptionif type为空
+description: 删除指定的Type集合中的对象
 type: docs
 weight: 50
 url: /zh/net/groupdocs.assembly/knowntypeset/remove/
 ---
 ## KnownTypeSet.Remove method
 
-删除指定的Type集合中的对象。投掷ArgumentExceptionif *type*为空。
+删除指定的Type集合中的对象。
+
+投掷ArgumentException如果*type*一片空白。
 
 ```csharp
 public void Remove(Type type)
@@ -16,7 +18,7 @@ public void Remove(Type type)
 
 | 范围 | 类型 | 描述 |
 | --- | --- | --- |
-| type | Type | 一个Type要删除的对象。 |
+| type | Type | AType要删除的对象。 |
 
 ### 也可以看看
 

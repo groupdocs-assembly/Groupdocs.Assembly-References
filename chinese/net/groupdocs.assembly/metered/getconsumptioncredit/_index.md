@@ -16,7 +16,7 @@ public static decimal GetConsumptionCredit()
 
 ### 返回值
 
-当前消耗的积分数。
+当前消耗的信用数。
 
 ### 也可以看看
 

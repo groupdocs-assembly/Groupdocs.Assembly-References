@@ -1,14 +1,14 @@
 ---
 title: AlwaysGenerateRootObject
 second_title: GroupDocs.Assembly for .NET API 参考
-description: 获取或设置一个标志指示生成的数据源是否将始终包含 XML 根 元素的对象如果一个 XML 根元素没有属性并且它的所有子元素都具有相同的名称则默认情况下不会创建这样的对象 
+description: 获取或设置一个标志该标志指示生成的数据源是否始终包含 XML 根 元素的对象如果 XML 根元素没有属性并且其所有子元素都具有相同的名称则默认情况下不会创建这样的对象 
 type: docs
 weight: 20
 url: /zh/net/groupdocs.assembly.data/xmldataloadoptions/alwaysgeneraterootobject/
 ---
 ## XmlDataLoadOptions.AlwaysGenerateRootObject property
 
-获取或设置一个标志，指示生成的数据源是否将始终包含 XML 根 元素的对象。如果一个 XML 根元素没有属性并且它的所有子元素都具有相同的名称，则默认情况下不会创建这样的对象 。
+获取或设置一个标志，该标志指示生成的数据源是否始终包含 XML 根 元素的对象。如果 XML 根元素没有属性并且其所有子元素都具有相同的名称，则默认情况下不会创建这样的对象 。
 
 ```csharp
 public bool AlwaysGenerateRootObject { get; set; }

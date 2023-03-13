@@ -1,14 +1,14 @@
 ---
 title: SimpleValueParseMode
 second_title: GroupDocs.Assembly for .NET API 参考
-description: 获取或设置在加载 JSON 时解析 JSON 简单值空布尔数字整数和字符串 的模式这种模式不会影响日期时间值的解析默认值为 Loose.
+description: 获取或设置加载 JSON 时解析 JSON 简单值空值布尔值数字整数和字符串 的模式这种模式不会影响日期时间值的解析默认为 Loose.
 type: docs
 weight: 40
 url: /zh/net/groupdocs.assembly.data/jsondataloadoptions/simplevalueparsemode/
 ---
 ## JsonDataLoadOptions.SimpleValueParseMode property
 
-获取或设置在加载 JSON 时解析 JSON 简单值（空、布尔、数字、整数和字符串） 的模式。这种模式不会影响日期时间值的解析。默认值为 Loose.
+获取或设置加载 JSON 时解析 JSON 简单值（空值、布尔值、数字、整数和字符串） 的模式。这种模式不会影响日期时间值的解析。默认为 Loose.
 
 ```csharp
 public JsonSimpleValueParseMode SimpleValueParseMode { get; set; }
