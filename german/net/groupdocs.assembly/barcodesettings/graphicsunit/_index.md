@@ -1,14 +1,14 @@
 ---
 title: GraphicsUnit
 second_title: GroupDocs.Assembly für .NET-API-Referenz
-description: Ermittelt oder setzt eine Grafikeinheit die zum Messen verwendet wirdBaseXDimensiongroupdocs.assembly/barcodesettings/basexdimension undBaseYDimensiongroupdocs.assembly/barcodesettings/baseydimension . Der Standardwert istMillimeter .
+description: Ermittelt oder setzt eine Grafikeinheit die zum Messen verwendet wirdBaseXDimensiongroupdocs.assembly/barcodesettings/basexdimension UndBaseYDimensiongroupdocs.assembly/barcodesettings/baseydimension . Der Standardwert istMillimeter .
 type: docs
 weight: 30
 url: /de/net/groupdocs.assembly/barcodesettings/graphicsunit/
 ---
 ## BarcodeSettings.GraphicsUnit property
 
-Ermittelt oder setzt eine Grafikeinheit, die zum Messen verwendet wird[`BaseXDimension`](../basexdimension) und[`BaseYDimension`](../baseydimension) . Der Standardwert istMillimeter .
+Ermittelt oder setzt eine Grafikeinheit, die zum Messen verwendet wird[`BaseXDimension`](../basexdimension) Und[`BaseYDimension`](../baseydimension) . Der Standardwert istMillimeter .
 
 ```csharp
 public GraphicsUnit GraphicsUnit { get; set; }

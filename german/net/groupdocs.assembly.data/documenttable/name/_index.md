@@ -23,7 +23,7 @@ Der Name der Tabelle gilt als gültig, wenn folgende Bedingungen erfüllt sind:
 * Der Name ist nicht leer.
 * Das erste Zeichen des Namens ist ein Buchstabe oder ein Unterstrich.
 * Die restlichen Zeichen des Namens sind Buchstaben, Unterstriche, Ziffern oder die folgenden Zeichen: '@', '#', '$'.
-* Das entsprechende[`DocumentTableSet`](../../documenttableset) Objekt enthält kein a[`DocumentTable`](../../documenttable)Instanz mit demselben Namen.
+* Das entsprechende[`DocumentTableSet`](../../documenttableset) Objekt enthält kein a[`DocumentTable`](../../documenttable) Instanz mit demselben Namen.
 
 ### Siehe auch
 

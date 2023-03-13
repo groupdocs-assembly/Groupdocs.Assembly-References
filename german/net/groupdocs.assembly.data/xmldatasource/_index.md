@@ -37,11 +37,11 @@ Wenn die XML-Schema-Definition an einen Konstruktor dieser Klasse übergeben wir
 
 Wenn die XML-Schemadefinition nicht an einen Konstruktor dieser Klasse übergeben wird, werden Datentypen von Werten einfacher XML-Elemente und Attribute automatisch anhand ihrer Zeichenfolgendarstellungen bestimmt. In Vorlagendokumenten können Sie also auch in diesem Fall mit getippten Werten arbeiten. Die Engine ist in der Lage, Werte der folgenden Typen automatisch zu erkennen:
 
-* Nullable
-* Nullable
-* Nullable
-* Nullable
-* String
+* `lang?`
+* `doppelt?`
+* `blöd?`
+* `Terminzeit?`
+* `Schnur`
 
 Beachten Sie, dass für eine funktionierende automatische Erkennung von Datentypen Zeichenfolgendarstellungen von Werten einfacher XML-Elemente und Attribute mithilfe von invarianten Kultureinstellungen gebildet werden sollten.
 

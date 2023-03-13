@@ -20,7 +20,7 @@ public DocumentTableRelation this[int index] { get; }
 
 ### Rückgabewert
 
-EIN[`DocumentTableRelation`](../../documenttablerelation) Instanz aus der Sammlung am angegebenen Index.
+A[`DocumentTableRelation`](../../documenttablerelation) Instanz aus der Sammlung am angegebenen Index.
 
 ### Siehe auch
 

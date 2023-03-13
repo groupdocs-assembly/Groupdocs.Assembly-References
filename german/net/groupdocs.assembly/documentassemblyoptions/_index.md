@@ -24,6 +24,7 @@ public enum DocumentAssemblyOptions
 | UpdateFieldsAndFormulas | `2` | Gibt an, dass Felder der Ergebnisdokumente der Textverarbeitung und Formeln der Ergebnisdokumente der Tabellenkalkulation vom Assembler aktualisiert werden sollen. |
 | RemoveEmptyParagraphs | `4` | Gibt an, dass der Assembler Absätze entfernen soll, die leer werden, nachdem Syntax-Tags der Vorlage entfernt oder durch leere Werte ersetzt wurden. |
 | InlineErrorMessages | `8` | Gibt an, dass der Assembler Vorlagensyntax-Fehlermeldungen in Ausgabedokumente einfügen soll. Wenn diese Option nicht gesetzt ist, löst der Assembler eine Ausnahme aus, wenn ein Syntaxfehler auftritt. |
+| UseSpreadsheetDataTypes | `10` | Bezieht sich nur auf Spreadsheet-Dokumente. Gibt an, dass ausgewertete Ausdrucksergebnisse entsprechenden Spreadsheet-Datentypen zugeordnet werden sollen, was sich auch auf ihre Standardformatierung in Zellen auswirkt. Wenn diese Option nicht gesetzt ist, werden Ausdrucksergebnisse vom Assembler immer als Strings geschrieben. Diese Option hat keine Wirkung, wenn Ausdrucksergebnisse mit Vorlagensyntax formatiert werden - Ausdrucksergebnisse werden dann auch immer als Strings geschrieben. |
 
 ### Siehe auch
 

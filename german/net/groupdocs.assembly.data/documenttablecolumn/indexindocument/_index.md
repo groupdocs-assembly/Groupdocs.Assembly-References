@@ -16,7 +16,7 @@ public int IndexInDocument { get; }
 
 ### Bemerkungen
 
-Abhängig von[`DocumentTableOptions`](../../documenttableoptions)angegeben, kann dieser Index vom Index von this abweichen[`DocumentTableColumn`](../../documenttablecolumn) Instanz innerhalb der Spaltensammlung des entsprechenden [`DocumentTable`](../../documenttable) Instanz.
+Abhängig von[`DocumentTableOptions`](../../documenttableoptions) angegeben, kann dieser Index vom Index von this abweichen[`DocumentTableColumn`](../../documenttablecolumn) Instanz innerhalb der Spaltensammlung des entsprechenden [`DocumentTable`](../../documenttable) Instanz.
 
 ### Siehe auch
 

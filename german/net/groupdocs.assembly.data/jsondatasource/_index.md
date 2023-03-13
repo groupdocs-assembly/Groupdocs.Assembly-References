@@ -31,15 +31,15 @@ Wenn in Vorlagendokumenten ein JSON-Element der obersten Ebene ein Array ist, a[
 
 In Vorlagendokumenten können Sie mit typisierten Werten von JSON-Elementen arbeiten. Der Einfachheit halber ersetzt die Engine den Satz der einfachen JSON-Typen durch den folgenden:
 
-* Nullable
-* Nullable
-* Nullable
-* Nullable
-* String
+* `lang?`
+* `doppelt?`
+* `blöd?`
+* `Terminzeit?`
+* `Schnur`
 
 Die Engine erkennt automatisch Werte der zusätzlichen Typen anhand ihrer JSON-Darstellungen.
 
-Um das Standardverhalten beim Laden von JSON-Daten zu überschreiben, initialisieren und übergeben Sie a[`JsonDataLoadOptions`](../jsondataloadoptions) instance zu einem Konstruktor dieser Klasse.
+Um das Standardverhalten beim Laden von JSON-Daten zu überschreiben, initialisieren und übergeben Sie a[`JsonDataLoadOptions`](../jsondataloadoptions)instance zu einem Konstruktor dieser Klasse.
 
 ### Siehe auch
 

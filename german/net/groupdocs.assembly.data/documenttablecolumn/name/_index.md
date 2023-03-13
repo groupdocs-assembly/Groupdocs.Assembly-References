@@ -23,7 +23,7 @@ Der Name der Spalte gilt als gültig, wenn die folgenden Bedingungen erfüllt si
 * Der Name ist nicht leer.
 * Das erste Zeichen des Namens ist ein Buchstabe oder ein Unterstrich.
 * Die restlichen Zeichen des Namens sind Buchstaben, Unterstriche, Ziffern oder die folgenden Zeichen: '@', '#', '$'.
-* Das entsprechende[`DocumentTable`](../../documenttable) Objekt enthält kein a[`DocumentTableColumn`](../../documenttablecolumn)Instanz mit demselben Namen.
+* Das entsprechende[`DocumentTable`](../../documenttable) Objekt enthält kein a[`DocumentTableColumn`](../../documenttablecolumn) Instanz mit demselben Namen.
 
 ### Siehe auch
 
