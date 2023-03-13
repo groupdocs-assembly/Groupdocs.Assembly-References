@@ -1,14 +1,14 @@
 ---
 title: KnownTypeSet
 second_title: GroupDocs.Assembly för .NET API-referens
-description: Representerar en oordnad uppsättning det vill säga en samling unika föremål som innehållerType objekt vilka helt eller delvis kvalificerade namn kan användas i dokumentmallar för att anropa motsvarande typers statiska medlemmar utföra typcasts etc.
+description: Representerar en oordnad uppsättning det vill säga en samling unika föremål som innehållerTypeobjekt vilka helt eller delvis kvalificerade namn kan användas i dokumentmallar för att anropa motsvarande typers statiska medlemmar utföra typcasts etc.
 type: docs
 weight: 230
 url: /sv/net/groupdocs.assembly/knowntypeset/
 ---
 ## KnownTypeSet class
 
-Representerar en oordnad uppsättning (det vill säga en samling unika föremål) som innehållerType objekt vilka helt eller delvis kvalificerade namn kan användas i dokumentmallar för att anropa motsvarande -typers statiska medlemmar, utföra typcasts, etc.
+Representerar en oordnad uppsättning (det vill säga en samling unika föremål) som innehållerTypeobjekt vilka helt eller delvis kvalificerade namn kan användas i dokumentmallar för att anropa motsvarande -typers statiska medlemmar, utföra typcasts, etc.
 
 ```csharp
 public class KnownTypeSet : IEnumerable
@@ -24,10 +24,10 @@ public class KnownTypeSet : IEnumerable
 
 | namn | Beskrivning |
 | --- | --- |
-| [Add](../../groupdocs.assembly/knowntypeset/add)(Type) | Lägger till det angivnaType objekt till uppsättningen. KastarArgumentException in följande fall: |
+| [Add](../../groupdocs.assembly/knowntypeset/add)(Type) | Lägger till det angivnaType objekt till uppsättningen. |
 | [Clear](../../groupdocs.assembly/knowntypeset/clear)() | Tar bort alla objekt från uppsättningen. |
 | [GetEnumerator](../../groupdocs.assembly/knowntypeset/getenumerator)() | Returnerar AnIEnumerator objekt att iterera över objekt i uppsättningen. |
-| [Remove](../../groupdocs.assembly/knowntypeset/remove)(Type) | Tar bort det angivnaType objekt från uppsättningen. KastarArgumentException if *type* är null. |
+| [Remove](../../groupdocs.assembly/knowntypeset/remove)(Type) | Tar bort det angivnaType objekt från uppsättningen. |
 
 ### Se även
 

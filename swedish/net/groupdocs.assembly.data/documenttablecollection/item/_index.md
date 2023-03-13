@@ -45,7 +45,7 @@ public DocumentTable this[string name] { get; }
 
 ### Returvärde
 
-A[`DocumentTable`](../../documenttable) instans med det angivna namnet från samlingen eller null om en sådan instans inte finns.
+A[`DocumentTable`](../../documenttable)instans med det angivna namnet från samlingen eller null om en sådan instans inte finns.
 
 ### Se även
 

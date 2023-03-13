@@ -18,7 +18,7 @@ Tillhandahåller klasser för åtkomst till data från externa dokument som ska 
 | [DocumentTableCollection](./documenttablecollection) | Representerar en skrivskyddad samling av[`DocumentTable`](../groupdocs.assembly.data/documenttable) föremål för en viss[`DocumentTableSet`](../groupdocs.assembly.data/documenttableset) instans. |
 | [DocumentTableColumn](./documenttablecolumn) | Representerar en enda kolumn av en viss[`DocumentTable`](../groupdocs.assembly.data/documenttable) objekt. |
 | [DocumentTableColumnCollection](./documenttablecolumncollection) | Representerar en skrivskyddad samling av[`DocumentTableColumn`](../groupdocs.assembly.data/documenttablecolumn) objekt av en viss [`DocumentTable`](../groupdocs.assembly.data/documenttable) instans. |
-| [DocumentTableLoadArgs](./documenttableloadargs) | Tillhandahåller data för[`Handle`](../groupdocs.assembly.data/idocumenttableloadhandler/handle) metod. |
+| [DocumentTableLoadArgs](./documenttableloadargs) | Tillhandahåller data för[`Handle`](../groupdocs.assembly.data/idocumenttableloadhandler/handle)metod. |
 | [DocumentTableOptions](./documenttableoptions) | Ger en uppsättning alternativ för att kontrollera extrahering av data från en dokumenttabell. |
 | [DocumentTableRelation](./documenttablerelation) | Representerar en förälder-barn-relation mellan två[`DocumentTable`](../groupdocs.assembly.data/documenttable) objekt. |
 | [DocumentTableRelationCollection](./documenttablerelationcollection) | Representerar samlingen av[`DocumentTableRelation`](../groupdocs.assembly.data/documenttablerelation) objekt av en singel[`DocumentTableSet`](../groupdocs.assembly.data/documenttableset) instans. |

@@ -1,20 +1,22 @@
 ---
 title: Add
 second_title: GroupDocs.Assembly för .NET API-referens
-description: Lägger till det angivnaType objekt till uppsättningen. KastarArgumentException in följande fall
+description: Lägger till det angivnaType objekt till uppsättningen.
 type: docs
 weight: 20
 url: /sv/net/groupdocs.assembly/knowntypeset/add/
 ---
 ## KnownTypeSet.Add method
 
-Lägger till det angivnaType objekt till uppsättningen. KastarArgumentException in följande fall:
+Lägger till det angivnaType objekt till uppsättningen.
+
+KastarArgumentException i följande fall:
 
 -*type* är inget.
 
 -*type* representerar en tomrumstyp.
 
--*type*representerar en osynlig typ, dvs en icke-public typ eller en offentlig kapslad typ som har en icke-public yttre typ.
+-*type* representerar en osynlig typ, dvs en icke-public typ eller en offentlig kapslad typ som har en icke-public yttre typ.
 
 -*type* representerar en generisk typ.
 

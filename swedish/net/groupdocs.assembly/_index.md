@@ -15,7 +15,7 @@ Tillhandahåller klasser för att generera dokument i populära kontorsfilformat
 | [BarcodeSettings](./barcodesettings) | Representerar en uppsättning inställningar som kontrollerar generering av streckkoder vid sammansättning av ett dokument. |
 | [DataSourceInfo](./datasourceinfo) | Ger information om ett enstaka datakällobjekt som ska användas för att sammanställa ett dokument från en mall. |
 | [DocumentAssembler](./documentassembler) | Tillhandahåller rutiner för att fylla i malldokument med data och en uppsättning inställningar för att kontrollera dessa rutiner. |
-| [KnownTypeSet](./knowntypeset) | Representerar en oordnad uppsättning (det vill säga en samling unika föremål) som innehållerType objekt vilka helt eller delvis kvalificerade namn kan användas i dokumentmallar för att anropa motsvarande -typers statiska medlemmar, utföra typcasts, etc. |
+| [KnownTypeSet](./knowntypeset) | Representerar en oordnad uppsättning (det vill säga en samling unika föremål) som innehållerTypeobjekt vilka helt eller delvis kvalificerade namn kan användas i dokumentmallar för att anropa motsvarande -typers statiska medlemmar, utföra typcasts, etc. |
 | [License](./license) | Tillhandahåller metoder för att licensiera komponenten. |
 | [LoadSaveOptions](./loadsaveoptions) | Anger ytterligare alternativ för att ladda och spara ett dokument som ska monteras. |
 | [Metered](./metered) | Tillhandahåller metoder för att arbeta med mätlicenser. |

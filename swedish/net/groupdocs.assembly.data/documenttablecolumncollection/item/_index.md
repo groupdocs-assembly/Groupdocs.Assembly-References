@@ -45,7 +45,7 @@ public DocumentTableColumn this[string name] { get; }
 
 ### Returvärde
 
-A[`DocumentTableColumn`](../../documenttablecolumn) instans med det angivna namnet från samlingen eller null om en sådan instans inte finns.
+A[`DocumentTableColumn`](../../documenttablecolumn)instans med det angivna namnet från samlingen eller null om en sådan instans inte finns.
 
 ### Se även
 

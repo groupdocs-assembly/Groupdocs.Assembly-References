@@ -33,7 +33,7 @@ public class DocumentTable
 
 ### Anmärkningar
 
-För dokument i kalkylarksfilformat, a[`DocumentTable`](../documenttable)instans representerar ett enda ark. För dokument med andra filformat, en[`DocumentTable`](../documenttable) instans representerar en enda tabell.
+För dokument i kalkylarksfilformat, a[`DocumentTable`](../documenttable) instans representerar ett enda ark. För dokument med andra filformat, en[`DocumentTable`](../documenttable) instans representerar en enda tabell.
 
 För att komma åt data från motsvarande tabell när du sätter ihop ett dokument, skicka en instans av denna klass som en datakälla till en av[`DocumentAssembler`](../../groupdocs.assembly/documentassembler) .AssembleDocument overloads.
 
