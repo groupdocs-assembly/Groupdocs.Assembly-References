@@ -25,7 +25,7 @@ public class JsonDataLoadOptions
 | اسم | وصف |
 | --- | --- |
 | [AlwaysGenerateRootObject](../../groupdocs.assembly.data/jsondataloadoptions/alwaysgeneraterootobject) { get; set; } | الحصول على أو تعيين علامة تشير إلى ما إذا كان مصدر البيانات الذي تم إنشاؤه سيحتوي دائمًا على كائن لعنصر JSON root . إذا كان عنصر جذر JSON يحتوي على خاصية معقدة واحدة ، فلن يتم تكوين هذا العنصر افتراضيًا. |
-| [ExactDateTimeParseFormats](../../groupdocs.assembly.data/jsondataloadoptions/exactdatetimeparseformats) { get; set; } | الحصول على أو تعيين تنسيقات دقيقة لتحليل قيم JSON للتاريخ والوقت أثناء تحميل JSON. الافتراضي هو**لا شيء** . |
+| [ExactDateTimeParseFormats](../../groupdocs.assembly.data/jsondataloadoptions/exactdatetimeparseformats) { get; set; } | الحصول على أو تعيين تنسيقات دقيقة لتحليل قيم JSON للتاريخ والوقت أثناء تحميل JSON. الافتراضي هو**باطل** . |
 | [SimpleValueParseMode](../../groupdocs.assembly.data/jsondataloadoptions/simplevalueparsemode) { get; set; } | الحصول على أو تحديد وضع لتحليل قيم JSON البسيطة (فارغ ، منطقي ، رقم ، عدد صحيح ، وسلسلة) أثناء تحميل JSON. مثل هذا الوضع لا يؤثر على تحليل قيم التاريخ والوقت. الافتراضي هو Loose . |
 
 ### ملاحظات

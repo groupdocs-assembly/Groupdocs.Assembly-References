@@ -27,19 +27,19 @@ public class JsonDataSource
 
 للوصول إلى بيانات الملف المقابل أو التدفق أثناء تجميع مستند ، قم بتمرير مثيل من هذه الفئة كـ مصدر بيانات إلى أحد[`DocumentAssembler`](../../groupdocs.assembly/documentassembler) .AssembleDocument التحميل الزائد .
 
-في مستندات النموذج ، إذا كان عنصر JSON ذي المستوى الأعلى عبارة عن مصفوفة ، أ[`JsonDataSource`](../jsondatasource) يجب معاملة المثال be بنفس الطريقة كما لو كان ملفDataTable نموذج. إذا كان عنصر JSON عالي المستوى كائنًا ، فإن ملف[`JsonDataSource`](../jsondatasource) يجب معاملة المثيل بنفس الطريقة كما لو كان أDataRowنموذج. لمزيد من المعلومات ، راجع مرجع بناء جملة النموذج (https://docs.groupdocs.com/display/assemblynet/Template+Syntax+-+Part+1+of+2#TemplateSyntax-Part1of2-UsingDataSources).
+في مستندات النموذج ، إذا كان عنصر JSON ذي المستوى الأعلى عبارة عن مصفوفة ، أ[`JsonDataSource`](../jsondatasource) يجب معاملة المثال be بنفس الطريقة كما لو كان ملفDataTable مثال. إذا كان عنصر JSON عالي المستوى كائنًا ، فإن ملف[`JsonDataSource`](../jsondatasource) يجب معاملة المثيل بنفس الطريقة كما لو كان أDataRowمثال. لمزيد من المعلومات ، راجع مرجع بناء جملة النموذج (https://docs.groupdocs.com/display/assemblynet/Template+Syntax+-+Part+1+of+2#TemplateSyntax-Part1of2-UsingDataSources).
 
 في مستندات النموذج ، يمكنك التعامل مع القيم المكتوبة لعناصر JSON. للراحة ، يستبدل المحرك مجموعة لأنواع JSON البسيطة بالمجموعة التالية:
 
-* Nullable
-* Nullable
-* Nullable
-* Nullable
-* String
+* `طويل؟`
+* `مزدوج؟`
+* `منطقي؟`
+* `DateTime؟`
+* `خيط`
 
 يتعرف المحرك تلقائيًا على قيم الأنواع الإضافية بناءً على تمثيلات JSON الخاصة بهم.
 
-لتجاوز السلوك الافتراضي لتحميل بيانات JSON ، قم بتهيئة وتمرير ملف[`JsonDataLoadOptions`](../jsondataloadoptions) example إلى مُنشئ هذه الفئة.
+لتجاوز السلوك الافتراضي لتحميل بيانات JSON ، قم بتهيئة وتمرير ملف[`JsonDataLoadOptions`](../jsondataloadoptions)example إلى مُنشئ هذه الفئة.
 
 ### أنظر أيضا
 

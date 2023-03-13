@@ -33,11 +33,11 @@ public class DocumentTable
 
 ### ملاحظات
 
-بالنسبة لمستندات تنسيقات ملفات جداول البيانات ، أ[`DocumentTable`](../documenttable)يمثل المثال ورقة واحدة. للمستندات ذات تنسيقات الملفات الأخرى ، أ[`DocumentTable`](../documenttable) يمثل المثال جدولًا واحدًا.
+بالنسبة لمستندات تنسيقات ملفات جداول البيانات ، أ[`DocumentTable`](../documenttable) يمثل المثال ورقة واحدة. للمستندات ذات تنسيقات الملفات الأخرى ، أ[`DocumentTable`](../documenttable) يمثل المثال جدولًا واحدًا.
 
 للوصول إلى بيانات الجدول المقابل أثناء تجميع مستند ، قم بتمرير مثيل من هذه الفئة كـ مصدر بيانات إلى أحد[`DocumentAssembler`](../../groupdocs.assembly/documentassembler) .AssembleDocument overloads.
 
-في مستندات النموذج ، أ[`DocumentTable`](../documenttable) يجب معاملة المثيل بنفس الطريقة كما لو كان aDataTable نموذج. انظر مرجع بناء الجملة لمزيد من المعلومات.
+في مستندات النموذج ، أ[`DocumentTable`](../documenttable) يجب معاملة المثيل بنفس الطريقة كما لو كان aDataTable مثال. انظر مرجع بناء الجملة لمزيد من المعلومات.
 
 ### أنظر أيضا
 

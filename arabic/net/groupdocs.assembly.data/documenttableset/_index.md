@@ -36,7 +36,7 @@ public class DocumentTableSet
 
 للوصول إلى بيانات الجداول المقابلة أثناء تجميع مستند ، قم بتمرير مثيل من هذه الفئة كـ مصدر بيانات إلى أحد[`DocumentAssembler`](../../groupdocs.assembly/documentassembler) .AssembleDocument overloads.
 
-في مستندات النموذج ، أ[`DocumentTableSet`](../documenttableset) يجب معاملة المثيل بنفس الطريقة كما لو كان aDataSet نموذج. انظر مرجع بناء الجملة لمزيد من المعلومات.
+في مستندات النموذج ، أ[`DocumentTableSet`](../documenttableset) يجب معاملة المثيل بنفس الطريقة كما لو كان aDataSet مثال. انظر مرجع بناء الجملة لمزيد من المعلومات.
 
 ### أنظر أيضا
 

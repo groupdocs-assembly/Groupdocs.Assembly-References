@@ -16,7 +16,7 @@ public int IndexInDocument { get; }
 
 ### ملاحظات
 
-حسب[`DocumentTableOptions`](../../documenttableoptions)المحدد ، قد يختلف هذا الفهرس عن فهرس هذا[`DocumentTableColumn`](../../documenttablecolumn) المثيل ضمن مجموعة العمود المقابلة لـ [`DocumentTable`](../../documenttable) المثال.
+حسب[`DocumentTableOptions`](../../documenttableoptions) المحدد ، قد يختلف هذا الفهرس عن فهرس هذا[`DocumentTableColumn`](../../documenttablecolumn) المثيل ضمن مجموعة العمود المقابلة لـ [`DocumentTable`](../../documenttable) المثال.
 
 ### أنظر أيضا
 

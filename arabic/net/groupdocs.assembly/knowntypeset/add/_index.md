@@ -1,20 +1,22 @@
 ---
 title: Add
 second_title: GroupDocs.Assembly للحصول على مرجع .NET API
-description: يضيف المحددType تعترض على المجموعة. رمياتArgumentException in الحالات التالية
+description: يضيف المحددType تعترض على المجموعة.
 type: docs
 weight: 20
 url: /ar/net/groupdocs.assembly/knowntypeset/add/
 ---
 ## KnownTypeSet.Add method
 
-يضيف المحددType تعترض على المجموعة. رمياتArgumentException in الحالات التالية:
+يضيف المحددType تعترض على المجموعة.
+
+رمياتArgumentException في الحالات التالية:
 
 -*type* باطل.
 
 -*type* يمثل نوع الفراغ.
 
--*type*يمثل نوعًا غير مرئي ، أي نوع غير عام أو نوع متداخل عام له نوع خارجي غير عام.
+-*type* يمثل نوعًا غير مرئي ، أي نوع غير عام أو نوع متداخل عام له نوع خارجي غير عام.
 
 -*type* يمثل نوعًا عامًا.
 

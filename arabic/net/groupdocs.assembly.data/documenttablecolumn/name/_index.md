@@ -23,7 +23,7 @@ public string Name { get; set; }
 * الاسم ليس فارغًا .
 * الحرف الأول من الاسم هو حرف أو شرطة سفلية .
 * باقي أحرف الاسم عبارة عن أحرف أو شرطات سفلية أو أرقام أو الأحرف التالية: "@" أو "#" أو "$" .
-* المقابل[`DocumentTable`](../../documenttable) لا يحتوي الكائن على[`DocumentTableColumn`](../../documenttablecolumn)مثيل بنفس الاسم.
+* المقابل[`DocumentTable`](../../documenttable) لا يحتوي الكائن على[`DocumentTableColumn`](../../documenttablecolumn) مثيل بنفس الاسم.
 
 ### أنظر أيضا
 

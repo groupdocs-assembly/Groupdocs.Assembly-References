@@ -27,19 +27,19 @@ public class CsvDataSource
 
 للوصول إلى بيانات الملف المقابل أو التدفق أثناء تجميع مستند ، قم بتمرير مثيل من هذه الفئة كـ مصدر بيانات إلى أحد[`DocumentAssembler`](../../groupdocs.assembly/documentassembler) .AssembleDocument التحميل الزائد .
 
-في مستندات النموذج ، أ[`CsvDataSource`](../csvdatasource) يجب معاملة المثيل بنفس الطريقة كما لو كان aDataTableنموذج. لمزيد من المعلومات ، راجع مرجع بناء جملة النموذج (https://docs.groupdocs.com/display/assemblynet/Template+Syntax+-+Part+1+of+2#TemplateSyntax-Part1of2-UsingDataSources).
+في مستندات النموذج ، أ[`CsvDataSource`](../csvdatasource) يجب معاملة المثيل بنفس الطريقة كما لو كان aDataTableمثال. لمزيد من المعلومات ، راجع مرجع بناء جملة النموذج (https://docs.groupdocs.com/display/assemblynet/Template+Syntax+-+Part+1+of+2#TemplateSyntax-Part1of2-UsingDataSources).
 
 يتم تحديد أنواع البيانات للقيم المفصولة بفواصل تلقائيًا عند تمثيل السلسلة. لذلك في مستندات template ، يمكنك العمل باستخدام القيم المكتوبة بدلاً من السلاسل فقط. المحرك قادر على التعرف تلقائيًا على قيم من الأنواع التالية:
 
-* Nullable
-* Nullable
-* Nullable
-* Nullable
-* String
+* `طويل؟`
+* `مزدوج؟`
+* `منطقي؟`
+* `DateTime؟`
+* `خيط`
 
 لاحظ أنه لكي يعمل التعرف التلقائي على أنواع البيانات ، يجب تشكيل تمثيلات السلسلة لقيم مفصولة بفواصل باستخدام إعدادات الثقافة الثابتة.
 
-لتجاوز السلوك الافتراضي لتحميل بيانات CSV ، قم بتهيئة وتمرير ملف[`CsvDataLoadOptions`](../csvdataloadoptions) example إلى مُنشئ هذه الفئة.
+لتجاوز السلوك الافتراضي لتحميل بيانات CSV ، قم بتهيئة وتمرير ملف[`CsvDataLoadOptions`](../csvdataloadoptions)example إلى مُنشئ هذه الفئة.
 
 ### أنظر أيضا
 
