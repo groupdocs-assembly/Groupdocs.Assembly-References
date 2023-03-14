@@ -31,15 +31,15 @@ I malldokument, om ett JSON-element på toppnivå är en array,[`JsonDataSource`
 
 I malldokument kan du arbeta med inskrivna värden för JSON-element. För enkelhetens skull ersätter motorn uppsättningen av JSON enkla typer med följande:
 
-* Nullable
-* Nullable
-* Nullable
-* Nullable
-* String
+* `lång?`
+* `dubbel?`
+* `bool?`
+* `Datum Tid?`
+* `sträng`
 
 Motorn känner automatiskt igen värden för de extra typerna på deras JSON-representationer.
 
-För att åsidosätta standardbeteendet för JSON-dataladdning, initiera och skicka ett[`JsonDataLoadOptions`](../jsondataloadoptions) instans till en konstruktor av denna klass.
+För att åsidosätta standardbeteendet för JSON-dataladdning, initiera och skicka ett[`JsonDataLoadOptions`](../jsondataloadoptions)instans till en konstruktor av denna klass.
 
 ### Se även
 

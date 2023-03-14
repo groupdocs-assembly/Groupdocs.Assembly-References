@@ -24,6 +24,7 @@ public enum DocumentAssemblyOptions
 | UpdateFieldsAndFormulas | `2` | Especifica que los campos de los documentos de procesamiento de texto de resultado y las fórmulas de los documentos de hoja de cálculo de resultado deben ser actualizados por el ensamblador. |
 | RemoveEmptyParagraphs | `4` | Especifica que el ensamblador debe eliminar los párrafos que quedan vacíos después de que las etiquetas de sintaxis de plantilla se eliminen o reemplacen con valores vacíos. |
 | InlineErrorMessages | `8` | Especifica que el ensamblador debe incluir mensajes de error de sintaxis de plantilla en línea en los documentos de salida. Si esta opción no está configurada, el ensamblador lanza una excepción cuando encuentra un error de sintaxis. |
+| UseSpreadsheetDataTypes | `10` | Se relaciona solo con documentos de hoja de cálculo. Especifica que los resultados de la expresión evaluada deben asignarse a los tipos de datos de hoja de cálculo correspondientes , lo que también afecta su formato predeterminado dentro de las celdas. Si no se establece esta opción , el ensamblador siempre escribe los resultados de la expresión como cadenas. Esta opción no tiene ningún efecto cuando los resultados de la expresión se formatean utilizando la sintaxis de plantilla; los resultados de la expresión siempre se escriben como cadenas también. |
 
 ### Ver también
 

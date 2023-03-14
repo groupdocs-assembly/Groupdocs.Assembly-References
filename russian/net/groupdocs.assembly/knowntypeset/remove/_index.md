@@ -1,14 +1,16 @@
 ---
 title: Remove
 second_title: Справочник по API GroupDocs.Assembly для .NET
-description: Удаляет указанныйType объект из набора. БроскиArgumentException если type равно нулю.
+description: Удаляет указанныйType объект из набора.
 type: docs
 weight: 50
 url: /ru/net/groupdocs.assembly/knowntypeset/remove/
 ---
 ## KnownTypeSet.Remove method
 
-Удаляет указанныйType объект из набора. БроскиArgumentException если *type* равно нулю.
+Удаляет указанныйType объект из набора.
+
+БроскиArgumentException если*type* нулевой.
 
 ```csharp
 public void Remove(Type type)

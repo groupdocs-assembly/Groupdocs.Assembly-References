@@ -1,20 +1,22 @@
 ---
 title: Add
 second_title: Référence de l'API GroupDocs.Assembly pour .NET
-description: Ajoute le spécifiéType sopposer à lensemble. LanceArgumentException dans les cas suivants 
+description: Ajoute le spécifiéType sopposer à lensemble.
 type: docs
 weight: 20
 url: /fr/net/groupdocs.assembly/knowntypeset/add/
 ---
 ## KnownTypeSet.Add method
 
-Ajoute le spécifiéType s'opposer à l'ensemble. LanceArgumentException dans les cas suivants :
+Ajoute le spécifiéType s'opposer à l'ensemble.
+
+LanceArgumentException dans les cas suivants :
 
 -*type* est nul.
 
 -*type* représente un type vide.
 
--*type*représente un type invisible, c'est-à-dire un type non public ou un type imbriqué public qui a un type externe non public.
+-*type* représente un type invisible, c'est-à-dire un type non public ou un type imbriqué public qui a un type externe non public.
 
 -*type* représente un type générique.
 

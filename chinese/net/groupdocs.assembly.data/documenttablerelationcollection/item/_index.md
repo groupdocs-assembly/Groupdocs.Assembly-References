@@ -1,14 +1,14 @@
 ---
 title: Item
 second_title: GroupDocs.Assembly for .NET API 参考
-description: 得到一个DocumentTableRelationgroupdocs.assembly.data/documenttablerelation指定索引处的集合中的实例
+description: 得到一个DocumentTableRelationgroupdocs.assembly.data/documenttablerelation来自指定索引处集合的实例.
 type: docs
 weight: 20
 url: /zh/net/groupdocs.assembly.data/documenttablerelationcollection/item/
 ---
 ## DocumentTableRelationCollection indexer
 
-得到一个[`DocumentTableRelation`](../../documenttablerelation)指定索引处的集合中的实例。
+得到一个[`DocumentTableRelation`](../../documenttablerelation)来自指定索引处集合的实例.
 
 ```csharp
 public DocumentTableRelation this[int index] { get; }
@@ -16,11 +16,11 @@ public DocumentTableRelation this[int index] { get; }
 
 | 范围 | 描述 |
 | --- | --- |
-| index | 返回关系的从零开始的索引。 |
+| index | 与回报相关的从零开始的指数。 |
 
 ### 返回值
 
-一个[`DocumentTableRelation`](../../documenttablerelation)集合中指定索引处的实例。
+A[`DocumentTableRelation`](../../documenttablerelation)指定索引处的集合中的实例。
 
 ### 也可以看看
 

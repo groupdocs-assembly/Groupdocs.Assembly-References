@@ -24,7 +24,7 @@ public class Metered
 
 | 姓名 | 描述 |
 | --- | --- |
-| [SetMeteredKey](../../groupdocs.assembly/metered/setmeteredkey)(string, string) | 通过指定适当的公共和私有计量密钥为组件启用计量许可。 |
+| [SetMeteredKey](../../groupdocs.assembly/metered/setmeteredkey)(string, string) | 通过指定适当的公用和专用计量密钥为组件启用计量许可。 |
 | static [GetConsumptionCredit](../../groupdocs.assembly/metered/getconsumptioncredit)() | 返回当前消耗的积分数。 |
 | static [GetConsumptionQuantity](../../groupdocs.assembly/metered/getconsumptionquantity)() | 返回当前消耗的兆字节数。 |
 

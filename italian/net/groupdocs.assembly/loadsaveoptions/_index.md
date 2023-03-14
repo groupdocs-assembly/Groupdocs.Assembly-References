@@ -19,7 +19,7 @@ public class LoadSaveOptions
 | Nome | Descrizione |
 | --- | --- |
 | [LoadSaveOptions](loadsaveoptions#constructor)() | Crea una nuova istanza di questa classe senza alcuna proprietà specificata. |
-| [LoadSaveOptions](loadsaveoptions#constructor_1)(FileFormat) | Crea una nuova istanza di questa classe con il formato file specificato per salvare un documento assemblato in. |
+| [LoadSaveOptions](loadsaveoptions#constructor_1)(FileFormat) | Crea una nuova istanza di questa classe con il formato di file specificato in cui salvare un documento assemblato. |
 
 ## Proprietà
 
@@ -27,7 +27,7 @@ public class LoadSaveOptions
 | --- | --- |
 | [ResourceLoadBaseUri](../../groupdocs.assembly/loadsaveoptions/resourceloadbaseuri) { get; set; } | Ottiene o imposta un URI di base per risolvere gli URI relativi dei file di risorse esterni in valori assoluti durante il caricamento di un documento modello HTML da assemblare e salvare in un formato non HTML. Il valore predefinito è una stringa vuota. |
 | [ResourceSaveFolder](../../groupdocs.assembly/loadsaveoptions/resourcesavefolder) { get; set; } | Ottiene o imposta un percorso di una cartella per archiviare file di risorse esterne mentre un documento assemblato caricato da un formato non HTML viene salvato in HTML. Il valore predefinito è una stringa vuota. |
-| [SaveFormat](../../groupdocs.assembly/loadsaveoptions/saveformat) { get; set; } | Ottiene o imposta un formato file in cui salvare un documento assemblato.Unspecified è l'impostazione predefinita. |
+| [SaveFormat](../../groupdocs.assembly/loadsaveoptions/saveformat) { get; set; } | Ottiene o imposta un formato di file in cui salvare un documento assemblato.Unspecified è l'impostazione predefinita. |
 
 ### Guarda anche
 

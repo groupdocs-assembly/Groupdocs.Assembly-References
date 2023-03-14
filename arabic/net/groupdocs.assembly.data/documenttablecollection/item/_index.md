@@ -45,7 +45,7 @@ public DocumentTable this[string name] { get; }
 
 ### قيمة الإرجاع
 
-أ[`DocumentTable`](../../documenttable) مثيل بالاسم المحدد من المجموعة أو null إذا كان هذا المثال غير موجود.
+أ[`DocumentTable`](../../documenttable)مثيل بالاسم المحدد من المجموعة أو null إذا كان هذا المثال غير موجود.
 
 ### أنظر أيضا
 

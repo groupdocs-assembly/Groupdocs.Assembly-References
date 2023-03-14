@@ -1,14 +1,14 @@
 ---
 title: RemoveAt
 second_title: Riferimento API GroupDocs.Assembly per .NET
-description: Rimuove la relazione in corrispondenza dellindice specificato dalla raccolta.
+description: Rimuove la relazione allindice specificato dalla raccolta.
 type: docs
 weight: 90
 url: /it/net/groupdocs.assembly.data/documenttablerelationcollection/removeat/
 ---
 ## DocumentTableRelationCollection.RemoveAt method
 
-Rimuove la relazione in corrispondenza dell'indice specificato dalla raccolta.
+Rimuove la relazione all'indice specificato dalla raccolta.
 
 ```csharp
 public void RemoveAt(int index)

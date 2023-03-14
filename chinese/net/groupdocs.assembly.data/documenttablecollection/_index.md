@@ -1,14 +1,14 @@
 ---
 title: DocumentTableCollection
 second_title: GroupDocs.Assembly for .NET API 参考
-description: 表示只读集合DocumentTable./documenttable特定对象DocumentTableSet./documenttableset 实例.
+description: 代表一个只读集合DocumentTable./documenttable特定对象DocumentTableSet./documenttableset 实例.
 type: docs
 weight: 50
 url: /zh/net/groupdocs.assembly.data/documenttablecollection/
 ---
 ## DocumentTableCollection class
 
-表示只读集合[`DocumentTable`](../documenttable)特定对象[`DocumentTableSet`](../documenttableset) 实例.
+代表一个只读集合[`DocumentTable`](../documenttable)特定对象[`DocumentTableSet`](../documenttableset) 实例.
 
 ```csharp
 public class DocumentTableCollection : IEnumerable
@@ -18,8 +18,8 @@ public class DocumentTableCollection : IEnumerable
 
 | 姓名 | 描述 |
 | --- | --- |
-| [Count](../../groupdocs.assembly.data/documenttablecollection/count) { get; } | 获取总数[`DocumentTable`](../documenttable)集合中的对象。 |
-| [Item](../../groupdocs.assembly.data/documenttablecollection/item) { get; } | 得到一个[`DocumentTable`](../documenttable)指定索引处的集合中的实例。 (2 indexers) |
+| [Count](../../groupdocs.assembly.data/documenttablecollection/count) { get; } | 获取总数[`DocumentTable`](../documenttable)集合中的对象. |
+| [Item](../../groupdocs.assembly.data/documenttablecollection/item) { get; } | 得到一个[`DocumentTable`](../documenttable)来自指定索引处集合的实例. (2 indexers) |
 
 ## 方法
 
@@ -27,13 +27,13 @@ public class DocumentTableCollection : IEnumerable
 | --- | --- |
 | [Contains](../../groupdocs.assembly.data/documenttablecollection/contains#contains)(DocumentTable) | 返回一个值，指示此集合是否包含指定的表。 |
 | [Contains](../../groupdocs.assembly.data/documenttablecollection/contains#contains_1)(string) | 返回一个值，指示此集合是否包含具有指定名称的表。 |
-| [GetEnumerator](../../groupdocs.assembly.data/documenttablecollection/getenumerator)() | 返回一个枚举器进行迭代[`DocumentTable`](../documenttable)此集合的对象。 |
+| [GetEnumerator](../../groupdocs.assembly.data/documenttablecollection/getenumerator)() | 返回一个枚举器进行迭代[`DocumentTable`](../documenttable)此集合的对象. |
 | [IndexOf](../../groupdocs.assembly.data/documenttablecollection/indexof#indexof)(DocumentTable) | 返回此集合中指定表的索引。 |
 | [IndexOf](../../groupdocs.assembly.data/documenttablecollection/indexof#indexof_1)(string) | 返回此集合中具有指定名称的表的索引。 |
 
 ### 评论
 
-集合在从文档加载相应表时自动填充，无法修改。 但是，[`DocumentTable`](../documenttable)可以修改集合中包含的对象。
+集合在从文档加载相应表格时自动填充，无法修改。 但是，属性[`DocumentTable`](../documenttable)可以修改集合中包含的对象。
 
 ### 也可以看看
 

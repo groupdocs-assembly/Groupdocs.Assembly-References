@@ -23,7 +23,7 @@ Tabellens namn anses vara giltigt om följande villkor är uppfyllda:
 * Namnet är inte tomt.
 * Namnets första tecken är en bokstav eller understreck.
 * Resten av namnets tecken är bokstäver, understreck, siffror eller följande tecken: '@', '#', '$'.
-* Motsvarande[`DocumentTableSet`](../../documenttableset) objektet innehåller inte en[`DocumentTable`](../../documenttable)instans med samma namn.
+* Motsvarande[`DocumentTableSet`](../../documenttableset) objektet innehåller inte en[`DocumentTable`](../../documenttable) instans med samma namn.
 
 ### Se även
 

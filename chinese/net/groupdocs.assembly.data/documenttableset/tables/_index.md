@@ -1,14 +1,14 @@
 ---
 title: Tables
 second_title: GroupDocs.Assembly for .NET API 参考
-description: 获取集合DocumentTablegroupdocs.assembly.data/documenttable表示此集合表的对象
+description: 获取集合DocumentTablegroupdocs.assembly.data/documenttable代表这个集合的表的对象.
 type: docs
 weight: 30
 url: /zh/net/groupdocs.assembly.data/documenttableset/tables/
 ---
 ## DocumentTableSet.Tables property
 
-获取集合[`DocumentTable`](../../documenttable)表示此集合表的对象。
+获取集合[`DocumentTable`](../../documenttable)代表这个集合的表的对象.
 
 ```csharp
 public DocumentTableCollection Tables { get; }

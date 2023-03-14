@@ -1,14 +1,14 @@
 ---
 title: DocumentTableRelationCollection
 second_title: .NET API Başvurusu için GroupDocs.Assembly
-description: koleksiyonunu temsil ederDocumentTableRelation./documenttablerelation tek bir nesneDocumentTableSet./documenttableset örnek.
+description: koleksiyonunu temsil ederDocumentTableRelation./documenttablerelation tek bir nesneDocumentTableSet./documenttableset örneği.
 type: docs
 weight: 110
 url: /tr/net/groupdocs.assembly.data/documenttablerelationcollection/
 ---
 ## DocumentTableRelationCollection class
 
-koleksiyonunu temsil eder[`DocumentTableRelation`](../documenttablerelation) tek bir nesne[`DocumentTableSet`](../documenttableset) örnek.
+koleksiyonunu temsil eder[`DocumentTableRelation`](../documenttablerelation) tek bir nesne[`DocumentTableSet`](../documenttableset) örneği.
 
 ```csharp
 public class DocumentTableRelationCollection : IEnumerable
@@ -19,7 +19,7 @@ public class DocumentTableRelationCollection : IEnumerable
 | İsim | Tanım |
 | --- | --- |
 | [Count](../../groupdocs.assembly.data/documenttablerelationcollection/count) { get; } | Toplam sayısını alır[`DocumentTableRelation`](../documenttablerelation) koleksiyondaki nesneler. |
-| [Item](../../groupdocs.assembly.data/documenttablerelationcollection/item) { get; } | [`DocumentTableRelation`](../documenttablerelation) belirtilen dizindeki koleksiyondan örnek. |
+| [Item](../../groupdocs.assembly.data/documenttablerelationcollection/item) { get; } | Bir alır[`DocumentTableRelation`](../documenttablerelation) belirtilen index. adresindeki koleksiyondan örnek |
 
 ## yöntemler
 
@@ -28,7 +28,7 @@ public class DocumentTableRelationCollection : IEnumerable
 | [Add](../../groupdocs.assembly.data/documenttablerelationcollection/add)(DocumentTableColumn, DocumentTableColumn) | oluşturur[`DocumentTableRelation`](../documenttablerelation) belirtilen üst ve alt sütunlar için nesne ve koleksiyona ekler. |
 | [Clear](../../groupdocs.assembly.data/documenttablerelationcollection/clear)() | Tüm ilişkilerin koleksiyonunu temizler. |
 | [Contains](../../groupdocs.assembly.data/documenttablerelationcollection/contains)(DocumentTableRelation) | Bu koleksiyonun belirtilen ilişkiyi içerip içermediğini gösteren bir değer döndürür. |
-| [GetEnumerator](../../groupdocs.assembly.data/documenttablerelationcollection/getenumerator)() | Yinelenecek bir numaralandırıcı döndürür[`DocumentTableRelation`](../documenttablerelation) bu koleksiyonun nesneleri. |
+| [GetEnumerator](../../groupdocs.assembly.data/documenttablerelationcollection/getenumerator)() | Yinelemek için bir numaralandırıcı döndürür[`DocumentTableRelation`](../documenttablerelation) bu koleksiyonun nesneleri. |
 | [IndexOf](../../groupdocs.assembly.data/documenttablerelationcollection/indexof)(DocumentTableRelation) | Bu koleksiyon içinde belirtilen ilişkinin dizinini döndürür. |
 | [Remove](../../groupdocs.assembly.data/documenttablerelationcollection/remove)(DocumentTableRelation) | Belirtilen ilişkiyi koleksiyondan kaldırır. |
 | [RemoveAt](../../groupdocs.assembly.data/documenttablerelationcollection/removeat)(int) | Belirtilen dizindeki ilişkiyi koleksiyondan kaldırır. |

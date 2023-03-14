@@ -18,7 +18,7 @@ public IEnumerable<string> ExactDateTimeParseFormats { get; set; }
 
 Le stringhe codificate utilizzando il formato data-ora Microsoft® JSON (ad esempio, "/Date(1224043200000)/") sono sempre riconosciute come valori data-ora indipendentemente dal valore di questa proprietà. La proprietà definisce formati aggiuntivi da utilizzare durante l'analisi dei valori data-ora dalle stringhe nel modo seguente:
 
-* Quando`ExactDateTimeParseFormats` è**nullo** il formato ISO-8601 e tutti i formati data-ora supportati per le culture correnti, inglese USA e inglese neozelandese vengono utilizzati in aggiunta nell'ordine menzionato.
+* Quando`ExactDateTimeParseFormats` È**nullo** il formato ISO-8601 e tutti i formati data-ora supportati per le culture correnti, inglese USA e inglese neozelandese vengono utilizzati in aggiunta nell'ordine menzionato.
 * Quando`ExactDateTimeParseFormats` contiene stringhe, vengono utilizzate come formati data-ora aggiuntivi utilizzando la cultura corrente.
 * Quando`ExactDateTimeParseFormats` è vuoto, non vengono utilizzati formati data-ora aggiuntivi.
 

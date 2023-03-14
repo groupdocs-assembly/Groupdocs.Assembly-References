@@ -23,7 +23,7 @@ Il nome della colonna è considerato valido se sono soddisfatte le seguenti cond
 * Il nome non è vuoto.
 * Il primo carattere del nome è una lettera o un trattino basso.
 * Il resto dei caratteri del nome sono lettere, trattini bassi, cifre o i seguenti caratteri: '@', '#', '$'.
-* Il corrispondente[`DocumentTable`](../../documenttable) l'oggetto non contiene a[`DocumentTableColumn`](../../documenttablecolumn)istanza con lo stesso nome.
+* Il corrispondente[`DocumentTable`](../../documenttable) l'oggetto non contiene a[`DocumentTableColumn`](../../documenttablecolumn) istanza con lo stesso nome.
 
 ### Guarda anche
 

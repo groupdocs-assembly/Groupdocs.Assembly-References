@@ -16,7 +16,7 @@ public bool AlwaysGenerateRootObject { get; set; }
 
 ### Notlar
 
-Varsayılan değer:**yanlış** .
+Varsayılan değer:**YANLIŞ** .
 
 ### Ayrıca bakınız
 

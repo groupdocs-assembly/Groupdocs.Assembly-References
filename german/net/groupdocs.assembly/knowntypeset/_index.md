@@ -1,14 +1,14 @@
 ---
 title: KnownTypeSet
 second_title: GroupDocs.Assembly für .NET-API-Referenz
-description: Repräsentiert einen ungeordneten Satz d. h. eine Sammlung einzigartiger Elemente der Folgendes enthältType Objekte  deren vollständig oder teilweise qualifizierte Namen in Dokumentvorlagen verwendet werden können um die statischen Member der entsprechenden Typen aufzurufen Typumwandlungen durchzuführen usw.
+description: Repräsentiert einen ungeordneten Satz d. h. eine Sammlung einzigartiger Elemente der Folgendes enthältTypeObjekte  deren vollständig oder teilweise qualifizierte Namen in Dokumentvorlagen verwendet werden können um die statischen Member der entsprechenden Typen aufzurufen Typumwandlungen durchzuführen usw.
 type: docs
 weight: 230
 url: /de/net/groupdocs.assembly/knowntypeset/
 ---
 ## KnownTypeSet class
 
-Repräsentiert einen ungeordneten Satz (d. h. eine Sammlung einzigartiger Elemente), der Folgendes enthältType Objekte , deren vollständig oder teilweise qualifizierte Namen in Dokumentvorlagen verwendet werden können, um die statischen Member der entsprechenden -Typen aufzurufen, Typumwandlungen durchzuführen usw.
+Repräsentiert einen ungeordneten Satz (d. h. eine Sammlung einzigartiger Elemente), der Folgendes enthältTypeObjekte , deren vollständig oder teilweise qualifizierte Namen in Dokumentvorlagen verwendet werden können, um die statischen Member der entsprechenden -Typen aufzurufen, Typumwandlungen durchzuführen usw.
 
 ```csharp
 public class KnownTypeSet : IEnumerable
@@ -24,10 +24,10 @@ public class KnownTypeSet : IEnumerable
 
 | Name | Beschreibung |
 | --- | --- |
-| [Add](../../groupdocs.assembly/knowntypeset/add)(Type) | Fügt die angegebene hinzuType Einspruch gegen den Satz. WirftArgumentException in die folgenden Fälle: |
+| [Add](../../groupdocs.assembly/knowntypeset/add)(Type) | Fügt die angegebene hinzuType Einspruch gegen den Satz. |
 | [Clear](../../groupdocs.assembly/knowntypeset/clear)() | Entfernt alle Elemente aus dem Set. |
 | [GetEnumerator](../../groupdocs.assembly/knowntypeset/getenumerator)() | Gibt ein zurückIEnumerator Objekt, um Elemente des Satzes zu durchlaufen. |
-| [Remove](../../groupdocs.assembly/knowntypeset/remove)(Type) | Entfernt die angegebeneType Objekt aus dem Set. WirftArgumentException if *type* ist null. |
+| [Remove](../../groupdocs.assembly/knowntypeset/remove)(Type) | Entfernt die angegebeneType Objekt aus dem Set. |
 
 ### Siehe auch
 

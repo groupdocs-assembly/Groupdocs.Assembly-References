@@ -23,7 +23,7 @@ public bool AssembleDocument(string sourcePath, string targetPath,
 
 ### 返回值
 
-指示模板文档解析是否成功的标志。仅当 为[`Options`](../options)财产包括InlineErrorMessages 选项.
+模板文档解析是否成功的标志。返回的标志只有在 是[`Options`](../options)财产包括InlineErrorMessages 选项.
 
 ### 也可以看看
 
@@ -47,12 +47,12 @@ public bool AssembleDocument(string sourcePath, string targetPath, LoadSaveOptio
 | --- | --- | --- |
 | sourcePath | String | 要填充数据的模板文档的路径。 |
 | targetPath | String | 结果文档的路径。 |
-| loadSaveOptions | LoadSaveOptions | 指定文档加载和保存的附加选项。 |
+| loadSaveOptions | LoadSaveOptions | 指定用于文档加载和保存的附加选项。 |
 | dataSourceInfos | DataSourceInfo[] | 提供有关要使用的数据源对象的信息。 |
 
 ### 返回值
 
-指示模板文档解析是否成功的标志。仅当 为[`Options`](../options)财产包括InlineErrorMessages 选项.
+模板文档解析是否成功的标志。返回的标志只有在 是[`Options`](../options)财产包括InlineErrorMessages 选项.
 
 ### 也可以看看
 
@@ -81,7 +81,7 @@ public bool AssembleDocument(Stream sourceStream, Stream targetStream,
 
 ### 返回值
 
-指示模板文档解析是否成功的标志。仅当 为[`Options`](../options)财产包括InlineErrorMessages 选项.
+模板文档解析是否成功的标志。返回的标志只有在 是[`Options`](../options)财产包括InlineErrorMessages 选项.
 
 ### 也可以看看
 
@@ -105,12 +105,12 @@ public bool AssembleDocument(Stream sourceStream, Stream targetStream,
 | --- | --- | --- |
 | sourceStream | Stream | 从中读取模板文档的流。 |
 | targetStream | Stream | 写入结果文档的流。 |
-| loadSaveOptions | LoadSaveOptions | 指定文档加载和保存的附加选项。 |
+| loadSaveOptions | LoadSaveOptions | 指定用于文档加载和保存的附加选项。 |
 | dataSourceInfos | DataSourceInfo[] | 提供有关要使用的数据源对象的信息。 |
 
 ### 返回值
 
-指示模板文档解析是否成功的标志。仅当 为[`Options`](../options)财产包括InlineErrorMessages 选项.
+模板文档解析是否成功的标志。返回的标志只有在 是[`Options`](../options)财产包括InlineErrorMessages 选项.
 
 ### 也可以看看
 

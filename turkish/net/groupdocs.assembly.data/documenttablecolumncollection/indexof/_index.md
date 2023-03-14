@@ -16,7 +16,7 @@ public int IndexOf(string name)
 
 | Parametre | Tip | Tanım |
 | --- | --- | --- |
-| name | String | Bulunacak bir sütunun büyük/küçük harfe duyarsız adı. |
+| name | String | Bulunacak bir sütunun büyük/küçük harf duyarlı olmayan adı. |
 
 ### Geri dönüş değeri
 
@@ -40,7 +40,7 @@ public int IndexOf(DocumentTableColumn column)
 
 | Parametre | Tip | Tanım |
 | --- | --- | --- |
-| column | DocumentTableColumn | Bulmak için bir sütun. |
+| column | DocumentTableColumn | Bulunacak bir sütun. |
 
 ### Geri dönüş değeri
 

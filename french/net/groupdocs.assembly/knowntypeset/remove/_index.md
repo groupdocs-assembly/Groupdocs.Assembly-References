@@ -1,14 +1,16 @@
 ---
 title: Remove
 second_title: Référence de l'API GroupDocs.Assembly pour .NET
-description: Supprime le spécifiéType objet de lensemble. LanceArgumentException si type est nul.
+description: Supprime le spécifiéType objet de lensemble.
 type: docs
 weight: 50
 url: /fr/net/groupdocs.assembly/knowntypeset/remove/
 ---
 ## KnownTypeSet.Remove method
 
-Supprime le spécifiéType objet de l'ensemble. LanceArgumentException si *type* est nul.
+Supprime le spécifiéType objet de l'ensemble.
+
+LanceArgumentException si*type* est nul.
 
 ```csharp
 public void Remove(Type type)

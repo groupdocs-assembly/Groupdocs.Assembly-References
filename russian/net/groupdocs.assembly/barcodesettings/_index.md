@@ -20,7 +20,7 @@ public class BarcodeSettings
 | --- | --- |
 | [BaseXDimension](../../groupdocs.assembly/barcodesettings/basexdimension) { get; set; } | Получает или задает базовый x-размер, т. е. наименьшую ширину единицы штрихов и пробелов штрих-кода. Измеряется в[`GraphicsUnit`](./graphicsunit) . |
 | [BaseYDimension](../../groupdocs.assembly/barcodesettings/baseydimension) { get; set; } | Получает или задает базовый размер по оси Y, то есть наименьшую высоту блока модулей 2D-штрихкода. Измеряется в[`GraphicsUnit`](./graphicsunit) . |
-| [GraphicsUnit](../../groupdocs.assembly/barcodesettings/graphicsunit) { get; set; } | Получает или задает графическую единицу, используемую для измерения[`BaseXDimension`](./basexdimension) а также[`BaseYDimension`](./baseydimension) . Значение по умолчанию:Millimeter . |
+| [GraphicsUnit](../../groupdocs.assembly/barcodesettings/graphicsunit) { get; set; } | Получает или задает графическую единицу, используемую для измерения[`BaseXDimension`](./basexdimension) и[`BaseYDimension`](./baseydimension) . Значение по умолчанию:Millimeter . |
 | [Resolution](../../groupdocs.assembly/barcodesettings/resolution) { get; set; } | Получает или задает горизонтальное и вертикальное разрешение создаваемого изображения штрих-кода. Измеряется в точках на дюйм. Значение по умолчанию: 96. . |
 | [UseAutoCorrection](../../groupdocs.assembly/barcodesettings/useautocorrection) { get; set; } | Получает или задает значение, указывающее, должно ли недопустимое значение штрих-кода автоматически исправляться (если возможно) в соответствии со спецификацией штрих-кода или должно быть выдано исключение, указывающее на ошибку. Значение по умолчанию — true. |
 

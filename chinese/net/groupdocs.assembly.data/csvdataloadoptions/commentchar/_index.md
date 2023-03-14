@@ -16,7 +16,7 @@ public char CommentChar { get; set; }
 
 ### 评论
 
-默认值为'#'（数字符号）。
+默认值为“#”（井号）。
 
 ### 也可以看看
 

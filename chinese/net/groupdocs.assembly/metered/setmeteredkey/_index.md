@@ -1,14 +1,14 @@
 ---
 title: SetMeteredKey
 second_title: GroupDocs.Assembly for .NET API 参考
-description: 通过指定适当的公共和私有计量密钥为组件启用计量许可
+description: 通过指定适当的公用和专用计量密钥为组件启用计量许可
 type: docs
 weight: 20
 url: /zh/net/groupdocs.assembly/metered/setmeteredkey/
 ---
 ## Metered.SetMeteredKey method
 
-通过指定适当的公共和私有计量密钥为组件启用计量许可。
+通过指定适当的公用和专用计量密钥为组件启用计量许可。
 
 ```csharp
 public void SetMeteredKey(string publicKey, string privateKey)
@@ -17,7 +17,7 @@ public void SetMeteredKey(string publicKey, string privateKey)
 | 范围 | 类型 | 描述 |
 | --- | --- | --- |
 | publicKey | String | 公共计量密钥。 |
-| privateKey | String | 计量的私有密钥。 |
+| privateKey | String | 私人计量密钥。 |
 
 ### 也可以看看
 

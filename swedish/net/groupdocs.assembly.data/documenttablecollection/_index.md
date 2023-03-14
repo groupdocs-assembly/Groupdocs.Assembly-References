@@ -33,7 +33,7 @@ public class DocumentTableCollection : IEnumerable
 
 ### Anmärkningar
 
-Samlingen fylls automatiskt när motsvarande tabeller laddas från ett dokument och kan inte ändras. Men egenskaper för[`DocumentTable`](../documenttable)objekt som finns i samlingen kan modifieras.
+Samlingen fylls automatiskt när motsvarande tabeller laddas från ett dokument och kan inte ändras. Men egenskaper för[`DocumentTable`](../documenttable) objekt som finns i samlingen kan modifieras.
 
 ### Se även
 

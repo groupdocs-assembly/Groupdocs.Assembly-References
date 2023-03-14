@@ -18,7 +18,7 @@ url: /ru/net/groupdocs.assembly.data/
 | [DocumentTableCollection](./documenttablecollection) | Представляет доступную только для чтения коллекцию[`DocumentTable`](../groupdocs.assembly.data/documenttable) объекты определенного[`DocumentTableSet`](../groupdocs.assembly.data/documenttableset) экземпляр. |
 | [DocumentTableColumn](./documenttablecolumn) | Представляет один столбец определенного[`DocumentTable`](../groupdocs.assembly.data/documenttable) объект. |
 | [DocumentTableColumnCollection](./documenttablecolumncollection) | Представляет доступную только для чтения коллекцию[`DocumentTableColumn`](../groupdocs.assembly.data/documenttablecolumn) объекты конкретного [`DocumentTable`](../groupdocs.assembly.data/documenttable) экземпляр. |
-| [DocumentTableLoadArgs](./documenttableloadargs) | Предоставляет данные для[`Handle`](../groupdocs.assembly.data/idocumenttableloadhandler/handle) метод. |
+| [DocumentTableLoadArgs](./documenttableloadargs) | Предоставляет данные для[`Handle`](../groupdocs.assembly.data/idocumenttableloadhandler/handle)метод. |
 | [DocumentTableOptions](./documenttableoptions) | Предоставляет набор параметров для управления извлечением данных из таблицы документов. |
 | [DocumentTableRelation](./documenttablerelation) | Представляет отношения родитель-потомок между двумя[`DocumentTable`](../groupdocs.assembly.data/documenttable) объекты. |
 | [DocumentTableRelationCollection](./documenttablerelationcollection) | Представляет коллекцию[`DocumentTableRelation`](../groupdocs.assembly.data/documenttablerelation) объекты единого[`DocumentTableSet`](../groupdocs.assembly.data/documenttableset) экземпляр. |

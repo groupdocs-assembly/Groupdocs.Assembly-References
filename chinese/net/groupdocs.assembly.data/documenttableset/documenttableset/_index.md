@@ -1,14 +1,14 @@
 ---
 title: DocumentTableSet
 second_title: GroupDocs.Assembly for .NET API 参考
-description: 创建此类的新实例使用默认 从文档中加载所有表DocumentTableOptionsgroupdocs.assembly.data/documenttableoptions.
+description: 创建此类的新实例使用默认 从文档加载所有表DocumentTableOptionsgroupdocs.assembly.data/documenttableoptions.
 type: docs
 weight: 10
 url: /zh/net/groupdocs.assembly.data/documenttableset/documenttableset/
 ---
 ## DocumentTableSet(string) {#constructor_2}
 
-创建此类的新实例，使用默认 从文档中加载所有表[`DocumentTableOptions`](../../documenttableoptions).
+创建此类的新实例，使用默认 从文档加载所有表[`DocumentTableOptions`](../../documenttableoptions).
 
 ```csharp
 public DocumentTableSet(string documentPath)
@@ -50,7 +50,7 @@ public DocumentTableSet(string documentPath, IDocumentTableLoadHandler loadHandl
 
 ## DocumentTableSet(Stream) {#constructor}
 
-创建此类的新实例，使用默认 从文档中加载所有表[`DocumentTableOptions`](../../documenttableoptions).
+创建此类的新实例，使用默认 从文档加载所有表[`DocumentTableOptions`](../../documenttableoptions).
 
 ```csharp
 public DocumentTableSet(Stream documentStream)
@@ -58,7 +58,7 @@ public DocumentTableSet(Stream documentStream)
 
 | 范围 | 类型 | 描述 |
 | --- | --- | --- |
-| documentStream | Stream | 包含要访问的表的文档的流。 |
+| documentStream | Stream | 包含带有要访问的表的文档的流。 |
 
 ### 也可以看看
 
@@ -78,7 +78,7 @@ public DocumentTableSet(Stream documentStream, IDocumentTableLoadHandler loadHan
 
 | 范围 | 类型 | 描述 |
 | --- | --- | --- |
-| documentStream | Stream | 包含要访问的表的文档的流。 |
+| documentStream | Stream | 包含带有要访问的表的文档的流。 |
 | loadHandler | IDocumentTableLoadHandler | 一个[`IDocumentTableLoadHandler`](../../idocumenttableloadhandler)实现控制如何加载文档表。 |
 
 ### 也可以看看

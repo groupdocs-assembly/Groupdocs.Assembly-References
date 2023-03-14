@@ -1,14 +1,14 @@
 ---
 title: Columns
 second_title: GroupDocs.Assembly for .NET API 参考
-description: 获取集合DocumentTableColumngroupdocs.assembly.data/documenttablecolumn代表 对应表列的对象
+description: 获取集合DocumentTableColumngroupdocs.assembly.data/documenttablecolumn表示 对应表的列的对象
 type: docs
 weight: 20
 url: /zh/net/groupdocs.assembly.data/documenttable/columns/
 ---
 ## DocumentTable.Columns property
 
-获取集合[`DocumentTableColumn`](../../documenttablecolumn)代表 对应表列的对象。
+获取集合[`DocumentTableColumn`](../../documenttablecolumn)表示 对应表的列的对象。
 
 ```csharp
 public DocumentTableColumnCollection Columns { get; }

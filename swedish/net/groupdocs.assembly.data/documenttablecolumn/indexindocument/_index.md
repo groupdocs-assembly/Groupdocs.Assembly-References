@@ -16,7 +16,7 @@ public int IndexInDocument { get; }
 
 ### Anmärkningar
 
-Beroende på[`DocumentTableOptions`](../../documenttableoptions)specificerat kan detta index skilja sig från indexet för this[`DocumentTableColumn`](../../documenttablecolumn) instans inom kolumnsamlingen för motsvarande [`DocumentTable`](../../documenttable) instans.
+Beroende på[`DocumentTableOptions`](../../documenttableoptions) specificerat kan detta index skilja sig från indexet för this[`DocumentTableColumn`](../../documenttablecolumn) instans inom kolumnsamlingen för motsvarande [`DocumentTable`](../../documenttable) instans.
 
 ### Se även
 

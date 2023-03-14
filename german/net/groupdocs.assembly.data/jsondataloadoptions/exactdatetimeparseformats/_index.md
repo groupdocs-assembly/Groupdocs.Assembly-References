@@ -18,7 +18,7 @@ public IEnumerable<string> ExactDateTimeParseFormats { get; set; }
 
 Zeichenfolgen, die mit dem Microsoft® JSON-Datums-/Uhrzeitformat codiert sind (z. B. „/Date(1224043200000)/“), werden immer als Datums-/Uhrzeitwerte erkannt, unabhängig von einem Wert dieser Eigenschaft. Die Eigenschaft definiert zusätzliche -Formate, die beim Analysieren von Datums- und Uhrzeitwerten aus Zeichenfolgen auf folgende Weise verwendet werden:
 
-* Wann`ExactDateTimeParseFormats` ist**Null** das ISO-8601-Format und alle Datums-/Zeitformate , die für die aktuellen Kulturen Englisch USA und Englisch Neuseeland unterstützt werden, werden zusätzlich in der genannten Reihenfolge verwendet.
+* Wann`ExactDateTimeParseFormats` Ist**Null** das ISO-8601-Format und alle Datums-/Zeitformate , die für die aktuellen Kulturen Englisch USA und Englisch Neuseeland unterstützt werden, werden zusätzlich in der genannten Reihenfolge verwendet.
 * Wann`ExactDateTimeParseFormats` Zeichenfolgen enthält, werden sie als zusätzliche date-time -Formate unter Verwendung der aktuellen Kultur verwendet.
 * Wann`ExactDateTimeParseFormats` leer ist, werden keine zusätzlichen Datums-Zeit-Formate verwendet.
 

@@ -31,15 +31,15 @@ Dans les modèles de documents, un[`CsvDataSource`](../csvdatasource) instance d
 
 Les types de données de valeurs séparées par des virgules sont déterminés automatiquement sur leurs représentations sous forme de chaîne. Ainsi, dans les documents template , vous pouvez travailler avec des valeurs typées plutôt qu'avec des chaînes. Le moteur est capable de reconnaître automatiquement les valeurs des types suivants :
 
-* Nullable
-* Nullable
-* Nullable
-* Nullable
-* String
+* `long?`
+* `double?`
+* `bah ?`
+* `DateHeure ?`
+* `chaîne`
 
 Notez que pour que la reconnaissance automatique des types de données fonctionne, les représentations sous forme de chaîne de valeurs séparées par des virgules doivent être formées à l'aide de paramètres de culture invariants.
 
-Pour remplacer le comportement par défaut du chargement des données CSV, initialisez et transmettez un[`CsvDataLoadOptions`](../csvdataloadoptions) instance à un constructeur de cette classe.
+Pour remplacer le comportement par défaut du chargement des données CSV, initialisez et transmettez un[`CsvDataLoadOptions`](../csvdataloadoptions)instance à un constructeur de cette classe.
 
 ### Voir également
 

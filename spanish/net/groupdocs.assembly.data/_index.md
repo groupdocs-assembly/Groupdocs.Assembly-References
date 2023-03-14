@@ -18,7 +18,7 @@ Proporciona clases para acceder a datos de documentos externos que se utilizará
 | [DocumentTableCollection](./documenttablecollection) | Representa una colección de solo lectura de[`DocumentTable`](../groupdocs.assembly.data/documenttable) objetos de un particular[`DocumentTableSet`](../groupdocs.assembly.data/documenttableset) instancia. |
 | [DocumentTableColumn](./documenttablecolumn) | Representa una sola columna de un determinado[`DocumentTable`](../groupdocs.assembly.data/documenttable) objeto. |
 | [DocumentTableColumnCollection](./documenttablecolumncollection) | Representa una colección de solo lectura de[`DocumentTableColumn`](../groupdocs.assembly.data/documenttablecolumn) objetos de un particular[`DocumentTable`](../groupdocs.assembly.data/documenttable) instancia. |
-| [DocumentTableLoadArgs](./documenttableloadargs) | Proporciona datos para el[`Handle`](../groupdocs.assembly.data/idocumenttableloadhandler/handle) método. |
+| [DocumentTableLoadArgs](./documenttableloadargs) | Proporciona datos para el[`Handle`](../groupdocs.assembly.data/idocumenttableloadhandler/handle)método. |
 | [DocumentTableOptions](./documenttableoptions) | Proporciona un conjunto de opciones para controlar la extracción de datos de una tabla de documentos. |
 | [DocumentTableRelation](./documenttablerelation) | Representa una relación padre-hijo entre dos[`DocumentTable`](../groupdocs.assembly.data/documenttable) objetos. |
 | [DocumentTableRelationCollection](./documenttablerelationcollection) | Representa la colección de[`DocumentTableRelation`](../groupdocs.assembly.data/documenttablerelation) objetos de un solo[`DocumentTableSet`](../groupdocs.assembly.data/documenttableset) instancia. |
@@ -26,7 +26,7 @@ Proporciona clases para acceder a datos de documentos externos que se utilizará
 | [JsonDataLoadOptions](./jsondataloadoptions) | Representa opciones para analizar datos JSON. |
 | [JsonDataSource](./jsondatasource) | Proporciona acceso a los datos de un archivo JSON o flujo que se usará al ensamblar un documento. |
 | [XmlDataLoadOptions](./xmldataloadoptions) | Representa opciones para la carga de datos XML. |
-| [XmlDataSource](./xmldatasource) | Proporciona acceso a los datos de un archivo o flujo XML que se usará al ensamblar un documento. |
+| [XmlDataSource](./xmldatasource) | Proporciona acceso a los datos de un archivo o secuencia XML que se usará al ensamblar un documento. |
 ## Interfaces
 
 | Interfaz | Descripción |

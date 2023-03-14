@@ -1,14 +1,14 @@
 ---
 title: AllowsNull
 second_title: GroupDocs.Assembly for .NET API 参考
-description: 获取一个值该值指示该列中的单元格是否包含空值
+description: 获取一个值指示此列中的单元格是否包含空值
 type: docs
 weight: 10
 url: /zh/net/groupdocs.assembly.data/documenttablecolumn/allowsnull/
 ---
 ## DocumentTableColumn.AllowsNull property
 
-获取一个值，该值指示该列中的单元格是否包含空值。
+获取一个值，指示此列中的单元格是否包含空值。
 
 ```csharp
 public bool AllowsNull { get; }
@@ -16,7 +16,7 @@ public bool AllowsNull { get; }
 
 ### 评论
 
-电子表格文档单元格中的未定义和错误值也被视为空值。
+电子表格文档单元格中的未定义值和错误值也被视为空值。
 
 ### 也可以看看
 

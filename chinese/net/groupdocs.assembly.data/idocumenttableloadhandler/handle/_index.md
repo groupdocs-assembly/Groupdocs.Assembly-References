@@ -1,14 +1,14 @@
 ---
 title: Handle
 second_title: GroupDocs.Assembly for .NET API 参考
-description: 覆盖特定的默认加载DocumentTablegroupdocs.assembly.data/documenttable创建 时的对象DocumentTableSetgroupdocs.assembly.data/documenttableset实例.
+description: 覆盖特定的默认加载DocumentTablegroupdocs.assembly.data/documenttable创建 a 时的对象DocumentTableSetgroupdocs.assembly.data/documenttableset实例.
 type: docs
 weight: 10
 url: /zh/net/groupdocs.assembly.data/idocumenttableloadhandler/handle/
 ---
 ## IDocumentTableLoadHandler.Handle method
 
-覆盖特定的默认加载[`DocumentTable`](../../documenttable)创建 时的对象[`DocumentTableSet`](../../documenttableset)实例.
+覆盖特定的默认加载[`DocumentTable`](../../documenttable)创建 a 时的对象[`DocumentTableSet`](../../documenttableset)实例.
 
 ```csharp
 public void Handle(DocumentTableLoadArgs args)

@@ -1,14 +1,14 @@
 ---
 title: SaveFormat
 second_title: GroupDocs.Assembly for .NET API 参考
-description: 获取或设置保存组合文档的文件格式Unspecified是默认值
+description: 获取或设置用于保存组合文档的文件格式Unspecified是默认值
 type: docs
 weight: 40
 url: /zh/net/groupdocs.assembly/loadsaveoptions/saveformat/
 ---
 ## LoadSaveOptions.SaveFormat property
 
-获取或设置保存组合文档的文件格式。Unspecified是默认值。
+获取或设置用于保存组合文档的文件格式。Unspecified是默认值。
 
 ```csharp
 public FileFormat SaveFormat { get; set; }
@@ -18,11 +18,11 @@ public FileFormat SaveFormat { get; set; }
 
 未指定此属性的值时，[`DocumentAssembler`](../../documentassembler)行为如下：
 
-- 当您指定保存组合文档的文件路径时，保存文件格式取决于路径中的文件 扩展名。
+- 当您指定一个文件路径来保存组合文档时，保存文件格式由路径中的文件 扩展名决定。
 
-- 当您指定流来保存组合文档时，保存文件格式与加载的模板文档的文件 格式相同。
+- 当您指定流来保存组装文档时，保存的文件格式与加载的模板文档的文件 格式保持相同。
 
-请注意，并非总是可以使用 GroupDocs.Assembly 将组合文档保存为任何文件格式。 例如，无法将从字处理文件格式（如 DOCX）加载的文档保存为 电子表格文件格式（如 XLSX）。有关 GroupDocs.Assembly 支持的加载和保存文件 格式的可能组合的更多信息，请查看 GroupDocs.Assembly 在线文档。
+请注意，并非总是可以使用 GroupDocs.Assembly 将组合文档保存为任何文件格式。 例如，无法将从文字处理文件格式（如 DOCX）加载的文档保存为 电子表格文件格式（如 XLSX）。有关 GroupDocs.Assembly 支持的加载和保存文件 格式的可能组合的更多信息，请查看 GroupDocs.Assembly 在线文档。
 
 ### 也可以看看
 

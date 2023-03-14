@@ -45,7 +45,7 @@ public DocumentTable this[string name] { get; }
 
 ### Valore di ritorno
 
-A[`DocumentTable`](../../documenttable) istanza con il nome specificato dalla raccolta o null se tale istanza non esiste.
+A[`DocumentTable`](../../documenttable)istanza con il nome specificato dalla raccolta o null se tale istanza non esiste.
 
 ### Guarda anche
 

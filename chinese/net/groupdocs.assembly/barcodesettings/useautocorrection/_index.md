@@ -1,14 +1,14 @@
 ---
 title: UseAutoCorrection
 second_title: GroupDocs.Assembly for .NET API 参考
-description: 获取或设置一个值该值指示是否应自动更正无效的条形码值 如果可能以适应条形码的规范或者应引发异常以指示错误 默认值为真
+description: 获取或设置一个值该值指示是否应自动更正无效的条形码值 如果可能以符合条形码的规范或者应抛出异常以指示错误 默认值为真
 type: docs
 weight: 50
 url: /zh/net/groupdocs.assembly/barcodesettings/useautocorrection/
 ---
 ## BarcodeSettings.UseAutoCorrection property
 
-获取或设置一个值，该值指示是否应自动更正无效的条形码值 （如果可能）以适应条形码的规范，或者应引发异常以指示错误。 默认值为真。
+获取或设置一个值，该值指示是否应自动更正无效的条形码值 （如果可能）以符合条形码的规范，或者应抛出异常以指示错误。 默认值为真。
 
 ```csharp
 public bool UseAutoCorrection { get; set; }
@@ -16,7 +16,7 @@ public bool UseAutoCorrection { get; set; }
 
 ### 评论
 
-Databar 条码无法自动更正。
+Databar 条形码无法自动更正。
 
 ### 也可以看看
 

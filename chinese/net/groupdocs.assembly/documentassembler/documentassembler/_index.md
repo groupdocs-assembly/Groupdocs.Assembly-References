@@ -1,14 +1,14 @@
 ---
 title: DocumentAssembler
 second_title: GroupDocs.Assembly for .NET API 参考
-description: 初始化这个类的一个新实例
+description: 初始化此类的新实例
 type: docs
 weight: 10
 url: /zh/net/groupdocs.assembly/documentassembler/documentassembler/
 ---
 ## DocumentAssembler constructor
 
-初始化这个类的一个新实例。
+初始化此类的新实例。
 
 ```csharp
 public DocumentAssembler()

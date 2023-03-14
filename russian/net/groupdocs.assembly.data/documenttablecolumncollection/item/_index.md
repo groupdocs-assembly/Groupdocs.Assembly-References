@@ -45,7 +45,7 @@ public DocumentTableColumn this[string name] { get; }
 
 ### Возвращаемое значение
 
-А[`DocumentTableColumn`](../../documenttablecolumn) экземпляр с указанным именем из коллекции или null , если такого экземпляра не существует.
+А[`DocumentTableColumn`](../../documenttablecolumn)экземпляр с указанным именем из коллекции или null , если такого экземпляра не существует.
 
 ### Смотрите также
 

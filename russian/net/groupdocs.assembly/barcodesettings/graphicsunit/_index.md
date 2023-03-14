@@ -1,14 +1,14 @@
 ---
 title: GraphicsUnit
 second_title: Справочник по API GroupDocs.Assembly для .NET
-description: Получает или задает графическую единицу используемую для измеренияBaseXDimensiongroupdocs.assembly/barcodesettings/basexdimension а такжеBaseYDimensiongroupdocs.assembly/barcodesettings/baseydimension . Значение по умолчаниюMillimeter .
+description: Получает или задает графическую единицу используемую для измеренияBaseXDimensiongroupdocs.assembly/barcodesettings/basexdimension иBaseYDimensiongroupdocs.assembly/barcodesettings/baseydimension . Значение по умолчаниюMillimeter .
 type: docs
 weight: 30
 url: /ru/net/groupdocs.assembly/barcodesettings/graphicsunit/
 ---
 ## BarcodeSettings.GraphicsUnit property
 
-Получает или задает графическую единицу, используемую для измерения[`BaseXDimension`](../basexdimension) а также[`BaseYDimension`](../baseydimension) . Значение по умолчанию:Millimeter .
+Получает или задает графическую единицу, используемую для измерения[`BaseXDimension`](../basexdimension) и[`BaseYDimension`](../baseydimension) . Значение по умолчанию:Millimeter .
 
 ```csharp
 public GraphicsUnit GraphicsUnit { get; set; }

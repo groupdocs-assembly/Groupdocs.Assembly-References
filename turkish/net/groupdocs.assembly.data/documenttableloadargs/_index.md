@@ -1,14 +1,14 @@
 ---
 title: DocumentTableLoadArgs
 second_title: .NET API Başvurusu için GroupDocs.Assembly
-description: için veri sağlarHandle./idocumenttableloadhandler/handle yöntem.
+description: Şunun için veri sağlarHandle./idocumenttableloadhandler/handleyöntem.
 type: docs
 weight: 80
 url: /tr/net/groupdocs.assembly.data/documenttableloadargs/
 ---
 ## DocumentTableLoadArgs class
 
-için veri sağlar[`Handle`](../idocumenttableloadhandler/handle) yöntem.
+Şunun için veri sağlar:[`Handle`](../idocumenttableloadhandler/handle)yöntem.
 
 ```csharp
 public class DocumentTableLoadArgs
@@ -18,7 +18,7 @@ public class DocumentTableLoadArgs
 
 | İsim | Tanım |
 | --- | --- |
-| [IsLoaded](../../groupdocs.assembly.data/documenttableloadargs/isloaded) { get; set; } | Karşılık gelen belge tablosunun yüklenip yüklenmeyeceğini belirten bir değer alır veya ayarlar. Varsayılan değer true'dur. |
+| [IsLoaded](../../groupdocs.assembly.data/documenttableloadargs/isloaded) { get; set; } | Karşılık gelen belge tablosunun yüklenip yüklenmeyeceğini gösteren bir değer alır veya ayarlar. Varsayılan değer true'dur. |
 | [Options](../../groupdocs.assembly.data/documenttableloadargs/options) { get; set; } | Alır veya ayarlar[`DocumentTableOptions`](../documenttableoptions) karşılık gelen belge tablosu yüklenirken kullanılacaktır. Varsayılan değer boştur, yani varsayılan[`DocumentTableOptions`](../documenttableoptions) uygulanacak. |
 | [TableIndex](../../groupdocs.assembly.data/documenttableloadargs/tableindex) { get; } | Yüklenecek ilgili belge tablosunun sıfır tabanlı dizinini alır. |
 

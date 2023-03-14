@@ -1,14 +1,14 @@
 ---
 title: Count
 second_title: GroupDocs.Assembly for .NET API 参考
-description: 获取总数DocumentTablegroupdocs.assembly.data/documenttable集合中的对象
+description: 获取总数DocumentTablegroupdocs.assembly.data/documenttable集合中的对象.
 type: docs
 weight: 10
 url: /zh/net/groupdocs.assembly.data/documenttablecollection/count/
 ---
 ## DocumentTableCollection.Count property
 
-获取总数[`DocumentTable`](../../documenttable)集合中的对象。
+获取总数[`DocumentTable`](../../documenttable)集合中的对象.
 
 ```csharp
 public int Count { get; }

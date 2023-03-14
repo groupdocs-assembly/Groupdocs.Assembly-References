@@ -16,7 +16,7 @@ public int IndexInDocument { get; }
 
 ### Observaciones
 
-Según[`DocumentTableOptions`](../../documenttableoptions)especificado, este índice puede diferir del índice de este[`DocumentTableColumn`](../../documenttablecolumn) instancia dentro de la colección de columnas del correspondiente[`DocumentTable`](../../documenttable) instancia.
+Según[`DocumentTableOptions`](../../documenttableoptions) especificado, este índice puede diferir del índice de este[`DocumentTableColumn`](../../documenttablecolumn) instancia dentro de la colección de columnas del correspondiente[`DocumentTable`](../../documenttable) instancia.
 
 ### Ver también
 

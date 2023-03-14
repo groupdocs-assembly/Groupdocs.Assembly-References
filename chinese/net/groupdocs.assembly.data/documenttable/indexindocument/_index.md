@@ -1,14 +1,14 @@
 ---
 title: IndexInDocument
 second_title: GroupDocs.Assembly for .NET API 参考
-description: 根据源文档获取对应表的原始从零开始的索引
+description: 根据源文档获取相应表的原始从零开始的索引
 type: docs
 weight: 30
 url: /zh/net/groupdocs.assembly.data/documenttable/indexindocument/
 ---
 ## DocumentTable.IndexInDocument property
 
-根据源文档获取对应表的原始从零开始的索引。
+根据源文档获取相应表的原始从零开始的索引。
 
 ```csharp
 public int IndexInDocument { get; }
@@ -16,7 +16,7 @@ public int IndexInDocument { get; }
 
 ### 评论
 
-取决于[`IDocumentTableLoadHandler`](../../idocumenttableloadhandler)提供的实现，这个索引可能不同于 这个索引[`DocumentTable`](../../documenttable)对应 的表集合内的实例[`DocumentTableSet`](../../documenttableset)例如，如果有的话。
+取决于[`IDocumentTableLoadHandler`](../../idocumenttableloadhandler)提供的实现，这个索引可能不同于 这个的索引[`DocumentTable`](../../documenttable)对应 表集合内的实例[`DocumentTableSet`](../../documenttableset)实例，如果有的话.
 
 ### 也可以看看
 

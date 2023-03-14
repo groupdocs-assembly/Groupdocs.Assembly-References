@@ -33,7 +33,7 @@ public class DocumentTable
 
 ### Bemerkungen
 
-Für Dokumente im Spreadsheet-Dateiformat a[`DocumentTable`](../documenttable)Beispiel stellt ein einzelnes Blatt dar. Für Dokumente anderer Dateiformate, a[`DocumentTable`](../documenttable) Instanz stellt eine einzelne Tabelle dar.
+Für Dokumente im Spreadsheet-Dateiformat a[`DocumentTable`](../documenttable) Beispiel stellt ein einzelnes Blatt dar. Für Dokumente anderer Dateiformate, a[`DocumentTable`](../documenttable) Instanz stellt eine einzelne Tabelle dar.
 
 Um beim Zusammenstellen eines Dokuments auf Daten der entsprechenden Tabelle zuzugreifen, übergeben Sie eine Instanz dieser Klasse als eine Datenquelle an eine von[`DocumentAssembler`](../../groupdocs.assembly/documentassembler) .AssembleDocument Überladungen.
 

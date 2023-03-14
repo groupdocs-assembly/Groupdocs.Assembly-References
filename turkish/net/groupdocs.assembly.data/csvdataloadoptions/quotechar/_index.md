@@ -16,7 +16,7 @@ public char QuoteChar { get; set; }
 
 ### Notlar
 
-Varsayılan değer ""'dir (tırnak işareti).
+Varsayılan değer '"' (tırnak işareti) şeklindedir.
 
 Alıntılanan metne yerleştirmek için karakteri ikiye katlayın.
 

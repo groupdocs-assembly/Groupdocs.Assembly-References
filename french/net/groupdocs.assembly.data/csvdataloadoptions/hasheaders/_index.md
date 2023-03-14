@@ -16,7 +16,7 @@ public bool HasHeaders { get; set; }
 
 ### Remarques
 
-La valeur par défaut est**faux** .
+La valeur par défaut est**FAUX** .
 
 ### Voir également
 

@@ -1,14 +1,14 @@
 ---
 title: GetEnumerator
 second_title: .NET API Başvurusu için GroupDocs.Assembly
-description: Yinelenecek bir numaralandırıcı döndürürDocumentTableRelationgroupdocs.assembly.data/documenttablerelation bu koleksiyonun nesneleri.
+description: Yinelemek için bir numaralandırıcı döndürürDocumentTableRelationgroupdocs.assembly.data/documenttablerelation bu koleksiyonun nesneleri.
 type: docs
 weight: 60
 url: /tr/net/groupdocs.assembly.data/documenttablerelationcollection/getenumerator/
 ---
 ## DocumentTableRelationCollection.GetEnumerator method
 
-Yinelenecek bir numaralandırıcı döndürür[`DocumentTableRelation`](../../documenttablerelation) bu koleksiyonun nesneleri.
+Yinelemek için bir numaralandırıcı döndürür[`DocumentTableRelation`](../../documenttablerelation) bu koleksiyonun nesneleri.
 
 ```csharp
 public IEnumerator GetEnumerator()

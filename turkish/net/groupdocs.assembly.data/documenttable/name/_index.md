@@ -1,14 +1,14 @@
 ---
 title: Name
 second_title: .NET API Başvurusu için GroupDocs.Assembly
-description: ye iletilen bir şablon belgesindeki tablo verilerine erişmek için kullanılan bu tablonun adını alır veya ayarlarDocumentAssemblergroupdocs.assembly/documentassembler .
+description: ye iletilen bir şablon belgedeki tablonun verilerine erişmek için kullanılan bu tablonun adını alır veya ayarlarDocumentAssemblergroupdocs.assembly/documentassembler .
 type: docs
 weight: 40
 url: /tr/net/groupdocs.assembly.data/documenttable/name/
 ---
 ## DocumentTable.Name property
 
-'ye iletilen bir şablon belgesindeki tablo verilerine erişmek için kullanılan bu tablonun adını alır veya ayarlar[`DocumentAssembler`](../../../groupdocs.assembly/documentassembler) .
+'ye iletilen bir şablon belgedeki tablonun verilerine erişmek için kullanılan bu tablonun adını alır veya ayarlar[`DocumentAssembler`](../../../groupdocs.assembly/documentassembler) .
 
 ```csharp
 public string Name { get; set; }
@@ -16,14 +16,14 @@ public string Name { get; set; }
 
 ### Notlar
 
-Tablonun adı bir belgeden okunursa, geçerli olması için ad otomatik olarak düzeltilir. Ancak tablonun adı bu özellik aracılığıyla manuel olarak ayarlanırsa ve ad geçersizse bir istisna atılır.
+Tablonun adı bir belgeden okunursa, geçerli olması için ad otomatik olarak düzeltilir. Ancak, tablonun adı bu özellik aracılığıyla manuel olarak ayarlanırsa ve ad geçersizse, bir istisna atılır.
 
-Aşağıdaki koşulların karşılanması durumunda tablonun adı geçerli kabul edilir:
+Aşağıdaki koşullar karşılanırsa tablonun adı geçerli kabul edilir:
 
 * Ad boş değil.
 * Adın ilk karakteri bir harf veya alt çizgidir.
 * Adın geri kalan karakterleri harfler, alt çizgiler, rakamlar veya şu karakterlerdir: '@', '#', '$'.
-* İlgili[`DocumentTableSet`](../../documenttableset) nesne içermiyor[`DocumentTable`](../../documenttable)aynı ada sahip örneği.
+* Karşılık gelen[`DocumentTableSet`](../../documenttableset) nesne bir içermiyor[`DocumentTable`](../../documenttable) aynı ada sahip örnek .
 
 ### Ayrıca bakınız
 

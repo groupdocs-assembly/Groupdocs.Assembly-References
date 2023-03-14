@@ -1,14 +1,14 @@
 ---
 title: BaseYDimension
 second_title: GroupDocs.Assembly for .NET API 参考
-description: 获取或设置一个基本的 y 维度即二维条码模块单位的最小高度 测量单位GraphicsUnitgroupdocs.assembly/barcodesettings/graphicsunit.
+description: 获取或设置一个基准y维度即二维条码模块单元的最小高度 测量单位GraphicsUnitgroupdocs.assembly/barcodesettings/graphicsunit.
 type: docs
 weight: 20
 url: /zh/net/groupdocs.assembly/barcodesettings/baseydimension/
 ---
 ## BarcodeSettings.BaseYDimension property
 
-获取或设置一个基本的 y 维度，即二维条码模块单位的最小高度。 测量单位[`GraphicsUnit`](../graphicsunit).
+获取或设置一个基准y维度，即二维条码模块单元的最小高度。 测量单位[`GraphicsUnit`](../graphicsunit).
 
 ```csharp
 public float BaseYDimension { get; set; }
@@ -16,9 +16,9 @@ public float BaseYDimension { get; set; }
 
 ### 评论
 
-某些类型的条形码（例如数据矩阵）可能会忽略 y 维度，而将 x 维度用于 宽度和高度单位。
+某些类型的条码（例如数据矩阵）可能会忽略 y 维度并使用 x 维度作为 宽度和高度单位。
 
-当通过模板应用条形码缩放时，实际的 y 维度是根据基本 y 维度和缩放因子计算的。
+当通过模板应用条形码缩放时，实际的 y 维度是根据基础 y 维度和缩放因子计算的。
 
 ### 也可以看看
 

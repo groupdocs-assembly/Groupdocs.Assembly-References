@@ -16,7 +16,7 @@ public int IndexInDocument { get; }
 
 ### Notlar
 
-bağlı olarak[`DocumentTableOptions`](../../documenttableoptions)belirtilmişse, bu dizin dizininden farklı olabilir[`DocumentTableColumn`](../../documenttablecolumn) karşılık gelen sütun koleksiyonundaki örnek[`DocumentTable`](../../documenttable) örnek.
+bağlı olarak[`DocumentTableOptions`](../../documenttableoptions) belirtilmişse, bu dizin dizininden farklı olabilir[`DocumentTableColumn`](../../documenttablecolumn) karşılık gelen sütun koleksiyonundaki örnek[`DocumentTable`](../../documenttable) örnek.
 
 ### Ayrıca bakınız
 

@@ -1,14 +1,14 @@
 ---
 title: ResourceSaveFolder
 second_title: .NET API Başvurusu için GroupDocs.Assembly
-description: HTML olmayan biçiminden yüklenen birleştirilmiş bir belge HTMLye kaydedilirken harici kaynak dosyalarını depolamak için bir klasör yolunu alır veya ayarlar. Varsayılan değer boş bir dizedir.
+description: HTML olmayan bir biçiminden yüklenen birleştirilmiş bir belge HTMLye kaydedilirken harici kaynak dosyalarını depolamak için bir klasörün yolunu alır veya ayarlar. Varsayılan değer boş bir dizedir.
 type: docs
 weight: 30
 url: /tr/net/groupdocs.assembly/loadsaveoptions/resourcesavefolder/
 ---
 ## LoadSaveOptions.ResourceSaveFolder property
 
-HTML olmayan biçiminden yüklenen birleştirilmiş bir belge HTML'ye kaydedilirken harici kaynak dosyalarını depolamak için bir klasör yolunu alır veya ayarlar. Varsayılan değer boş bir dizedir.
+HTML olmayan bir biçiminden yüklenen birleştirilmiş bir belge HTML'ye kaydedilirken, harici kaynak dosyalarını depolamak için bir klasörün yolunu alır veya ayarlar. Varsayılan değer boş bir dizedir.
 
 ```csharp
 public string ResourceSaveFolder { get; set; }
@@ -16,7 +16,7 @@ public string ResourceSaveFolder { get; set; }
 
 ### Notlar
 
-Varsayılan olarak, birleştirilmiş bir belgeyi bir HTML dosyasına kaydederken, harici kaynak dosyaları, uzantısı olmayan HTML dosyasıyla aynı ada ve "_files" son ekine sahip bir klasör klasörüne depolanır. Bu klasör, HTML dosyasıyla aynı klasörde içinde bulunur. Ancak, birleştirilmiş bir belgeyi bir HTML akışına kaydederken bu yapılamaz. Birleştirilmiş bir belgeyi bir HTML akışına kaydederken harici kaynak dosyalarını depolamak için bir klasöre giden yolu belirtmek için bu özelliği ayarlayın veya bir bir HTML dosyasına birleştirilmiş belge.
+Varsayılan olarak, birleştirilmiş bir belgeyi bir HTML dosyasına kaydederken, harici kaynak dosyaları, uzantısı ve "_files" son eki olmayan HTML dosyasıyla aynı ada sahip bir folder klasöründe depolanır. Bu klasör, HTML dosyasıyla aynı klasörde bulunur. Ancak, birleştirilmiş bir belgeyi bir HTML akışına kaydederken bu yapılamaz. Bu özelliği, birleştirilmiş bir belgeyi bir HTML akışına kaydederken harici kaynak dosyalarını depolamak için bir klasörün yolunu belirtmek üzere veya bir HTML akışına kaydederken varsayılan klasörü geçersiz kılmak için ayarlayın. birleştirilmiş belgeyi bir HTML dosyasına.
 
 HTML'ye kaydedilen derlenmiş bir belge HTML'den de yüklendiyse, bu özelliğin değeri göz ardı edilir (harici kaynak dosyaları depolanmaz ve bunlara bağlantılar o zaman değiştirilmez).
 

@@ -25,7 +25,7 @@ public class JsonDataLoadOptions
 | İsim | Tanım |
 | --- | --- |
 | [AlwaysGenerateRootObject](../../groupdocs.assembly.data/jsondataloadoptions/alwaysgeneraterootobject) { get; set; } | Oluşturulan bir veri kaynağının her zaman bir JSON root öğesi için bir nesne içerip içermeyeceğini belirten bir işaret alır veya ayarlar. Bir JSON kök öğesi tek bir karmaşık özellik içeriyorsa, böyle bir nesne varsayılan olarak oluşturulmaz. |
-| [ExactDateTimeParseFormats](../../groupdocs.assembly.data/jsondataloadoptions/exactdatetimeparseformats) { get; set; } | JSON yüklenirken JSON tarih-saat değerlerini ayrıştırmak için tam biçimleri alır veya ayarlar. Varsayılan**hükümsüz** . |
+| [ExactDateTimeParseFormats](../../groupdocs.assembly.data/jsondataloadoptions/exactdatetimeparseformats) { get; set; } | JSON yüklenirken JSON tarih-saat değerlerinin ayrıştırılması için kesin biçimleri alır veya ayarlar. varsayılan**hükümsüz** . |
 | [SimpleValueParseMode](../../groupdocs.assembly.data/jsondataloadoptions/simplevalueparsemode) { get; set; } | JSON yüklenirken JSON basit değerlerini (null, boolean, sayı, tamsayı ve dize) ayrıştırmak için bir mod alır veya ayarlar. Böyle bir mod, tarih-zaman değerlerinin ayrıştırılmasını etkilemez. Varsayılan Loose . |
 
 ### Notlar

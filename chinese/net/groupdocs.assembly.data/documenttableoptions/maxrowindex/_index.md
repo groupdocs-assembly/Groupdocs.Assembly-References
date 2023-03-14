@@ -1,14 +1,14 @@
 ---
 title: MaxRowIndex
 second_title: GroupDocs.Assembly for .NET API 参考
-description: 获取或设置要从文档表中提取的行的最大从零开始的索引 默认值为负数表示最大行索引不受限制
+description: 获取或设置要从文档表中提取的行的最大从零开始的索引 默认值为负数表示不限制最大行索引
 type: docs
 weight: 40
 url: /zh/net/groupdocs.assembly.data/documenttableoptions/maxrowindex/
 ---
 ## DocumentTableOptions.MaxRowIndex property
 
-获取或设置要从文档表中提取的行的最大从零开始的索引。 默认值为负数，表示最大行索引不受限制。
+获取或设置要从文档表中提取的行的最大从零开始的索引。 默认值为负数，表示不限制最大行索引。
 
 ```csharp
 public int MaxRowIndex { get; set; }

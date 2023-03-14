@@ -1,14 +1,14 @@
 ---
 title: FirstRowContainsColumnNames
 second_title: GroupDocs.Assembly for .NET API 参考
-description: 获取或设置一个值该值指示是否要从文档表的 first 提取行中获取列名默认值为假
+description: 获取或设置一个值该值指示是否要从文档表的 first 提取行中获取列名默认值为 false.
 type: docs
 weight: 20
 url: /zh/net/groupdocs.assembly.data/documenttableoptions/firstrowcontainscolumnnames/
 ---
 ## DocumentTableOptions.FirstRowContainsColumnNames property
 
-获取或设置一个值，该值指示是否要从文档表的 first 提取行中获取列名。默认值为假。
+获取或设置一个值，该值指示是否要从文档表的 first 提取行中获取列名。默认值为 false.
 
 ```csharp
 public bool FirstRowContainsColumnNames { get; set; }
@@ -16,7 +16,7 @@ public bool FirstRowContainsColumnNames { get; set; }
 
 ### 评论
 
-如果列名未设置为从文档表的第一个提取行获取，则使用 默认列名。对于电子表格文件格式的文档，默认的 列名称定义为 A、B、C、... Z、AA、AB 等。对于其他 文件格式的文档，默认列名定义为Column1、Column2、Column3等。
+如果列名未设置为从文档表的第一个提取行中获取，则使用 默认列名。对于 Spreadsheet 文件格式的文档，默认 列名称定义为 A、B、C、... Z、AA、AB 等。对于其他 文件格式的文档，默认列名定义为Column1、Column2、Column3等。
 
 ### 也可以看看
 

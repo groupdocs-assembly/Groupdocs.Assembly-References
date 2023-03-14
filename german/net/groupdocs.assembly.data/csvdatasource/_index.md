@@ -31,15 +31,15 @@ In Vorlagendokumenten a[`CsvDataSource`](../csvdatasource) Instanz sollte genaus
 
 Datentypen von kommagetrennten Werten werden automatisch anhand ihrer Zeichenfolgendarstellung bestimmt. In template -Dokumenten können Sie also mit eingegebenen Werten statt nur mit Zeichenfolgen arbeiten. Die Engine kann automatisch -Werte der folgenden Typen erkennen:
 
-* Nullable
-* Nullable
-* Nullable
-* Nullable
-* String
+* `lang?`
+* `doppelt?`
+* `blöd?`
+* `Terminzeit?`
+* `Schnur`
 
 Beachten Sie, dass für eine funktionierende automatische Erkennung von Datentypen Zeichenfolgendarstellungen von kommagetrennten Werten mit invarianten Kultureinstellungen gebildet werden sollten.
 
-Um das Standardverhalten beim Laden von CSV-Daten zu überschreiben, initialisieren und übergeben Sie a[`CsvDataLoadOptions`](../csvdataloadoptions) instance zu einem Konstruktor dieser Klasse.
+Um das Standardverhalten beim Laden von CSV-Daten zu überschreiben, initialisieren und übergeben Sie a[`CsvDataLoadOptions`](../csvdataloadoptions)instance zu einem Konstruktor dieser Klasse.
 
 ### Siehe auch
 

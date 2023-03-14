@@ -1,14 +1,14 @@
 ---
 title: Name
 second_title: GroupDocs.Assembly for .NET API 参考
-description: 获取或设置此列的名称用于访问传递给的模板文档中的列数据 DocumentAssemblergroupdocs.assembly/documentassembler.
+description: 获取或设置此列的名称用于访问传递给 的模板文档中的列数据DocumentAssemblergroupdocs.assembly/documentassembler.
 type: docs
 weight: 30
 url: /zh/net/groupdocs.assembly.data/documenttablecolumn/name/
 ---
 ## DocumentTableColumn.Name property
 
-获取或设置此列的名称，用于访问传递给的模板文档中的列数据 [`DocumentAssembler`](../../../groupdocs.assembly/documentassembler).
+获取或设置此列的名称，用于访问传递给 的模板文档中的列数据[`DocumentAssembler`](../../../groupdocs.assembly/documentassembler).
 
 ```csharp
 public string Name { get; set; }
@@ -16,14 +16,14 @@ public string Name { get; set; }
 
 ### 评论
 
-如果列的名称是从文档中读取的（请参阅[`FirstRowContainsColumnNames`](../../documenttableoptions/firstrowcontainscolumnnames)), 名称会自动更正以使其有效。但是，如果通过 这个属性手动设置了列的名称，并且名称无效，则会抛出异常。
+如果列的名称是从文档中读取的（请参阅[`FirstRowContainsColumnNames`](../../documenttableoptions/firstrowcontainscolumnnames)), 名称会自动更正以使其有效。但是，如果列的名称是通过 这个属性手动设置的，并且名称无效，则会抛出异常。
 
-如果满足以下条件，则认为该列的名称有效：
+如果满足以下条件，则列名被认为是有效的：
 
-* 名字不为空
+* 名称不为空。
 * 名称的第一个字符是字母或下划线。
-* 名称的其余字符是字母、下划线、数字或以下字符：'@'、'#'、'$'.
-* 对应的[`DocumentTable`](../../documenttable)对象不包含[`DocumentTableColumn`](../../documenttablecolumn)实例 具有相同的名称。
+* 名称的其余字符是字母、下划线、数字或以下字符：“@”、“#”、“$”。
+* 对应的[`DocumentTable`](../../documenttable)对象不包含[`DocumentTableColumn`](../../documenttablecolumn)具有相同名称的实例 .
 
 ### 也可以看看
 

@@ -1,14 +1,14 @@
 ---
 title: HasHeaders
 second_title: GroupDocs.Assembly for .NET API 参考
-description: 获取或设置一个值该值指示 CSV 数据的第一行是否包含列名
+description: 获取或设置一个值指示 CSV 数据的第一行是否包含列名
 type: docs
 weight: 40
 url: /zh/net/groupdocs.assembly.data/csvdataloadoptions/hasheaders/
 ---
 ## CsvDataLoadOptions.HasHeaders property
 
-获取或设置一个值，该值指示 CSV 数据的第一行是否包含列名。
+获取或设置一个值，指示 CSV 数据的第一行是否包含列名。
 
 ```csharp
 public bool HasHeaders { get; set; }

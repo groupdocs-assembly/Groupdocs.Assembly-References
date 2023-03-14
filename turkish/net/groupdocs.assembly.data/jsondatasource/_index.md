@@ -20,26 +20,26 @@ public class JsonDataSource
 | --- | --- |
 | [JsonDataSource](jsondatasource#constructor)(Stream) | JSON verilerini ayrıştırmak için varsayılan seçenekleri kullanarak bir JSON akışından alınan verilerle yeni bir veri kaynağı oluşturur. |
 | [JsonDataSource](jsondatasource#constructor_2)(string) | JSON verilerini ayrıştırmak için varsayılan seçenekleri kullanarak bir JSON dosyasındaki verilerle yeni bir veri kaynağı oluşturur. |
-| [JsonDataSource](jsondatasource#constructor_1)(Stream, JsonDataLoadOptions) | JSON verilerini ayrıştırmak için belirtilen seçenekleri kullanarak bir JSON akışındaki verilerle yeni bir veri kaynağı oluşturur. |
+| [JsonDataSource](jsondatasource#constructor_1)(Stream, JsonDataLoadOptions) | JSON verilerini ayrıştırmak için belirtilen seçenekleri kullanarak bir JSON akışından alınan verilerle yeni bir veri kaynağı oluşturur. |
 | [JsonDataSource](jsondatasource#constructor_3)(string, JsonDataLoadOptions) | JSON verilerini ayrıştırmak için belirtilen seçenekleri kullanarak bir JSON dosyasındaki verilerle yeni bir veri kaynağı oluşturur. |
 
 ### Notlar
 
-Bir belgeyi birleştirirken ilgili dosyanın veya akışın verilerine erişmek için, bu sınıfın bir örneğini veri kaynağı olarak as aşağıdakilerden birine iletin[`DocumentAssembler`](../../groupdocs.assembly/documentassembler) .AssembleDocument aşırı yükler.
+Bir belgeyi bir araya getirirken ilgili dosyanın veya akışın verilerine erişmek için, bu sınıfın bir örneğini as bir veri kaynağından birine iletin.[`DocumentAssembler`](../../groupdocs.assembly/documentassembler) .AssembleDocument aşırı yüklemeler.
 
-Şablon belgelerinde, üst düzey bir JSON öğesi bir diziyse, bir[`JsonDataSource`](../jsondatasource) örnek, be ile aynı şekilde ele alınmalıdır.DataTable misal. Üst düzey JSON öğesi bir nesneyse,[`JsonDataSource`](../jsondatasource) örnek, a olduğu gibi ele alınmalıdır.DataRowmisal. Daha fazla bilgi için şablon sözdizimi başvurusuna bakın (https://docs.groupdocs.com/display/assemblynet/Template+Syntax+-+Part+1+of+2#TemplateSyntax-Part1of2-UsingDataSources).
+Şablon belgelerinde, üst düzey bir JSON öğesi bir diziyse, bir[`JsonDataSource`](../jsondatasource) örnek, be ile aynı şekilde ele alınmalıdır.DataTable misal. Üst düzey JSON öğesi bir nesneyse,[`JsonDataSource`](../jsondatasource) örnek, a olduğu gibi ele alınmalıdır.DataRowmisal. Daha fazla bilgi için şablon sözdizimi referansı 'ye bakın (https://docs.groupdocs.com/display/assemblynet/Template+Syntax+-+Part+1+of+2#TemplateSyntax-Part1of2-UsingDataSources).
 
 Şablon belgelerinde, JSON öğelerinin yazılan değerleriyle çalışabilirsiniz. Kolaylık sağlamak için motor, basit JSON türlerinin kümesini aşağıdakiyle değiştirir:
 
-* Nullable
-* Nullable
-* Nullable
-* Nullable
-* String
+* `uzun?`
+* `çift?`
+* `bool?`
+* `TarihSaat?`
+* `sicim`
 
-Motor, JSON temsillerine göre ekstra türlerin değerlerini otomatik olarak tanır.
+Motor, ekstra türlerin değerlerini JSON temsillerine göre otomatik olarak tanır.
 
-JSON veri yüklemesinin varsayılan davranışını geçersiz kılmak için, bir[`JsonDataLoadOptions`](../jsondataloadoptions) instance bu sınıfın bir yapıcısına.
+JSON veri yüklemesinin varsayılan davranışını geçersiz kılmak için bir[`JsonDataLoadOptions`](../jsondataloadoptions)instance bu sınıfın yapıcısına.
 
 ### Ayrıca bakınız
 

@@ -15,7 +15,7 @@ Proporciona clases para generar documentos en formatos de archivo de oficina pop
 | [BarcodeSettings](./barcodesettings) | Representa un conjunto de configuraciones que controlan la generación de códigos de barras mientras se ensambla un documento. |
 | [DataSourceInfo](./datasourceinfo) | Proporciona información sobre un único objeto de origen de datos que se utilizará para ensamblar un documento a partir de una plantilla. |
 | [DocumentAssembler](./documentassembler) | Proporciona rutinas para llenar documentos de plantilla con datos y un conjunto de configuraciones para controlar estas rutinas. |
-| [KnownTypeSet](./knowntypeset) | Representa un conjunto desordenado (es decir, una colección de elementos únicos) que contieneType objetos cuyos nombres total o parcialmente calificados se pueden usar dentro de las plantillas de documentos para invocar los miembros estáticos de los tipos correspondientes, realizar conversiones de tipos, etc. |
+| [KnownTypeSet](./knowntypeset) | Representa un conjunto desordenado (es decir, una colección de elementos únicos) que contieneTypeobjetos cuyos nombres total o parcialmente calificados se pueden usar dentro de las plantillas de documentos para invocar los miembros estáticos de los tipos correspondientes, realizar conversiones de tipos, etc. |
 | [License](./license) | Proporciona métodos para licenciar el componente. |
 | [LoadSaveOptions](./loadsaveoptions) | Especifica opciones adicionales para cargar y guardar un documento para ensamblar. |
 | [Metered](./metered) | Proporciona métodos para trabajar con licencias medidas. |

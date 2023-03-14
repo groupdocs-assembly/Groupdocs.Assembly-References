@@ -1,14 +1,14 @@
 ---
 title: AssembleDocument
 second_title: Riferimento API GroupDocs.Assembly per .NET
-description: Carica un documento modello dal percorso di origine specificato popola il documento modello con i dati da le origini singole o multiple specificate e archivia il documento risultante nel percorso di destinazione utilizzando default LoadSaveOptionsgroupdocs.assembly/loadsaveoptions .
+description: Carica un documento modello dal percorso di origine specificato popola il documento modello con i dati provenienti da le origini singole o multiple specificate e memorizza il documento risultante nel percorso di destinazione utilizzando default LoadSaveOptionsgroupdocs.assembly/loadsaveoptions .
 type: docs
 weight: 50
 url: /it/net/groupdocs.assembly/documentassembler/assembledocument/
 ---
 ## AssembleDocument(string, string, params DataSourceInfo[]) {#assembledocument_2}
 
-Carica un documento modello dal percorso di origine specificato, popola il documento modello con i dati da le origini singole o multiple specificate e archivia il documento risultante nel percorso di destinazione utilizzando default [`LoadSaveOptions`](../../loadsaveoptions) .
+Carica un documento modello dal percorso di origine specificato, popola il documento modello con i dati provenienti da le origini singole o multiple specificate e memorizza il documento risultante nel percorso di destinazione utilizzando default [`LoadSaveOptions`](../../loadsaveoptions) .
 
 ```csharp
 public bool AssembleDocument(string sourcePath, string targetPath, 
@@ -23,7 +23,7 @@ public bool AssembleDocument(string sourcePath, string targetPath,
 
 ### Valore di ritorno
 
-Un flag che indica se l'analisi del documento modello è riuscita. Il flag restituito ha senso solo se è un valore di[`Options`](../options) la proprietà comprende ilInlineErrorMessages opzione.
+Un flag che indica se l'analisi del documento modello ha avuto successo. Il flag restituito ha senso solo se un valore di the[`Options`](../options) proprietà comprende ilInlineErrorMessages opzione.
 
 ### Guarda anche
 
@@ -52,7 +52,7 @@ public bool AssembleDocument(string sourcePath, string targetPath, LoadSaveOptio
 
 ### Valore di ritorno
 
-Un flag che indica se l'analisi del documento modello è riuscita. Il flag restituito ha senso solo se è un valore di[`Options`](../options) la proprietà comprende ilInlineErrorMessages opzione.
+Un flag che indica se l'analisi del documento modello ha avuto successo. Il flag restituito ha senso solo se un valore di the[`Options`](../options) proprietà comprende ilInlineErrorMessages opzione.
 
 ### Guarda anche
 
@@ -81,7 +81,7 @@ public bool AssembleDocument(Stream sourceStream, Stream targetStream,
 
 ### Valore di ritorno
 
-Un flag che indica se l'analisi del documento modello è riuscita. Il flag restituito ha senso solo se è un valore di[`Options`](../options) la proprietà comprende ilInlineErrorMessages opzione.
+Un flag che indica se l'analisi del documento modello ha avuto successo. Il flag restituito ha senso solo se un valore di the[`Options`](../options) proprietà comprende ilInlineErrorMessages opzione.
 
 ### Guarda anche
 
@@ -110,7 +110,7 @@ public bool AssembleDocument(Stream sourceStream, Stream targetStream,
 
 ### Valore di ritorno
 
-Un flag che indica se l'analisi del documento modello è riuscita. Il flag restituito ha senso solo se è un valore di[`Options`](../options) la proprietà comprende ilInlineErrorMessages opzione.
+Un flag che indica se l'analisi del documento modello ha avuto successo. Il flag restituito ha senso solo se un valore di the[`Options`](../options) proprietà comprende ilInlineErrorMessages opzione.
 
 ### Guarda anche
 

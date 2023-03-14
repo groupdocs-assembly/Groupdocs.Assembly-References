@@ -33,7 +33,7 @@ public class DocumentTable
 
 ### Remarques
 
-Pour les documents au format de fichier Tableur, un[`DocumentTable`](../documenttable)instance représente une seule feuille. Pour les documents d'autres formats de fichier, un[`DocumentTable`](../documenttable) instance représente une seule table.
+Pour les documents au format de fichier Tableur, un[`DocumentTable`](../documenttable) instance représente une seule feuille. Pour les documents d'autres formats de fichier, un[`DocumentTable`](../documenttable) instance représente une seule table.
 
 Pour accéder aux données de la table correspondante lors de l'assemblage d'un document, passez une instance de cette classe en tant que une source de données à l'un des[`DocumentAssembler`](../../groupdocs.assembly/documentassembler) .AssembleDocument surcharges.
 

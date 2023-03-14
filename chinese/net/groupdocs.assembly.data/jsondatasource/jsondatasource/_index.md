@@ -1,14 +1,14 @@
 ---
 title: JsonDataSource
 second_title: GroupDocs.Assembly for .NET API 参考
-description: 使用解析 JSON 数据的默认选项使用来自 JSON 文件的数据创建新数据源
+description: 使用用于解析 JSON 数据的默认选项使用来自 JSON 文件的数据创建新数据源
 type: docs
 weight: 10
 url: /zh/net/groupdocs.assembly.data/jsondatasource/jsondatasource/
 ---
 ## JsonDataSource(string) {#constructor_2}
 
-使用解析 JSON 数据的默认选项，使用来自 JSON 文件的数据创建新数据源。
+使用用于解析 JSON 数据的默认选项使用来自 JSON 文件的数据创建新数据源。
 
 ```csharp
 public JsonDataSource(string jsonPath)
@@ -16,7 +16,7 @@ public JsonDataSource(string jsonPath)
 
 | 范围 | 类型 | 描述 |
 | --- | --- | --- |
-| jsonPath | String | 要用作数据源的 JSON 文件的路径。 |
+| jsonPath | String | 用作数据源的 JSON 文件的路径。 |
 
 ### 也可以看看
 
@@ -28,7 +28,7 @@ public JsonDataSource(string jsonPath)
 
 ## JsonDataSource(string, JsonDataLoadOptions) {#constructor_3}
 
-使用用于解析 JSON 数据的指定选项，使用来自 JSON 文件的数据创建新数据源。
+使用用于解析 JSON 数据的指定选项使用 JSON 文件中的数据创建新数据源。
 
 ```csharp
 public JsonDataSource(string jsonPath, JsonDataLoadOptions options)
@@ -36,7 +36,7 @@ public JsonDataSource(string jsonPath, JsonDataLoadOptions options)
 
 | 范围 | 类型 | 描述 |
 | --- | --- | --- |
-| jsonPath | String | 要用作数据源的 JSON 文件的路径。 |
+| jsonPath | String | 用作数据源的 JSON 文件的路径。 |
 | options | JsonDataLoadOptions | 解析 JSON 数据的选项。 |
 
 ### 也可以看看
@@ -50,7 +50,7 @@ public JsonDataSource(string jsonPath, JsonDataLoadOptions options)
 
 ## JsonDataSource(Stream) {#constructor}
 
-使用解析 JSON 数据的默认选项使用来自 JSON 流的数据创建新数据源。
+使用用于解析 JSON 数据的默认选项使用来自 JSON 流的数据创建新数据源。
 
 ```csharp
 public JsonDataSource(Stream jsonStream)
@@ -58,7 +58,7 @@ public JsonDataSource(Stream jsonStream)
 
 | 范围 | 类型 | 描述 |
 | --- | --- | --- |
-| jsonStream | Stream | 要用作数据源的 JSON 数据流。 |
+| jsonStream | Stream | 用作数据源的 JSON 数据流。 |
 
 ### 也可以看看
 
@@ -70,7 +70,7 @@ public JsonDataSource(Stream jsonStream)
 
 ## JsonDataSource(Stream, JsonDataLoadOptions) {#constructor_1}
 
-使用用于解析 JSON 数据的指定选项，使用来自 JSON 流的数据创建新数据源。
+使用用于解析 JSON 数据的指定选项使用来自 JSON 流的数据创建新数据源。
 
 ```csharp
 public JsonDataSource(Stream jsonStream, JsonDataLoadOptions options)
@@ -78,7 +78,7 @@ public JsonDataSource(Stream jsonStream, JsonDataLoadOptions options)
 
 | 范围 | 类型 | 描述 |
 | --- | --- | --- |
-| jsonStream | Stream | 要用作数据源的 JSON 数据流。 |
+| jsonStream | Stream | 用作数据源的 JSON 数据流。 |
 | options | JsonDataLoadOptions | 解析 JSON 数据的选项。 |
 
 ### 也可以看看

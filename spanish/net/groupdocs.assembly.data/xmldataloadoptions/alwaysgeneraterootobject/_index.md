@@ -16,7 +16,7 @@ public bool AlwaysGenerateRootObject { get; set; }
 
 ### Observaciones
 
-El valor predeterminado es**falso** .
+El valor predeterminado es**FALSO** .
 
 ### Ver también
 

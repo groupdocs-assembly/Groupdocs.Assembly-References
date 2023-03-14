@@ -18,7 +18,7 @@ public class DocumentTableRelation
 
 | Nome | Descrizione |
 | --- | --- |
-| [ChildColumn](../../groupdocs.assembly.data/documenttablerelation/childcolumn) { get; } | Ottiene la colonna figlia di questa relazione. |
+| [ChildColumn](../../groupdocs.assembly.data/documenttablerelation/childcolumn) { get; } | Ottiene la colonna figlio di questa relazione. |
 | [ParentColumn](../../groupdocs.assembly.data/documenttablerelation/parentcolumn) { get; } | Ottiene la colonna padre di questa relazione. |
 
 ### Guarda anche

@@ -18,7 +18,7 @@ public enum FileFormat
 
 | 姓名 | 价值 | 描述 |
 | --- | --- | --- |
-| Unspecified | `0` | 指定一个未设置的值。默认. |
+| Unspecified | `0` | 指定未设置的值。默认. |
 | Doc | `1` | 指定 Microsoft Word 97 - 2007 二进制文档格式。 |
 | Dot | `2` | 指定 Microsoft Word 97 - 2007 二进制模板格式。 |
 | Docx | `3` | 指定 Office Open XML WordprocessingML 文档（无宏）格式。 |
@@ -26,9 +26,9 @@ public enum FileFormat
 | Dotx | `5` | 指定 Office Open XML WordprocessingML 模板（无宏）格式。 |
 | Dotm | `6` | 指定 Office Open XML WordprocessingML 启用宏的模板格式。 |
 | FlatOpc | `7` | 指定存储在平面 XML 文件而不是 ZIP 包中的 Office Open XML WordprocessingML 格式。 |
-| FlatOpcMacroEnabled | `8` | 指定 Office Open XML WordprocessingML 启用宏的文档格式存储在平面 XML 文件 而不是 ZIP 包中。 |
+| FlatOpcMacroEnabled | `8` | 指定存储在平面 XML 文件 而不是 ZIP 包中的 Office Open XML WordprocessingML 宏启用文档格式。 |
 | FlatOpcTemplate | `9` | 指定存储在平面 XML 文件 而不是 ZIP 包中的 Office Open XML WordprocessingML 模板（无宏）格式。 |
-| FlatOpcTemplateMacroEnabled | `10` | 指定 Office Open XML WordprocessingML 启用宏的模板格式存储在平面 XML 文件 而不是 ZIP 包中。 |
+| FlatOpcTemplateMacroEnabled | `10` | 指定存储在平面 XML 文件 而不是 ZIP 包中的 Office Open XML WordprocessingML 启用宏的模板格式。 |
 | WordML | `11` | 指定 Microsoft Word 2003 WordprocessingML 格式。 |
 | Odt | `12` | 指定 ODF 文本文档格式。 |
 | Ott | `13` | 指定 ODF 文本文档模板格式。 |
@@ -41,22 +41,22 @@ public enum FileFormat
 | Xlsb | `20` | 指定 Microsoft Excel 2007 启用宏的二进制文件格式。 |
 | SpreadsheetML | `21` | 指定 Microsoft Excel 2003 SpreadsheetML 格式。 |
 | Ods | `22` | 指定 ODF 电子表格格式。 |
-| Ppt | `23` | 指定 Microsoft PowerPoint 97 - 2007 二进制演示文稿格式。 |
+| Ppt | `23` | 指定 Microsoft PowerPoint 97 - 2007 二进制表示格式。 |
 | Pps | `24` | 指定 Microsoft PowerPoint 97 - 2007 二进制幻灯片放映格式。 |
-| Pptx | `25` | 指定 Office Open XML PresentationML Presentation（无宏）格式。 |
-| Pptm | `26` | 指定 Office Open XML PresentationML 启用宏的演示格式。 |
+| Pptx | `25` | 指定 Office Open XML PresentationML 演示文稿（无宏）格式。 |
+| Pptm | `26` | 指定 Office Open XML PresentationML 启用宏的演示文稿格式。 |
 | Ppsx | `27` | 指定 Office Open XML PresentationML 幻灯片放映（无宏）格式。 |
 | Ppsm | `28` | 指定 Office Open XML PresentationML 启用宏的幻灯片放映格式。 |
 | Potx | `29` | 指定 Office Open XML PresentationML 模板（无宏）格式。 |
 | Potm | `30` | 指定 Office Open XML PresentationML 启用宏的模板格式。 |
 | Odp | `31` | 指定 ODF 表示格式。 |
-| MsgAscii | `32` | 指定使用 ASCII 字符编码的 Microsoft Outlook 邮件 (MSG) 格式。 |
-| MsgUnicode | `33` | 指定使用 Unicode 字符编码的 Microsoft Outlook 邮件 (MSG) 格式。 |
+| MsgAscii | `32` | 指定使用 ASCII 字符编码的 Microsoft Outlook 消息 (MSG) 格式。 |
+| MsgUnicode | `33` | 指定使用 Unicode 字符编码的 Microsoft Outlook 消息 (MSG) 格式。 |
 | Eml | `34` | 指定 MIME 标准格式。 |
 | Emlx | `35` | 指定 Apple Mail.app 程序文件格式。 |
 | Rtf | `36` | 指定 RTF 格式。 |
 | Text | `37` | 指定纯文本格式。 |
-| Xml | `38` | 指定通用表单的 XML 格式。 |
+| Xml | `38` | 指定一般形式的 XML 格式。 |
 | Xaml | `39` | 指定可扩展应用程序标记语言 (XAML) 格式。 |
 | XamlPackage | `40` | 指定可扩展应用程序标记语言 (XAML) 包格式。 |
 | Html | `41` | 指定 HTML 格式。 |
@@ -65,13 +65,13 @@ public enum FileFormat
 | OpenXps | `44` | 指定 OpenXPS (Ecma-388) 格式。 |
 | Pdf | `45` | 指定 PDF（Adobe 便携式文档）格式。 |
 | Epub | `46` | 指定 IDPF EPUB 格式。 |
-| Ps | `47` | 指定 PS（PostScript）格式。 |
+| Ps | `47` | 指定 PS (PostScript) 格式。 |
 | Pcl | `48` | 指定 PCL（打印机控制语言）格式。 |
 | Svg | `49` | 指定 SVG（可缩放矢量图形）格式。 |
 | Tiff | `50` | 指定 TIFF 格式。 |
 | Markdown | `51` | 指定 Markdown 格式。 |
 | Pot | `52` | 指定 Microsoft PowerPoint 97 - 2007 二进制模板格式。 |
-| Otp | `53` | 指定 ODF 演示模板格式。 |
+| Otp | `53` | 指定 ODF 表示模板格式。 |
 | Xlt | `54` | 指定 Microsoft Excel 97 - 2007 二进制模板格式。 |
 
 ### 也可以看看

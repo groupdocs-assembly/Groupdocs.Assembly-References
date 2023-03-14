@@ -1,14 +1,14 @@
 ---
 title: SaveFormat
 second_title: .NET API Başvurusu için GroupDocs.Assembly
-description: Birleştirilmiş bir belgenin kaydedileceği dosya biçimini alır veya ayarlar.Unspecified varsayılandır.
+description: Birleştirilmiş bir belgeyi kaydetmek için bir dosya formatı alır veya ayarlar.Unspecified varsayılandır.
 type: docs
 weight: 40
 url: /tr/net/groupdocs.assembly/loadsaveoptions/saveformat/
 ---
 ## LoadSaveOptions.SaveFormat property
 
-Birleştirilmiş bir belgenin kaydedileceği dosya biçimini alır veya ayarlar.Unspecified varsayılandır.
+Birleştirilmiş bir belgeyi kaydetmek için bir dosya formatı alır veya ayarlar.Unspecified varsayılandır.
 
 ```csharp
 public FileFormat SaveFormat { get; set; }
@@ -16,11 +16,11 @@ public FileFormat SaveFormat { get; set; }
 
 ### Notlar
 
-Bu özelliğin değeri belirtilmediğinde,[`DocumentAssembler`](../../documentassembler) aşağıdaki gibi davranır:
+Bu özelliğin değeri belirtilmediğinde,[`DocumentAssembler`](../../documentassembler) şu şekilde davranır:
 
-- Birleştirilmiş bir belgeyi kaydetmek için bir dosya yolu belirttiğinizde, kaydetme dosyası biçimi, yoldan dosya uzantısına göre belirlenir.
+- Birleştirilmiş bir belgeyi kaydetmek için bir dosya yolu belirttiğinizde, dosya kaydetme biçimi, yoldan alınan dosya uzantısına göre belirlenir.
 
-- Birleştirilmiş bir belgeyi kaydetmek için bir akış belirttiğinizde, kaydetme dosyası biçimi, yüklenen bir şablon belgesinin dosya biçimiyle aynı kalır.
+- Birleştirilmiş bir belgeyi kaydetmek için bir akış belirttiğinizde, dosya kaydetme biçimi, yüklü bir şablon belgenin dosya biçimiyle aynı kalır.
 
 Birleştirilmiş bir belgeyi GroupDocs.Assembly kullanarak herhangi bir dosya biçiminde kaydetmenin her zaman mümkün olmadığına dikkat edin. Örneğin, Kelime İşleme dosya biçiminden (DOCX gibi) yüklenen bir belgeyi Hesap Tablosu dosya biçimine (XLSX gibi) kaydetmek mümkün değildir. GroupDocs.Assembly tarafından desteklenen dosyası yükleme ve kaydetme biçimlerinin olası kombinasyonları hakkında daha fazla bilgi için lütfen GroupDocs.Assembly çevrimiçi belgelerine bakın.
 

@@ -27,7 +27,7 @@ public class DocumentAssembler
 | [BarcodeSettings](../../groupdocs.assembly/documentassembler/barcodesettings) { get; } | Bir belgeyi bir araya getirirken barkod oluşturmayı kontrol eden bir dizi ayar alır. |
 | [KnownTypes](../../groupdocs.assembly/documentassembler/knowntypes) { get; } | Aşağıdakileri içeren sırasız bir küme (yani benzersiz öğelerden oluşan bir koleksiyon) alır:Type bu birleştirici örneği tarafından işlenen belge şablonlarında tamamen veya kısmen nitelikli adlar kullanılabilen nesneleri, karşılık gelen türlerin statik üyelerini çağırmak, tür atamaları gerçekleştirmek vb. |
 | [Options](../../groupdocs.assembly/documentassembler/options) { get; set; } | Bunun davranışını kontrol eden bir dizi bayrak alır veya ayarlar[`DocumentAssembler`](../documentassembler) bir belgeyi bir araya getirirken örneği. |
-| static [UseReflectionOptimization](../../groupdocs.assembly/documentassembler/usereflectionoptimization) { get; set; } | Yansıma API'si aracılığıyla gerçekleştirilen özel tür üyelerinin çağrılarının dinamik sınıf oluşturma kullanılarak optimize edilip edilmediğini gösteren bir değer alır veya ayarlar. Varsayılan değer true. |
+| static [UseReflectionOptimization](../../groupdocs.assembly/documentassembler/usereflectionoptimization) { get; set; } | Yansıma API'si aracılığıyla gerçekleştirilen özel tip üyelerin çağrılarının dinamik sınıf oluşturma kullanılarak optimize edilip edilmediğini gösteren bir değer alır veya ayarlar. Varsayılan değer true. 'dir. |
 
 ## yöntemler
 

@@ -23,7 +23,7 @@ Le nom de la colonne est considéré comme valide si les conditions suivantes so
 * Le nom n'est pas vide.
 * Le premier caractère du nom est une lettre ou un trait de soulignement.
 * Les autres caractères du nom sont des lettres, des traits de soulignement, des chiffres ou les caractères suivants : '@', '#', '$'.
-* Le correspondant[`DocumentTable`](../../documenttable) l'objet ne contient pas de[`DocumentTableColumn`](../../documenttablecolumn)instance avec le même nom.
+* Le correspondant[`DocumentTable`](../../documenttable) l'objet ne contient pas de[`DocumentTableColumn`](../../documenttablecolumn) instance avec le même nom.
 
 ### Voir également
 

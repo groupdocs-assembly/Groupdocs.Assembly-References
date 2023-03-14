@@ -1,14 +1,14 @@
 ---
 title: CsvDataLoadOptions
 second_title: GroupDocs.Assembly for .NET API 参考
-description: 表示解析 CSV 数据的选项
+description: 表示解析CSV数据的选项
 type: docs
 weight: 20
 url: /zh/net/groupdocs.assembly.data/csvdataloadoptions/
 ---
 ## CsvDataLoadOptions class
 
-表示解析 CSV 数据的选项。
+表示解析CSV数据的选项。
 
 ```csharp
 public class CsvDataLoadOptions
@@ -27,12 +27,12 @@ public class CsvDataLoadOptions
 | --- | --- |
 | [CommentChar](../../groupdocs.assembly.data/csvdataloadoptions/commentchar) { get; set; } | 获取或设置用于注释 CSV 数据行的字符。 |
 | [Delimiter](../../groupdocs.assembly.data/csvdataloadoptions/delimiter) { get; set; } | 获取或设置用作列分隔符的字符。 |
-| [HasHeaders](../../groupdocs.assembly.data/csvdataloadoptions/hasheaders) { get; set; } | 获取或设置一个值，该值指示 CSV 数据的第一行是否包含列名。 |
+| [HasHeaders](../../groupdocs.assembly.data/csvdataloadoptions/hasheaders) { get; set; } | 获取或设置一个值，指示 CSV 数据的第一行是否包含列名。 |
 | [QuoteChar](../../groupdocs.assembly.data/csvdataloadoptions/quotechar) { get; set; } | 获取或设置用于引用字段值的字符。 |
 
 ### 评论
 
-可以将此类的实例传递给[`CsvDataSource`](../csvdatasource).
+此类的实例可以传递到的构造函数中[`CsvDataSource`](../csvdatasource).
 
 ### 也可以看看
 

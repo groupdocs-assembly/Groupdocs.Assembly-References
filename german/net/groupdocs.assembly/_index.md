@@ -15,7 +15,7 @@ Bietet Klassen zum Generieren von Dokumenten in gängigen Office-Dateiformaten b
 | [BarcodeSettings](./barcodesettings) | Stellt eine Reihe von Einstellungen dar, die die Barcode-Erzeugung beim Zusammenstellen eines Dokuments steuern. |
 | [DataSourceInfo](./datasourceinfo) | Stellt Informationen zu einem einzelnen Datenquellenobjekt bereit, das zum Zusammenstellen eines Dokuments aus einer Vorlage verwendet werden soll. |
 | [DocumentAssembler](./documentassembler) | Bietet Routinen zum Füllen von Vorlagendokumenten mit Daten und eine Reihe von Einstellungen zum Steuern dieser Routinen. |
-| [KnownTypeSet](./knowntypeset) | Repräsentiert einen ungeordneten Satz (d. h. eine Sammlung einzigartiger Elemente), der Folgendes enthältType Objekte , deren vollständig oder teilweise qualifizierte Namen in Dokumentvorlagen verwendet werden können, um die statischen Member der entsprechenden -Typen aufzurufen, Typumwandlungen durchzuführen usw. |
+| [KnownTypeSet](./knowntypeset) | Repräsentiert einen ungeordneten Satz (d. h. eine Sammlung einzigartiger Elemente), der Folgendes enthältTypeObjekte , deren vollständig oder teilweise qualifizierte Namen in Dokumentvorlagen verwendet werden können, um die statischen Member der entsprechenden -Typen aufzurufen, Typumwandlungen durchzuführen usw. |
 | [License](./license) | Stellt Methoden zur Lizenzierung der Komponente bereit. |
 | [LoadSaveOptions](./loadsaveoptions) | Gibt zusätzliche Optionen zum Laden und Speichern eines zusammenzustellenden Dokuments an. |
 | [Metered](./metered) | Bietet Methoden zum Arbeiten mit gemessener Lizenzierung. |

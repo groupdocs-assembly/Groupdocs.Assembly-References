@@ -1,14 +1,14 @@
 ---
 title: Options
 second_title: GroupDocs.Assembly for .NET API 参考
-description: 获取或设置DocumentTableOptionsgroupdocs.assembly.data/documenttableoptions加载对应的文档表时使用 默认值为null表示默认DocumentTableOptionsgroupdocs.assembly.data/documenttableoptions将被应用
+description: 获取或设置DocumentTableOptionsgroupdocs.assembly.data/documenttableoptions加载对应的文档表时使用 默认值为null表示默认DocumentTableOptionsgroupdocs.assembly.data/documenttableoptions将被应用.
 type: docs
 weight: 20
 url: /zh/net/groupdocs.assembly.data/documenttableloadargs/options/
 ---
 ## DocumentTableLoadArgs.Options property
 
-获取或设置[`DocumentTableOptions`](../../documenttableoptions)加载对应的文档表时使用。 默认值为null，表示默认[`DocumentTableOptions`](../../documenttableoptions)将被应用。
+获取或设置[`DocumentTableOptions`](../../documenttableoptions)加载对应的文档表时使用。 默认值为null，表示默认[`DocumentTableOptions`](../../documenttableoptions)将被应用.
 
 ```csharp
 public DocumentTableOptions Options { get; set; }

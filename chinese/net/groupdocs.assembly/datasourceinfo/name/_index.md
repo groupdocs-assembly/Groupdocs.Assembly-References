@@ -1,14 +1,14 @@
 ---
 title: Name
 second_title: GroupDocs.Assembly for .NET API 参考
-description: 获取或设置用于访问模板文档中的数据源对象的数据源对象的名称
+description: 获取或设置数据源对象的名称用于访问模板文档中的数据源对象
 type: docs
 weight: 30
 url: /zh/net/groupdocs.assembly/datasourceinfo/name/
 ---
 ## DataSourceInfo.Name property
 
-获取或设置用于访问模板文档中的数据源对象的数据源对象的名称。
+获取或设置数据源对象的名称，用于访问模板文档中的数据源对象。
 
 ```csharp
 public string Name { get; set; }
@@ -16,11 +16,11 @@ public string Name { get; set; }
 
 ### 评论
 
-指定数据源对象的名称后，您可以在模板文档中使用该名称访问数据源对象及其成员 。
+当指定数据源对象的名称时，可以使用名称. 访问模板文档中的数据源对象及其成员
 
-当数据源对象的名称为 null 或为空时，您仍然可以使用上下文对象成员访问在模板文档中访问数据源对象 的成员（更多信息请参阅模板语法参考）， 但您无法访问数据源对象本身。
+当数据源对象的名称为 null 或为空时，您仍然可以使用上下文对象成员访问在模板文档中访问数据源对象 的成员（有关详细信息，请参阅模板语法参考）， 但您不能访问数据源对象本身.
 
-传递多个时[`DataSourceInfo`](../../datasourceinfo)实例到[`DocumentAssembler`](../../documentassembler)，只有 第一个数据源对象的名称可以为null或为空。其余名称必须指定且唯一。
+传递多个时[`DataSourceInfo`](../../datasourceinfo)实例到[`DocumentAssembler`](../../documentassembler) 只有 第一个数据源对象的名称可以为 null 或为空。其余名称必须指定且唯一。
 
 ### 也可以看看
 

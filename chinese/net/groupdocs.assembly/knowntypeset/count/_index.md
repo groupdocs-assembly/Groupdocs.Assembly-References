@@ -1,14 +1,14 @@
 ---
 title: Count
 second_title: GroupDocs.Assembly for .NET API 参考
-description: 获取集合中项目的计数
+description: 获取集合中的项目数
 type: docs
 weight: 10
 url: /zh/net/groupdocs.assembly/knowntypeset/count/
 ---
 ## KnownTypeSet.Count property
 
-获取集合中项目的计数。
+获取集合中的项目数。
 
 ```csharp
 public int Count { get; }

@@ -23,7 +23,7 @@ Le nom de la table est considéré comme valide si les conditions suivantes sont
 * Le nom n'est pas vide.
 * Le premier caractère du nom est une lettre ou un trait de soulignement.
 * Les autres caractères du nom sont des lettres, des traits de soulignement, des chiffres ou les caractères suivants : '@', '#', '$'.
-* Le correspondant[`DocumentTableSet`](../../documenttableset) l'objet ne contient pas de[`DocumentTable`](../../documenttable)instance avec le même nom.
+* Le correspondant[`DocumentTableSet`](../../documenttableset) l'objet ne contient pas de[`DocumentTable`](../../documenttable) instance avec le même nom.
 
 ### Voir également
 

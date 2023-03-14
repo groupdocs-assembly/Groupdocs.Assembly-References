@@ -1,14 +1,14 @@
 ---
 title: MinRowIndex
 second_title: GroupDocs.Assembly for .NET API 参考
-description: 获取或设置要从文档表中提取的行的最小零基索引 默认值为负表示最小行索引不受限制
+description: 获取或设置要从文档表中提取的行的从零开始的最小索引 默认值为负数表示不限制最小行索引
 type: docs
 weight: 60
 url: /zh/net/groupdocs.assembly.data/documenttableoptions/minrowindex/
 ---
 ## DocumentTableOptions.MinRowIndex property
 
-获取或设置要从文档表中提取的行的最小零基索引。 默认值为负，表示最小行索引不受限制。
+获取或设置要从文档表中提取的行的从零开始的最小索引。 默认值为负数，表示不限制最小行索引。
 
 ```csharp
 public int MinRowIndex { get; set; }

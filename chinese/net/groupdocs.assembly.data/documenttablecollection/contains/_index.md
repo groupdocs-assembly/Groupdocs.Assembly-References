@@ -44,7 +44,7 @@ public bool Contains(DocumentTable table)
 
 ### 返回值
 
-一个值，指示此集合是否包含指定的表。
+指示此集合是否包含指定表的值。
 
 ### 也可以看看
 

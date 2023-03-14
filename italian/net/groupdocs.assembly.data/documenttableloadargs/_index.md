@@ -1,14 +1,14 @@
 ---
 title: DocumentTableLoadArgs
 second_title: Riferimento API GroupDocs.Assembly per .NET
-description: Fornisce i dati per ilHandle./idocumenttableloadhandler/handle metodo.
+description: Fornisce i dati per ilHandle./idocumenttableloadhandler/handlemetodo.
 type: docs
 weight: 80
 url: /it/net/groupdocs.assembly.data/documenttableloadargs/
 ---
 ## DocumentTableLoadArgs class
 
-Fornisce i dati per il[`Handle`](../idocumenttableloadhandler/handle) metodo.
+Fornisce i dati per il[`Handle`](../idocumenttableloadhandler/handle)metodo.
 
 ```csharp
 public class DocumentTableLoadArgs

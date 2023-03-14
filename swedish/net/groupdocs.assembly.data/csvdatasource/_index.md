@@ -31,15 +31,15 @@ I malldokument, en[`CsvDataSource`](../csvdatasource) instans bör behandlas på
 
 Datatyper av kommaseparerade värden bestäms automatiskt efter deras strängrepresentationer. Så i template -dokument kan du arbeta med inskrivna värden snarare än bara strängar. Motorn kan automatiskt känna igen värden av följande typer:
 
-* Nullable
-* Nullable
-* Nullable
-* Nullable
-* String
+* `lång?`
+* `dubbel?`
+* `bool?`
+* `Datum Tid?`
+* `sträng`
 
 Observera att för att automatisk igenkänning av datatyper ska fungera bör strängrepresentationer av kommaseparerade värden bildas med invarianta kulturinställningar.
 
-För att åsidosätta standardbeteendet för CSV-dataladdning, initiera och skicka ett[`CsvDataLoadOptions`](../csvdataloadoptions) instans till en konstruktor av denna klass.
+För att åsidosätta standardbeteendet för CSV-dataladdning, initiera och skicka ett[`CsvDataLoadOptions`](../csvdataloadoptions)instans till en konstruktor av denna klass.
 
 ### Se även
 

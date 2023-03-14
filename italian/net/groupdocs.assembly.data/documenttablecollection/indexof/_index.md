@@ -20,7 +20,7 @@ public int IndexOf(string name)
 
 ### Valore di ritorno
 
-L'indice in base zero di una tabella con il nome specificato o -1 se la tabella non esiste in questa raccolta.
+L'indice in base zero di una tabella con il nome specificato oppure -1 se la tabella non esiste in questa raccolta.
 
 ### Guarda anche
 
@@ -40,7 +40,7 @@ public int IndexOf(DocumentTable table)
 
 | Parametro | Tipo | Descrizione |
 | --- | --- | --- |
-| table | DocumentTable | Un tavolo da trovare. |
+| table | DocumentTable | Un tavolo da trovare |
 
 ### Valore di ritorno
 

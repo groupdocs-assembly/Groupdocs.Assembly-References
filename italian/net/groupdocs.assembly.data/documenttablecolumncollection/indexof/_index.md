@@ -20,7 +20,7 @@ public int IndexOf(string name)
 
 ### Valore di ritorno
 
-L'indice in base zero di una colonna con il nome specificato o -1 se la colonna non esiste in questa raccolta.
+L'indice in base zero di una colonna con il nome specificato oppure -1 se la colonna non esiste in questa raccolta.
 
 ### Guarda anche
 

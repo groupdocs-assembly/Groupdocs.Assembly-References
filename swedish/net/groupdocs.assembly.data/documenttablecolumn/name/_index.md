@@ -23,7 +23,7 @@ Kolumnens namn anses vara giltigt om följande villkor är uppfyllda:
 * Namnet är inte tomt.
 * Namnets första tecken är en bokstav eller understreck.
 * Resten av namnets tecken är bokstäver, understreck, siffror eller följande tecken: '@', '#', '$'.
-* Motsvarande[`DocumentTable`](../../documenttable) objektet innehåller inte en[`DocumentTableColumn`](../../documenttablecolumn)instans med samma namn.
+* Motsvarande[`DocumentTable`](../../documenttable) objektet innehåller inte en[`DocumentTableColumn`](../../documenttablecolumn) instans med samma namn.
 
 ### Se även
 

@@ -1,14 +1,14 @@
 ---
 title: IndexOf
 second_title: .NET API Başvurusu için GroupDocs.Assembly
-description: Bu koleksiyonda belirtilen ada sahip bir tablonun dizinini döndürür.
+description: Bu koleksiyon içinde belirtilen ada sahip bir tablonun dizinini döndürür.
 type: docs
 weight: 50
 url: /tr/net/groupdocs.assembly.data/documenttablecollection/indexof/
 ---
 ## IndexOf(string) {#indexof_1}
 
-Bu koleksiyonda belirtilen ada sahip bir tablonun dizinini döndürür.
+Bu koleksiyon içinde belirtilen ada sahip bir tablonun dizinini döndürür.
 
 ```csharp
 public int IndexOf(string name)
@@ -16,7 +16,7 @@ public int IndexOf(string name)
 
 | Parametre | Tip | Tanım |
 | --- | --- | --- |
-| name | String | Bulunacak bir tablonun büyük/küçük harfe duyarsız adı. |
+| name | String | Bulunacak tablonun büyük/küçük harf duyarlı olmayan adı. |
 
 ### Geri dönüş değeri
 

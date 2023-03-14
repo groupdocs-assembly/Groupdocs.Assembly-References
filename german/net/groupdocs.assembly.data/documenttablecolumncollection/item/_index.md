@@ -20,7 +20,7 @@ public DocumentTableColumn this[int index] { get; }
 
 ### Rückgabewert
 
-EIN[`DocumentTableColumn`](../../documenttablecolumn) Instanz aus der Sammlung am angegebenen Index.
+A[`DocumentTableColumn`](../../documenttablecolumn) Instanz aus der Sammlung am angegebenen Index.
 
 ### Siehe auch
 
@@ -45,7 +45,7 @@ public DocumentTableColumn this[string name] { get; }
 
 ### Rückgabewert
 
-A[`DocumentTableColumn`](../../documenttablecolumn) Instanz mit dem angegebenen Namen aus der Sammlung oder null falls eine solche Instanz nicht existiert.
+A[`DocumentTableColumn`](../../documenttablecolumn)Instanz mit dem angegebenen Namen aus der Sammlung oder null falls eine solche Instanz nicht existiert.
 
 ### Siehe auch
 

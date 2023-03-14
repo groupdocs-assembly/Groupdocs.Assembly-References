@@ -18,7 +18,7 @@ Stellt Klassen für den Zugriff auf Daten externer Dokumente bereit, die beim Zu
 | [DocumentTableCollection](./documenttablecollection) | Repräsentiert eine schreibgeschützte Sammlung von[`DocumentTable`](../groupdocs.assembly.data/documenttable) Objekte eines bestimmten[`DocumentTableSet`](../groupdocs.assembly.data/documenttableset) Instanz. |
 | [DocumentTableColumn](./documenttablecolumn) | Repräsentiert eine einzelne Spalte eines bestimmten[`DocumentTable`](../groupdocs.assembly.data/documenttable) Objekt. |
 | [DocumentTableColumnCollection](./documenttablecolumncollection) | Repräsentiert eine schreibgeschützte Sammlung von[`DocumentTableColumn`](../groupdocs.assembly.data/documenttablecolumn) Objekte eines bestimmten [`DocumentTable`](../groupdocs.assembly.data/documenttable) Instanz. |
-| [DocumentTableLoadArgs](./documenttableloadargs) | Liefert Daten für die[`Handle`](../groupdocs.assembly.data/idocumenttableloadhandler/handle) Methode. |
+| [DocumentTableLoadArgs](./documenttableloadargs) | Liefert Daten für die[`Handle`](../groupdocs.assembly.data/idocumenttableloadhandler/handle)Methode. |
 | [DocumentTableOptions](./documenttableoptions) | Stellt eine Reihe von Optionen bereit, um die Extraktion von Daten aus einer Dokumenttabelle zu steuern. |
 | [DocumentTableRelation](./documenttablerelation) | Repräsentiert eine Eltern-Kind-Beziehung zwischen zwei[`DocumentTable`](../groupdocs.assembly.data/documenttable) Objekte. |
 | [DocumentTableRelationCollection](./documenttablerelationcollection) | Repräsentiert die Sammlung von[`DocumentTableRelation`](../groupdocs.assembly.data/documenttablerelation) Objekte eines einzigen[`DocumentTableSet`](../groupdocs.assembly.data/documenttableset) Instanz. |

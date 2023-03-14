@@ -16,7 +16,7 @@ public int IndexInDocument { get; }
 
 ### Remarques
 
-Selon[`DocumentTableOptions`](../../documenttableoptions)spécifié, cet index peut différer de l'index de ce[`DocumentTableColumn`](../../documenttablecolumn) instance dans la collection de colonnes du correspondant[`DocumentTable`](../../documenttable) instance.
+Selon[`DocumentTableOptions`](../../documenttableoptions) spécifié, cet index peut différer de l'index de ce[`DocumentTableColumn`](../../documenttablecolumn) instance dans la collection de colonnes du correspondant[`DocumentTable`](../../documenttable) instance.
 
 ### Voir également
 

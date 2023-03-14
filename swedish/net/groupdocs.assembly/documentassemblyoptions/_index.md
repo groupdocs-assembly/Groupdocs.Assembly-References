@@ -24,6 +24,7 @@ public enum DocumentAssemblyOptions
 | UpdateFieldsAndFormulas | `2` | Anger att fält för resultatordbehandlingsdokument och formler för resultatkalkylarksdokument ska uppdateras av assemblern. |
 | RemoveEmptyParagraphs | `4` | Anger att assemblern ska ta bort stycken som blir tomma efter att mallsyntaxtaggar har tagits bort eller ersatts med tomma värden. |
 | InlineErrorMessages | `8` | Anger att assemblern ska infoga mallsyntaxfelmeddelanden i utdatadokument. Om det här alternativet inte är inställt, skapar assemblern ett undantag när ett syntaxfel stöter på. |
+| UseSpreadsheetDataTypes | `10` | Avser endast kalkylarksdokument. Anger att utvärderade uttrycksresultat ska mappas till motsvarande kalkylbladsdatatyper, vilket också påverkar deras standardformatering inom celler. Om det här alternativet inte är inställt, skrivs uttrycksresultat alltid som strängar av assemblern. Det här alternativet har ingen effekt när uttrycksresultat formateras med mallsyntax - uttrycksresultat skrivs alltid som strängar då också. |
 
 ### Se även
 

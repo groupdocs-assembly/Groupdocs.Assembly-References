@@ -27,12 +27,12 @@ public class DocumentTableSet
 
 | Nome | Descrizione |
 | --- | --- |
-| [Relations](../../groupdocs.assembly.data/documenttableset/relations) { get; } | Ottiene la raccolta delle relazioni padre-figlio definite per le tabelle di documenti di questo set. |
+| [Relations](../../groupdocs.assembly.data/documenttableset/relations) { get; } | Ottiene la raccolta delle relazioni padre-figlio definite per le tabelle dei documenti di questo insieme. |
 | [Tables](../../groupdocs.assembly.data/documenttableset/tables) { get; } | Ottiene la raccolta di[`DocumentTable`](../documenttable) oggetti che rappresentano le tabelle di questo set. |
 
 ### Osservazioni
 
-Per i documenti dei formati di file Spreadsheet, a[`DocumentTableSet`](../documenttableset) instance rappresenta un insieme di fogli. Per documenti di altri formati di file, a[`DocumentTableSet`](../documenttableset) l'istanza rappresenta un insieme di tabelle.
+Per i documenti nei formati di file Spreadsheet, a[`DocumentTableSet`](../documenttableset) instance rappresenta un insieme di fogli. Per documenti di altri formati di file, a[`DocumentTableSet`](../documenttableset) l'istanza rappresenta un insieme di tabelle.
 
 Per accedere ai dati delle tabelle corrispondenti durante l'assemblaggio di un documento, passare un'istanza di questa classe come un'origine dati a uno dei[`DocumentAssembler`](../../groupdocs.assembly/documentassembler) .AssembleDocument sovraccarichi.
 

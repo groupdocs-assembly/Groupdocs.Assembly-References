@@ -18,7 +18,7 @@ url: /ar/net/groupdocs.assembly.data/
 | [DocumentTableCollection](./documenttablecollection) | يمثل مجموعة للقراءة فقط من[`DocumentTable`](../groupdocs.assembly.data/documenttable) كائنات معينة[`DocumentTableSet`](../groupdocs.assembly.data/documenttableset) مثيل . |
 | [DocumentTableColumn](./documenttablecolumn) | يمثل عمودًا واحدًا لعمود معين[`DocumentTable`](../groupdocs.assembly.data/documenttable) الكائن . |
 | [DocumentTableColumnCollection](./documenttablecolumncollection) | يمثل مجموعة للقراءة فقط من[`DocumentTableColumn`](../groupdocs.assembly.data/documenttablecolumn) كائنات خاصة [`DocumentTable`](../groupdocs.assembly.data/documenttable) المثال. |
-| [DocumentTableLoadArgs](./documenttableloadargs) | توفير بيانات لملف[`Handle`](../groupdocs.assembly.data/idocumenttableloadhandler/handle) طريقة . |
+| [DocumentTableLoadArgs](./documenttableloadargs) | توفير بيانات لملف[`Handle`](../groupdocs.assembly.data/idocumenttableloadhandler/handle)طريقة . |
 | [DocumentTableOptions](./documenttableoptions) | يوفر مجموعة من الخيارات للتحكم في استخراج البيانات من جدول المستندات. |
 | [DocumentTableRelation](./documenttablerelation) | يمثل العلاقة بين الوالدين والطفل[`DocumentTable`](../groupdocs.assembly.data/documenttable) الكائنات . |
 | [DocumentTableRelationCollection](./documenttablerelationcollection) | يمثل مجموعة[`DocumentTableRelation`](../groupdocs.assembly.data/documenttablerelation) كائنات واحدة[`DocumentTableSet`](../groupdocs.assembly.data/documenttableset) مثيل . |

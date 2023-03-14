@@ -1,14 +1,14 @@
 ---
 title: XmlDataLoadOptions
 second_title: GroupDocs.Assembly for .NET API 参考
-description: 表示 XML 数据加载的选项
+description: 表示加载 XML 数据的选项
 type: docs
 weight: 170
 url: /zh/net/groupdocs.assembly.data/xmldataloadoptions/
 ---
 ## XmlDataLoadOptions class
 
-表示 XML 数据加载的选项。
+表示加载 XML 数据的选项。
 
 ```csharp
 public class XmlDataLoadOptions
@@ -24,11 +24,11 @@ public class XmlDataLoadOptions
 
 | 姓名 | 描述 |
 | --- | --- |
-| [AlwaysGenerateRootObject](../../groupdocs.assembly.data/xmldataloadoptions/alwaysgeneraterootobject) { get; set; } | 获取或设置一个标志，指示生成的数据源是否将始终包含 XML 根 元素的对象。如果一个 XML 根元素没有属性并且它的所有子元素都具有相同的名称，则默认情况下不会创建这样的对象 。 |
+| [AlwaysGenerateRootObject](../../groupdocs.assembly.data/xmldataloadoptions/alwaysgeneraterootobject) { get; set; } | 获取或设置一个标志，该标志指示生成的数据源是否始终包含 XML 根 元素的对象。如果 XML 根元素没有属性并且其所有子元素都具有相同的名称，则默认情况下不会创建这样的对象 。 |
 
 ### 评论
 
-可以将此类的实例传递给[`XmlDataSource`](../xmldatasource).
+此类的实例可以传递到的构造函数中[`XmlDataSource`](../xmldatasource).
 
 ### 也可以看看
 

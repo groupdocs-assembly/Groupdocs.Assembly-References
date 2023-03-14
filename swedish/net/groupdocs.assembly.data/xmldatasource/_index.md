@@ -37,11 +37,11 @@ När XML Schema Definition skickas till en konstruktor av denna klass, bestäms 
 
 När XML Schema Definition inte skickas till en konstruktor av denna klass, bestäms datatyper av värden för enkla XML-element och attribut automatiskt efter deras strängrepresentationer. Så i malldokument kan du arbeta med inskrivna värden också i det här fallet. Motorn kan automatiskt känna igen värden av följande typer:
 
-* Nullable
-* Nullable
-* Nullable
-* Nullable
-* String
+* `lång?`
+* `dubbel?`
+* `bool?`
+* `Datum Tid?`
+* `sträng`
 
 Observera att för att automatisk igenkänning av datatyper ska fungera bör strängrepresentationer av värden för enkla XML-element och attribut skapas med invarianta kulturinställningar.
 

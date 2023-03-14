@@ -1,14 +1,14 @@
 ---
 title: Type
 second_title: GroupDocs.Assembly for .NET API 参考
-description: 获取或设置该列单元格值的类型
+description: 获取或设置此列中单元格值的类型
 type: docs
 weight: 40
 url: /zh/net/groupdocs.assembly.data/documenttablecolumn/type/
 ---
 ## DocumentTableColumn.Type property
 
-获取或设置该列单元格值的类型。
+获取或设置此列中单元格值的类型。
 
 ```csharp
 public Type Type { get; set; }
@@ -16,7 +16,7 @@ public Type Type { get; set; }
 
 ### 评论
 
-对于非电子表格文件格式的文档，初始类型始终自动确定为字符串 。对于电子表格文件格式的文档，初始类型会根据相应的单元格值自动确定 。
+对于非电子表格文件格式的文档，初始类型始终自动确定 为字符串。对于Spreadsheet文件格式的文档，初始类型是根据相应的单元格值自动确定 。
 
 如果特定电子表格列的单元格包含不同类型的值，则该列的 初始类型也自动确定为字符串。
 

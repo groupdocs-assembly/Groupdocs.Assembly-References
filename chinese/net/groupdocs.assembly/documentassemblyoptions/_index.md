@@ -1,14 +1,14 @@
 ---
 title: DocumentAssemblyOptions
 second_title: GroupDocs.Assembly for .NET API 参考
-description: 指定控制行为的选项DocumentAssembler./documentassembler在组装文档时
+description: 指定控制行为的选项DocumentAssembler./documentassembler在组装文档时.
 type: docs
 weight: 210
 url: /zh/net/groupdocs.assembly/documentassemblyoptions/
 ---
 ## DocumentAssemblyOptions enumeration
 
-指定控制行为的选项[`DocumentAssembler`](../documentassembler)在组装文档时。
+指定控制行为的选项[`DocumentAssembler`](../documentassembler)在组装文档时.
 
 ```csharp
 [Flags]
@@ -20,10 +20,11 @@ public enum DocumentAssemblyOptions
 | 姓名 | 价值 | 描述 |
 | --- | --- | --- |
 | None | `0` | 指定默认选项。 |
-| AllowMissingMembers | `1` | 指定缺少的对象成员应被汇编器视为空文字。此选项 仅影响对实例（即非静态）对象成员和扩展方法的访问。如果没有设置这个 选项，当遇到缺少的对象成员时，汇编器会抛出异常。 |
-| UpdateFieldsAndFormulas | `2` | 指定结果字处理文档的字段和结果电子表格文档的公式 应由汇编程序更新。 |
-| RemoveEmptyParagraphs | `4` | 指定在模板语法标记被 删除或替换为空值后，汇编器应删除变为空的段落。 |
-| InlineErrorMessages | `8` | 指定汇编器应将模板语法错误消息内联到输出文档中。 如果没有设置这个选项，汇编器在遇到语法错误时会抛出异常。 |
+| AllowMissingMembers | `1` | 指定缺少的对象成员应被汇编程序视为空文字。此选项 仅影响对实例（即非静态）对象成员和扩展方法的访问。如果未设置此 选项，汇编程序会在遇到缺少的对象成员时抛出异常。 |
+| UpdateFieldsAndFormulas | `2` | 指定应由汇编器更新结果字处理文档的字段和结果电子表格文档 的公式。 |
+| RemoveEmptyParagraphs | `4` | 指定在模板语法标记被 删除或替换为空值后，汇编程序应删除变为空的段落。 |
+| InlineErrorMessages | `8` | 指定汇编程序应将模板语法错误消息内联到输出文档中。 如果不设置该选项，汇编程序在遇到语法错误时抛出异常。 |
+| UseSpreadsheetDataTypes | `10` | 仅与电子表格文档相关。指定评估的表达式结果应映射到 对应的电子表格数据类型，这也会影响它们在单元格中的默认格式。如果未设置此 选项，则表达式结果始终由汇编程序写入为字符串。当使用模板语法格式化表达式结果时，此选项 无效 - 表达式结果始终 然后也写为字符串。 |
 
 ### 也可以看看
 

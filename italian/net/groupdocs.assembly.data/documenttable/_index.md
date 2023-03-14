@@ -1,14 +1,14 @@
 ---
 title: DocumentTable
 second_title: Riferimento API GroupDocs.Assembly per .NET
-description: Fornisce laccesso ai dati di una singola tabella o foglio di calcolo che si trova in un documento esterno da utilizzare durante assemblando un documento.
+description: Fornisce laccesso ai dati di una singola tabella o foglio di calcolo situata in un documento esterno da utilizzare durante lassemblaggio di un documento.
 type: docs
 weight: 40
 url: /it/net/groupdocs.assembly.data/documenttable/
 ---
 ## DocumentTable class
 
-Fornisce l'accesso ai dati di una singola tabella (o foglio di calcolo) che si trova in un documento esterno da utilizzare durante assemblando un documento.
+Fornisce l'accesso ai dati di una singola tabella (o foglio di calcolo) situata in un documento esterno da utilizzare durante l'assemblaggio di un documento.
 
 ```csharp
 public class DocumentTable
@@ -28,12 +28,12 @@ public class DocumentTable
 | Nome | Descrizione |
 | --- | --- |
 | [Columns](../../groupdocs.assembly.data/documenttable/columns) { get; } | Ottiene la raccolta di[`DocumentTableColumn`](../documenttablecolumn) oggetti che rappresentano colonne di la tabella corrispondente. |
-| [IndexInDocument](../../groupdocs.assembly.data/documenttable/indexindocument) { get; } | Ottiene l'indice in base zero originale della tabella corrispondente come da documento di origine. |
+| [IndexInDocument](../../groupdocs.assembly.data/documenttable/indexindocument) { get; } | Ottiene l'indice in base zero originale della tabella corrispondente in base al documento di origine. |
 | [Name](../../groupdocs.assembly.data/documenttable/name) { get; set; } | Ottiene o imposta il nome di questa tabella utilizzata per accedere ai dati della tabella in un documento modello passato a [`DocumentAssembler`](../../groupdocs.assembly/documentassembler) . |
 
 ### Osservazioni
 
-Per i documenti dei formati di file Spreadsheet, a[`DocumentTable`](../documenttable)l'istanza rappresenta un singolo foglio. Per documenti di altri formati di file, a[`DocumentTable`](../documenttable) l'istanza rappresenta una singola tabella.
+Per i documenti nei formati di file Spreadsheet, a[`DocumentTable`](../documenttable) l'istanza rappresenta un singolo foglio. Per documenti di altri formati di file, a[`DocumentTable`](../documenttable) l'istanza rappresenta una singola tabella.
 
 Per accedere ai dati della tabella corrispondente durante l'assemblaggio di un documento, passa un'istanza di questa classe come un'origine dati a uno dei[`DocumentAssembler`](../../groupdocs.assembly/documentassembler) .AssembleDocument sovraccarichi.
 

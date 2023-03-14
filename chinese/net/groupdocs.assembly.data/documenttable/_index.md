@@ -1,14 +1,14 @@
 ---
 title: DocumentTable
 second_title: GroupDocs.Assembly for .NET API 参考
-description: 提供对位于外部文档中的单个表或电子表格的数据的访问以便在 组装文档时使用
+description: 提供对位于外部文档中的单个表或电子表格数据的访问以便在 汇编文档时使用
 type: docs
 weight: 40
 url: /zh/net/groupdocs.assembly.data/documenttable/
 ---
 ## DocumentTable class
 
-提供对位于外部文档中的单个表（或电子表格）的数据的访问，以便在 组装文档时使用。
+提供对位于外部文档中的单个表（或电子表格）数据的访问，以便在 汇编文档时使用。
 
 ```csharp
 public class DocumentTable
@@ -18,8 +18,8 @@ public class DocumentTable
 
 | 姓名 | 描述 |
 | --- | --- |
-| [DocumentTable](documenttable#constructor)(Stream, int) | 使用默认创建此类的新实例[`DocumentTableOptions`](../documenttableoptions). |
-| [DocumentTable](documenttable#constructor_2)(string, int) | 使用默认创建此类的新实例[`DocumentTableOptions`](../documenttableoptions). |
+| [DocumentTable](documenttable#constructor)(Stream, int) | 使用默认值创建此类的新实例[`DocumentTableOptions`](../documenttableoptions). |
+| [DocumentTable](documenttable#constructor_2)(string, int) | 使用默认值创建此类的新实例[`DocumentTableOptions`](../documenttableoptions). |
 | [DocumentTable](documenttable#constructor_1)(Stream, int, DocumentTableOptions) | 创建此类的新实例。 |
 | [DocumentTable](documenttable#constructor_3)(string, int, DocumentTableOptions) | 创建此类的新实例。 |
 
@@ -27,17 +27,17 @@ public class DocumentTable
 
 | 姓名 | 描述 |
 | --- | --- |
-| [Columns](../../groupdocs.assembly.data/documenttable/columns) { get; } | 获取集合[`DocumentTableColumn`](../documenttablecolumn)代表 对应表列的对象。 |
-| [IndexInDocument](../../groupdocs.assembly.data/documenttable/indexindocument) { get; } | 根据源文档获取对应表的原始从零开始的索引。 |
-| [Name](../../groupdocs.assembly.data/documenttable/name) { get; set; } | 获取或设置此表的名称，用于访问传递给的模板文档中的表数据 [`DocumentAssembler`](../../groupdocs.assembly/documentassembler). |
+| [Columns](../../groupdocs.assembly.data/documenttable/columns) { get; } | 获取集合[`DocumentTableColumn`](../documenttablecolumn)表示 对应表的列的对象。 |
+| [IndexInDocument](../../groupdocs.assembly.data/documenttable/indexindocument) { get; } | 根据源文档获取相应表的原始从零开始的索引。 |
+| [Name](../../groupdocs.assembly.data/documenttable/name) { get; set; } | 获取或设置此表的名称，用于访问传递给 的模板文档中的表数据[`DocumentAssembler`](../../groupdocs.assembly/documentassembler). |
 
 ### 评论
 
-对于电子表格文件格式的文档，a[`DocumentTable`](../documenttable)instance 表示单个 sheet. 对于其他文件格式的文档，a[`DocumentTable`](../documenttable)实例代表一个表。
+对于电子表格文件格式的文档，a[`DocumentTable`](../documenttable) instance 表示单个 sheet. 对于其他文件格式的文档，a[`DocumentTable`](../documenttable)实例代表单个表。
 
-要在组装文档时访问相应表的数据，请将此类的实例作为 数据源传递给其中一个[`DocumentAssembler`](../../groupdocs.assembly/documentassembler).AssembleDocument 重载.
+要在组装文档时访问相应表的数据，将此类的实例作为 数据源传递给其中之一[`DocumentAssembler`](../../groupdocs.assembly/documentassembler).AssembleDocument 重载.
 
-在模板文档中，一个[`DocumentTable`](../documenttable)实例应该以与 was a 相同的方式处理DataTable实例。有关更多信息，请参阅模板语法参考。
+在模板文档中，一个[`DocumentTable`](../documenttable)应以与 was a 相同的方式对待实例DataTable实例。有关详细信息，请参阅模板语法参考。
 
 ### 也可以看看
 

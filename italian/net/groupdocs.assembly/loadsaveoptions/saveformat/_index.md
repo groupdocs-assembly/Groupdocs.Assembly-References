@@ -1,14 +1,14 @@
 ---
 title: SaveFormat
 second_title: Riferimento API GroupDocs.Assembly per .NET
-description: Ottiene o imposta un formato file in cui salvare un documento assemblato.Unspecified è limpostazione predefinita.
+description: Ottiene o imposta un formato di file in cui salvare un documento assemblato.Unspecified è limpostazione predefinita.
 type: docs
 weight: 40
 url: /it/net/groupdocs.assembly/loadsaveoptions/saveformat/
 ---
 ## LoadSaveOptions.SaveFormat property
 
-Ottiene o imposta un formato file in cui salvare un documento assemblato.Unspecified è l'impostazione predefinita.
+Ottiene o imposta un formato di file in cui salvare un documento assemblato.Unspecified è l'impostazione predefinita.
 
 ```csharp
 public FileFormat SaveFormat { get; set; }
@@ -18,9 +18,9 @@ public FileFormat SaveFormat { get; set; }
 
 Quando il valore di questa proprietà non è specificato,[`DocumentAssembler`](../../documentassembler) si comporta come segue:
 
-- Quando si specifica un percorso file per salvare un documento assemblato, il formato del file di salvataggio viene determinato in base all'estensione del file dal percorso.
+- Quando si specifica un percorso file per salvare un documento assemblato, il formato del file di salvataggio è determinato dall'estensione del file dal percorso.
 
-- Quando si specifica un flusso per salvare un documento assemblato, il formato del file di salvataggio rimane lo stesso del formato file di un documento modello caricato.
+- Quando specifichi un flusso per salvare un documento assemblato, il formato del file di salvataggio rimane lo stesso del formato file di un documento modello caricato.
 
 Attenzione che non è sempre possibile salvare un documento assemblato in qualsiasi formato di file utilizzando GroupDocs.Assembly. Ad esempio, è impossibile salvare un documento caricato da un formato di file di elaborazione testi (come DOCX) in un formato di file di foglio elettronico (come XLSX). Per ulteriori informazioni sulle possibili combinazioni di caricamento e salvataggio dei formati di file supportati da GroupDocs.Assembly, consultare la documentazione online di GroupDocs.Assembly.
 

@@ -18,13 +18,13 @@ public class License
 
 | 姓名 | 描述 |
 | --- | --- |
-| [License](license)() | 初始化这个类的一个新实例。 |
+| [License](license)() | 初始化此类的新实例。 |
 
 ## 特性
 
 | 姓名 | 描述 |
 | --- | --- |
-| [IsLicensed](../../groupdocs.assembly/license/islicensed) { get; } | 如果已应用有效许可证，则返回 true；如果组件在评估模式下运行，则为 false。 |
+| [IsLicensed](../../groupdocs.assembly/license/islicensed) { get; } | 如果已应用有效许可证，则返回真；如果组件在评估模式下运行，则为 false. |
 
 ## 方法
 

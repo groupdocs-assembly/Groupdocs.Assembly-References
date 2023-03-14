@@ -20,10 +20,11 @@ public enum DocumentAssemblyOptions
 | Nome | Valore | Descrizione |
 | --- | --- | --- |
 | None | `0` | Specifica le opzioni predefinite. |
-| AllowMissingMembers | `1` | Specifica che i membri dell'oggetto mancanti devono essere trattati come valori letterali null dall'assembler. Questa opzione ha effetto solo sull'accesso ai membri dell'oggetto istanza (ovvero non statici) e ai metodi di estensione. Se questa opzione non è impostata, l'assembler genera un'eccezione quando incontra un membro dell'oggetto mancante. |
-| UpdateFieldsAndFormulas | `2` | Specifica che i campi dei risultati Documenti di elaborazione testi e formule dei risultati Fogli elettronici devono essere aggiornati dall'assemblatore. |
-| RemoveEmptyParagraphs | `4` | Specifica che l'assembler deve rimuovere i paragrafi che diventano vuoti dopo che i tag della sintassi del modello sono stati rimossi o sostituiti con valori vuoti. |
-| InlineErrorMessages | `8` | Specifica che l'assembler deve incorporare i messaggi di errore della sintassi del modello nei documenti di output. Se questa opzione non è impostata, l'assembler genera un'eccezione quando rileva un errore di sintassi. |
+| AllowMissingMembers | `1` | Specifica che i membri dell'oggetto mancanti devono essere trattati come valori letterali null dall'assembler. Questa opzione influisce solo sull'accesso ai membri dell'oggetto istanza (ovvero non statici) e ai metodi di estensione. Se questa opzione non è impostata, l'assembler genera un'eccezione quando incontra un membro dell'oggetto mancante. |
+| UpdateFieldsAndFormulas | `2` | Specifica che i campi dei risultati dei documenti di elaborazione testi e le formule dei risultati dei documenti di foglio di calcolo devono essere aggiornati dall'assemblatore. |
+| RemoveEmptyParagraphs | `4` | Specifica che l'assembler deve rimuovere i paragrafi che diventano vuoti dopo che i tag di sintassi del modello vengono rimossi o sostituiti con valori vuoti. |
+| InlineErrorMessages | `8` | Specifica che l'assembler deve incorporare i messaggi di errore di sintassi del modello nei documenti di output. Se questa opzione non è impostata, l'assembler lancia un'eccezione quando incontra un errore di sintassi. |
+| UseSpreadsheetDataTypes | `10` | Si riferisce solo ai documenti del foglio di calcolo. Specifica che i risultati dell'espressione valutata devono essere mappati ai tipi di dati del foglio di calcolo corrispondenti , il che influisce anche sulla loro formattazione predefinita all'interno delle celle. Se questa opzione non è impostata, i risultati dell'espressione vengono sempre scritti come stringhe dall'assembler. Questa opzione non ha alcun effetto quando i risultati delle espressioni sono formattati utilizzando la sintassi del modello - anche i risultati delle espressioni sono sempre scritti come stringhe. |
 
 ### Guarda anche
 

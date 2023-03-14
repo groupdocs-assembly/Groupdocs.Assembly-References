@@ -1,14 +1,14 @@
 ---
 title: KnownTypeSet
 second_title: Referencia de API de GroupDocs.Assembly para .NET
-description: Representa un conjunto desordenado es decir una colección de elementos únicos que contieneType objetos cuyos nombres total o parcialmente calificados se pueden usar dentro de las plantillas de documentos para invocar los miembros estáticos de los tipos correspondientes realizar conversiones de tipos etc.
+description: Representa un conjunto desordenado es decir una colección de elementos únicos que contieneTypeobjetos cuyos nombres total o parcialmente calificados se pueden usar dentro de las plantillas de documentos para invocar los miembros estáticos de los tipos correspondientes realizar conversiones de tipos etc.
 type: docs
 weight: 230
 url: /es/net/groupdocs.assembly/knowntypeset/
 ---
 ## KnownTypeSet class
 
-Representa un conjunto desordenado (es decir, una colección de elementos únicos) que contieneType objetos cuyos nombres total o parcialmente calificados se pueden usar dentro de las plantillas de documentos para invocar los miembros estáticos de los tipos correspondientes, realizar conversiones de tipos, etc.
+Representa un conjunto desordenado (es decir, una colección de elementos únicos) que contieneTypeobjetos cuyos nombres total o parcialmente calificados se pueden usar dentro de las plantillas de documentos para invocar los miembros estáticos de los tipos correspondientes, realizar conversiones de tipos, etc.
 
 ```csharp
 public class KnownTypeSet : IEnumerable
@@ -24,10 +24,10 @@ public class KnownTypeSet : IEnumerable
 
 | Nombre | Descripción |
 | --- | --- |
-| [Add](../../groupdocs.assembly/knowntypeset/add)(Type) | Agrega lo especificadoType objeto al conjunto. LanzaArgumentException en los siguientes casos: |
+| [Add](../../groupdocs.assembly/knowntypeset/add)(Type) | Agrega lo especificadoType objeto al conjunto. |
 | [Clear](../../groupdocs.assembly/knowntypeset/clear)() | Elimina todos los elementos del conjunto. |
 | [GetEnumerator](../../groupdocs.assembly/knowntypeset/getenumerator)() | Devuelve unIEnumerator objeto para iterar sobre elementos del conjunto. |
-| [Remove](../../groupdocs.assembly/knowntypeset/remove)(Type) | Elimina el especificadoType objeto del conjunto. LanzaArgumentException si *type* es nulo. |
+| [Remove](../../groupdocs.assembly/knowntypeset/remove)(Type) | Elimina lo especificadoType objeto del conjunto. |
 
 ### Ver también
 

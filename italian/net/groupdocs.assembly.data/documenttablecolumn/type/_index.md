@@ -1,14 +1,14 @@
 ---
 title: Type
 second_title: Riferimento API GroupDocs.Assembly per .NET
-description: Ottiene o imposta il tipo di valori delle celle in questa colonna.
+description: Ottiene o imposta il tipo di valori di cella in questa colonna.
 type: docs
 weight: 40
 url: /it/net/groupdocs.assembly.data/documenttablecolumn/type/
 ---
 ## DocumentTableColumn.Type property
 
-Ottiene o imposta il tipo di valori delle celle in questa colonna.
+Ottiene o imposta il tipo di valori di cella in questa colonna.
 
 ```csharp
 public Type Type { get; set; }
@@ -16,9 +16,9 @@ public Type Type { get; set; }
 
 ### Osservazioni
 
-Per i documenti di formati di file diversi dal foglio di calcolo, il tipo iniziale viene sempre determinato automaticamente come stringa. Per i documenti dei formati di file Spreadsheet, il tipo iniziale viene determinato automaticamente in base ai valori delle celle corrispondenti.
+Per i documenti di formati di file diversi dal foglio di calcolo, il tipo iniziale viene sempre determinato automaticamente come stringa. Per i documenti nei formati di file Spreadsheet, il tipo iniziale viene determinato automaticamente in base ai valori delle celle corrispondenti.
 
-Se le celle di una particolare colonna del foglio di calcolo contengono valori di tipo diverso, anche il tipo iniziale della colonna viene determinato automaticamente come stringa.
+Se le celle di una particolare colonna del foglio di calcolo contengono valori di tipi diversi, anche il tipo iniziale della colonna viene determinato automaticamente come stringa.
 
 ### Guarda anche
 

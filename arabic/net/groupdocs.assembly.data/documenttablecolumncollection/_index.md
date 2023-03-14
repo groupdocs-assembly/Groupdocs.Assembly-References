@@ -33,7 +33,7 @@ public class DocumentTableColumnCollection : IEnumerable
 
 ### ملاحظات
 
-يتم ملء المجموعة تلقائيًا أثناء تحميل الجدول المقابل من مستند ولا يمكن تعديلها. ومع ذلك ، فإن خصائص[`DocumentTableColumn`](../documenttablecolumn)يمكن تعديل الكائنات الموجودة في المجموعة.
+يتم ملء المجموعة تلقائيًا أثناء تحميل الجدول المقابل من مستند ولا يمكن تعديلها. ومع ذلك ، فإن خصائص[`DocumentTableColumn`](../documenttablecolumn) يمكن تعديل الكائنات الموجودة في المجموعة.
 
 ### أنظر أيضا
 

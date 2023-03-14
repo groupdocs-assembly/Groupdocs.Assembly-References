@@ -32,7 +32,7 @@ L'oggetto origine dati può essere di uno dei seguenti tipi:
 * DataRowView
 * Qualsiasi altro tipo .NET arbitrario non dinamico e non anonimo
 
-Per informazioni su come lavorare con origini dati di tipo diverso nei documenti modello, vedere riferimento alla sintassi del modello (https://docs.groupdocs.com/display/assemblynet/Template+Syntax+-+Part+1+of+2# TemplateSyntax-Part1of2-UsingDataSources).
+Per informazioni su come lavorare con origini dati di tipi diversi nei documenti modello, vedere il riferimento alla sintassi del modello (https://docs.groupdocs.com/display/assemblynet/Template+Syntax+-+Part+1+of+2# TemplateSyntax-Part1of2-UsingDataSources).
 
 ### Guarda anche
 

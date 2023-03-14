@@ -1,14 +1,16 @@
 ---
 title: Remove
 second_title: GroupDocs.Assembly för .NET API-referens
-description: Tar bort det angivnaType objekt från uppsättningen. KastarArgumentException if type är null.
+description: Tar bort det angivnaType objekt från uppsättningen.
 type: docs
 weight: 50
 url: /sv/net/groupdocs.assembly/knowntypeset/remove/
 ---
 ## KnownTypeSet.Remove method
 
-Tar bort det angivnaType objekt från uppsättningen. KastarArgumentException if *type* är null.
+Tar bort det angivnaType objekt från uppsättningen.
+
+KastarArgumentException om*type* är inget.
 
 ```csharp
 public void Remove(Type type)

@@ -24,11 +24,11 @@ public class DocumentTableOptions
 
 | 姓名 | 描述 |
 | --- | --- |
-| [FirstRowContainsColumnNames](../../groupdocs.assembly.data/documenttableoptions/firstrowcontainscolumnnames) { get; set; } | 获取或设置一个值，该值指示是否要从文档表的 first 提取行中获取列名。默认值为假。 |
-| [MaxColumnIndex](../../groupdocs.assembly.data/documenttableoptions/maxcolumnindex) { get; set; } | 获取或设置要从文档表中提取的列的从零开始的最大索引。 默认值为负数，表示最大列索引不受限制。 |
-| [MaxRowIndex](../../groupdocs.assembly.data/documenttableoptions/maxrowindex) { get; set; } | 获取或设置要从文档表中提取的行的最大从零开始的索引。 默认值为负数，表示最大行索引不受限制。 |
-| [MinColumnIndex](../../groupdocs.assembly.data/documenttableoptions/mincolumnindex) { get; set; } | 获取或设置要从文档表中提取的列的最小零基索引。 默认值为负，表示最小列索引不受限制。 |
-| [MinRowIndex](../../groupdocs.assembly.data/documenttableoptions/minrowindex) { get; set; } | 获取或设置要从文档表中提取的行的最小零基索引。 默认值为负，表示最小行索引不受限制。 |
+| [FirstRowContainsColumnNames](../../groupdocs.assembly.data/documenttableoptions/firstrowcontainscolumnnames) { get; set; } | 获取或设置一个值，该值指示是否要从文档表的 first 提取行中获取列名。默认值为 false. |
+| [MaxColumnIndex](../../groupdocs.assembly.data/documenttableoptions/maxcolumnindex) { get; set; } | 获取或设置要从文档表中提取的列的最大从零开始的索引。 默认值为负数，表示不限制最大列索引。 |
+| [MaxRowIndex](../../groupdocs.assembly.data/documenttableoptions/maxrowindex) { get; set; } | 获取或设置要从文档表中提取的行的最大从零开始的索引。 默认值为负数，表示不限制最大行索引。 |
+| [MinColumnIndex](../../groupdocs.assembly.data/documenttableoptions/mincolumnindex) { get; set; } | 获取或设置要从文档表中提取的列的最小从零开始的索引。 默认值为负数，即不限制最小列索引。 |
+| [MinRowIndex](../../groupdocs.assembly.data/documenttableoptions/minrowindex) { get; set; } | 获取或设置要从文档表中提取的行的从零开始的最小索引。 默认值为负数，表示不限制最小行索引。 |
 
 ### 也可以看看
 

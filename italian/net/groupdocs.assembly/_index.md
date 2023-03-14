@@ -1,12 +1,12 @@
 ---
 title: GroupDocs.Assembly
 second_title: Riferimento API GroupDocs.Assembly per .NET
-description: Fornisce classi per la generazione di documenti nei formati di file Office più diffusi in base a documenti modello e dati ottenuti da varie origini inclusi database XML JSON OData oggetti di tipi .NET personalizzati e altro ancora.
+description: Fornisce classi per la generazione di documenti nei formati di file Office più diffusi basati su documenti modello e dati ottenuti da varie fonti tra cui database XML JSON OData oggetti di tipi .NET personalizzati e altro ancora.
 type: docs
 weight: 10
 url: /it/net/groupdocs.assembly/
 ---
-Fornisce classi per la generazione di documenti nei formati di file Office più diffusi in base a documenti modello e dati ottenuti da varie origini, inclusi database, XML, JSON, OData, oggetti di tipi .NET personalizzati e altro ancora.
+Fornisce classi per la generazione di documenti nei formati di file Office più diffusi basati su documenti modello e dati ottenuti da varie fonti, tra cui database, XML, JSON, OData, oggetti di tipi .NET personalizzati e altro ancora.
 
 ## Classi
 
@@ -15,7 +15,7 @@ Fornisce classi per la generazione di documenti nei formati di file Office più 
 | [BarcodeSettings](./barcodesettings) | Rappresenta un insieme di impostazioni che controllano la generazione del codice a barre durante l'assemblaggio di un documento. |
 | [DataSourceInfo](./datasourceinfo) | Fornisce informazioni su un singolo oggetto origine dati da utilizzare per assemblare un documento da un modello. |
 | [DocumentAssembler](./documentassembler) | Fornisce routine per popolare i documenti modello con dati e una serie di impostazioni per controllare queste routine. |
-| [KnownTypeSet](./knowntypeset) | Rappresenta un insieme non ordinato (ovvero una raccolta di elementi univoci) contenenteType oggetti i cui nomi completi o parzialmente qualificati possono essere utilizzati all'interno dei modelli di documento per richiamare i membri statici dei tipi corrispondenti, eseguire cast di tipi, ecc. |
+| [KnownTypeSet](./knowntypeset) | Rappresenta un set non ordinato (ovvero una raccolta di elementi univoci) contenenteTypeoggetti i cui nomi completi o parzialmente qualificati possono essere utilizzati all'interno dei modelli di documento per richiamare i membri statici dei tipi corrispondenti, eseguire cast di tipi, ecc. |
 | [License](./license) | Fornisce metodi per concedere in licenza il componente. |
 | [LoadSaveOptions](./loadsaveoptions) | Specifica opzioni aggiuntive per il caricamento e il salvataggio di un documento da assemblare. |
 | [Metered](./metered) | Fornisce metodi per lavorare con le licenze a consumo. |

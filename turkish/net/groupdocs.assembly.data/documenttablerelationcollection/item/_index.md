@@ -1,14 +1,14 @@
 ---
 title: Item
 second_title: .NET API Başvurusu için GroupDocs.Assembly
-description: DocumentTableRelationgroupdocs.assembly.data/documenttablerelation belirtilen dizindeki koleksiyondan örnek.
+description: Bir alırDocumentTableRelationgroupdocs.assembly.data/documenttablerelation belirtilen index. adresindeki koleksiyondan örnek
 type: docs
 weight: 20
 url: /tr/net/groupdocs.assembly.data/documenttablerelationcollection/item/
 ---
 ## DocumentTableRelationCollection indexer
 
-[`DocumentTableRelation`](../../documenttablerelation) belirtilen dizindeki koleksiyondan örnek.
+Bir alır[`DocumentTableRelation`](../../documenttablerelation) belirtilen index. adresindeki koleksiyondan örnek
 
 ```csharp
 public DocumentTableRelation this[int index] { get; }

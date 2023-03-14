@@ -1,14 +1,14 @@
 ---
 title: Item
 second_title: .NET API Başvurusu için GroupDocs.Assembly
-description: DocumentTablegroupdocs.assembly.data/documenttable belirtilen dizindeki koleksiyondan örnek.
+description: Bir alırDocumentTablegroupdocs.assembly.data/documenttable belirtilen index. adresindeki koleksiyondan örnek
 type: docs
 weight: 20
 url: /tr/net/groupdocs.assembly.data/documenttablecollection/item/
 ---
 ## DocumentTableCollection indexer (1 of 2)
 
-[`DocumentTable`](../../documenttable) belirtilen dizindeki koleksiyondan örnek.
+Bir alır[`DocumentTable`](../../documenttable) belirtilen index. adresindeki koleksiyondan örnek
 
 ```csharp
 public DocumentTable this[int index] { get; }
@@ -33,7 +33,7 @@ A[`DocumentTable`](../../documenttable) belirtilen dizindeki koleksiyondan örne
 
 ## DocumentTableCollection indexer (2 of 2)
 
-[`DocumentTable`](../../documenttable) koleksiyondan belirtilen ada sahip örnek.
+Bir alır[`DocumentTable`](../../documenttable) koleksiyondan belirtilen ada sahip örnek.
 
 ```csharp
 public DocumentTable this[string name] { get; }
@@ -41,11 +41,11 @@ public DocumentTable this[string name] { get; }
 
 | Parametre | Tanım |
 | --- | --- |
-| name | Döndürülecek tablonun büyük/küçük harfe duyarsız adı. |
+| name | Döndürülecek tablonun büyük/küçük harf duyarlı olmayan adı. |
 
 ### Geri dönüş değeri
 
-A[`DocumentTable`](../../documenttable) koleksiyondan belirtilen ada sahip örnek veya böyle bir örnek yoksa null .
+bir[`DocumentTable`](../../documenttable)koleksiyondan belirtilen ada sahip örnek veya böyle bir örnek yoksa null .
 
 ### Ayrıca bakınız
 

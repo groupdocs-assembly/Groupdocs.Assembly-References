@@ -14,11 +14,11 @@ Fornisce classi per l'accesso ai dati di documenti esterni da utilizzare durante
 | --- | --- |
 | [CsvDataLoadOptions](./csvdataloadoptions) | Rappresenta le opzioni per l'analisi dei dati CSV. |
 | [CsvDataSource](./csvdatasource) | Fornisce l'accesso ai dati di un file o flusso CSV da utilizzare durante l'assemblaggio di un documento. |
-| [DocumentTable](./documenttable) | Fornisce l'accesso ai dati di una singola tabella (o foglio di calcolo) che si trova in un documento esterno da utilizzare durante assemblando un documento. |
+| [DocumentTable](./documenttable) | Fornisce l'accesso ai dati di una singola tabella (o foglio di calcolo) situata in un documento esterno da utilizzare durante l'assemblaggio di un documento. |
 | [DocumentTableCollection](./documenttablecollection) | Rappresenta una raccolta di sola lettura di[`DocumentTable`](../groupdocs.assembly.data/documenttable) oggetti di un particolare[`DocumentTableSet`](../groupdocs.assembly.data/documenttableset) istanza. |
 | [DocumentTableColumn](./documenttablecolumn) | Rappresenta una singola colonna di un particolare[`DocumentTable`](../groupdocs.assembly.data/documenttable) oggetto. |
 | [DocumentTableColumnCollection](./documenttablecolumncollection) | Rappresenta una raccolta di sola lettura di[`DocumentTableColumn`](../groupdocs.assembly.data/documenttablecolumn) oggetti di un particolare [`DocumentTable`](../groupdocs.assembly.data/documenttable) istanza. |
-| [DocumentTableLoadArgs](./documenttableloadargs) | Fornisce i dati per il[`Handle`](../groupdocs.assembly.data/idocumenttableloadhandler/handle) metodo. |
+| [DocumentTableLoadArgs](./documenttableloadargs) | Fornisce i dati per il[`Handle`](../groupdocs.assembly.data/idocumenttableloadhandler/handle)metodo. |
 | [DocumentTableOptions](./documenttableoptions) | Fornisce una serie di opzioni per controllare l'estrazione dei dati da una tabella di documenti. |
 | [DocumentTableRelation](./documenttablerelation) | Rappresenta una relazione genitore-figlio tra due[`DocumentTable`](../groupdocs.assembly.data/documenttable) oggetti. |
 | [DocumentTableRelationCollection](./documenttablerelationcollection) | Rappresenta la raccolta di[`DocumentTableRelation`](../groupdocs.assembly.data/documenttablerelation) oggetti di un singolo[`DocumentTableSet`](../groupdocs.assembly.data/documenttableset) istanza. |
@@ -31,7 +31,7 @@ Fornisce classi per l'accesso ai dati di documenti esterni da utilizzare durante
 
 | Interfaccia | Descrizione |
 | --- | --- |
-| [IDocumentTableLoadHandler](./idocumenttableloadhandler) | Sostituisce il caricamento predefinito di[`DocumentTable`](../groupdocs.assembly.data/documenttable) oggetti durante la creazione di a[`DocumentTableSet`](../groupdocs.assembly.data/documenttableset) istanza. |
+| [IDocumentTableLoadHandler](./idocumenttableloadhandler) | Sostituisce il caricamento predefinito di[`DocumentTable`](../groupdocs.assembly.data/documenttable) oggetti durante la creazione di un file[`DocumentTableSet`](../groupdocs.assembly.data/documenttableset) istanza. |
 ## Enumerazione
 
 | Enumerazione | Descrizione |

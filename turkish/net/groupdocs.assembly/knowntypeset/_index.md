@@ -1,14 +1,14 @@
 ---
 title: KnownTypeSet
 second_title: .NET API Başvurusu için GroupDocs.Assembly
-description: Aşağıdakileri içeren sıralanmamış bir kümeyi yani benzersiz öğelerden oluşan bir koleksiyonu temsil ederType karşılık gelen türlerinin statik üyelerini çağırmak tür atamaları gerçekleştirmek vb. için belge şablonlarında tamamen veya kısmen nitelenmiş adlar kullanılabilen nesneleri.
+description: Aşağıdakileri içeren sıralanmamış bir kümeyi yani benzersiz öğelerden oluşan bir koleksiyonu temsil ederTypekarşılık gelen türlerinin statik üyelerini çağırmak tür atamaları gerçekleştirmek vb. için belge şablonlarında tamamen veya kısmen nitelenmiş adlar kullanılabilen nesneleri.
 type: docs
 weight: 230
 url: /tr/net/groupdocs.assembly/knowntypeset/
 ---
 ## KnownTypeSet class
 
-Aşağıdakileri içeren sıralanmamış bir kümeyi (yani benzersiz öğelerden oluşan bir koleksiyonu) temsil eder:Type karşılık gelen türlerinin statik üyelerini çağırmak, tür atamaları gerçekleştirmek vb. için belge şablonlarında tamamen veya kısmen nitelenmiş adlar kullanılabilen nesneleri.
+Aşağıdakileri içeren sıralanmamış bir kümeyi (yani benzersiz öğelerden oluşan bir koleksiyonu) temsil eder:Typekarşılık gelen türlerinin statik üyelerini çağırmak, tür atamaları gerçekleştirmek vb. için belge şablonlarında tamamen veya kısmen nitelenmiş adlar kullanılabilen nesneleri.
 
 ```csharp
 public class KnownTypeSet : IEnumerable
@@ -24,10 +24,10 @@ public class KnownTypeSet : IEnumerable
 
 | İsim | Tanım |
 | --- | --- |
-| [Add](../../groupdocs.assembly/knowntypeset/add)(Type) | Belirtilen eklerType sete itiraz. AtarArgumentException in aşağıdaki durumlarda: |
+| [Add](../../groupdocs.assembly/knowntypeset/add)(Type) | Belirtilen eklerType sete itiraz. |
 | [Clear](../../groupdocs.assembly/knowntypeset/clear)() | Kümedeki tüm öğeleri kaldırır. |
 | [GetEnumerator](../../groupdocs.assembly/knowntypeset/getenumerator)() | An döndürürIEnumerator set. öğelerini yinelemek için nesne |
-| [Remove](../../groupdocs.assembly/knowntypeset/remove)(Type) | Belirtilenleri kaldırırType kümeden nesne. AtarArgumentException if *type* null. |
+| [Remove](../../groupdocs.assembly/knowntypeset/remove)(Type) | Belirtilenleri kaldırırType kümeden nesne. |
 
 ### Ayrıca bakınız
 

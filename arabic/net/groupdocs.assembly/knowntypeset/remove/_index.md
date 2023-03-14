@@ -1,14 +1,16 @@
 ---
 title: Remove
 second_title: GroupDocs.Assembly للحصول على مرجع .NET API
-description: يزيل المحددType كائن من المجموعة. رمياتArgumentException if type فارغ .
+description: يزيل المحددType كائن من المجموعة.
 type: docs
 weight: 50
 url: /ar/net/groupdocs.assembly/knowntypeset/remove/
 ---
 ## KnownTypeSet.Remove method
 
-يزيل المحددType كائن من المجموعة. رمياتArgumentException if *type* فارغ .
+يزيل المحددType كائن من المجموعة.
+
+رمياتArgumentException لو*type* باطل.
 
 ```csharp
 public void Remove(Type type)

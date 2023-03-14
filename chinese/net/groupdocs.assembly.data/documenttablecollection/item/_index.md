@@ -1,14 +1,14 @@
 ---
 title: Item
 second_title: GroupDocs.Assembly for .NET API 参考
-description: 得到一个DocumentTablegroupdocs.assembly.data/documenttable指定索引处的集合中的实例
+description: 得到一个DocumentTablegroupdocs.assembly.data/documenttable来自指定索引处集合的实例.
 type: docs
 weight: 20
 url: /zh/net/groupdocs.assembly.data/documenttablecollection/item/
 ---
 ## DocumentTableCollection indexer (1 of 2)
 
-得到一个[`DocumentTable`](../../documenttable)指定索引处的集合中的实例。
+得到一个[`DocumentTable`](../../documenttable)来自指定索引处集合的实例.
 
 ```csharp
 public DocumentTable this[int index] { get; }
@@ -20,7 +20,7 @@ public DocumentTable this[int index] { get; }
 
 ### 返回值
 
-一个[`DocumentTable`](../../documenttable)集合中指定索引处的实例。
+A[`DocumentTable`](../../documenttable)指定索引处的集合中的实例。
 
 ### 也可以看看
 
@@ -33,7 +33,7 @@ public DocumentTable this[int index] { get; }
 
 ## DocumentTableCollection indexer (2 of 2)
 
-得到一个[`DocumentTable`](../../documenttable)集合中具有指定名称的实例。
+得到一个[`DocumentTable`](../../documenttable)集合中具有指定名称的实例.
 
 ```csharp
 public DocumentTable this[string name] { get; }
@@ -45,7 +45,7 @@ public DocumentTable this[string name] { get; }
 
 ### 返回值
 
-一个[`DocumentTable`](../../documenttable)集合中具有指定名称的实例，如果不存在此类实例，则为 null 。
+一个[`DocumentTable`](../../documenttable)集合中具有指定名称的实例，如果此类实例不存在，则为 null 。
 
 ### 也可以看看
 

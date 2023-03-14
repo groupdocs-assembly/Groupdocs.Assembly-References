@@ -1,14 +1,14 @@
 ---
 title: JsonDataLoadOptions
 second_title: GroupDocs.Assembly for .NET API 参考
-description: 表示解析 JSON 数据的选项
+description: 表示解析JSON数据的选项
 type: docs
 weight: 140
 url: /zh/net/groupdocs.assembly.data/jsondataloadoptions/
 ---
 ## JsonDataLoadOptions class
 
-表示解析 JSON 数据的选项。
+表示解析JSON数据的选项。
 
 ```csharp
 public class JsonDataLoadOptions
@@ -24,13 +24,13 @@ public class JsonDataLoadOptions
 
 | 姓名 | 描述 |
 | --- | --- |
-| [AlwaysGenerateRootObject](../../groupdocs.assembly.data/jsondataloadoptions/alwaysgeneraterootobject) { get; set; } | 获取或设置一个标志，指示生成的数据源是否将始终包含 JSON root 元素的对象。如果 JSON 根元素包含单个复杂属性，则默认情况下不会创建此类对象。 |
-| [ExactDateTimeParseFormats](../../groupdocs.assembly.data/jsondataloadoptions/exactdatetimeparseformats) { get; set; } | 获取或设置在加载 JSON 时解析 JSON 日期时间值的确切格式。默认是**无效的**. |
-| [SimpleValueParseMode](../../groupdocs.assembly.data/jsondataloadoptions/simplevalueparsemode) { get; set; } | 获取或设置在加载 JSON 时解析 JSON 简单值（空、布尔、数字、整数和字符串） 的模式。这种模式不会影响日期时间值的解析。默认值为 Loose. |
+| [AlwaysGenerateRootObject](../../groupdocs.assembly.data/jsondataloadoptions/alwaysgeneraterootobject) { get; set; } | 获取或设置一个标志，指示生成的数据源是否始终包含 JSON root 元素的对象。如果 JSON 根元素包含单个复杂属性，则默认情况下不会创建此类对象。 |
+| [ExactDateTimeParseFormats](../../groupdocs.assembly.data/jsondataloadoptions/exactdatetimeparseformats) { get; set; } | 获取或设置在加载 JSON 时解析 JSON 日期时间值的准确格式。默认是**无效的**. |
+| [SimpleValueParseMode](../../groupdocs.assembly.data/jsondataloadoptions/simplevalueparsemode) { get; set; } | 获取或设置加载 JSON 时解析 JSON 简单值（空值、布尔值、数字、整数和字符串） 的模式。这种模式不会影响日期时间值的解析。默认为 Loose. |
 
 ### 评论
 
-可以将此类的实例传递给[`JsonDataSource`](../jsondatasource).
+此类的实例可以传递到的构造函数中[`JsonDataSource`](../jsondatasource).
 
 ### 也可以看看
 

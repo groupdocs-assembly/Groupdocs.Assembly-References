@@ -24,6 +24,7 @@ public enum DocumentAssemblyOptions
 | UpdateFieldsAndFormulas | `2` | Spécifie que les champs des documents de traitement de texte résultants et les formules des documents de feuille de calcul résultants doivent être mis à jour par l'assembleur. |
 | RemoveEmptyParagraphs | `4` | Spécifie que l'assembleur doit supprimer les paragraphes devenus vides après que les balises de syntaxe du modèle ont été supprimées ou remplacées par des valeurs vides. |
 | InlineErrorMessages | `8` | Spécifie que l'assembleur doit intégrer les messages d'erreur de syntaxe du modèle dans les documents de sortie. Si cette option n'est pas définie, l'assembleur lève une exception lorsqu'il rencontre une erreur de syntaxe. |
+| UseSpreadsheetDataTypes | `10` | Concerne uniquement les feuilles de calcul. Spécifie que les résultats d'expression évalués doivent être mappés aux types de données de feuille de calcul correspondants , ce qui affecte également leur mise en forme par défaut dans les cellules. Si cette option n'est pas définie, les résultats des expressions sont toujours écrits sous forme de chaînes par l'assembleur. Cette option n'a aucun effet lorsque les résultats d'expression sont formatés à l'aide de la syntaxe de modèle - les résultats d'expression sont toujours écrits sous forme de chaînes également. |
 
 ### Voir également
 

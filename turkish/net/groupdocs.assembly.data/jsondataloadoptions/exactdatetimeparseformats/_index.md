@@ -1,14 +1,14 @@
 ---
 title: ExactDateTimeParseFormats
 second_title: .NET API Başvurusu için GroupDocs.Assembly
-description: JSON yüklenirken JSON tarihsaat değerlerini ayrıştırmak için tam biçimleri alır veya ayarlar. Varsayılanhükümsüz .
+description: JSON yüklenirken JSON tarihsaat değerlerinin ayrıştırılması için kesin biçimleri alır veya ayarlar. varsayılanhükümsüz .
 type: docs
 weight: 30
 url: /tr/net/groupdocs.assembly.data/jsondataloadoptions/exactdatetimeparseformats/
 ---
 ## JsonDataLoadOptions.ExactDateTimeParseFormats property
 
-JSON yüklenirken JSON tarih-saat değerlerini ayrıştırmak için tam biçimleri alır veya ayarlar. Varsayılan**hükümsüz** .
+JSON yüklenirken JSON tarih-saat değerlerinin ayrıştırılması için kesin biçimleri alır veya ayarlar. varsayılan**hükümsüz** .
 
 ```csharp
 public IEnumerable<string> ExactDateTimeParseFormats { get; set; }
@@ -18,9 +18,9 @@ public IEnumerable<string> ExactDateTimeParseFormats { get; set; }
 
 Microsoft® JSON tarih-saat biçimi (örneğin, "/Date(1224043200000)/") kullanılarak kodlanan dizeler, bu özelliğin değerinden bağımsız olarak her zaman olarak tarih-saat değerleri olarak tanınır. Özellik, dizelerden tarih-zaman değerleri ayrıştırılırken kullanılacak ek biçimlerini şu şekilde tanımlar:
 
-* Ne zaman`ExactDateTimeParseFormats` dır-dir**hükümsüz** geçerli, İngilizce ABD ve İngiliz Yeni Zelanda kültürleri için desteklenen ISO-8601 biçimi ve tüm tarih-saat biçimleri ek olarak belirtilen sırada içinde kullanılır.
-* Ne zaman`ExactDateTimeParseFormats` dizeler içerir, geçerli kültürü kullanan ek tarih-saat biçimleri olarak kullanılırlar.
-* Ne zaman`ExactDateTimeParseFormats` boşsa, ek tarih-saat biçimi kullanılmaz.
+* Ne zaman`ExactDateTimeParseFormats` dır-dir**hükümsüz** mevcut İngiliz ABD ve İngiliz Yeni Zelanda kültürleri için desteklenen ISO-8601 formatı ve tüm tarih-saat formatları , belirtilen sırayla 'de ek olarak kullanılır.
+* Ne zaman`ExactDateTimeParseFormats` dizeler içeriyorsa, geçerli kültürü kullanan ek tarih-saat biçimleri olarak kullanılırlar.
+* Ne zaman`ExactDateTimeParseFormats` boş, ek tarih-saat biçimleri kullanılmaz.
 
 ### Ayrıca bakınız
 

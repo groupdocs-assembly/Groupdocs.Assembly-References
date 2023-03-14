@@ -18,9 +18,9 @@ public class BarcodeSettings
 
 | Nome | Descrizione |
 | --- | --- |
-| [BaseXDimension](../../groupdocs.assembly/barcodesettings/basexdimension) { get; set; } | Ottiene o imposta una dimensione x di base, ovvero la larghezza più piccola dell'unità di barre e spazi del codice a barre. Misurato in[`GraphicsUnit`](./graphicsunit) . |
-| [BaseYDimension](../../groupdocs.assembly/barcodesettings/baseydimension) { get; set; } | Ottiene o imposta una dimensione y di base, ovvero l'altezza più piccola dell'unità dei moduli di codici a barre 2D. Misurato in[`GraphicsUnit`](./graphicsunit) . |
-| [GraphicsUnit](../../groupdocs.assembly/barcodesettings/graphicsunit) { get; set; } | Ottiene o imposta un'unità grafica utilizzata per misurare[`BaseXDimension`](./basexdimension) e[`BaseYDimension`](./baseydimension) . Il valore predefinito èMillimeter . |
+| [BaseXDimension](../../groupdocs.assembly/barcodesettings/basexdimension) { get; set; } | Ottiene o imposta una dimensione x di base, ovvero la larghezza minima dell'unità di barre e spazi del codice a barre. Misurata in[`GraphicsUnit`](./graphicsunit) . |
+| [BaseYDimension](../../groupdocs.assembly/barcodesettings/baseydimension) { get; set; } | Ottiene o imposta una dimensione y di base, ovvero l'altezza minima dell'unità di moduli di codici a barre 2D. Misurata in[`GraphicsUnit`](./graphicsunit) . |
+| [GraphicsUnit](../../groupdocs.assembly/barcodesettings/graphicsunit) { get; set; } | Ottiene o imposta un'unità grafica utilizzata per misurare[`BaseXDimension`](./basexdimension) E[`BaseYDimension`](./baseydimension) . Il valore predefinito èMillimeter . |
 | [Resolution](../../groupdocs.assembly/barcodesettings/resolution) { get; set; } | Ottiene o imposta la risoluzione orizzontale e verticale di un'immagine di codice a barre generata. Misurato in punti per pollice. Il valore predefinito è 96. |
 | [UseAutoCorrection](../../groupdocs.assembly/barcodesettings/useautocorrection) { get; set; } | Ottiene o imposta un valore che indica se un valore di codice a barre non valido deve essere corretto automaticamente (se possibile) per adattarsi alla specifica del codice a barre o deve essere generata un'eccezione per indicare l'errore. Il valore predefinito è true. |
 
