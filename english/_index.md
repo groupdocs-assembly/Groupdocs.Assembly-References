@@ -12,15 +12,20 @@ lead: "Generate documents and reports from templates and data using LINQ syntax.
 
 platforms:
   - name: ".NET"
+    version: "25.12.0"
+    versionUrl: "https://www.nuget.org/packages/groupdocs.assembly/25.12.0"
     key: net
     ref: "/net/"
     install: "dotnet add package GroupDocs.Assembly"
   - name: "Java"
+    version: "26.1"
+    versionUrl: "https://releases.groupdocs.com/java/repo/com/groupdocs/groupdocs-assembly/26.1/"
     key: java
     ref: "/java/"
     install: "com.groupdocs:groupdocs-assembly"
   - name: "Python via .NET"
-    version: "25.4"
+    version: "25.5.1"
+    versionUrl: "https://pypi.org/project/groupdocs-assembly-net/25.5.1/"
     key: python
     ref: "/python-net/"
     install: "pip install groupdocs-assembly-net"
