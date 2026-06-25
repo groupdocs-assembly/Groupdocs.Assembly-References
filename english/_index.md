@@ -31,6 +31,8 @@ platforms:
     install: "pip install groupdocs-assembly-net"
 
 formats: ["Word", "Excel", "PowerPoint", "Email", "PDF", "HTML"]
+formatsCount: "50+"
+formatsNote: "…and 40+ more document and web formats."
 
 capabilities:
   - "Template-based document generation"
