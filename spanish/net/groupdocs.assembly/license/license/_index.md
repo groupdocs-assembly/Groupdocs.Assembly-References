@@ -1,0 +1,23 @@
+---
+title: "Licencia"
+second_title: "Referencia de API de GroupDocs.Assembly para .NET"
+description: "Inicializa una nueva instancia de esta clase."
+type: docs
+weight: 10
+url: /es/net/groupdocs.assembly/license/license/
+---
+## License constructor
+
+Inicializa una nueva instancia de esta clase.
+
+```csharp
+public License()
+```
+
+### Ver también
+
+* class [License](../../license)
+* namespace [GroupDocs.Assembly](../../license)
+* assembly [GroupDocs.Assembly](../../../)
+
+<!-- NO EDITAR: generado por xmldocmd para GroupDocs.Assembly.dll -->
