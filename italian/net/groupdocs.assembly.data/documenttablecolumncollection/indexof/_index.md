@@ -1,0 +1,56 @@
+---
+title: "IndexOf"
+second_title: "Riferimento API di GroupDocs.Assembly per .NET"
+description: "Restituisce l'indice di una colonna con il nome specificato all'interno di questa collezione."
+type: docs
+weight: 50
+url: /it/net/groupdocs.assembly.data/documenttablecolumncollection/indexof/
+---
+## IndexOf(string) {#indexof_1}
+
+Restituisce l'indice di una colonna con il nome specificato all'interno di questa collezione.
+
+```csharp
+public int IndexOf(string name)
+```
+
+| Parametro | Tipo | Descrizione |
+| --- | --- | --- |
+| name | String | Il nome di una colonna da trovare, senza distinzione tra maiuscole e minuscole. |
+
+### Valore di ritorno
+
+L'indice basato su zero di una colonna con il nome specificato, o -1 se la colonna non esiste in questa collezione.
+
+### Vedi anche
+
+* class [DocumentTableColumnCollection](../../documenttablecolumncollection)
+* namespace [GroupDocs.Assembly.Data](../../documenttablecolumncollection)
+* assembly [GroupDocs.Assembly](../../../)
+
+---
+
+## IndexOf(DocumentTableColumn) {#indexof}
+
+Restituisce l'indice della colonna specificata all'interno di questa collezione.
+
+```csharp
+public int IndexOf(DocumentTableColumn column)
+```
+
+| Parametro | Tipo | Descrizione |
+| --- | --- | --- |
+| colonna | DocumentTableColumn | Una colonna da trovare. |
+
+### Valore di ritorno
+
+L'indice basato su zero della colonna specificata, o -1 se la colonna non esiste in questa collezione.
+
+### Vedi anche
+
+* class [DocumentTableColumn](../../documenttablecolumn)
+* class [DocumentTableColumnCollection](../../documenttablecolumncollection)
+* namespace [GroupDocs.Assembly.Data](../../documenttablecolumncollection)
+* assembly [GroupDocs.Assembly](../../../)
+
+<!-- NON MODIFICARE: generato da xmldocmd per GroupDocs.Assembly.dll -->
