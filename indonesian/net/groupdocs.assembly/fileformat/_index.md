@@ -1,0 +1,82 @@
+---
+title: "FileFormat"
+second_title: "Referensi API GroupDocs.Assembly untuk .NET"
+description: "Menentukan format sebuah file."
+type: docs
+weight: 30
+url: /id/net/groupdocs.assembly/fileformat/
+---
+## FileFormat enumeration
+
+Menentukan format sebuah file.
+
+```csharp
+public enum FileFormat
+```
+
+### Nilai
+
+| Nama | Nilai | Deskripsi |
+| --- | --- | --- |
+| Unspecified | `0` | Menentukan nilai yang belum diatur. Nilai default. |
+| Doc | `1` | Menentukan format Dokumen Biner Microsoft Word 97 - 2007. |
+| Dot | `2` | Menentukan format Template Biner Microsoft Word 97 - 2007. |
+| Docx | `3` | Menentukan format Dokumen Office Open XML WordprocessingML (tanpa makro). |
+| Docm | `4` | Menentukan format Dokumen Office Open XML WordprocessingML yang Mendukung Makro. |
+| Dotx | `5` | Menentukan format Template Office Open XML WordprocessingML (tanpa makro). |
+| Dotm | `6` | Menentukan format Template Office Open XML WordprocessingML yang Mendukung Makro. |
+| FlatOpc | `7` | Menentukan format Office Open XML WordprocessingML yang disimpan dalam file XML datar alih-alih paket ZIP. |
+| FlatOpcMacroEnabled | `8` | Menentukan format Dokumen Office Open XML WordprocessingML yang Mendukung Makro dan disimpan dalam file XML datar alih-alih paket ZIP. |
+| FlatOpcTemplate | `9` | Menentukan format Template Office Open XML WordprocessingML (tanpa makro) yang disimpan dalam file XML datar alih-alih paket ZIP. |
+| FlatOpcTemplateMacroEnabled | `10` | Menentukan format Template Macro-Enabled WordprocessingML Office Open XML yang disimpan dalam file XML datar alih-alih paket ZIP. |
+| WordML | `11` | Menentukan format WordprocessingML Microsoft Word 2003. |
+| Odt | `12` | Menentukan format Dokumen Teks ODF. |
+| Ott | `13` | Menentukan format Template Dokumen Teks ODF. |
+| Xls | `14` | Menentukan format Workbook Biner Microsoft Excel 97 - 2007. |
+| Xlsx | `15` | Menentukan format Workbook (tanpa makro) SpreadsheetML Office Open XML. |
+| Xlsm | `16` | Menentukan format Workbook Macro-Enabled SpreadsheetML Office Open XML. |
+| Xltx | `17` | Menentukan format Template (tanpa makro) SpreadsheetML Office Open XML. |
+| Xltm | `18` | Menentukan format Template Macro-Enabled SpreadsheetML Office Open XML. |
+| Xlam | `19` | Menentukan format Add-in Macro-Enabled SpreadsheetML Office Open XML. |
+| Xlsb | `20` | Menentukan format File Biner Macro-Enabled Microsoft Excel 2007. |
+| SpreadsheetML | `21` | Menentukan format SpreadsheetML Microsoft Excel 2003. |
+| Ods | `22` | Menentukan format Spreadsheet ODF. |
+| Ppt | `23` | Menentukan format Presentasi Biner Microsoft PowerPoint 97 - 2007. |
+| Pps | `24` | Menentukan format Slide Show Biner Microsoft PowerPoint 97 - 2007. |
+| Pptx | `25` | Menentukan format Presentasi (tanpa makro) PresentationML Office Open XML. |
+| Pptm | `26` | Menentukan format Presentasi Macro-Enabled PresentationML Office Open XML. |
+| Ppsx | `27` | Menentukan format Slide Show (tanpa makro) PresentationML Office Open XML. |
+| Ppsm | `28` | Menentukan format Slide Show Macro-Enabled PresentationML Office Open XML. |
+| Potx | `29` | Menentukan format Template (tanpa makro) PresentationML Office Open XML. |
+| Potm | `30` | Menentukan format Template Macro-Enabled PresentationML Office Open XML. |
+| Odp | `31` | Menentukan format Presentasi ODF. |
+| MsgAscii | `32` | Menentukan format Pesan (MSG) Microsoft Outlook menggunakan enkoding karakter ASCII. |
+| MsgUnicode | `33` | Menentukan format Pesan (MSG) Microsoft Outlook menggunakan enkoding karakter Unicode. |
+| Eml | `34` | Menentukan format standar MIME. |
+| Emlx | `35` | Menentukan format file program Apple Mail.app. |
+| Rtf | `36` | Menentukan format RTF. |
+| Text | `37` | Menentukan format teks biasa. |
+| Xml | `38` | Menentukan format XML dari formulir umum. |
+| Xaml | `39` | Menentukan format Extensible Application Markup Language (XAML). |
+| XamlPackage | `40` | Menentukan format paket Extensible Application Markup Language (XAML). |
+| Html | `41` | Menentukan format HTML. |
+| Mhtml | `42` | Menentukan format MHTML (Arsip Web). |
+| Xps | `43` | Menentukan format XPS (XML Paper Specification). |
+| OpenXps | `44` | Menentukan format OpenXPS (Ecma-388). |
+| Pdf | `45` | Menentukan format PDF (Adobe Portable Document). |
+| Epub | `46` | Menentukan format IDPF EPUB. |
+| Ps | `47` | Menentukan format PS (PostScript). |
+| Pcl | `48` | Menentukan format PCL (Printer Control Language). |
+| Svg | `49` | Menentukan format SVG (Scalable Vector Graphics). |
+| Tiff | `50` | Menentukan format TIFF. |
+| Markdown | `51` | Menentukan format Markdown. |
+| Pot | `52` | Menentukan format Template Biner Microsoft PowerPoint 97 - 2007. |
+| Otp | `53` | Menentukan format Template Presentasi ODF. |
+| Xlt | `54` | Menentukan format Template Biner Microsoft Excel 97 - 2007. |
+
+### Lihat Juga
+
+* namespace [GroupDocs.Assembly](../../groupdocs.assembly)
+* assembly [GroupDocs.Assembly](../../)
+
+<!-- DO NOT EDIT: generated by xmldocmd for GroupDocs.Assembly.dll -->
