@@ -10,3 +10,8 @@ is_root: true
 ## Packages
 | Package | Description |
 | --- | --- |
+| [com.groupdocs.assembly](./com.groupdocs.assembly) |  |
+| [com.groupdocs.assembly.system](./com.groupdocs.assembly.system) |  |
+| [com.groupdocs.assembly.system.data](./com.groupdocs.assembly.system.data) |  |
+| [com.groupdocs.assembly.system.data.common](./com.groupdocs.assembly.system.data.common) |  |
+| [com.groupdocs.assembly.system.drawing](./com.groupdocs.assembly.system.drawing) |  |
