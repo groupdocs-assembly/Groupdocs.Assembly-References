@@ -1,24 +1,20 @@
-﻿---
+---
 title: always_generate_root_object property
 second_title: GroupDocs.Assembly for Python via .NET API References
-description: 
+description: "The flag indicating whether a generated data source will always contain an object for an XML root element; if the root has no attributes and all child elements share the same name, the object is…"
 type: docs
 url: /python-net/groupdocs.assembly.data/xmldataloadoptions/always_generate_root_object/
 is_root: false
-weight: 30
+weight: 2010
 ---
+
 
 ## always_generate_root_object property
 
+The flag indicating whether a generated data source will always contain an object for an XML root element; if the root has no attributes and all child elements share the same name, the object is omitted by default.
 
-Gets or sets a flag indicating whether a generated data source will always contain an object for an XML root 
-element. If an XML root element has no attributes and all its child elements have same names, such an object 
-is not created by default.
+The default value is False.
 
-### Remarks 
-
-
-The default value is **false** .
 ### Definition:
 ```python
 @property
@@ -30,5 +26,4 @@ def always_generate_root_object(self, value):
 ```
 
 ### See Also
-* module [`groupdocs.assembly.data`](../../)
-* class [`XmlDataLoadOptions`](/assembly/python-net/groupdocs.assembly.data/xmldataloadoptions)
+* class [`XmlDataLoadOptions`](/assembly/python-net/groupdocs.assembly.data/xmldataloadoptions/)

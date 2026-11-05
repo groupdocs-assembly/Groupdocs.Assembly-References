@@ -1,18 +1,18 @@
-﻿---
+---
 title: is_loaded property
 second_title: GroupDocs.Assembly for Python via .NET API References
-description: 
+description: "The flag indicating whether the corresponding document table should be loaded."
 type: docs
 url: /python-net/groupdocs.assembly.data/documenttableloadargs/is_loaded/
 is_root: false
-weight: 30
+weight: 2010
 ---
+
 
 ## is_loaded property
 
+The flag indicating whether the corresponding document table should be loaded. The default value is True.
 
-Gets or sets a value indicating whether the corresponding document table is to be loaded or not.
-The default value is true.
 ### Definition:
 ```python
 @property
@@ -24,5 +24,4 @@ def is_loaded(self, value):
 ```
 
 ### See Also
-* module [`groupdocs.assembly.data`](../../)
-* class [`DocumentTableLoadArgs`](/assembly/python-net/groupdocs.assembly.data/documenttableloadargs)
+* class [`DocumentTableLoadArgs`](/assembly/python-net/groupdocs.assembly.data/documenttableloadargs/)

@@ -1,58 +1,53 @@
-﻿---
+---
 title: contains method
 second_title: GroupDocs.Assembly for Python via .NET API References
-description: 
+description: "Returns a value indicating whether this collection contains a table with the specified name."
 type: docs
 url: /python-net/groupdocs.assembly.data/documenttablecollection/contains/
 is_root: false
-weight: 20
+weight: 1010
 ---
 
-## contains {#str}
+
+## contains {#name}
 
 Returns a value indicating whether this collection contains a table with the specified name.
-
-
-### Returns 
-
-
-A value indicating whether this collection contains a table with the specified name.
-
 
 ```python
 def contains(self, name):
     ...
 ```
 
-
 | Parameter | Type | Description |
 | :- | :- | :- |
-| name | str | The case-insensitive name of a table to look for. |
+| name | `str` | The case-insensitive name of a table to look for. |
 
+**Returns:** bool: True if the collection contains a table with the specified name; otherwise False.
 
-## contains {#groupdocs.assembly.data.DocumentTable}
+## contains {#table}
 
 Returns a value indicating whether this collection contains the specified table.
-
-
-### Returns 
-
-
-A value indicating whether this collection contains the specified table.
-
 
 ```python
 def contains(self, table):
     ...
 ```
 
-
 | Parameter | Type | Description |
 | :- | :- | :- |
-| table | [`DocumentTable`](/assembly/python-net/groupdocs.assembly.data/documenttable) | A table to look for. |
+| table | `DocumentTable` | A table to look for. |
 
+**Returns:** bool: A value indicating whether this collection contains the specified table.
 
+### Aliases
+
+These names call `contains` too, limited to the overloads listed.
+
+| Alias | Accepts |
+| :- | :- |
+| `contains_file` | `contains_file(name)` |
+| `contains_string` | `contains_string(name)` |
+| `contains_document_table` | `contains_document_table(table)` |
 
 ### See Also
-* module [`groupdocs.assembly.data`](../../)
-* class [`DocumentTableCollection`](/assembly/python-net/groupdocs.assembly.data/documenttablecollection)
+* class [`DocumentTableCollection`](/assembly/python-net/groupdocs.assembly.data/documenttablecollection/)

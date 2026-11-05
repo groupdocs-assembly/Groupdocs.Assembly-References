@@ -1,33 +1,34 @@
-﻿---
+---
 title: get_consumption_credit method
 second_title: GroupDocs.Assembly for Python via .NET API References
-description: 
+description: "Returns the currently consumed number of credits."
 type: docs
 url: /python-net/groupdocs.assembly/metered/get_consumption_credit/
 is_root: false
-weight: 20
+weight: 1010
 ---
 
-## get_consumption_credit {#}
+
+## get_consumption_credit
 
 Returns the currently consumed number of credits.
 
-
-### Returns 
-
-
-The currently consumed number of credits.
-
-
 ```python
-def get_consumption_credit(self):
+def get_consumption_credit(cls):
     ...
 ```
 
+**Returns:** The currently consumed number of credits.
 
+### Example
 
+```python
+    from groupdocs.assembly import Metered
 
+    # Ensure a metered license is set before calling
+    credit = Metered.get_consumption_credit()
+    print("Consumed credit:", credit)
+    ```
 
 ### See Also
-* module [`groupdocs.assembly`](../../)
-* class [`Metered`](/assembly/python-net/groupdocs.assembly/metered)
+* class [`Metered`](/assembly/python-net/groupdocs.assembly/metered/)

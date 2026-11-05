@@ -1,58 +1,53 @@
-﻿---
+---
 title: contains method
 second_title: GroupDocs.Assembly for Python via .NET API References
-description: 
+description: "Returns a value indicating whether this collection contains a column with the specified name."
 type: docs
 url: /python-net/groupdocs.assembly.data/documenttablecolumncollection/contains/
 is_root: false
-weight: 20
+weight: 1010
 ---
 
-## contains {#str}
+
+## contains {#name}
 
 Returns a value indicating whether this collection contains a column with the specified name.
-
-
-### Returns 
-
-
-A value indicating whether this collection contains a column with the specified name.
-
 
 ```python
 def contains(self, name):
     ...
 ```
 
-
 | Parameter | Type | Description |
 | :- | :- | :- |
-| name | str | The case-insensitive name of a column to look for. |
+| name | `str` | The case-insensitive name of a column to look for. |
 
+**Returns:** bool: True if the collection contains a column with the specified name; otherwise False.
 
-## contains {#groupdocs.assembly.data.DocumentTableColumn}
+## contains {#column}
 
 Returns a value indicating whether this collection contains the specified column.
-
-
-### Returns 
-
-
-A value indicating whether this collection contains the specified column.
-
 
 ```python
 def contains(self, column):
     ...
 ```
 
-
 | Parameter | Type | Description |
 | :- | :- | :- |
-| column | [`DocumentTableColumn`](/assembly/python-net/groupdocs.assembly.data/documenttablecolumn) | A column to look for. |
+| column | `DocumentTableColumn` | A column to look for. |
 
+**Returns:** bool: A value indicating whether this collection contains the specified column.
 
+### Aliases
+
+These names call `contains` too, limited to the overloads listed.
+
+| Alias | Accepts |
+| :- | :- |
+| `contains_file` | `contains_file(name)` |
+| `contains_string` | `contains_string(name)` |
+| `contains_document_table_column` | `contains_document_table_column(column)` |
 
 ### See Also
-* module [`groupdocs.assembly.data`](../../)
-* class [`DocumentTableColumnCollection`](/assembly/python-net/groupdocs.assembly.data/documenttablecolumncollection)
+* class [`DocumentTableColumnCollection`](/assembly/python-net/groupdocs.assembly.data/documenttablecolumncollection/)

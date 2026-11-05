@@ -1,18 +1,18 @@
-﻿---
+---
 title: min_column_index property
 second_title: GroupDocs.Assembly for Python via .NET API References
-description: 
+description: "The smallest zero-based column index to extract from a document table; a negative default means the index is not limited."
 type: docs
 url: /python-net/groupdocs.assembly.data/documenttableoptions/min_column_index/
 is_root: false
-weight: 60
+weight: 2040
 ---
+
 
 ## min_column_index property
 
+The smallest zero-based column index to extract from a document table; a negative default means the index is not limited.
 
-Gets or sets the smallest zero-based index of a column to be extracted from a document table.
-The default value is negative which means that the smallest column index is not limited.
 ### Definition:
 ```python
 @property
@@ -24,5 +24,4 @@ def min_column_index(self, value):
 ```
 
 ### See Also
-* module [`groupdocs.assembly.data`](../../)
-* class [`DocumentTableOptions`](/assembly/python-net/groupdocs.assembly.data/documenttableoptions)
+* class [`DocumentTableOptions`](/assembly/python-net/groupdocs.assembly.data/documenttableoptions/)

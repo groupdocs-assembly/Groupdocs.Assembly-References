@@ -1,18 +1,18 @@
-﻿---
+---
 title: options property
 second_title: GroupDocs.Assembly for Python via .NET API References
-description: 
+description: "The options property defines a set of flags that control the behavior of this DocumentAssembler instance while assembling a document."
 type: docs
 url: /python-net/groupdocs.assembly/documentassembler/options/
 is_root: false
-weight: 60
+weight: 2030
 ---
+
 
 ## options property
 
+The options property defines a set of flags that control the behavior of this DocumentAssembler instance while assembling a document.
 
-Gets or sets a set of flags controlling behavior of this [`DocumentAssembler`](/assembly/python-net/groupdocs.assembly/documentassembler) instance 
-while assembling a document.
 ### Definition:
 ```python
 @property
@@ -24,6 +24,4 @@ def options(self, value):
 ```
 
 ### See Also
-* module [`groupdocs.assembly`](../../)
-* class [`DocumentAssembler`](/assembly/python-net/groupdocs.assembly/documentassembler)
-* class [`DocumentAssemblyOptions`](/assembly/python-net/groupdocs.assembly/documentassemblyoptions)
+* class [`DocumentAssembler`](/assembly/python-net/groupdocs.assembly/documentassembler/)

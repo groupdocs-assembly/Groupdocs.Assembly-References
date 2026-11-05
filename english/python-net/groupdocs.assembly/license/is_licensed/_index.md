@@ -1,17 +1,18 @@
-﻿---
+---
 title: is_licensed property
 second_title: GroupDocs.Assembly for Python via .NET API References
-description: 
+description: "The property indicates whether a valid license has been applied; returns True if a license is applied, otherwise False."
 type: docs
 url: /python-net/groupdocs.assembly/license/is_licensed/
 is_root: false
-weight: 40
+weight: 2010
 ---
+
 
 ## is_licensed property
 
+The property indicates whether a valid license has been applied; returns True if a license is applied, otherwise False.
 
-Returns true if a valid license has been applied; false if the component is running in evaluation mode.
 ### Definition:
 ```python
 @property
@@ -20,5 +21,4 @@ def is_licensed(self):
 ```
 
 ### See Also
-* module [`groupdocs.assembly`](../../)
-* class [`License`](/assembly/python-net/groupdocs.assembly/license)
+* class [`License`](/assembly/python-net/groupdocs.assembly/license/)

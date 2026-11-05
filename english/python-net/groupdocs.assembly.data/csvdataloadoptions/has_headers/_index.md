@@ -1,22 +1,20 @@
-﻿---
+---
 title: has_headers property
 second_title: GroupDocs.Assembly for Python via .NET API References
-description: 
+description: "The property indicating whether the first line of CSV data contains column names."
 type: docs
 url: /python-net/groupdocs.assembly.data/csvdataloadoptions/has_headers/
 is_root: false
-weight: 50
+weight: 2030
 ---
+
 
 ## has_headers property
 
+The property indicating whether the first line of CSV data contains column names.
 
-Gets or sets a value indicating whether the first line of CSV data contains column names.
+The default value is False.
 
-### Remarks 
-
-
-The default value is **false** .
 ### Definition:
 ```python
 @property
@@ -28,5 +26,4 @@ def has_headers(self, value):
 ```
 
 ### See Also
-* module [`groupdocs.assembly.data`](../../)
-* class [`CsvDataLoadOptions`](/assembly/python-net/groupdocs.assembly.data/csvdataloadoptions)
+* class [`CsvDataLoadOptions`](/assembly/python-net/groupdocs.assembly.data/csvdataloadoptions/)

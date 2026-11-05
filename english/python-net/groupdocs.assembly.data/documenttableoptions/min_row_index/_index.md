@@ -1,18 +1,18 @@
-﻿---
+---
 title: min_row_index property
 second_title: GroupDocs.Assembly for Python via .NET API References
-description: 
+description: "The smallest zero-based index of a row to be extracted from a document table."
 type: docs
 url: /python-net/groupdocs.assembly.data/documenttableoptions/min_row_index/
 is_root: false
-weight: 70
+weight: 2050
 ---
+
 
 ## min_row_index property
 
+The smallest zero-based index of a row to be extracted from a document table. The default value is negative, which means that the smallest row index is not limited.
 
-Gets or sets the smallest zero-based index of a row to be extracted from a document table.
-The default value is negative which means that the smallest row index is not limited.
 ### Definition:
 ```python
 @property
@@ -24,5 +24,4 @@ def min_row_index(self, value):
 ```
 
 ### See Also
-* module [`groupdocs.assembly.data`](../../)
-* class [`DocumentTableOptions`](/assembly/python-net/groupdocs.assembly.data/documenttableoptions)
+* class [`DocumentTableOptions`](/assembly/python-net/groupdocs.assembly.data/documenttableoptions/)

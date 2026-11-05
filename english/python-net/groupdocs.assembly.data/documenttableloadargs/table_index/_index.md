@@ -1,17 +1,18 @@
-﻿---
+---
 title: table_index property
 second_title: GroupDocs.Assembly for Python via .NET API References
-description: 
+description: "The zero-based index of the document table to be loaded."
 type: docs
 url: /python-net/groupdocs.assembly.data/documenttableloadargs/table_index/
 is_root: false
-weight: 50
+weight: 2030
 ---
+
 
 ## table_index property
 
+The zero-based index of the document table to be loaded.
 
-Gets the zero-based index of the corresponding document table to be loaded.
 ### Definition:
 ```python
 @property
@@ -20,5 +21,4 @@ def table_index(self):
 ```
 
 ### See Also
-* module [`groupdocs.assembly.data`](../../)
-* class [`DocumentTableLoadArgs`](/assembly/python-net/groupdocs.assembly.data/documenttableloadargs)
+* class [`DocumentTableLoadArgs`](/assembly/python-net/groupdocs.assembly.data/documenttableloadargs/)

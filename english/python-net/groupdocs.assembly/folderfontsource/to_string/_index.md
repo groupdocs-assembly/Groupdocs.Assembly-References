@@ -1,0 +1,24 @@
+---
+title: to_string method
+second_title: GroupDocs.Assembly for Python via .NET API References
+description: "Returns a string that represents the current object."
+type: docs
+url: /python-net/groupdocs.assembly/folderfontsource/to_string/
+is_root: false
+weight: 1030
+---
+
+
+## to_string
+
+Returns a string that represents the current object.
+
+```python
+def to_string(self):
+    ...
+```
+
+**Returns:** str: A string that represents the current object.
+
+### See Also
+* class [`FolderFontSource`](/assembly/python-net/groupdocs.assembly/folderfontsource/)

@@ -1,33 +1,32 @@
-﻿---
+---
 title: get_consumption_quantity method
 second_title: GroupDocs.Assembly for Python via .NET API References
-description: 
+description: "Returns the currently consumed number of megabytes."
 type: docs
 url: /python-net/groupdocs.assembly/metered/get_consumption_quantity/
 is_root: false
-weight: 30
+weight: 1020
 ---
 
-## get_consumption_quantity {#}
+
+## get_consumption_quantity
 
 Returns the currently consumed number of megabytes.
 
-
-### Returns 
-
-
-The currently consumed number of megabytes.
-
-
 ```python
-def get_consumption_quantity(self):
+def get_consumption_quantity(cls):
     ...
 ```
 
+**Returns:** int: The currently consumed number of megabytes.
 
+### Example
 
+```python
+from groupdocs.assembly import Metered
 
+print("Quantity:", Metered.get_consumption_quantity())
+```
 
 ### See Also
-* module [`groupdocs.assembly`](../../)
-* class [`Metered`](/assembly/python-net/groupdocs.assembly/metered)
+* class [`Metered`](/assembly/python-net/groupdocs.assembly/metered/)

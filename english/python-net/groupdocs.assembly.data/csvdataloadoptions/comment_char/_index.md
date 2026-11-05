@@ -1,22 +1,20 @@
-﻿---
+---
 title: comment_char property
 second_title: GroupDocs.Assembly for Python via .NET API References
-description: 
+description: "The character used to comment lines of CSV data."
 type: docs
 url: /python-net/groupdocs.assembly.data/csvdataloadoptions/comment_char/
 is_root: false
-weight: 30
+weight: 2010
 ---
+
 
 ## comment_char property
 
-
-Gets or sets the character that is used to comment lines of CSV data.
-
-### Remarks 
-
+The character used to comment lines of CSV data.
 
 The default value is '#' (number sign).
+
 ### Definition:
 ```python
 @property
@@ -28,5 +26,4 @@ def comment_char(self, value):
 ```
 
 ### See Also
-* module [`groupdocs.assembly.data`](../../)
-* class [`CsvDataLoadOptions`](/assembly/python-net/groupdocs.assembly.data/csvdataloadoptions)
+* class [`CsvDataLoadOptions`](/assembly/python-net/groupdocs.assembly.data/csvdataloadoptions/)

@@ -1,17 +1,18 @@
-﻿---
+---
 title: count property
 second_title: GroupDocs.Assembly for Python via .NET API References
-description: 
+description: "The total number of DocumentTable objects in the collection."
 type: docs
 url: /python-net/groupdocs.assembly.data/documenttablecollection/count/
 is_root: false
-weight: 50
+weight: 2010
 ---
+
 
 ## count property
 
+The total number of DocumentTable objects in the collection.
 
-Gets the total number of [`DocumentTable`](/assembly/python-net/groupdocs.assembly.data/documenttable) objects in the collection.
 ### Definition:
 ```python
 @property
@@ -20,6 +21,4 @@ def count(self):
 ```
 
 ### See Also
-* module [`groupdocs.assembly.data`](../../)
-* class [`DocumentTable`](/assembly/python-net/groupdocs.assembly.data/documenttable)
-* class [`DocumentTableCollection`](/assembly/python-net/groupdocs.assembly.data/documenttablecollection)
+* class [`DocumentTableCollection`](/assembly/python-net/groupdocs.assembly.data/documenttablecollection/)

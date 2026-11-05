@@ -1,23 +1,20 @@
-﻿---
+---
 title: always_generate_root_object property
 second_title: GroupDocs.Assembly for Python via .NET API References
-description: 
+description: "The flag indicating whether a generated data source will always contain an object for a JSON root element; if the root element contains a single complex property, such an object is not created by…"
 type: docs
 url: /python-net/groupdocs.assembly.data/jsondataloadoptions/always_generate_root_object/
 is_root: false
-weight: 30
+weight: 2010
 ---
+
 
 ## always_generate_root_object property
 
+The flag indicating whether a generated data source will always contain an object for a JSON root element; if the root element contains a single complex property, such an object is not created by default.
 
-Gets or sets a flag indicating whether a generated data source will always contain an object for a JSON root
-element. If a JSON root element contains a single complex property, such an object is not created by default.
+The default value is False.
 
-### Remarks 
-
-
-The default value is **false** .
 ### Definition:
 ```python
 @property
@@ -29,5 +26,4 @@ def always_generate_root_object(self, value):
 ```
 
 ### See Also
-* module [`groupdocs.assembly.data`](../../)
-* class [`JsonDataLoadOptions`](/assembly/python-net/groupdocs.assembly.data/jsondataloadoptions)
+* class [`JsonDataLoadOptions`](/assembly/python-net/groupdocs.assembly.data/jsondataloadoptions/)

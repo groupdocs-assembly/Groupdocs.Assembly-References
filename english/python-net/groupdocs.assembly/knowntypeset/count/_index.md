@@ -1,17 +1,18 @@
-﻿---
+---
 title: count property
 second_title: GroupDocs.Assembly for Python via .NET API References
-description: 
+description: "The count of items in the set."
 type: docs
 url: /python-net/groupdocs.assembly/knowntypeset/count/
 is_root: false
-weight: 60
+weight: 2010
 ---
+
 
 ## count property
 
+The count of items in the set.
 
-Gets the count of items in the set.
 ### Definition:
 ```python
 @property
@@ -20,5 +21,4 @@ def count(self):
 ```
 
 ### See Also
-* module [`groupdocs.assembly`](../../)
-* class [`KnownTypeSet`](/assembly/python-net/groupdocs.assembly/knowntypeset)
+* class [`KnownTypeSet`](/assembly/python-net/groupdocs.assembly/knowntypeset/)
