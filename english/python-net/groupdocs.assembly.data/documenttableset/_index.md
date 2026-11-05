@@ -69,5 +69,10 @@ assembler.assemble_document(
 )
 ```
 
+### Guides
+Task guides that use `DocumentTableSet`:
+
+* [Template Syntax - Part 2 of 2](/assembly/python-net/guides/template-syntax-part-2-of-2/)
+
 ### See Also
 * module [`groupdocs.assembly.data`](/assembly/python-net/groupdocs.assembly.data/)

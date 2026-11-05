@@ -23,5 +23,10 @@ The DocumentAssemblyOptions type exposes the following members:
 | [INLINE_ERROR_MESSAGES](/assembly/python-net/groupdocs.assembly/documentassemblyoptions/inline_error_messages/) | Specifies that the assembler should inline template syntax error messages into output documents. If this option is not set, the assembler throws an exception when encounters a syntax error. |
 | [USE_SPREADSHEET_DATA_TYPES](/assembly/python-net/groupdocs.assembly/documentassemblyoptions/use_spreadsheet_data_types/) | Relates to Spreadsheet documents only. Specifies that evaluated expression results should be mapped to corresponding Spreadsheet data types, which also affects their default formatting within cells. If this option is not set, expression results are always written as strings by the assembler. This option has no effect when expression results are formatted using template syntax - expression results are always written as strings then as well. |
 
+### Guides
+Task guides that use `DocumentAssemblyOptions`:
+
+* [GroupDocs.Assembly Engine APIs](/assembly/python-net/guides/groupdocs.assembly-engine-apis/)
+
 ### See Also
 * module [`groupdocs.assembly`](/assembly/python-net/groupdocs.assembly/)

@@ -2,7 +2,7 @@
 title: Features Overview
 linkTitle: "Features overview"
 second_title: GroupDocs.Assembly for Python via .NET API References
-description: "GroupDocs.Assembly for Python via .NET is an API that allows you to generate documents in popular microsoft office and email file formats based upon template documents and data obt"
+description: "GroupDocs.Assembly for Python via .NET builds reports from Word, Excel, PowerPoint, OpenDocument, email, HTML, Markdown and text templates, filled with Python dicts and lists, JSON, XML and CSV files, or the tables of other documents: tables, lists, charts, images, barcodes, hyperlinks and more."
 type: docs
 url: /python-net/guides/features-overview/
 is_root: false
@@ -10,245 +10,42 @@ weight: 20
 ---
 
 
-GroupDocs.Assembly for Python via .NET is an API that allows you to generate documents in popular *microsoft office* and email file formats based upon template documents and data obtained from various sources including databases, XML, JSON, OData, objects of custom .NET types, external documents, and more. The following is the list of salient features which are offered by the GroupDocs.Assembly API:
+GroupDocs.Assembly for Python via .NET generates reports from templates. A template is an ordinary document of one of the [supported formats](/assembly/python-net/guides/supported-document-formats/) whose text holds tags such as `<<[customer.Name]>>` or `<<foreach [o in orders]>>`. Every task follows the same workflow: prepare the data, wrap each data source in a [`DataSourceInfo`](/assembly/python-net/groupdocs.assembly/datasourceinfo/) with the name the template uses, and call `DocumentAssembler.assemble_document()` with the template and the report to write.
 
-*   Multiple data formats support
-*   Use formulae & perform sequential data operations
-*   Apply upper, lower, capital, firstcap formatting to strings in template syntax
-*   Template syntax support formatting of ordinal, cardinal, alphabetic numeric nature
-*   Support template documents with custom variables & text comments within template syntax tags
-*   Dynamically insert out document content in report
-*   Dynamically configure background color of html documents & generate barcode in reports
-*   Dynamically insert hyperlinks in reports & apply attributes to email message body
-*   Dynamically attach email attachments
-*   Support of next field analogue of Microsoft Word
-*   Update fields during word processing document assembly
-*   Apply formula during spreadsheet assembly
-*   Template formatting for numeric, text, image, date-time, chart elements
-*   Conditional formatting of template text elements
-*   Linq-based template syntax
-*   Change format of assembled file using explicit specifications or file extension
-*   Auto-removal of empty paragraphs
-*   Generate various report types, e.g., charts, image, tables, lists and more
-*   Inline template syntax errors in generated documents instead of exception throwing.
-*   Load template documents from html with resources and save assembled Word, Excel, PowerPoint & emails to html with resources
+## Data sources
 
-Following is the detail given about how the features are offered with their usage and limits.
+Fill a template with:
 
-## Data Sources
+- **Python data**: dicts, lists, numbers, strings, dates and `Decimal` values, as they are. A dict's keys are read as members (`customer.Name`), a list is a collection to iterate. See [Generate from custom objects](https://docs.groupdocs.com/assembly/python-net/basic-usage-custom-objects/) and [The Business Layer](https://docs.groupdocs.com/assembly/python-net/the-business-layer/).
+- **JSON, XML and CSV files** through [`JsonDataSource`](/assembly/python-net/groupdocs.assembly.data/jsondatasource/), [`XmlDataSource`](/assembly/python-net/groupdocs.assembly.data/xmldatasource/) and [`CsvDataSource`](/assembly/python-net/groupdocs.assembly.data/csvdatasource/), which recognize numbers, booleans and dates in the text. See [Working with simple data sources](https://docs.groupdocs.com/assembly/python-net/working-with-simple-data-sources/).
+- **The tables of other documents**: a table of a Word document or a presentation, or a worksheet, as a [`DocumentTable`](/assembly/python-net/groupdocs.assembly.data/documenttable/), and several related tables of one document as a [`DocumentTableSet`](/assembly/python-net/groupdocs.assembly.data/documenttableset/). See [Using documents as data source](https://docs.groupdocs.com/assembly/python-net/using-documents-as-data-source/).
+- **Database rows**, turned into dicts in Python. See [Generate from a database](https://docs.groupdocs.com/assembly/python-net/basic-usage-database-datasource/).
+- **Several sources in one report**, each under its own name. See [Working with multiple data sources](https://docs.groupdocs.com/assembly/python-net/working-with-multiple-data-sources/).
 
-### Data Formats
+## Template syntax
 
-| Feature | Support in GroupDocs.Assembly for Python via .NET |
-| --- | --- |
-| Database | Supported (using DataSet, DataTable, etc.) |
-| XML | Supported (using DataSet.ReadXml or XML deserialization of custom objects) |
-| OData | Supported (using deserialization of custom objects through WCF or [third-party .NET libraries](https://en.wikipedia.org/wiki/Open_Data_Protocol#.NET) |
-| JSON | Supported (using a third-party component like [Json.NET](http://www.newtonsoft.com/json) on DataSet or custom objects in .NET |
-| Custom .NET Objects | Supported |
-| Ability to use Spreadsheet as Table of Data | Supported |
-| Ability to use Word processing Table as Table of Data | Supported |
+Expressions in tags use a subset of C# syntax that works on any data source: arithmetic, comparisons, string operations, the `Sum`, `Count`, `Average`, `Where`, `OrderBy`, `GroupBy` and other sequence operations, and conditional expressions. Format numbers, dates and text in the tag itself, declare variables, and leave comments in a template. See [Template syntax - part 1](/assembly/python-net/guides/template-syntax-part-1-of-2/), [part 2](/assembly/python-net/guides/template-syntax-part-2-of-2/), [Basic template syntax](https://docs.groupdocs.com/assembly/python-net/basic-usage-template-syntax-basics/) and [Enumeration extension methods](https://docs.groupdocs.com/assembly/python-net/enumeration-extension-methods/).
 
-### Data Manipulation Capabilities
+## Reports
 
-| Feature | Support in GroupDocs.Assembly for Python via .NET |
-| --- | --- |
-| Formulas | Supported (using C# syntax subset) |
-| Sequential Data Operations (filtering, ordering, grouping, aggregating, etc.) | Supported (through LINQ syntax for data sources of all types) |
-| Type Member Invocation | Supported |
-| Built-In Data Relation Support | Supported |
-| Data Processing Customization | Supported (using external .NET types) |
-| External Document Import | Supported |
+- **Tables**: a row per item, with totals, grouping, filtering and ordering, master-detail tables, highlighted rows, alternate content for empty data, merged cells. See [Working with table reports](https://docs.groupdocs.com/assembly/python-net/working-with-table-reports/) and [Generate tables from a collection](https://docs.groupdocs.com/assembly/python-net/basic-usage-generate-tables/).
+- **Lists**: bulleted, numbered and multicolored numbered lists, and lists inside a paragraph. See [Generate bullet lists](https://docs.groupdocs.com/assembly/python-net/basic-usage-generate-bullet-lists/) and [Generate numbered lists](https://docs.groupdocs.com/assembly/python-net/basic-usage-generate-numbered-lists/).
+- **Charts**: pie, bubble, scatter and column charts whose series, points, colors and titles come from the data. See [Working with chart reports: pie](https://docs.groupdocs.com/assembly/python-net/working-with-chart-reports-pie/) and [Working with chart series coloring](https://docs.groupdocs.com/assembly/python-net/working-with-chart-series-coloring/).
+- **Images and barcodes**: pictures named by the data, and barcodes generated from it. See [Inserting images dynamically](https://docs.groupdocs.com/assembly/python-net/inserting-images-dynamically/) and [Working with barcode image generation](https://docs.groupdocs.com/assembly/python-net/working-with-barcode-image-generation/).
+- **Hyperlinks, bookmarks, check boxes and other documents**: links and bookmarks built from data, check box and drop-down values, and whole documents inserted into the report. See [Inserting hyperlinks or bookmarks](https://docs.groupdocs.com/assembly/python-net/inserting-hyperlinks-or-bookmarks/), [Set checkbox values dynamically](https://docs.groupdocs.com/assembly/python-net/set-checkbox-values-dynamically/) and [Inserting documents dynamically](https://docs.groupdocs.com/assembly/python-net/inserting-documents-dynamically/).
+- **Email messages**: MSG and EML templates whose sender, recipients, subject and body come from the data. See [Generate email messages](https://docs.groupdocs.com/assembly/python-net/basic-usage-generate-emails/).
 
-### Explicit Support for Multiple Data Sources
+## Formats
 
-A new overload [**DocumentAssembler.AssembleDocument**](https://reference.groupdocs.com/net/assembly/groupdocs.assembly/documentassembler/methods/assembledocument/index) is added in the new release. Using this overload user can reference multiple data source objects and their members in the template. Overload accepts an array of data source names and an array of data sources. Learn more about support of multiple data sources in [this](https://docs.groupdocs.com/assembly/net/working-with-multiple-data-sources/) article.
+Templates and reports can be Word processing documents, spreadsheets, presentations, OpenDocument files, emails, HTML, Markdown and plain text. A report is saved in the format of its file extension, or of the format you name with [`LoadSaveOptions`](/assembly/python-net/groupdocs.assembly/loadsaveoptions/), so a Word template can give a PDF or HTML report. See [Supported document formats](/assembly/python-net/guides/supported-document-formats/), [Changing target file format](https://docs.groupdocs.com/assembly/python-net/changing-target-file-format/) and [Using Markdown documents](https://docs.groupdocs.com/assembly/python-net/using-markdown-documents/).
 
-## Template Formats, Elements and Syntax
+## Assembly options
 
-### Template Document Formats
+- Update fields and recalculate formulas while assembling: see [Updating fields](https://docs.groupdocs.com/assembly/python-net/updating-fields-while-assembling-word-processing-documents/) and [Calculate formulas](https://docs.groupdocs.com/assembly/python-net/calculate-formula-while-assembling-spreadsheet-documents/).
+- Remove the paragraphs that end up empty: see [Removing empty paragraphs](https://docs.groupdocs.com/assembly/python-net/removing-empty-paragraphs/).
+- Write template errors into the report instead of raising: see [In-line syntax error messages](https://docs.groupdocs.com/assembly/python-net/use-of-in-line-syntax-error-messages-into-templates/).
+- Allow members the data does not have (`DocumentAssemblyOptions.ALLOW_MISSING_MEMBERS`).
 
-#### Word Processing Document Formats
+## Loading and saving
 
-Word Processing Document formats including Microsoft Word Document and OpenOffice document formats are supported. For more details, please visit [Support for Word Processing Document Formats](https://docs.groupdocs.com/assembly/net/supported-document-formats/#supportfor-word-processing-document-formats).
-
-#### Spreadsheet Document Formats
-
-Spreadsheet Document formats including Microsoft Excel Workbook and OpenOffice spreadsheet document formats are supported. For more details, please visit [Support for Spreadsheet Document Formats](https://docs.groupdocs.com/assembly/net/supported-document-formats/#supportfor-spreadsheet-document-formats).
-
-#### Presentation Document Formats
-
-Presentation Document formats including Microsoft PowerPoint Presentation and OpenOffice presentation document formats are supported. For more details, please visit [Support for Presentation Document Formats](https://docs.groupdocs.com/assembly/net/supported-document-formats/#supportfor-presentation-document-formats).
-
-#### Email Document Formats
-
-Email Document formats is supported. For more details, please visit [Support for Email Document Formats](https://docs.asposeptyltd.com/display/assemblynet/Supported+Document+Formats#SupportedDocumentFormats-EmailDocumentFormats).
-
-#### More Document Formats
-
-HTML and Plain Text document formats are supported by the GroupDocs.Assembly API. More Document formats including PDF, Epub and XPS document formats will be supported in the future releases. For more details, please visit [Support for more Document Formats](https://docs.groupdocs.com/assembly/net/supported-document-formats/#supportformore-document-formats).
-
-#### Dynamic Merging of Table Cells
-
-You can merge table cells with equal textual contents within your reports dynamically using **cellMerge** tag. For the detail, please visit [Merging Table Cells Dynamically](https://docs.groupdocs.com/assembly/net/merging-table-cells-dynamically/).
-
-#### Textual Comments within Template Syntax Tags
-
-An optional comment providing a human-readable explanation ignored by the engine
-
-```python
-<<tag_name [expression] –switch1 –switch2 ... // optional_comment >>
-```
-
-#### In-lining of Syntax Error Messages into Templates 
-
-In-lining of syntax error messages into templates instead of exception throwing. For the detail, please visit [Use of In-line Syntax Error Messages into Templates](https://docs.groupdocs.com/assembly/net/use-of-in-line-syntax-error-messages-into-templates/).
-
-### Template Elements
-
-| Feature | Support in GroupDocs.Assembly for Python via .NET |
-| --- | --- |
-| Formatted Text Blocks | Supported |
-| HTML Blocks | Supported |
-| Repeated Blocks (including list items and table rows) | Supported |
-| Conditional Blocks | Supported (including list items and table rows) |
-| Pivot Tables | To be supported |
-| Images | Supported |
-| Charts | Supported |
-| Barcodes (through barcode fonts) | Supported |
-| Bound Form Controls | To be supported |
-| Hyperlinks to URI or Bookmarks | Supported |
-
-### Template Syntax Formats for Expression Results
-
-#### Specifying String Formats
-
-API provides a useful feature to format strings in template syntax. String formatting such as upper, lower, capital, etc.
-
-| String Format | Description |
-| --- | --- |
-| lower | Converts a string to lower case ("the string") |
-| upper | Converts a string to upper case ("THE STRING") |
-| caps | Capitalizes a first letter of every word in a string ("The String") |
-| firstCap | Capitalizes the first letter of the first word in a string ("The string") |
-
-#### Specifying Numeric Formats
-
-Using GroupDocs.Assembly for Python via .NET user can also do numeric formatting in template syntax. Numeric formatting such as ordinal, cardinal, alphabetic, etc.
-
-| Number Format | Description |
-| --- | --- |
-| alphabetic | Formats an integer number as an upper-case letter (A, B, C, ...) |
-| roman | Formats an integer number as an upper-case Roman numeral (I, II, III, ...) |
-| ordinal | Appends an ordinal suffix to an integer number (1st, 2nd, 3rd, ...) |
-| ordinalText | Converts an integer number to its ordinal text representation (First, Second, Third, ...) |
-| cardinal | Converts an integer number to its text representation (One, Two, Three, ...) |
-| hex | Formats an integer number as hexadecimal (8, 9, A, B, C, D, E, F, 10, 11, ...) |
-| arabicDash | Encloses an integer number with dashes (- 1 -, - 2 -, - 3 -, ...) |
-
-#### Variables in Template Documents
-
-API permits users to define variables in template documents as follows:
-
-```python
-<<var [st = "Hello, "]>><<[st]>><<var[st = "World!"]>><<[st]>>
-```
-
-### Support for Outer Document Insertion
-
-You can insert contents of outer documents to your reports dynamically.
-
-### Barcode Image Generation
-
-Barcode images can be generated in reports dynamically.
-
-### Support for Analogue of Microsoft Word NEXT Field
-
-This feature allows user to implement a new <<next>> tag. The tag should be supported only within data bands created by using <<foreach>> tag.
-
-### Setting Background Color Dynamically
-
-For [HTML documents](https://docs.groupdocs.com/assembly/net/bulleted-list-in-html-document/), a background color can not be set dynamically using the backColor tag
-
-```python
-<<backColor ["red"]>>text with red background<</backColor>>
-
-```
-
-Aside this, you can use the HTML style attribute to achieve this.
-
-### Setting Email Message Attributes Dynamically
-
-In addition to an email message body, you can use GroupDocs.Assembly to set the following email message attributes dynamically using the same template syntax:
-
-*   Subject
-*   From
-*   To
-*   CC
-*   BCC
-
-For example, given that recipients is an enumeration of strings "Named Recipient <[named@example.com](mailto:named@example.com)\>" and "[unnamed@example.com](mailto:unnamed@example.com)", you can use the following template to set the To attribute for an email message.
-
-```python
-<<foreach [r in recipients]>><<[r]>>; <</foreach>>
-
-```
-
-During runtime, the To attribute is set to the following value then.
-
-```python
-Named Recipient <named@example.com>; unnamed@example.com
-
-```
-
-### Building Email Message Attachments Dynamically
-
-GroupDocs.Assembly enables you to build contents of documents attached to email messages dynamically. To do this, attach template documents (of file formats supported by GroupDocs.Assembly) to your template email message. Then, while assembling the email message, the engine assembles the attached documents as well using the same data sources.
-
-### Ability to Update Fields
-
-API permits users to update fields while assembling Word Processing documents.
-
-### Ability to Calculate Formulas
-
-API allows users to calculate formula while assembling Spreadsheet documents.
-
-### Template Elements Formatting
-
-| Feature | Support in GroupDocs.Assembly for Python via .NET |
-| --- | --- |
-| Numeric/Date-Time Value Formatting | Supported |
-| Text Formatting | Supported |
-| Conditional Text Formatting | Supported (only through conditional blocks) |
-| Image Formatting | Supported (WYSIWYG) |
-| Chart Formatting | Supported (WYSIWYG) |
-
-### Template Syntax
-
-| Feature | Support in GroupDocs.Assembly for Python via .NET |
-| --- | --- |
-| [LINQ-based](https://docs.groupdocs.com/assembly/net/template-syntax-part-1-of-2/) | Supported |
-| [Mustache](https://mustache.github.io/mustache.5.html) | To be supported |
-
-### Changing Output File Format 
-
-GroupDocs.Assembly provides a powerful feature to change the target file format of an assembled document using file extension or explicit specification.
-
-### Loading HTML and Saving To HTML with External Resource Files
-
-Load template documents from html with resources and save assembled Word, Excel, PowerPoint & emails to html with resources. Please visit the following articles for the detail:
-
-*   [Loading of template documents from HTML with resources](https://docs.groupdocs.com/assembly/net/loading-of-template-documents-from-html-with-resources/)
-*   [Saving to HTML with External Resource Files](https://docs.groupdocs.com/assembly/net/saving-to-html-with-external-resource-files/)
-
-### Numbering Restart in Nested Numbered List 
-
-The GroupDocs.Assembly engine allows restart list numbering within your documents dynamically using *<<restartNum>>* tags. In particular, this feature is useful when working with a nested numbered list within a data band. Please visit [this article](https://docs.groupdocs.com/assembly/net/numbered-list-in-word-processing-document/#numbering-restart-in-nested-numbered-list) for more details
-
-  
-
-  
-
-## Metered Licensing
-
-The GroupDocs.Assembly.Metered public class has been added to provide metered licensing. This feature is supported in GroupDocs.Assembly for Python via .NET 16.12.0.
+Read templates from files or streams and write reports to files or streams, resolve the pictures of an HTML template from a folder of your choice, save an HTML report with its resources in a separate folder, and choose the OOXML compliance level of a Word report. See [Streams vs. file paths](https://docs.groupdocs.com/assembly/python-net/basic-usage-streams-vs-files/), [Loading and saving with external resource files](https://docs.groupdocs.com/assembly/python-net/loading-and-saving-with-external-resource-files/) and [Specify OOXML compliance](https://docs.groupdocs.com/assembly/python-net/basic-usage-ooxml-compliance/).

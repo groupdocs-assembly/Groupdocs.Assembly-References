@@ -2,7 +2,7 @@
 title: Template Syntax - Part 1 of 2
 linkTitle: "Template Syntax - Part 1 of 2"
 second_title: GroupDocs.Assembly for Python via .NET API References
-description: "A typical template for GroupDocs.Assembly Engine is composed of common document contents and tags that describe the template's structure and data bindings."
+description: "GroupDocs.Assembly template syntax, part 1: tags, expressions, types, operators, lambda functions, Python dicts and lists and other data sources, images, documents, checkboxes, comboboxes, hyperlinks, contextual member access and conditional blocks."
 type: docs
 url: /python-net/guides/template-syntax-part-1-of-2/
 is_root: false
@@ -10,7 +10,9 @@ weight: 30
 ---
 
 
-This article is the first part of the Template Syntax series of articles. For second part, please visit Template Syntax - Part 2 of 2.
+This article is the first part of the Template Syntax series of articles. For second part, please visit [Template Syntax - Part 2 of 2](/assembly/python-net/guides/template-syntax-part-2-of-2/).
+
+The template syntax is the same in GroupDocs.Assembly for Python via .NET as in GroupDocs.Assembly for .NET: a template written for one works with the other. Template expressions follow the syntax of C#, whatever language the application that builds the report is written in. What differs is the data: a Python application passes dicts, lists and Python values, which the engine reads as .NET objects (see [Using Data Sources](#using-data-sources)).
 
 ## Composing Template
 
@@ -28,21 +30,19 @@ A tag body typically consists of the following elements:
 *   An expression surrounded by brackets
 *   A set of switches available for the tag, each of which is preceded by the "`-`" character
 
-```csharp
+```text
 <<tag_name [expression] -switch1 -switch2 ...>>
 ```
 
 An optional comment can be written to provide a human-readable explanation.
 
-```csharp
-<<tag_name [expression] –switch1 –switch2 ... // optional_comment >>
+```text
+<<tag_name [expression] -switch1 -switch2 ... // optional_comment >>
 ```
-
-The optional comment feature is supported by version 19.1 or greater
 
 Particular tags can have additional elements. Some tags require closing counterparts. A closing tag has the "`/`" character that precedes its name. This tag's name must match to the name of the corresponding opening tag.
 
-```csharp
+```text
 <</tag_name>>
 ```
 
@@ -59,25 +59,30 @@ The following table describes lexical tokens that you can use in template expres
 | **Keyword** | Only the following tokens are reserved as keywords: `true`, `false`, `null`, `new`, and `in` |
 | **Identifier** | <ul><li>The feature of keyword escaping through the "@" character is not supported.</li><li>Unicode character escapes are not permitted in identifiers.</li></ul> |
 | **Literal** | None |
-| **Operator** | See [Using Operators](https://docs.groupdocs.com/assembly/python-net/template-syntax-part-1-of-2/) |
+| **Operator** | See [Using Operators](#using-operators) |
+
+The literals and keywords are those of C#, not of Python: write `true`, `false` and `null` in a template, not `True`, `False` and `None`, and enclose strings in double quotes.
 
 You can use the following identifiers that are not preceded by a member access operator in template expressions:
 
 *   The name of a passed data source object
-*   The name of an iteration variable within its scope (see [Outputting Sequential Data](https://docs.groupdocs.com/assembly/python-net/template-syntax-part-2-of-2/#outputting-sequential-data) for more information)
+*   The name of an iteration variable within its scope (see [Outputting Sequential Data](/assembly/python-net/guides/template-syntax-part-2-of-2/#outputting-sequential-data) for more information)
 *   The name of a lambda function parameter within the scope of the lambda function
-*   A fully or partially qualified name of a type that is known by the engine (see [Setting up Known External Types](https://docs.groupdocs.com/assembly/python-net/groupdocs-assembly-engine-apis/#setting-up-known-external-types) for more information)
+*   A fully or partially qualified name of a type that is known by the engine (see [Setting up Known External Types](/assembly/python-net/guides/groupdocs.assembly-engine-apis/#setting-up-known-external-types) for more information)
 *   The name of a member of an object that is determined as follows:
     *   Inside a data band body, the object is resolved to the innermost iteration variable.
     *   Outside a data band body, the object is resolved to a passed data source.
 
-The feature of the omitting of an object identifier while accessing the object's members is also known as the contextual object member access. See [Using Contextual Object Member Access](https://docs.groupdocs.com/assembly/python-net/template-syntax-part-1-of-2/) for more information.
+The feature of the omitting of an object identifier while accessing the object's members is also known as the contextual object member access. See [Using Contextual Object Member Access](#using-contextual-object-member-access) for more information.
 
 ### Using Types
 
-GroupDocs.Assembly Engine enables you to use external visible types in template expressions. A `visible type` is a public type with outer types (if any) are public as well. You can use a data source object of any visible type to pass it to the engine.
+GroupDocs.Assembly Engine enables you to use .NET types in template expressions. A Python application deals with two kinds of them:
 
-However, you can use the identifier of a visible type in template expressions only if the following additional requirements are met:
+*   The types of the data it passes. The engine reads a `str` as a .NET `String`, an `int` as an `Int64`, a `datetime` as a `DateTime`, and a dict as an object of a type it makes from the dict's keys (see [Using Data Sources](#using-data-sources)). A template uses the members of these types, `<<[c.CustomerName.ToUpper()]>>` or `<<[o.OrderDate.Month]>>`, but cannot name a type made from a dict: its name is generated.
+*   The types of the .NET runtime that a template calls by name, such as `Math` in `<<[Math.Round(price, 2)]>>`. Such a type must be known by the engine (see [Setting up Known External Types](/assembly/python-net/guides/groupdocs.assembly-engine-apis/#setting-up-known-external-types)).
+
+You can use the identifier of a type in template expressions only if the following additional requirements are met:
 
 *   The type is not void.
 *   The type does not represent an array.
@@ -85,7 +90,7 @@ However, you can use the identifier of a visible type in template expressions on
 
 **Note:** Whereas using of generic types' identifiers is forbidden in template expressions, you can use identifiers of nullable types in the shorthand `"T?"` form.
 
-Also, the engine enables you to use anonymous types in template expressions. Such types are useful while composing expressions with grouping by multiple keys. See [Enumeration Extension Methods](https://docs.groupdocs.com/assembly/python-net/template-syntax-part-2-of-2/#enumeration-extension-methods) for the examples.
+Also, the engine enables you to use anonymous types in template expressions. Such types are useful while composing expressions with grouping by multiple keys. See [Enumeration Extension Methods](/assembly/python-net/guides/template-syntax-part-2-of-2/#enumeration-extension-methods) for the examples.
 
 #### Type Members
 
@@ -96,6 +101,8 @@ GroupDocs.Assembly Engine enables you to access the following public (static and
 *   Indexer getters
 *   Methods
 *   Constructors
+
+The keys of a Python dict are properties of its object, and the dict also has an indexer that reads a value by its key (see [Using Data Sources](#using-data-sources)).
 
 However, you can use a functional type member in template expressions only if the following additional requirements are met:
 
@@ -113,8 +120,8 @@ The engine supports the following features when dealing with functional members:
 
 GroupDocs.Assembly Engine enables you to use the following built-in extension methods in template expressions:
 
-*   Extension methods mimicking the ones for `IEnumerable<T>` (see [Enumeration Extension Methods](https://docs.groupdocs.com/assembly/python-net/template-syntax-part-2-of-2/#enumeration-extension-methods) for more information)
-*   Extension methods for iteration variables (see [Extension Methods of Iteration Variables](https://docs.groupdocs.com/assembly/python-net/template-syntax-part-2-of-2/#extension-methods-of-iteration-variables) for more information)
+*   Extension methods mimicking the ones for `IEnumerable<T>`, which apply to Python lists (see [Enumeration Extension Methods](/assembly/python-net/guides/template-syntax-part-2-of-2/#enumeration-extension-methods) for more information)
+*   Extension methods for iteration variables (see [Extension Methods of Iteration Variables](/assembly/python-net/guides/template-syntax-part-2-of-2/#extension-methods-of-iteration-variables) for more information)
 
 **Note:** Extension methods, other than the built-in ones, can be used only in the form of plain static methods in template expressions.
 
@@ -123,29 +130,28 @@ GroupDocs.Assembly Engine enables you to use the following built-in extension me
 The following list contains predefined and user-defined operators that Document Assembler enables you to use in template expressions.
 
 *   **Primary:**
-  
-    ```csharp
-    x.y f(x) a[x] new x?.y a?[x]  
+
+    ```text
+    x.y f(x) a[x] new x?.y a?[x]
     ```
-    
+
 *   **Unary:**
-  
-    ```csharp
+
+    ```text
     - ! ~ (T)x
     ```
-    
+
 *   **Binary:**
-  
-    ```csharp
+
+    ```text
     * / % + - << >> < > <= >= == != & ^ | && || ??
     ```
-    
+
 *   **Ternary:**
-  
-    ```csharp
+
+    ```text
     ?:
     ```
-    
 
 The engine follows operator precedence, associativity and overload resolution rules declared at [C# Language Specification 5.0](http://www.microsoft.com/en-us/download/details.aspx?id=7029) while evaluating template expressions. But be aware of the following limitations in the behavior comparing with the specification:
 
@@ -155,76 +161,88 @@ The engine follows operator precedence, associativity and overload resolution ru
 
 Also, the engine enables you to use lifted operators in template expressions.
 
+The operators are those of C#: `&&`, `||` and `!` rather than Python's `and`, `or` and `not`, and `/` between two integers is an integer division, as in C#. To divide integers exactly, cast one of them: `(double)o.Price / o.ProductQuantity`.
+
 ### Using Lambda Functions
 
-GroupDocs.Assembly Engine enables you to use lambda functions only as arguments of built-in enumeration extension methods in template expressions. See [Enumeration Extension Methods](https://docs.groupdocs.com/assembly/python-net/template-syntax-part-2-of-2/#enumeration-extension-methods) for more information.
+GroupDocs.Assembly Engine enables you to use lambda functions only as arguments of built-in enumeration extension methods in template expressions. See [Enumeration Extension Methods](/assembly/python-net/guides/template-syntax-part-2-of-2/#enumeration-extension-methods) for more information.
 
-**Note:** Lambda functions declared within template expressions are not interchangeable with delegates. Thus, you can not pass delegates as arguments to built-in enumeration extension methods.
+**Note:** Lambda functions declared within template expressions are written in the C# form, `p => p.Age > 30`, and are not interchangeable with delegates. Thus, you can not pass a Python function or lambda to a template as an argument of built-in enumeration extension methods.
 
 You can use both explicit and implicit lambda function signatures in template expressions. If you do not specify the type of a parameter of a lambda function explicitly, the type is determined implicitly by the engine depending on the type of the corresponding enumeration.
 
 ### Using Data Sources
 
-#### DataSet Objects
+[The Business Layer](https://docs.groupdocs.com/assembly/python-net/the-business-layer/) describes the data files the examples of this documentation read and how each is loaded.
 
-[This link](https://docs.groupdocs.com/assembly/python-net/the-business-layer/#dataset-source) will explain you how we utilized the DataSet Objects in Business Layer.
+#### Python Dicts and Lists
 
-GroupDocs.Assembly Engine enables you to access `DataTable` objects contained within a particular `DataSet` instance by table names using the "." operator in template expressions. That is, for example, given that `ds` is a `DataSet` instance that contains a `DataTable` named "Persons", you can access the table using the following syntax.
+A Python application passes its data as dicts, lists and Python values. When [`DataSourceInfo`](/assembly/python-net/groupdocs.assembly/datasourceinfo/) is created, the engine copies them into .NET objects as follows:
 
-```csharp
+| Python | In a template |
+| --- | --- |
+| `dict` | An object whose properties are the dict's keys: `<<[c.CustomerName]>>`. All dicts that hold the same place, such as the items of one list or the values of one key across the items, are objects of one type, which has the keys of all of them. |
+| `list`, `tuple`, `set` | A sequence (`List<T>`) that `foreach` tags and enumeration extension methods iterate. |
+| `str` | `String`. A string of digits stays a string: `"007"` is not the number 7. |
+| `int` | `Int64` (`bool` is `Boolean`). |
+| `float` | `Double`. |
+| `decimal.Decimal` | `Decimal`. |
+| `datetime`, `date` | `DateTime` (a `date` at midnight). An aware `datetime` is a `DateTimeOffset`. |
+| `time` | `TimeSpan`. |
+| `bytes` | A byte array, which image and doc tags take. |
+| `None` | `null`. |
+
+A few consequences are worth knowing:
+
+*   **Missing keys.** A key that some dicts of a list have and others lack, or hold `None` for, makes the property nullable: it is `null` where the key is absent. A value-type property, such as an `int` or a `datetime`, then becomes nullable (`Int64?`, `DateTime?`): operators and format strings work on it as they are, but its members are read through `Value`, `<<[o.Date.Value.Month]>>`.
+*   **Mixed values.** Values of different kinds under one key, or in one list, make the property or the item an `Object`, which can be output but whose members cannot be read.
+*   **Empty lists.** An empty list has no item to take a type from: `<<foreach [o in c.Orders]>><<[o.Product]>>` fails on a customer whose only `Orders` is `[]`, unless another customer's `Orders` has items. Give the data an item, or apply `DocumentAssemblyOptions.ALLOW_MISSING_MEMBERS`.
+*   **Equality.** Two objects made from dicts of one type are equal when their values are, so `Distinct()` and `GroupBy(o => o.Customer)` work on the copies of a customer that `json.load` gives each of its orders. Dicts that hold different places, such as the items of two lists under different keys, are of different types and never equal (see the note in [Enumeration Extension Methods](/assembly/python-net/guides/template-syntax-part-2-of-2/#the-enumeration-extension)).
+*   **Shared and circular data.** A dict that appears in several places is one object, so a structure may refer back to itself (see [Working with Lazy And Recursive Access of Data](https://docs.groupdocs.com/assembly/python-net/working-with-lazy-and-recursive-access-of-data/)).
+*   **The indexer.** A dict's object also reads a value by its key, `<<[r["First Name"]]>>`, which is how to reach a key that is not an identifier. The indexer returns an `Object`, which cannot be indexed again.
+*   **Copied once.** The data is copied when [`DataSourceInfo`](/assembly/python-net/groupdocs.assembly/datasourceinfo/) is created: a change to a dict made afterwards does not reach the report. Other Python objects, such as instances of your classes, cannot be part of the data; turn them into dicts first.
+
+#### Document Table Sets
+
+ADO.NET `DataSet` objects have no Python form. A [`DocumentTableSet`](/assembly/python-net/groupdocs.assembly.data/documenttableset/), which loads all the tables of a Word, Excel or PowerPoint document, plays their part: GroupDocs.Assembly Engine enables you to access the [`DocumentTable`](/assembly/python-net/groupdocs.assembly.data/documenttable/) objects contained within a particular [`DocumentTableSet`](/assembly/python-net/groupdocs.assembly.data/documenttableset/) instance by table names using the "." operator in template expressions. That is, for example, given that `ds` is a [`DocumentTableSet`](/assembly/python-net/groupdocs.assembly.data/documenttableset/) instance that contains a table named "Persons", you can access the table using the following syntax.
+
+```text
 ds.Persons
 ```
 
-**Note** Table names are case-insensitive.
+**Note:** Table names are case-insensitive.
 
-#### DataTable and DataView Objects
+A Python dict holding lists plays the same part for your own data: given that `ds` is `{"Persons": [...]}`, `ds.Persons` is the list.
 
-GroupDocs.Assembly Engine enables you to treat `DataTable` and `DataView` objects in template expressions as enumerations of their rows. That is, you can use template expressions evaluated to such objects in `foreach` tags (see [Outputting Sequential Data](https://docs.groupdocs.com/assembly/python-net/template-syntax-part-2-of-2/#outputting-sequential-data) for more information).
+#### Document Tables
 
-Also, you can normally apply enumeration extension methods (see [Enumeration Extension Methods](https://docs.groupdocs.com/assembly/python-net/template-syntax-part-2-of-2/#enumeration-extension-methods) for more information) to `DataTable` and `DataView` objects in template expressions. For example, given that persons is a `DataTable` or `DataView` instance, you can count its rows using the following syntax.
+GroupDocs.Assembly Engine enables you to treat [`DocumentTable`](/assembly/python-net/groupdocs.assembly.data/documenttable/) objects in template expressions as enumerations of their rows, as it treats ADO.NET `DataTable` and `DataView` objects. That is, you can use template expressions evaluated to such objects in `foreach` tags (see [Outputting Sequential Data](/assembly/python-net/guides/template-syntax-part-2-of-2/#outputting-sequential-data) for more information).
 
-```csharp
+Also, you can normally apply enumeration extension methods (see [Enumeration Extension Methods](/assembly/python-net/guides/template-syntax-part-2-of-2/#enumeration-extension-methods) for more information) to [`DocumentTable`](/assembly/python-net/groupdocs.assembly.data/documenttable/) objects in template expressions. For example, given that persons is a [`DocumentTable`](/assembly/python-net/groupdocs.assembly.data/documenttable/) instance, you can count its rows using the following syntax.
+
+```text
 persons.Count()
 ```
 
-#### DataRow and DataRowView Objects
+#### Rows of Document Tables
 
-GroupDocs.Assembly Engine enables you to access a data associated with a particular `DataRow` or `DataRowView` instance in template expressions using the "." operator. The following table describes, which identifiers you can use to access different kinds of the data.
+GroupDocs.Assembly Engine enables you to access a data associated with a particular row of a [`DocumentTable`](/assembly/python-net/groupdocs.assembly.data/documenttable/) in template expressions using the "." operator. The following table describes, which identifiers you can use to access different kinds of the data.
 
 | Data Kind | Identifier | Examples of Template Expressions |
 | --- | --- | --- |
-| **Field Value** | Field name | Given that `r` is a row that has a field named "Name", you can access the field’s value using the following syntax:<br />`r.Name`. |
-| **Single Parent or Child Row** | Parent (child) table name | Given that `r` is a row of a `DataTable` that has a parent (child) `DataTable` named "City", you can access the single parent (child) row of `r` using the following syntax:<br />`r.City`.<br />Given that the "City" `DataTable` has a field named "Name", you can access the field’s value for the single parent (child) row using the following syntax:<br />`r.City.Name`. |
-| **Enumeration of Child or Parent Rows** | Child (parent) table name | Given that `r` is a row of a `DataTable` that has a child (parent) `DataTable` named "Persons", you can access the enumeration of the child (parent) rows of `r` using the following syntax:<br />`r.Persons`.<br />Given that the "Persons" `DataTable` has a field named "Age", you can count the child (parent) rows that correspond to persons over thirty years old using the following syntax:<br />`r.Persons.Count(p => p.Age > 30)`. |
+| **Field Value** | Field name | Given that `r` is a row that has a field named "Name", you can access the field's value using the following syntax:<br />`r.Name`. |
+| **Single Parent or Child Row** | Parent (child) table name | Given that `r` is a row of a table that has a parent (child) table named "City", you can access the single parent (child) row of `r` using the following syntax:<br />`r.City`.<br />Given that the "City" table has a field named "Name", you can access the field's value for the single parent (child) row using the following syntax:<br />`r.City.Name`. |
+| **Enumeration of Child or Parent Rows** | Child (parent) table name | Given that `r` is a row of a table that has a child (parent) table named "Persons", you can access the enumeration of the child (parent) rows of `r` using the following syntax:<br />`r.Persons`.<br />Given that the "Persons" table has a field named "Age", you can count the child (parent) rows that correspond to persons over thirty years old using the following syntax:<br />`r.Persons.Count(p => p.Age > 30)`. |
 
- Field and table names are case-insensitive.
+ Field and table names are case-insensitive.
 
-To determine parent-child relationships for a particular `DataTable` instance, the engine uses *[DataRelation](http://msdn.microsoft.com/en-us/library/system.data.datarelation(v=vs.110).aspx)* objects contained within the corresponding `DataSet` instance. Thus, you can manage these relationships in a common way.
+A row of a document table has no indexer: read its fields by name with the "." operator. A column name with a space has an underscore in its place (`Total_Contract_Price`).
 
-Instead of using of table names to access data of child or parent rows, you can also use relation names, which is useful when you deal with multiple relations to the same table.
+To determine parent-child relationships between the tables of a [`DocumentTableSet`](/assembly/python-net/groupdocs.assembly.data/documenttableset/), the engine uses the relations you add to its `relations` collection, which link a column of the parent table to a column of the child table. See [Defining Relations Between DocumentTable Instances Loaded from a Single Document](https://docs.groupdocs.com/assembly/python-net/defining-relations-between-documenttable-instances-loaded-from-a-single-document/) and the examples of [Table-Row Data Bands](/assembly/python-net/guides/template-syntax-part-2-of-2/#table-row-data-bands).
 
-  
+#### Database Rows
 
-#### IDataReader Implementors
-
-GroupDocs.Assembly Engine enables you to treat `IDataReader` implementors as enumerations of `IDataRecord` implementors in template expressions. That is, you can use `IDataReader` implementors in template expressions in the same way as `DataTable` objects. See [Working with DataTable and DataView Objects](https://docs.groupdocs.com/assembly/python-net/template-syntax-part-1-of-2/) for more information.
-
-However, you can not use IDataReader implementors in template expressions in conjunction with enumeration operations that require a caching of enumeration items. The examples of such operations are grouping and sorting. To work around this restriction, use DataTable objects instead.
-
-#### IDataRecord Implementors
-
-Document Assembler enables you to access field values of a particular `IDataRecord` implementor by field names using the "." operator in template expressions. To use this feature, one of the following conditions must be met:
-
-*   The `IDataRecord` implementor represents an iteration variable upon enumerating an `IDataReader` implementor (see [Outputting Sequential Data](https://docs.groupdocs.com/assembly/python-net/template-syntax-part-2-of-2/#outputting-sequential-data) for more information).
-*   The `IDataRecord` implementor does not implement the `IDataReader` interface.
-
-The following example shows, how to use this feature. Given that `r` is an `IDataRecord` implementor that has a field named "Name", you can access the field's value using the following syntax.
-
-```csharp
-r.Name
-```
-
-**Note** Field names are case-insensitive.
+The .NET engine also reads ADO.NET `IDataReader` and `IDataRecord` implementors. A Python database cursor is not one: fetch the rows in Python and pass them as dicts, one per row, whose keys are the column names. With `sqlite3`, set `connection.row_factory = sqlite3.Row` and pass `[dict(row) for row in cursor]`. See [Generate Document from Database](https://docs.groupdocs.com/assembly/python-net/basic-usage-database-datasource/).
 
 ### Using Images
 
@@ -233,19 +251,17 @@ You can insert images to your reports dynamically using image tags. To declare a
 1.  Add a textbox to your template at the place where you want an image to be inserted.
 2.  Set common image attributes such as frame, size, and others for the textbox, making the textbox look like a blank inserted image.
 3.  Specify an image tag within the textbox using the following syntax.
-  
-    ```csharp
+
+    ```text
     <<image [image_expression]>>
-    
     ```
-    
 
-The expression declared within an image tag is used by the engine to build an image to be inserted. The expression must return a value of one of the following types:
+The expression declared within an image tag is used by the engine to build an image to be inserted. For Python data, the expression must return a value of one of the following types:
 
-*   A byte array containing an image data
-*   A [Stream](http://msdn.microsoft.com/en-us/library/system.io.stream(v=vs.110).aspx) instance able to read an image data
-*   An [Image](http://msdn.microsoft.com/en-us/library/system.drawing.image(v=vs.110).aspx) object
-*   A string containing an image URI, path, or Base64-encoded image data
+*   A byte array containing an image data: a `bytes` value in the data
+*   A string containing an image URI, path, or Base64-encoded image data: a `str` value in the data
+
+A path is resolved against the current folder of the Python process. The .NET engine also takes a `Stream` or an `Image` object, which Python data cannot hold.
 
 While building a report, the following procedure is applied to an image tag:
 
@@ -253,42 +269,39 @@ While building a report, the following procedure is applied to an image tag:
 *   The corresponding textbox is filled with this image.
 *   The tag is removed from the textbox.
 
-**Note:** If the expression declared within an image tag returns a stream object, then it is closed by the engine as soon as the corresponding image is built.
-
 By default, the assembler stretches an image filling a textbox to the size of the textbox. However, you can change this behavior in the following ways:
 
-*   To keep the size of the textbox and stretch the image within bounds of the textbox preserving the ratio of the image, use the *keepRatio* switch as follows:
-  
-    ```csharp
+*   To keep the size of the textbox and stretch the image within bounds of the textbox preserving the ratio of the image, use the *keepRatio* switch as follows:
+
+    ```text
     <<image [image_expression] -keepRatio>>
     ```
-    
+
 *   To keep the width of the textbox and change its height preserving the ratio of the image, use the fitHeight switch as follows.
-  
-    ```csharp
+
+    ```text
     <<image [image_expression] -fitHeight>>
     ```
-    
+
 *   To keep the height of the textbox and change its width preserving the ratio of the image, use the fitWidth switch as follows.
-  
-    ```csharp
+
+    ```text
     <<image [image_expression] -fitWidth>>
     ```
-    
+
 *   To change the size of the textbox according to the size of the image, use the fitSize switch as follows.
-  
-    ```csharp
+
+    ```text
     <<image [image_expression] -fitSize>>
     ```
-    
+
 *   To change the size of the textbox according to the size of the image without increasing the size of the textbox, use the fitSizeLim switch as follows.
-  
-    ```csharp
+
+    ```text
     <<image [image_expression] -fitSizeLim>>
     ```
-    
+
     If the size of the image is greater than the size of the textbox, then the fitSizeLim switch acts like fitHeight or fitWidth. Otherwise, the fitSizeLim switch acts like fitSize.
-    
 
 ### Inserting Documents
 
@@ -296,26 +309,24 @@ You can insert contents of outer documents to your reports dynamically using doc
 
 Syntax of a doc tag is defined as follows.
 
-```csharp
+```text
 <<doc [document_expression]>>
 ```
 
 A doc tag can be used almost anywhere in a template document except textboxes and charts.
 
-An expression declared within a doc tag is used by the assembler to load a document to be inserted during runtime. The expression must return a value of one of the following types:
+An expression declared within a doc tag is used by the assembler to load a document to be inserted during runtime. For Python data, the expression must return a value of one of the following types:
 
-*   A byte array containing document data
-*   A [Stream](http://msdn.microsoft.com/en-us/library/system.io.stream(v=vs.110).aspx) instance able to read document data
-*   An instance of the Document class
-*   A string containing a document URI, path, or Base64-encoded document data
+*   A byte array containing document data: a `bytes` value in the data
+*   A string containing a document URI, path, or Base64-encoded document data: a `str` value in the data
+
+The .NET engine also takes a `Stream` or a `Document` object, which Python data cannot hold.
 
 While building a report, an expression declared within a doc tag is evaluated and its result is used to load a document which content replaces the doc tag then.
 
-If an expression declared within a doc tag returns a stream object, then the stream is closed by the assembler as soon as a corresponding document is loaded.
-
 By default, a document being inserted is not checked against template syntax and is not populated with data. However, you can enable this by using a build switch as follows.
 
-```csharp
+```text
 <<doc [document_expression] -build>>
 ```
 
@@ -323,8 +334,8 @@ When a build switch is used, the assembler treats a document being inserted as a
 
 *   Data sources
 *   Variables
-*   A contextual object 
-*   Known external types 
+*   A contextual object
+*   Known external types
 
 ### Setting Checkbox Values Dynamically
 
@@ -333,11 +344,11 @@ You can set checkbox values to either checked or unchecked in your reports dynam
 1.  Add a checkbox content control to your template at a place where you want it to appear in a result document.
 2.  By editing content control properties, add a check tag to the title of the checkbox content control using the following syntax.
 
-```csharp
+```text
 <<check [conditional_expression]>>
 ```
 
-Here, conditional\_expression defines a condition upon which the value of the checkbox content control is to be set to checked (or unchecked, if the condition is not met). The conditional expression must return a Boolean value.
+Here, conditional\_expression defines a condition upon which the value of the checkbox content control is to be set to checked (or unchecked, if the condition is not met). The conditional expression must return a Boolean value: a Python `bool` in the data, or a comparison such as `[o.Discount > 0]`.
 
 While building a report, a conditional expression declared within a check tag is evaluated and the value of its containing checkbox content control is set accordingly. The check tag itself is removed then.
 
@@ -350,7 +361,7 @@ You can dynamically add items to comboboxes and dropdown lists defined in your t
 1. Add a combobox or dropdown list content control to your template at a place where you want it to appear in a result document.
 2. By editing content control properties, add an `item` tag to the title of this content control using the following syntax.
 
-```csharp
+```text
 <<item [value_expression] [display_name_expression]>>
 ```
 
@@ -358,25 +369,25 @@ Here, `value_expression` defines a value of a combobox or dropdown list item to 
 
 In turn, `display_name_expression` defines a display name of the combobox or dropdown list item to be added. This expression is optional. If it is omitted, then during runtime, a value of `value_expression` is used as a display name as well.
 
-**Note –** Values of both `value_expression` and `display_name_expression` can be of any types. During runtime, `Object.ToString()` is invoked to get textual representations of these expressions’ values.
+**Note –** Values of both `value_expression` and `display_name_expression` can be of any types. During runtime, `Object.ToString()` is invoked to get textual representations of these expressions' values.
 
 While building a report, `value_expression` and `display_name_expression` are evaluated and a corresponding combobox or dropdown list item is added. A declaring `item` tag is removed then.
 
 A single `item` tag causes addition of a single combobox or dropdown list item during runtime. You can add multiple combobox or dropdown list items using multiple `item` tags as shown in the following snippet.
 
-```csharp
+```text
 <<item ...>><<item ...>>
 ```
 
-Also, you can normally use `item` tags within data bands to add a combobox or dropdown list item per item of a data collection. For example, given that `clients` is a `DataTable` instance having a field named “Name”, you can use the following template to cover such a scenario.
+Also, you can normally use `item` tags within data bands to add a combobox or dropdown list item per item of a data collection. For example, given that `clients` is a list of dicts having a key named "Name", you can use the following template to cover such a scenario.
 
-```csharp
+```text
 <<foreach [client in clients]>><<item [client.Name]>><</foreach>>
 ```
 
 An `item` tag can also be combined with an `if` tag to add a combobox or dropdown list item depending on a condition as shown in the following snippet.
 
-```csharp
+```text
 <<if ...>><<item ...>><</if>>
 ```
 
@@ -384,27 +395,27 @@ Existing combobox and dropdown list items are not affected by `item` tags. Thus,
 
 **Note –** While inserting a combobox or dropdown list, Microsoft Word adds a default item that has to be removed manually, if the item is unwanted.
 
-### Using Hyperlinks 
+### Using Hyperlinks
 
 Using GroupDocs.Assembly, you can insert hyperlinks to URI or Bookmarks to your reports dynamically using link tags. The syntax of a link tag is defined below for various types of documents:
 
 #### Word Processing and Emails
 
-```csharp
-<<link [uri_or_bookmark_expression][display_text_expression]>>
+```text
+<<link [uri_or_bookmark_expression] [display_text_expression]>>
 ```
 
 #### Spreadsheets
 
 If the insertion of the link to cell A1 is required:
 
-```csharp
+```text
 <<link ["A1"] ["Home"]>>
 ```
 
 #### Presentations
 
-```csharp
+```text
 <<link ["Slide1"] ["Home"]>>
 ```
 
@@ -417,28 +428,70 @@ You can make your templates less cumbersome using the contextual object member a
 
 Obviously, inside a data band body, you can not use the feature to access members of an outer iteration variable or a passed data source object. With the exception of this restriction, you can use both contextual and common object member access syntaxes interchangeably depending on your needs and preferences.
 
-Consider the following example. Given that `ds` is a `DataSet` instance containing a `DataTable` object named "Persons" that has fields named "Name" and "Age", you can use the following template to list the contents of the table.
+Consider the following example. Given that `ds` is a dict whose "Persons" key holds a list of dicts with "Name" and "Age" keys, you can use the following template to list the persons in a table.
 
 | No. | Name | Age |
 | --- | --- | --- |
 | `<<foreach [p in ds.Persons]>><<[p.NumberOf()]>>` | `<<[p.Name]>>` | `<<[p.Age]>><</foreach>>` |
 | `Count: <<[ds.Persons.Count()]>>` |  |  |
 
-Alternatively, you can use the following template involving the contextual object member access syntax to get the same results.
+Alternatively, you can use the following template involving the contextual object member access syntax to get the same results. The data source is then passed without a name.
 
 | No. | Name | Age |
 | --- | --- | --- |
 | `<<foreach [in Persons]>><<[NumberOf()]>>` | `<<[Name]>>` | `<<[Age]>><</foreach>>` |
 | `Count: <<[Persons.Count()]>>` |  |  |
 
+The following example builds a report from each template with Harbor Lane's staff:
+
+{{< tabs "example1" >}}
+{{< tab "Python" >}}
+```python
+from groupdocs.assembly import DataSourceInfo, DocumentAssembler
+
+ds = {
+    "Persons": [
+        {"Name": "Amara Osei", "Age": 41},
+        {"Name": "Jonas Weber", "Age": 37},
+        {"Name": "Lena Park", "Age": 29},
+    ]
+}
+
+assembler = DocumentAssembler()
+# The data source is named "ds" in the first template
+assembler.assemble_document("staff-table-named.docx", "staff-table-named-report.docx", DataSourceInfo(ds, "ds"))
+# The second template uses the contextual object member access: no name
+assembler.assemble_document("staff-table-contextual.docx", "staff-table-contextual-report.docx", DataSourceInfo(ds))
+```
+{{< /tab >}}
+{{< tab "staff-table-named.docx" >}}
+
+The following sample file is used in this example: [staff-table-named.docx](https://docs.groupdocs.com/assembly/python-net/_sample_files/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/template-syntax-part-1-of-2/staff-table-named.docx)
+
+{{< /tab >}}
+{{< tab "staff-table-contextual.docx" >}}
+
+The following sample file is used in this example: [staff-table-contextual.docx](https://docs.groupdocs.com/assembly/python-net/_sample_files/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/template-syntax-part-1-of-2/staff-table-contextual.docx)
+
+{{< /tab >}}
+{{< tab "using-contextual-object-member-access-outputs.zip" >}}  
+```text
+staff-table-contextual-report.docx (7 KB)
+staff-table-named-report.docx (7 KB)
+```
+[Download full output](https://docs.groupdocs.com/assembly/python-net/_output_files/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/template-syntax-part-1-of-2/using_contextual_object_member_access/using-contextual-object-member-access-outputs.zip)
+{{< /tab >}}
+{{< /tabs >}}
+
 ### Using Conditional Blocks
 
-You can use different document blocks to represent the same data depending on a condition with the help of conditional blocks. A conditional block represents a set of template options, each of which is bound with a conditional expression. At runtime, these conditional expressions are sequentially evaluated, until an expression that returns true is reached. Then, the conditional block is replaced with the corresponding template option populated with data.  
+You can use different document blocks to represent the same data depending on a condition with the help of conditional blocks. A conditional block represents a set of template options, each of which is bound with a conditional expression. At runtime, these conditional expressions are sequentially evaluated, until an expression that returns true is reached. Then, the conditional block is replaced with the corresponding template option populated with data.
+
 A conditional block can have a default template option that is not bound with a conditional expression. At runtime, this template option is used, when none of conditional expressions return true. If a default template option is missing and none of conditional expressions return true, then the whole conditional block is removed during runtime.
 
 You can use the following syntax to declare a conditional block:
 
-```csharp
+```text
 <<if [conditional_expression1]>>
 template_option1
 <<elseif [conditional_expression2]>>
@@ -453,32 +506,35 @@ default_template_option
 
 #### Common Conditional Blocks
 
-A common conditional block is a conditional block which body starts and ends within paragraphs that belong to a single story or table cell.  
+A common conditional block is a conditional block which body starts and ends within paragraphs that belong to a single story or table cell.
+
 If a conditional block belongs to a single paragraph, it can be used as a replacement for an expression tag that involves the ternary "?:" operator. For example, given that items is an enumeration, you can use the following template to represent the count of elements in the enumeration:
 
-```csharp
+```text
 You have chosen <<if [!items.Any()]>>no items<<else>><<[items.Count()]>> item(s)<</if>>.
 ```
 
 **Note:** A template option of a common conditional block can be composed of multiple paragraphs, if needed.
 
-You can normally use common conditional blocks within data bands. For example, given that items is an enumeration of the strings "item1", "item2", and "item3", you can use the following template to enumerate them and apply different formatting for even and odd elements:
+You can normally use common conditional blocks within data bands. For example, given that items is a list of the strings "item1", "item2", and "item3", you can use the following template to enumerate them and apply different formatting for even and odd elements:
 
-```csharp
-<<foreach \[item in items\]>><<if \[IndexOf() % 2 == 0\]>><<\[item\]>>  
-<<else>><<\[item\]>>  
+```text
+<<foreach [item in items]>><<if [IndexOf() % 2 == 0]>><<[item]>>
+<<else>><<[item]>>
 <</if>><</foreach>>
 ```
 
 In this case, the engine produces a report as follows:
 
-item1  
-item2  
+```text
+item1
+item2
 item3
+```
 
 You can use data bands within common conditional blocks as well. For example, given the previous declaration of items, you can check whether the enumeration contains any elements before outputting their list:
 
-```csharp
+```text
 <<if [!items.Any()]>>No data.
 <<else>><<foreach [item in items]>><<[item]>>
 <</foreach>><</if>>
@@ -486,37 +542,65 @@ You can use data bands within common conditional blocks as well. For example, gi
 
 #### Table-Row Conditional Block
 
-A table-row conditional block is a conditional block which body occupies single or multiple rows of a single document table. The body of such a block (as well as the body of its every template option) starts at the beginning of the first occupied row and ends at the end of the last occupied row as follows:  
-**Note:** Table rows occupied by different template options in the following template are highlighted with different colors.
+A table-row conditional block is a conditional block which body occupies single or multiple rows of a single document table. The body of such a block (as well as the body of its every template option) starts at the beginning of the first occupied row and ends at the end of the last occupied row as follows:
 
-<table cellspacing="0" cellpadding="0" style="border-collapse: collapse; margin-left: 0pt;"><tbody><tr><td style="background-color: rgb(242, 242, 242);"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">&nbsp;</span></p></td><td style="background-color: rgb(242, 242, 242);"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">&nbsp;</span></p></td><td style="background-color: rgb(242, 242, 242);"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">&nbsp;</span></p></td></tr><tr><td style="background-color: rgb(226, 239, 217);"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">&lt;&lt;if ...&gt;&gt; ...</span></p></td><td style="background-color: rgb(226, 239, 217);"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">...</span></p></td><td style="background-color: rgb(226, 239, 217);"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">...</span></p></td></tr><tr><td style="background-color: rgb(226, 239, 217);"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">...</span></p></td><td style="background-color: rgb(226, 239, 217);"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">...</span></p></td><td style="background-color: rgb(226, 239, 217);"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">...</span></p></td></tr><tr><td style="background-color: rgb(255, 242, 204);"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">&lt;&lt;elseif ...&gt;&gt; ...</span></p></td><td style="background-color: rgb(255, 242, 204);"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">...</span></p></td><td style="background-color: rgb(255, 242, 204);"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">...</span></p></td></tr><tr><td style="background-color: rgb(255, 242, 204);"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">...</span></p></td><td style="background-color: rgb(255, 242, 204);"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">...</span></p></td><td style="background-color: rgb(255, 242, 204);"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">...</span></p></td></tr><tr><td style="background-color: rgb(222, 234, 246);"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">&lt;&lt;else&gt;&gt; ...</span></p></td><td style="background-color: rgb(222, 234, 246);"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">...</span></p></td><td style="background-color: rgb(222, 234, 246);"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">...</span></p></td></tr><tr><td style="background-color: rgb(222, 234, 246);"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">...</span></p></td><td style="background-color: rgb(222, 234, 246);"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">...</span></p></td><td style="background-color: rgb(222, 234, 246);"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">...</span></p></td></tr><tr><td style="background-color: rgb(222, 234, 246);"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">...</span></p></td><td style="background-color: rgb(222, 234, 246);"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">...</span></p></td><td style="background-color: rgb(222, 234, 246);"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">... &lt;&lt;/if&gt;&gt;</span></p></td></tr><tr><td style="background-color: rgb(242, 242, 242);"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">&nbsp;</span></p></td><td style="background-color: rgb(242, 242, 242);"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">&nbsp;</span></p></td><td style="background-color: rgb(242, 242, 242);"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">&nbsp;</span></p></td></tr></tbody></table>
-The following examples in this section are given using client, an instance of the Client class, and clients, an enumeration of instances of the Client class that is defined as follows:
+| | | |
+| --- | --- | --- |
+| `<<if ...>>` ... | ... | ... |
+| ... | ... | ... |
+| `<<elseif ...>>` ... | ... | ... |
+| ... | ... | ... |
+| `<<else>>` ... | ... | ... |
+| ... | ... | ... |
+| ... | ... | ... `<</if>>` |
 
-```csharp
-public class Client
-{
-    public String Name { get { ... } }
-    public String Country { get { ... } }
-    public String LocalAddress { get { ... } }
-    ...
-}
-```
+The following examples in this section are given using `client`, a dict of a client, and `clients`, a list of such dicts, each having the "Name", "Country" and "LocalAddress" keys.
 
-Using table-row conditional blocks, you can pick to output a single row among several rows of a single document table depending on a condition like in the following example:
+Using table-row conditional blocks, you can pick to output a single row among several rows of a single document table depending on a condition like in the following example, where the row for a client of New Zealand merges its second and third cells:
 
-<table cellspacing="0" cellpadding="0" style="border-collapse: collapse; margin-left: 0pt;"><tbody><tr><td style="background-color: rgb(242, 242, 242);"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">...</span></p></td><td style="background-color: rgb(242, 242, 242);"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">...</span></p></td><td style="background-color: rgb(242, 242, 242);"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">...</span></p></td></tr><tr><td style="background-color: rgb(226, 239, 217);"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">&lt;&lt;if [client.</span><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">Country</span><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;"> == "New Zealand"]&gt;&gt;&lt;&lt;[client.</span><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">Name</span><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">]&gt;&gt;</span></p></td><td colspan="2" style="background-color: rgb(226, 239, 217);"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">&lt;&lt;[client.</span><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">LocalAddress</span><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">]&gt;&gt;</span></p></td></tr><tr><td style="background-color: rgb(242, 242, 242);"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">&lt;&lt;else&gt;&gt;</span><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">&lt;&lt;[client.</span><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">Name</span><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">]&gt;&gt;</span></p></td><td style="background-color: rgb(242, 242, 242);"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">&lt;&lt;[client.</span><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">Country</span><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">]&gt;&gt;</span></p></td><td style="background-color: rgb(242, 242, 242);"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">&lt;&lt;[client.</span><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">LocalAddress</span><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">]&gt;&gt;</span><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">&lt;&lt;/if&gt;&gt;</span></p></td></tr><tr><td style="background-color: rgb(242, 242, 242);"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">...</span></p></td><td style="background-color: rgb(242, 242, 242);"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">...</span></p></td><td style="background-color: rgb(242, 242, 242);"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">...</span></p></td></tr><tr style="height: 0pt;"><td style="width: 176.95pt; border-top-color: initial; border-top-style: none; border-top-width: initial; border-right-color: initial; border-right-style: none; border-right-width: initial; border-bottom-color: initial; border-bottom-style: none; border-bottom-width: initial; border-left-color: initial; border-left-style: none; border-left-width: initial;"></td><td style="width: 127.6pt; border-top-color: initial; border-top-style: none; border-top-width: initial; border-right-color: initial; border-right-style: none; border-right-width: initial; border-bottom-color: initial; border-bottom-style: none; border-bottom-width: initial; border-left-color: initial; border-left-style: none; border-left-width: initial;"></td><td style="width: 162.7pt; border-top-color: initial; border-top-style: none; border-top-width: initial; border-right-color: initial; border-right-style: none; border-right-width: initial; border-bottom-color: initial; border-bottom-style: none; border-bottom-width: initial; border-left-color: initial; border-left-style: none; border-left-width: initial;"></td></tr></tbody></table>
+| | | |
+| --- | --- | --- |
+| ... | ... | ... |
+| `<<if [client.Country == "New Zealand"]>><<[client.Name]>>` | `<<[client.LocalAddress]>>` (two merged cells) | |
+| `<<else>><<[client.Name]>>` | `<<[client.Country]>>` | `<<[client.LocalAddress]>><</if>>` |
+| ... | ... | ... |
+
 You can normally use table-row conditional blocks within data bands to make elements of an enumeration look differently depending on a condition. Consider the following template:
 
-<table cellspacing="0" cellpadding="0" style="border-collapse: collapse; margin-left: 0pt;"><tbody><tr><td style="background-color: rgb(226, 239, 217);"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">&lt;&lt;foreach [in clients]&gt;&gt;&lt;&lt;if [</span><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">Country</span><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;"> == "New Zealand"]&gt;&gt;&lt;&lt;[</span><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">Name</span><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">]&gt;&gt;</span></p></td><td colspan="2" style="background-color: rgb(226, 239, 217);"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">&lt;&lt;[</span><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">LocalAddress</span><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">]&gt;&gt;</span></p></td></tr><tr><td style="background-color: rgb(242, 242, 242);"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">&lt;&lt;else&gt;&gt;&lt;&lt;[</span><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">Name</span><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">]&gt;&gt;</span></p></td><td style="background-color: rgb(242, 242, 242);"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">&lt;&lt;[</span><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">Country</span><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">]&gt;&gt;</span></p></td><td style="background-color: rgb(242, 242, 242);"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">&lt;&lt;[</span><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">LocalAddress</span><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">]&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/foreach&gt;&gt;</span></p></td></tr><tr style="height: 0pt;"><td style="width: 176.95pt; border-top-color: initial; border-top-style: none; border-top-width: initial; border-right-color: initial; border-right-style: none; border-right-width: initial; border-bottom-color: initial; border-bottom-style: none; border-bottom-width: initial; border-left-color: initial; border-left-style: none; border-left-width: initial;"></td><td style="width: 127.6pt; border-top-color: initial; border-top-style: none; border-top-width: initial; border-right-color: initial; border-right-style: none; border-right-width: initial; border-bottom-color: initial; border-bottom-style: none; border-bottom-width: initial; border-left-color: initial; border-left-style: none; border-left-width: initial;"></td><td style="width: 162.7pt; border-top-color: initial; border-top-style: none; border-top-width: initial; border-right-color: initial; border-right-style: none; border-right-width: initial; border-bottom-color: initial; border-bottom-style: none; border-bottom-width: initial; border-left-color: initial; border-left-style: none; border-left-width: initial;"></td></tr></tbody></table>
-In this case, the engine produces the report as below:
+| | | |
+| --- | --- | --- |
+| `<<foreach [in clients]>><<if [Country == "New Zealand"]>><<[Name]>>` | `<<[LocalAddress]>>` (two merged cells) | |
+| `<<else>><<[Name]>>` | `<<[Country]>>` | `<<[LocalAddress]>><</if>><</foreach>>` |
 
-<table cellspacing="0" cellpadding="0" style="border-collapse: collapse; margin-left: 0pt;"><tbody><tr><td style="background-color: rgb(242, 242, 242); border-bottom-color: rgb(0, 0, 0); border-bottom-style: solid; border-bottom-width: 0.75pt; border-left-color: rgb(0, 0, 0); border-left-style: solid; border-left-width: 0.75pt; border-right-color: rgb(0, 0, 0); border-right-style: solid; border-right-width: 0.75pt; border-top-color: rgb(0, 0, 0); border-top-style: solid; border-top-width: 0.75pt; padding-left: 5.03pt; padding-right: 5.03pt; vertical-align: top; width: 166.15pt;"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">A Company</span></p></td><td style="background-color: rgb(242, 242, 242); border-bottom-color: rgb(0, 0, 0); border-bottom-style: solid; border-bottom-width: 0.75pt; border-left-color: rgb(0, 0, 0); border-left-style: solid; border-left-width: 0.75pt; border-right-color: rgb(0, 0, 0); border-right-style: solid; border-right-width: 0.75pt; border-top-color: rgb(0, 0, 0); border-top-style: solid; border-top-width: 0.75pt; padding-left: 5.03pt; padding-right: 5.03pt; vertical-align: top; width: 116.8pt;"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">Australia</span></p></td><td style="background-color: rgb(242, 242, 242); border-bottom-color: rgb(0, 0, 0); border-bottom-style: solid; border-bottom-width: 0.75pt; border-left-color: rgb(0, 0, 0); border-left-style: solid; border-left-width: 0.75pt; border-right-color: rgb(0, 0, 0); border-right-style: solid; border-right-width: 0.75pt; border-top-color: rgb(0, 0, 0); border-top-style: solid; border-top-width: 0.75pt; padding-left: 5.03pt; padding-right: 5.03pt; vertical-align: top; width: 151.9pt;"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">219-241 Cleveland St</span></p><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">STRAWBERRY HILLS&nbsp; NSW&nbsp; 1427</span></p></td></tr><tr><td style="background-color: rgb(242, 242, 242); border-bottom-color: rgb(0, 0, 0); border-bottom-style: solid; border-bottom-width: 0.75pt; border-left-color: rgb(0, 0, 0); border-left-style: solid; border-left-width: 0.75pt; border-right-color: rgb(0, 0, 0); border-right-style: solid; border-right-width: 0.75pt; border-top-color: rgb(0, 0, 0); border-top-style: solid; border-top-width: 0.75pt; padding-left: 5.03pt; padding-right: 5.03pt; vertical-align: top; width: 166.15pt;"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">B Ltd.</span></p></td><td style="background-color: rgb(242, 242, 242); border-bottom-color: rgb(0, 0, 0); border-bottom-style: solid; border-bottom-width: 0.75pt; border-left-color: rgb(0, 0, 0); border-left-style: solid; border-left-width: 0.75pt; border-right-color: rgb(0, 0, 0); border-right-style: solid; border-right-width: 0.75pt; border-top-color: rgb(0, 0, 0); border-top-style: solid; border-top-width: 0.75pt; padding-left: 5.03pt; padding-right: 5.03pt; vertical-align: top; width: 116.8pt;"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">Brazil</span></p></td><td style="background-color: rgb(242, 242, 242); border-bottom-color: rgb(0, 0, 0); border-bottom-style: solid; border-bottom-width: 0.75pt; border-left-color: rgb(0, 0, 0); border-left-style: solid; border-left-width: 0.75pt; border-right-color: rgb(0, 0, 0); border-right-style: solid; border-right-width: 0.75pt; border-top-color: rgb(0, 0, 0); border-top-style: solid; border-top-width: 0.75pt; padding-left: 5.03pt; padding-right: 5.03pt; vertical-align: top; width: 151.9pt;"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">Avenida João Jorge, 112, ap. 31</span></p><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">Vila Industrial</span></p><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">Campinas - SP</span></p><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">13035-680</span></p></td></tr><tr><td style="background-color: rgb(242, 242, 242); border-bottom-color: rgb(0, 0, 0); border-bottom-style: solid; border-bottom-width: 0.75pt; border-left-color: rgb(0, 0, 0); border-left-style: solid; border-left-width: 0.75pt; border-right-color: rgb(0, 0, 0); border-right-style: solid; border-right-width: 0.75pt; border-top-color: rgb(0, 0, 0); border-top-style: solid; border-top-width: 0.75pt; padding-left: 5.03pt; padding-right: 5.03pt; vertical-align: top; width: 166.15pt;"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">C &amp; D</span></p></td><td style="background-color: rgb(242, 242, 242); border-bottom-color: rgb(0, 0, 0); border-bottom-style: solid; border-bottom-width: 0.75pt; border-left-color: rgb(0, 0, 0); border-left-style: solid; border-left-width: 0.75pt; border-right-color: rgb(0, 0, 0); border-right-style: solid; border-right-width: 0.75pt; border-top-color: rgb(0, 0, 0); border-top-style: solid; border-top-width: 0.75pt; padding-left: 5.03pt; padding-right: 5.03pt; vertical-align: top; width: 116.8pt;"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">Canada</span></p></td><td style="background-color: rgb(242, 242, 242); border-bottom-color: rgb(0, 0, 0); border-bottom-style: solid; border-bottom-width: 0.75pt; border-left-color: rgb(0, 0, 0); border-left-style: solid; border-left-width: 0.75pt; border-right-color: rgb(0, 0, 0); border-right-style: solid; border-right-width: 0.75pt; border-top-color: rgb(0, 0, 0); border-top-style: solid; border-top-width: 0.75pt; padding-left: 5.03pt; padding-right: 5.03pt; vertical-align: top; width: 151.9pt;"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">101-3485 RUE DE LA MONTAGNE</span></p><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">MONTRÉAL (QUÉBEC) h2G 2A6</span></p></td></tr><tr><td style="background-color: rgb(226, 239, 217); border-bottom-color: rgb(0, 0, 0); border-bottom-style: solid; border-bottom-width: 0.75pt; border-left-color: rgb(0, 0, 0); border-left-style: solid; border-left-width: 0.75pt; border-right-color: rgb(0, 0, 0); border-right-style: solid; border-right-width: 0.75pt; border-top-color: rgb(0, 0, 0); border-top-style: solid; border-top-width: 0.75pt; padding-left: 5.03pt; padding-right: 5.03pt; vertical-align: top; width: 166.15pt;"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">E Corp.</span></p></td><td colspan="2" style="background-color: rgb(226, 239, 217); border-bottom-color: rgb(0, 0, 0); border-bottom-style: solid; border-bottom-width: 0.75pt; border-left-color: rgb(0, 0, 0); border-left-style: solid; border-left-width: 0.75pt; border-right-color: rgb(0, 0, 0); border-right-style: solid; border-right-width: 0.75pt; border-top-color: rgb(0, 0, 0); border-top-style: solid; border-top-width: 0.75pt; padding-left: 5.03pt; padding-right: 5.03pt; vertical-align: top; width: 279.5pt;"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">445 Mount Eden Road</span></p><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">Mount Eden</span></p><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">Auckland 1024</span></p></td></tr><tr><td style="background-color: rgb(226, 239, 217); border-bottom-color: rgb(0, 0, 0); border-bottom-style: solid; border-bottom-width: 0.75pt; border-left-color: rgb(0, 0, 0); border-left-style: solid; border-left-width: 0.75pt; border-right-color: rgb(0, 0, 0); border-right-style: solid; border-right-width: 0.75pt; border-top-color: rgb(0, 0, 0); border-top-style: solid; border-top-width: 0.75pt; padding-left: 5.03pt; padding-right: 5.03pt; vertical-align: top; width: 166.15pt;"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">F &amp; Partners</span></p></td><td colspan="2" style="background-color: rgb(226, 239, 217); border-bottom-color: rgb(0, 0, 0); border-bottom-style: solid; border-bottom-width: 0.75pt; border-left-color: rgb(0, 0, 0); border-left-style: solid; border-left-width: 0.75pt; border-right-color: rgb(0, 0, 0); border-right-style: solid; border-right-width: 0.75pt; border-top-color: rgb(0, 0, 0); border-top-style: solid; border-top-width: 0.75pt; padding-left: 5.03pt; padding-right: 5.03pt; vertical-align: top; width: 279.5pt;"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">20 Greens Road</span></p><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">Tuahiwi</span></p><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">Kaiapoi 7691</span></p></td></tr><tr><td style="background-color: rgb(242, 242, 242); border-bottom-color: rgb(0, 0, 0); border-bottom-style: solid; border-bottom-width: 0.75pt; border-left-color: rgb(0, 0, 0); border-left-style: solid; border-left-width: 0.75pt; border-right-color: rgb(0, 0, 0); border-right-style: solid; border-right-width: 0.75pt; border-top-color: rgb(0, 0, 0); border-top-style: solid; border-top-width: 0.75pt; padding-left: 5.03pt; padding-right: 5.03pt; vertical-align: top; width: 166.15pt;"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">G &amp; Co.</span></p></td><td style="background-color: rgb(242, 242, 242); border-bottom-color: rgb(0, 0, 0); border-bottom-style: solid; border-bottom-width: 0.75pt; border-left-color: rgb(0, 0, 0); border-left-style: solid; border-left-width: 0.75pt; border-right-color: rgb(0, 0, 0); border-right-style: solid; border-right-width: 0.75pt; border-top-color: rgb(0, 0, 0); border-top-style: solid; border-top-width: 0.75pt; padding-left: 5.03pt; padding-right: 5.03pt; vertical-align: top; width: 116.8pt;"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">Greece</span></p></td><td style="background-color: rgb(242, 242, 242); border-bottom-color: rgb(0, 0, 0); border-bottom-style: solid; border-bottom-width: 0.75pt; border-left-color: rgb(0, 0, 0); border-left-style: solid; border-left-width: 0.75pt; border-right-color: rgb(0, 0, 0); border-right-style: solid; border-right-width: 0.75pt; border-top-color: rgb(0, 0, 0); border-top-style: solid; border-top-width: 0.75pt; padding-left: 5.03pt; padding-right: 5.03pt; vertical-align: top; width: 151.9pt;"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">Karkisias 6</span></p><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">GR-111 42&nbsp; ATHINA</span></p><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">GRÉCE</span></p></td></tr><tr><td style="background-color: rgb(242, 242, 242); border-bottom-color: rgb(0, 0, 0); border-bottom-style: solid; border-bottom-width: 0.75pt; border-left-color: rgb(0, 0, 0); border-left-style: solid; border-left-width: 0.75pt; border-right-color: rgb(0, 0, 0); border-right-style: solid; border-right-width: 0.75pt; border-top-color: rgb(0, 0, 0); border-top-style: solid; border-top-width: 0.75pt; padding-left: 5.03pt; padding-right: 5.03pt; vertical-align: top; width: 166.15pt;"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">H Group</span></p></td><td style="background-color: rgb(242, 242, 242); border-bottom-color: rgb(0, 0, 0); border-bottom-style: solid; border-bottom-width: 0.75pt; border-left-color: rgb(0, 0, 0); border-left-style: solid; border-left-width: 0.75pt; border-right-color: rgb(0, 0, 0); border-right-style: solid; border-right-width: 0.75pt; border-top-color: rgb(0, 0, 0); border-top-style: solid; border-top-width: 0.75pt; padding-left: 5.03pt; padding-right: 5.03pt; vertical-align: top; width: 116.8pt;"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">Hungary</span></p></td><td style="background-color: rgb(242, 242, 242); border-bottom-color: rgb(0, 0, 0); border-bottom-style: solid; border-bottom-width: 0.75pt; border-left-color: rgb(0, 0, 0); border-left-style: solid; border-left-width: 0.75pt; border-right-color: rgb(0, 0, 0); border-right-style: solid; border-right-width: 0.75pt; border-top-color: rgb(0, 0, 0); border-top-style: solid; border-top-width: 0.75pt; padding-left: 5.03pt; padding-right: 5.03pt; vertical-align: top; width: 151.9pt;"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">Budapest</span></p><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">Fiktív utca 82., IV. em./28.</span></p><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">2806</span></p></td></tr><tr><td style="background-color: rgb(226, 239, 217); border-bottom-color: rgb(0, 0, 0); border-bottom-style: solid; border-bottom-width: 0.75pt; border-left-color: rgb(0, 0, 0); border-left-style: solid; border-left-width: 0.75pt; border-right-color: rgb(0, 0, 0); border-right-style: solid; border-right-width: 0.75pt; border-top-color: rgb(0, 0, 0); border-top-style: solid; border-top-width: 0.75pt; padding-left: 5.03pt; padding-right: 5.03pt; vertical-align: top; width: 166.15pt;"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">I &amp; Sons</span></p></td><td colspan="2" style="background-color: rgb(226, 239, 217); border-bottom-color: rgb(0, 0, 0); border-bottom-style: solid; border-bottom-width: 0.75pt; border-left-color: rgb(0, 0, 0); border-left-style: solid; border-left-width: 0.75pt; border-right-color: rgb(0, 0, 0); border-right-style: solid; border-right-width: 0.75pt; border-top-color: rgb(0, 0, 0); border-top-style: solid; border-top-width: 0.75pt; padding-left: 5.03pt; padding-right: 5.03pt; vertical-align: top; width: 279.5pt;"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">43 Vogel Street</span></p><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">Roslyn</span></p><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">Palmerston North 4414</span></p></td></tr><tr><td style="background-color: rgb(242, 242, 242); border-bottom-color: rgb(0, 0, 0); border-bottom-style: solid; border-bottom-width: 0.75pt; border-left-color: rgb(0, 0, 0); border-left-style: solid; border-left-width: 0.75pt; border-right-color: rgb(0, 0, 0); border-right-style: solid; border-right-width: 0.75pt; border-top-color: rgb(0, 0, 0); border-top-style: solid; border-top-width: 0.75pt; padding-left: 5.03pt; padding-right: 5.03pt; vertical-align: top; width: 166.15pt;"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">J Ent.</span></p></td><td style="background-color: rgb(242, 242, 242); border-bottom-color: rgb(0, 0, 0); border-bottom-style: solid; border-bottom-width: 0.75pt; border-left-color: rgb(0, 0, 0); border-left-style: solid; border-left-width: 0.75pt; border-right-color: rgb(0, 0, 0); border-right-style: solid; border-right-width: 0.75pt; border-top-color: rgb(0, 0, 0); border-top-style: solid; border-top-width: 0.75pt; padding-left: 5.03pt; padding-right: 5.03pt; vertical-align: top; width: 116.8pt;"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">Japan</span></p></td><td style="background-color: rgb(242, 242, 242); border-bottom-color: rgb(0, 0, 0); border-bottom-style: solid; border-bottom-width: 0.75pt; border-left-color: rgb(0, 0, 0); border-left-style: solid; border-left-width: 0.75pt; border-right-color: rgb(0, 0, 0); border-right-style: solid; border-right-width: 0.75pt; border-top-color: rgb(0, 0, 0); border-top-style: solid; border-top-width: 0.75pt; padding-left: 5.03pt; padding-right: 5.03pt; vertical-align: top; width: 151.9pt;"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">Hakusan 4-Ch?me 3-2</span></p><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">Bunky?-ku, T?KY?</span></p><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">112-0001</span></p><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">Japan</span></p></td></tr><tr style="height: 0pt;"><td style="width: 176.95pt; border-top-color: initial; border-top-style: none; border-top-width: initial; border-right-color: initial; border-right-style: none; border-right-width: initial; border-bottom-color: initial; border-bottom-style: none; border-bottom-width: initial; border-left-color: initial; border-left-style: none; border-left-width: initial;"></td><td style="width: 127.6pt; border-top-color: initial; border-top-style: none; border-top-width: initial; border-right-color: initial; border-right-style: none; border-right-width: initial; border-bottom-color: initial; border-bottom-style: none; border-bottom-width: initial; border-left-color: initial; border-left-style: none; border-left-width: initial;"></td><td style="width: 162.7pt; border-top-color: initial; border-top-style: none; border-top-width: initial; border-right-color: initial; border-right-style: none; border-right-width: initial; border-bottom-color: initial; border-bottom-style: none; border-bottom-width: initial; border-left-color: initial; border-left-style: none; border-left-width: initial;"></td></tr></tbody></table>
+In this case, the engine produces the report as below, the clients of New Zealand having no country cell:
+
+| Name | Country | Local Address |
+| --- | --- | --- |
+| A Company | Australia | 219-241 Cleveland St, STRAWBERRY HILLS NSW 1427 |
+| B Ltd. | Brazil | Avenida João Jorge, 112, ap. 31, Vila Industrial, Campinas - SP, 13035-680 |
+| C & D | Canada | 101-3485 RUE DE LA MONTAGNE, MONTRÉAL (QUÉBEC) H2G 2A6 |
+| E Corp. | | 445 Mount Eden Road, Mount Eden, Auckland 1024 |
+| F & Partners | | 20 Greens Road, Tuahiwi, Kaiapoi 7691 |
+| G & Co. | Greece | Karkisias 6, GR-111 42 ATHINA, GRÉCE |
+| H Group | Hungary | Budapest, Fiktív utca 82., IV. em./28., 2806 |
+| I & Sons | | 43 Vogel Street, Roslyn, Palmerston North 4414 |
+| J Ent. | Japan | Hakusan 4-Chōme 3-2, Bunkyō-ku, TŌKYŌ, 112-0001, Japan |
+
 **Note:** You can use common conditional blocks within table-row data bands as well.
 
 Also, you can use data bands inside table-row conditional blocks. For example, you can provide an alternate content for an empty table-row data band using the following template:
 
-<table cellspacing="0" cellpadding="0" style="border-collapse: collapse; margin-left: 0pt;"><tbody><tr><td style="background-color: rgb(242, 242, 242); border-bottom-color: rgb(0, 0, 0); border-bottom-style: solid; border-bottom-width: 0.75pt; border-left-color: rgb(0, 0, 0); border-left-style: solid; border-left-width: 0.75pt; border-right-color: rgb(0, 0, 0); border-right-style: solid; border-right-width: 0.75pt; border-top-color: rgb(0, 0, 0); border-top-style: solid; border-top-width: 0.75pt; padding-left: 5.03pt; padding-right: 5.03pt; vertical-align: top; width: 144.9pt;"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">Client</span></p></td><td style="background-color: rgb(242, 242, 242); border-bottom-color: rgb(0, 0, 0); border-bottom-style: solid; border-bottom-width: 0.75pt; border-left-color: rgb(0, 0, 0); border-left-style: solid; border-left-width: 0.75pt; border-right-color: rgb(0, 0, 0); border-right-style: solid; border-right-width: 0.75pt; border-top-color: rgb(0, 0, 0); border-top-style: solid; border-top-width: 0.75pt; padding-left: 5.03pt; padding-right: 5.03pt; vertical-align: top; width: 102.6pt;"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">Country</span></p></td><td style="background-color: rgb(242, 242, 242); border-bottom-color: rgb(0, 0, 0); border-bottom-style: solid; border-bottom-width: 0.75pt; border-left-color: rgb(0, 0, 0); border-left-style: solid; border-left-width: 0.75pt; border-right-color: rgb(0, 0, 0); border-right-style: solid; border-right-width: 0.75pt; border-top-color: rgb(0, 0, 0); border-top-style: solid; border-top-width: 0.75pt; padding-left: 5.03pt; padding-right: 5.03pt; vertical-align: top; width: 187.35pt;"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">Local Address</span></p></td></tr><tr><td colspan="3" style="background-color: rgb(242, 242, 242); border-bottom-color: rgb(0, 0, 0); border-bottom-style: solid; border-bottom-width: 0.75pt; border-left-color: rgb(0, 0, 0); border-left-style: solid; border-left-width: 0.75pt; border-right-color: rgb(0, 0, 0); border-right-style: solid; border-right-width: 0.75pt; border-top-color: rgb(0, 0, 0); border-top-style: solid; border-top-width: 0.75pt; padding-left: 5.03pt; padding-right: 5.03pt; vertical-align: top; width: 456.45pt;"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt; text-align: center;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">&lt;&lt;if [!clients.</span><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">Any</span><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">()]&gt;&gt;No data</span></p></td></tr><tr><td style="background-color: rgb(242, 242, 242); border-bottom-color: rgb(0, 0, 0); border-bottom-style: solid; border-bottom-width: 0.75pt; border-left-color: rgb(0, 0, 0); border-left-style: solid; border-left-width: 0.75pt; border-right-color: rgb(0, 0, 0); border-right-style: solid; border-right-width: 0.75pt; border-top-color: rgb(0, 0, 0); border-top-style: solid; border-top-width: 0.75pt; padding-left: 5.03pt; padding-right: 5.03pt; vertical-align: top; width: 144.9pt;"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">&lt;&lt;else&gt;&gt;&lt;&lt;foreach [in clients]&gt;&gt;&lt;&lt;[</span><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">Name</span><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">]&gt;&gt;</span></p></td><td style="background-color: rgb(242, 242, 242); border-bottom-color: rgb(0, 0, 0); border-bottom-style: solid; border-bottom-width: 0.75pt; border-left-color: rgb(0, 0, 0); border-left-style: solid; border-left-width: 0.75pt; border-right-color: rgb(0, 0, 0); border-right-style: solid; border-right-width: 0.75pt; border-top-color: rgb(0, 0, 0); border-top-style: solid; border-top-width: 0.75pt; padding-left: 5.03pt; padding-right: 5.03pt; vertical-align: top; width: 102.6pt;"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">&lt;&lt;[</span><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">Country</span><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">]&gt;&gt;</span></p></td><td style="background-color: rgb(242, 242, 242); border-bottom-color: rgb(0, 0, 0); border-bottom-style: solid; border-bottom-width: 0.75pt; border-left-color: rgb(0, 0, 0); border-left-style: solid; border-left-width: 0.75pt; border-right-color: rgb(0, 0, 0); border-right-style: solid; border-right-width: 0.75pt; border-top-color: rgb(0, 0, 0); border-top-style: solid; border-top-width: 0.75pt; padding-left: 5.03pt; padding-right: 5.03pt; vertical-align: top; width: 187.35pt;"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">&lt;&lt;[</span><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">LocalAddress</span><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">]&gt;&gt;&lt;&lt;/foreach&gt;&gt;&lt;&lt;/if&gt;&gt;</span></p></td></tr><tr style="height: 0pt;"><td style="width: 155.7pt; border-top-color: initial; border-top-style: none; border-top-width: initial; border-right-color: initial; border-right-style: none; border-right-width: initial; border-bottom-color: initial; border-bottom-style: none; border-bottom-width: initial; border-left-color: initial; border-left-style: none; border-left-width: initial;"></td><td style="width: 113.4pt; border-top-color: initial; border-top-style: none; border-top-width: initial; border-right-color: initial; border-right-style: none; border-right-width: initial; border-bottom-color: initial; border-bottom-style: none; border-bottom-width: initial; border-left-color: initial; border-left-style: none; border-left-width: initial;"></td><td style="width: 198.15pt; border-top-color: initial; border-top-style: none; border-top-width: initial; border-right-color: initial; border-right-style: none; border-right-width: initial; border-bottom-color: initial; border-bottom-style: none; border-bottom-width: initial; border-left-color: initial; border-left-style: none; border-left-width: initial;"></td></tr></tbody></table>
+| Client | Country | Local Address |
+| --- | --- | --- |
+| `<<if [!clients.Any()]>>No data` | | |
+| `<<else>><<foreach [in clients]>><<[Name]>>` | `<<[Country]>>` | `<<[LocalAddress]>><</foreach>><</if>>` |
+
 In case, the corresponding enumeration is empty, the engine produces a report as below:
 
-<table cellspacing="0" cellpadding="0" style="border-collapse: collapse; margin-left: 0pt;"><tbody><tr><td style="background-color: rgb(242, 242, 242); border-bottom-color: rgb(0, 0, 0); border-bottom-style: solid; border-bottom-width: 0.75pt; border-left-color: rgb(0, 0, 0); border-left-style: solid; border-left-width: 0.75pt; border-right-color: rgb(0, 0, 0); border-right-style: solid; border-right-width: 0.75pt; border-top-color: rgb(0, 0, 0); border-top-style: solid; border-top-width: 0.75pt; padding-left: 5.03pt; padding-right: 5.03pt; vertical-align: top; width: 144.9pt;"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">Client</span></p></td><td style="background-color: rgb(242, 242, 242); border-bottom-color: rgb(0, 0, 0); border-bottom-style: solid; border-bottom-width: 0.75pt; border-left-color: rgb(0, 0, 0); border-left-style: solid; border-left-width: 0.75pt; border-right-color: rgb(0, 0, 0); border-right-style: solid; border-right-width: 0.75pt; border-top-color: rgb(0, 0, 0); border-top-style: solid; border-top-width: 0.75pt; padding-left: 5.03pt; padding-right: 5.03pt; vertical-align: top; width: 102.6pt;"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">Country</span></p></td><td style="background-color: rgb(242, 242, 242); border-bottom-color: rgb(0, 0, 0); border-bottom-style: solid; border-bottom-width: 0.75pt; border-left-color: rgb(0, 0, 0); border-left-style: solid; border-left-width: 0.75pt; border-right-color: rgb(0, 0, 0); border-right-style: solid; border-right-width: 0.75pt; border-top-color: rgb(0, 0, 0); border-top-style: solid; border-top-width: 0.75pt; padding-left: 5.03pt; padding-right: 5.03pt; vertical-align: top; width: 187.35pt;"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">Local Address</span></p></td></tr><tr><td colspan="3" style="background-color: rgb(242, 242, 242); border-bottom-color: rgb(0, 0, 0); border-bottom-style: solid; border-bottom-width: 0.75pt; border-left-color: rgb(0, 0, 0); border-left-style: solid; border-left-width: 0.75pt; border-right-color: rgb(0, 0, 0); border-right-style: solid; border-right-width: 0.75pt; border-top-color: rgb(0, 0, 0); border-top-style: solid; border-top-width: 0.75pt; padding-left: 5.03pt; padding-right: 5.03pt; vertical-align: top; width: 456.45pt;"><p style="margin-top: 0pt; margin-right: 0pt; margin-bottom: 0pt; margin-left: 0pt; text-align: center;"><span style="color: rgb(127, 127, 127); font-family: &quot;Courier New&quot;; font-size: 11pt; font-weight: bold;">No data</span></p></td></tr><tr style="height: 0pt;"><td style="width: 155.7pt; border-top-color: initial; border-top-style: none; border-top-width: initial; border-right-color: initial; border-right-style: none; border-right-width: initial; border-bottom-color: initial; border-bottom-style: none; border-bottom-width: initial; border-left-color: initial; border-left-style: none; border-left-width: initial;"></td><td style="width: 113.4pt; border-top-color: initial; border-top-style: none; border-top-width: initial; border-right-color: initial; border-right-style: none; border-right-width: initial; border-bottom-color: initial; border-bottom-style: none; border-bottom-width: initial; border-left-color: initial; border-left-style: none; border-left-width: initial;"></td><td style="width: 198.15pt; border-top-color: initial; border-top-style: none; border-top-width: initial; border-right-color: initial; border-right-style: none; border-right-width: initial; border-bottom-color: initial; border-bottom-style: none; border-bottom-width: initial; border-left-color: initial; border-left-style: none; border-left-width: initial;"></td></tr></tbody></table>
+| Client | Country | Local Address |
+| --- | --- | --- |
+| No data | | |
+
 **Note:** If tags denoting boundaries of a template option are contained within a single table cell, the option is considered to be a common template option, rather than a table-row one. That is, the option is considered to occupy contents within the cell, rather than the whole row. That is why, a single-cell alternate content in the previous example is located between an opening if and else tags, rather than between an else and closing if tags.
+
+For Python data, an empty `clients` list has no items to take a type from, so `Name`, `Country` and `LocalAddress` are unknown members in the `foreach` of this template, although it is never entered. Apply `DocumentAssemblyOptions.ALLOW_MISSING_MEMBERS` when the list can be empty, or see [Implicit Enumeration Determination](/assembly/python-net/guides/groupdocs.assembly-engine-apis/#implicit-enumeration-determination).

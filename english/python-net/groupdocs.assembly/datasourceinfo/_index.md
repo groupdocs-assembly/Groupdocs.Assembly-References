@@ -43,9 +43,10 @@ assembler.assemble_document("hello-world.docx", "hello-world-report.docx", DataS
 ### Guides
 Task guides that use `DataSourceInfo`:
 
+* [Template Syntax - Part 1 of 2](/assembly/python-net/guides/template-syntax-part-1-of-2/)
+* [Template Syntax - Part 2 of 2](/assembly/python-net/guides/template-syntax-part-2-of-2/)
 * [GroupDocs.Assembly Engine APIs](/assembly/python-net/guides/groupdocs.assembly-engine-apis/)
-* [Generate sample report for document with variable](/assembly/python-net/guides/barcode/)
-* [Generate email report with common list.](/assembly/python-net/guides/email_reports/)
+* [Adding NEXT Field into Template Syntax](/assembly/python-net/guides/adding-next-field-into-template-syntax/)
 
 ### See Also
 * module [`groupdocs.assembly`](/assembly/python-net/groupdocs.assembly/)

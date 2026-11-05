@@ -2,7 +2,7 @@
 title: GroupDocs.Assembly Engine APIs
 linkTitle: "Engine APIs"
 second_title: GroupDocs.Assembly for Python via .NET API References
-description: "Classes of GroupDocs.Assembly are located within the GroupDocs.Assembly namespace."
+description: "The GroupDocs.Assembly for Python via .NET API: DocumentAssembler.assemble_document, DataSourceInfo, Python dicts and lists, XML, JSON and CSV data sources, known types, missing members and spreadsheet data types."
 type: docs
 url: /python-net/guides/groupdocs.assembly-engine-apis/
 is_root: false
@@ -14,39 +14,101 @@ In this article, we will discuss the behavior of GroupDocs.Assembly APIs.
 
 ## Overview of the API
 
-Classes of GroupDocs.Assembly are located within the GroupDocs.Assembly namespace. The main of the classes is DocumentAssembler. All the functionality required to build a report from a template is assembled within the class.
+Classes of GroupDocs.Assembly for Python via .NET are located within the `groupdocs.assembly` package, and the data source classes within `groupdocs.assembly.data`. The main of the classes is [`DocumentAssembler`](https://reference.groupdocs.com/assembly/python-net/groupdocs.assembly/documentassembler/). All the functionality required to build a report from a template is assembled within the class.
 
 ### Building Reports
 
-To build a report from a template, you can use one of the `DocumentAssembler.AssembleDocument` overloads. The following table describes parameters of these overloads.
+To build a report from a template, you can use the [`DocumentAssembler.assemble_document`](https://reference.groupdocs.com/assembly/python-net/groupdocs.assembly/documentassembler/assemble_document/) method. The following table describes its parameters.
 
 | Parameter | Description |
 | --- | --- |
-| document | A template document. At runtime, this document instance is populated with a data from the specified source and becomes a ready report. |
-| dataSource | An object providing a data to populate the specified template. The object must be of one of the following types:<ul><li>[`JsonDataSource`](/assembly/python-net/groupdocs.assembly.data/jsondatasource/)</li><li>[`XmlDataSource`](/assembly/python-net/groupdocs.assembly.data/xmldatasource/)</li><li>[`CsvDataSource`](/assembly/python-net/groupdocs.assembly.data/csvdatasource/)</li><li>`DataSet`</li><li>`DataTable`</li><li>`DataRow`</li><li>`DataView`</li><li>`DataRowView`</li><li>`IDataReader`</li><li>`IDataRecord`</li><li>An object of a custom [visible type](https://docs.groupdocs.com/assembly/python-net/template-syntax-part-1-of-2/#using-types)</li></ul> |
-| dataSourceName | The identifier of the specified data source object within the specified template. You can omit this identifier, if the template uses the [contextual object member access](https://docs.groupdocs.com/assembly/python-net/template-syntax-part-1-of-2/#using-contextual-object-member-access) when dealing with the data source. |
+| `source_path` or `source_stream` | A template document: its path, or a binary file object or `io.BytesIO` to read it from. At runtime, the template is populated with a data from the specified sources and becomes a ready report. |
+| `target_path` or `target_stream` | Where to write the report: a path, or a binary file object or `io.BytesIO`. |
+| `load_save_options` | Optional. A [`LoadSaveOptions`](/assembly/python-net/groupdocs.assembly/loadsaveoptions/) object, for instance to write the report in another format: `LoadSaveOptions(FileFormat.PDF)`. Passed positionally, it goes before the data sources. |
+| `data_source_infos` | One [`DataSourceInfo`](https://reference.groupdocs.com/assembly/python-net/groupdocs.assembly/datasourceinfo/), or a list of them. |
 
-Given a template to be populated with a data from a DataSet instance that is identified as "ds" within the template, you can use the following code to build the corresponding report.
+A [`DataSourceInfo`](/assembly/python-net/groupdocs.assembly/datasourceinfo/) pairs a data source with its name:
 
+| Parameter | Description |
+| --- | --- |
+| `data_source` | An object providing a data to populate the template. It can be one of the following:<ul><li>A `dict`, or a `list` or `tuple` of dicts. The engine reads a dict as an object whose members are its keys (see [Using Data Sources](/assembly/python-net/guides/template-syntax-part-1-of-2/#using-data-sources)).</li><li>A single value: a `str`, a number, a `bool` or a `datetime`, or a list of such values.</li><li>A [`JsonDataSource`](/assembly/python-net/groupdocs.assembly.data/jsondatasource/), [`XmlDataSource`](/assembly/python-net/groupdocs.assembly.data/xmldatasource/) or [`CsvDataSource`](/assembly/python-net/groupdocs.assembly.data/csvdatasource/).</li><li>A [`DocumentTable`](/assembly/python-net/groupdocs.assembly.data/documenttable/) or [`DocumentTableSet`](/assembly/python-net/groupdocs.assembly.data/documenttableset/).</li></ul> |
+| `name` | The identifier of the data source within the template. You can omit this identifier, if the template uses the [contextual object member access](/assembly/python-net/guides/template-syntax-part-1-of-2/#using-contextual-object-member-access) when dealing with the data source. |
+
+`assemble_document` returns `True` when the report is built. It takes at least one data source.
+
+Given a template to be populated with a data from a list of customers that is identified as "customers" within the template, you can use the following code to build the corresponding report.
+
+{{< tabs "example1" >}}
+{{< tab "Python" >}}
 ```python
-//Setting up source document template
-strDocumentTemplate = "Template Folder/wordTemplate.docx";
-//Setting up destination document report
-strDocumentReport = "Report Folder/wordReport.docx";
-// Setting up a data set.
-DataSourceInfo = ...
-array = [DataSourceInfo]
+import json
 
-assembler = ga.DocumentAssembler()
+from groupdocs.assembly import DataSourceInfo, DocumentAssembler
 
-assembler.AssembleDocument(strDocumentTemplate, strDocumentReport, array);
+with open("customers.json", encoding="utf-8") as f:
+    customers = json.load(f)
+
+assembler = DocumentAssembler()
+assembler.assemble_document("in-table-list.docx", "in-table-list-report.docx", DataSourceInfo(customers, "customers"))
 ```
+{{< /tab >}}
+{{< tab "in-table-list.docx" >}}
+
+The following sample file is used in this example: [in-table-list.docx](https://docs.groupdocs.com/assembly/python-net/_sample_files/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/in-table-list.docx)
+
+{{< /tab >}}
+{{< tab "customers.json" >}}
+
+The following sample file is used in this example: [customers.json](https://docs.groupdocs.com/assembly/python-net/_sample_files/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/customers.json)
+
+{{< /tab >}}
+{{< tab "in-table-list-report.docx" >}}  
+```text
+Binary file (DOCX, 10 KB)
+```
+[Download full output](https://docs.groupdocs.com/assembly/python-net/_output_files/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/building_reports/in-table-list-report.docx)
+{{< /tab >}}
+{{< /tabs >}}
+
+Given a template to be populated with a data about a single customer using the contextual object member access, such as `<<[CustomerName]>>`, you can pass the customer's dict without a name:
+
+{{< tabs "example2" >}}
+{{< tab "Python" >}}
+```python
+import json
+
+from groupdocs.assembly import DataSourceInfo, DocumentAssembler
+
+with open("customer.json", encoding="utf-8") as f:
+    customer = json.load(f)
+
+assembler = DocumentAssembler()
+assembler.assemble_document("customer-contact.docx", "customer-contact-report.docx", DataSourceInfo(customer))
+```
+{{< /tab >}}
+{{< tab "customer-contact.docx" >}}
+
+The following sample file is used in this example: [customer-contact.docx](https://docs.groupdocs.com/assembly/python-net/_sample_files/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/customer-contact.docx)
+
+{{< /tab >}}
+{{< tab "customer.json" >}}
+
+The following sample file is used in this example: [customer.json](https://docs.groupdocs.com/assembly/python-net/_sample_files/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/customer.json)
+
+{{< /tab >}}
+{{< tab "customer-contact-report.docx" >}}  
+```text
+Binary file (DOCX, 7 KB)
+```
+[Download full output](https://docs.groupdocs.com/assembly/python-net/_output_files/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/building_reports_2/customer-contact-report.docx)
+{{< /tab >}}
+{{< /tabs >}}
 
 ### Accessing XML Data
 
-To access XML data while building a report, you can use facilities of `DataSet` to read XML into it and then pass it to the engine as a data source. However, if your scenario does not permit to specify XML schema while loading XML into `DataSet`, all attributes and text values of XML elements are loaded as strings then. Thus, it becomes impossible, for example, to use arithmetic operations on numbers or to specify custom date-time and numeric formats to output corresponding values, because all of them are treated as strings.
+To access XML data while building a report, you can pass an [`XmlDataSource`](/assembly/python-net/groupdocs.assembly.data/xmldatasource/) instance to the engine as a data source. You can also parse XML yourself, with `xml.etree.ElementTree` for instance, and pass the result as dicts and lists; but then every attribute and text value is a string, unless your code converts it. Thus, it becomes impossible, for example, to use arithmetic operations on numbers or to specify custom date-time and numeric formats to output corresponding values, because all of them are treated as strings.
 
-To overcome this limitation, you can pass an [`XmlDataSource`](/assembly/python-net/groupdocs.assembly.data/xmldatasource/) instance to the engine as a data source instead. Even when XML schema is not provided, [`XmlDataSource`](/assembly/python-net/groupdocs.assembly.data/xmldatasource/) is capable to recognize values of the following types by their string representations:
+[`XmlDataSource`](/assembly/python-net/groupdocs.assembly.data/xmldatasource/) overcomes this limitation. Even when XML schema is not provided, [`XmlDataSource`](/assembly/python-net/groupdocs.assembly.data/xmldatasource/) is capable to recognize values of the following types by their string representations:
 
 - Int64?
 - Double?
@@ -55,81 +117,105 @@ To overcome this limitation, you can pass an [`XmlDataSource`](/assembly/python-
 
 **Note –** For recognition of data types to work, string representations of corresponding attributes and text values of XML elements must be formed using invariant culture settings.
 
+**Note –** The `?` means that the values are .NET nullable types. Operators and format strings work on them directly, but a member of the value is reached through `Value`: `<<[Birth.Value.Year]>>`. A `datetime` in a Python dict needs no `Value`: `<<[Birth.Year]>>`.
+
 While loading data to [`XmlDataSource`](/assembly/python-net/groupdocs.assembly.data/xmldatasource/), the engine performs actions typical for XML deserialization behind the scenes: It maps complex-type XML elements to internal objects and simple-type XML elements to fields of containing objects. So, in template documents, an [`XmlDataSource`](/assembly/python-net/groupdocs.assembly.data/xmldatasource/) instance should be treated as an object having corresponding fields and nested objects as shown in the following example.
 
 XML
-```
+
+```xml
 <Person>
-	<Name>John Doe</Name>
-	<Age>30</Age>
-	<Birth>1989-04-01 4:00:00 pm</Birth>
-	<Child>Ann Doe</Child>
-	<Child>Charles Doe</Child>
+	<Name>Amara Osei</Name>
+	<Age>41</Age>
+	<Birth>1984-03-12 9:30:00 am</Birth>
+	<Certificate>Food safety level 3</Certificate>
+	<Certificate>Forklift operation</Certificate>
 </Person>
 ```
 
 Template document
 
-```
-Name: <<[Name]>>, Age: <<[Age]>>, Date of Birth:
-<<[Birth]:"dd.MM.yyyy">>
+```text
+Name: <<[Name]>>, Age: <<[Age]>>, Date of Birth: <<[Birth]:"dd.MM.yyyy">>
 
-Children:
+Certificates:
 
-<<foreach [in Child]>><<[Child_Text]>>
+<<foreach [in Certificate]>><<[Certificate_Text]>>
 <</foreach>>
 ```
 
 Source code
 
+{{< tabs "example3" >}}
+{{< tab "Python" >}}
+```python
+from groupdocs.assembly import DataSourceInfo, DocumentAssembler
+from groupdocs.assembly.data import XmlDataSource
+
+data_source = XmlDataSource("staff-certificates.xml")
+
+assembler = DocumentAssembler()
+assembler.assemble_document("staff-certificates.docx", "staff-certificates-report.docx", DataSourceInfo(data_source))
 ```
-dataSource = ga.data.XmlDataSource(constants.productXmlFile)
-DataSourceInfo = ga.DataSourceInfo(dataSource)
-    array = [DataSourceInfo]
-assembler = ga.DocumentAssembler()
-assembler.AssembleDocument(..., array);
+{{< /tab >}}
+{{< tab "staff-certificates.docx" >}}
+
+The following sample file is used in this example: [staff-certificates.docx](https://docs.groupdocs.com/assembly/python-net/_sample_files/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/staff-certificates.docx)
+
+{{< /tab >}}
+{{< tab "staff-certificates.xml" >}}
+
+The following sample file is used in this example: [staff-certificates.xml](https://docs.groupdocs.com/assembly/python-net/_sample_files/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/staff-certificates.xml)
+
+{{< /tab >}}
+{{< tab "staff-certificates-report.docx" >}}  
+```text
+Binary file (DOCX, 7 KB)
 ```
+[Download full output](https://docs.groupdocs.com/assembly/python-net/_output_files/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/accessing_xml_data/staff-certificates-report.docx)
+{{< /tab >}}
+{{< /tabs >}}
 
 Result document
 
+```text
+Name: Amara Osei, Age: 41, Date of Birth: 12.03.1984
+
+Certificates:
+
+Food safety level 3
+Forklift operation
 ```
-Name: John Doe, Age: 30, Date of Birth: 01.04.1989
 
-Children:
-
-Ann Doe
-Charles Doe
-```
-
-**Note –** To reference a sequence of repeated simple-type XML elements with the same name, the elements’ name itself (for example, “Child”) should be used in a template document, whereas the same name with the “_Text” suffix (for example, “Child_Text”) should be used to reference the text value of one of these elements.
+**Note –** To reference a sequence of repeated simple-type XML elements with the same name, the elements' name itself (for example, "Certificate") should be used in a template document, whereas the same name with the "_Text" suffix (for example, "Certificate_Text") should be used to reference the text value of one of these elements.
 
 By default, if a root XML element contains only a sequence of elements of one type, the engine does not generate an internal root object while loading XML data. So, in template documents, such an [`XmlDataSource`](/assembly/python-net/groupdocs.assembly.data/xmldatasource/) instance should be treated as a sequence of corresponding nested objects as shown in the following example.
 
 XML
 
-```
+```xml
 <Persons>
 	<Person>
-		<Name>John Doe</Name>
-		<Age>30</Age>
-		<Birth>1989-04-01 4:00:00 pm</Birth>
+		<Name>Amara Osei</Name>
+		<Age>41</Age>
+		<Birth>1984-03-12 9:30:00 am</Birth>
 	</Person>
 	<Person>
-		<Name>Jane Doe</Name>
-		<Age>27</Age>
-		<Birth>1992-01-31 07:00:00 am</Birth>
+		<Name>Jonas Weber</Name>
+		<Age>37</Age>
+		<Birth>1988-07-04 2:00:00 pm</Birth>
 	</Person>
 	<Person>
-		<Name>John Smith</Name>
-		<Age>51</Age>
-		<Birth>1968-03-08 1:00:00 pm</Birth>
+		<Name>Lena Park</Name>
+		<Age>29</Age>
+		<Birth>1996-11-21 7:45:00 am</Birth>
 	</Person>
 </Persons>
 ```
 
 Template document
 
-```
+```text
 <<foreach [in persons]>>Name: <<[Name]>>, Age: <<[Age]>>, Date of Birth: <<[Birth]:"dd.MM.yyyy">>
 <</foreach>>
 
@@ -138,107 +224,116 @@ Average age: <<[persons.Average(p => p.Age)]>>
 
 Source code
 
+{{< tabs "example4" >}}
+{{< tab "Python" >}}
+```python
+from groupdocs.assembly import DataSourceInfo, DocumentAssembler
+from groupdocs.assembly.data import XmlDataSource
+
+data_source = XmlDataSource("staff-ages.xml")
+
+assembler = DocumentAssembler()
+assembler.assemble_document("staff-ages.docx", "staff-ages-report.docx", DataSourceInfo(data_source, "persons"))
 ```
-dataSource = ga.data.XmlDataSource(constants.productXmlFile)
-DataSourceInfo = ga.DataSourceInfo(dataSource)
-    array = [DataSourceInfo]
-assembler = ga.DocumentAssembler()
-assembler.AssembleDocument(..., array);
+{{< /tab >}}
+{{< tab "staff-ages.docx" >}}
+
+The following sample file is used in this example: [staff-ages.docx](https://docs.groupdocs.com/assembly/python-net/_sample_files/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/staff-ages.docx)
+
+{{< /tab >}}
+{{< tab "staff-ages.xml" >}}
+
+The following sample file is used in this example: [staff-ages.xml](https://docs.groupdocs.com/assembly/python-net/_sample_files/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/staff-ages.xml)
+
+{{< /tab >}}
+{{< tab "staff-ages-report.docx" >}}  
+```text
+Binary file (DOCX, 7 KB)
 ```
+[Download full output](https://docs.groupdocs.com/assembly/python-net/_output_files/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/accessing_xml_data_2/staff-ages-report.docx)
+{{< /tab >}}
+{{< /tabs >}}
 
 Result document
 
-```
-Name: John Doe, Age: 30, Date of Birth: 01.04.1989
-Name: Jane Doe, Age: 27, Date of Birth: 31.01.1992
-Name: John Smith, Age: 51, Date of Birth: 08.03.1968
+```text
+Name: Amara Osei, Age: 41, Date of Birth: 12.03.1984
+Name: Jonas Weber, Age: 37, Date of Birth: 04.07.1988
+Name: Lena Park, Age: 29, Date of Birth: 21.11.1996
 
-Average age: 36
-```
-
-However, if your scenario requires an internal object for a root XML element to be always generated while loading data to [`XmlDataSource`](/assembly/python-net/groupdocs.assembly.data/xmldatasource/), you can force this as shown in the following code snippet.
-
-```
-XmlDataLoadOptions options = new XmlDataLoadOptions();
-options.AlwaysGenerateRootObject = true;
-XmlDataSource dataSource = new XmlDataSource(..., options);
+Average age: 35.666666666666664
 ```
 
-The following example sums up typical scenarios involving nested complex-type XML elements.
+However, if your scenario requires an internal object for a root XML element to be always generated while loading data to [`XmlDataSource`](/assembly/python-net/groupdocs.assembly.data/xmldatasource/), you can force this as shown in the following example. The persons are then a member of the root object, `persons.Person`:
+
+```text
+<<foreach [in persons.Person]>>Name: <<[Name]>>, Age: <<[Age]>>
+<</foreach>>
+
+Average age: <<[persons.Person.Average(p => p.Age)]>>
+```
+
+{{< tabs "example5" >}}
+{{< tab "Python" >}}
+```python
+from groupdocs.assembly import DataSourceInfo, DocumentAssembler
+from groupdocs.assembly.data import XmlDataLoadOptions, XmlDataSource
+
+options = XmlDataLoadOptions()
+options.always_generate_root_object = True
+data_source = XmlDataSource("staff-ages.xml", options)
+
+assembler = DocumentAssembler()
+assembler.assemble_document("staff-ages-root.docx", "staff-ages-root-report.docx", DataSourceInfo(data_source, "persons"))
+```
+{{< /tab >}}
+{{< tab "staff-ages-root.docx" >}}
+
+The following sample file is used in this example: [staff-ages-root.docx](https://docs.groupdocs.com/assembly/python-net/_sample_files/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/staff-ages-root.docx)
+
+{{< /tab >}}
+{{< tab "staff-ages.xml" >}}
+
+The following sample file is used in this example: [staff-ages.xml](https://docs.groupdocs.com/assembly/python-net/_sample_files/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/staff-ages.xml)
+
+{{< /tab >}}
+{{< tab "staff-ages-root-report.docx" >}}  
+```text
+Binary file (DOCX, 7 KB)
+```
+[Download full output](https://docs.groupdocs.com/assembly/python-net/_output_files/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/accessing_xml_data_3/staff-ages-root-report.docx)
+{{< /tab >}}
+{{< /tabs >}}
+
+The following example sums up typical scenarios involving nested complex-type XML elements. It reads `managers.xml`, Harbor Lane's account managers and their contracts:
 
 XML
 
-```
+```xml
 <Managers>
-   <Manager>
-       <Name>John Smith</Name>
-       <Contract>
-           <Client>
-               <Name>A Company</Name>
-           </Client>
-           <Price>1200000</Price>
-       </Contract>
-       <Contract>
-           <Client>
-               <Name>B Ltd.</Name>
-           </Client>
-           <Price>750000</Price>
-       </Contract>
-       <Contract>
-           <Client>
-               <Name>C &amp; D</Name>
-           </Client>
-           <Price>350000</Price>
-       </Contract>
-   </Manager>
-   <Manager>
-       <Name>Tony Anderson</Name>
-       <Contract>
-           <Client>
-               <Name>E Corp.</Name>
-           </Client>
-           <Price>650000</Price>
-       </Contract>
-       <Contract>
-           <Client>
-               <Name>F &amp; Partners</Name>
-           </Client>
-           <Price>550000</Price>
-       </Contract>
-   </Manager>
-   <Manager>
-       <Name>July James</Name>
-       <Contract>
-           <Client>
-               <Name>G &amp; Co.</Name>
-           </Client>
-           <Price>350000</Price>
-       </Contract>
-       <Contract>
-           <Client>
-               <Name>H Group</Name>
-           </Client>
-           <Price>250000</Price>
-       </Contract>
-       <Contract>
-           <Client>
-               <Name>I &amp; Sons</Name>
-           </Client>
-           <Price>100000</Price>
-       </Contract>
-       <Contract>
-           <Client>
-               <Name>J Ent.</Name>
-           </Client>
-           <Price>100000</Price>
-       </Contract>
-   </Manager>
+  <Manager>
+    <Name>Mei Tanaka</Name>
+    <Contract>
+      <Client>
+        <Name>Harbourview Hotel</Name>
+      </Client>
+      <Price>120000</Price>
+    </Contract>
+    <Contract>
+      <Client>
+        <Name>Quayside Bistro</Name>
+      </Client>
+      <Price>75000</Price>
+    </Contract>
+    ...
+  </Manager>
+  ...
 </Managers>
 ```
 
 Template document
 
-```
+```text
 <<foreach [in managers]>>Manager: <<[Name]>>
 Contracts:
 <<foreach [in Contract]>>- <<[Client.Name]>> ($<<[Price]>>)
@@ -248,39 +343,61 @@ Contracts:
 
 Source code
 
+{{< tabs "example6" >}}
+{{< tab "Python" >}}
+```python
+from groupdocs.assembly import DataSourceInfo, DocumentAssembler
+from groupdocs.assembly.data import XmlDataSource
+
+data_source = XmlDataSource("managers.xml")
+
+assembler = DocumentAssembler()
+assembler.assemble_document("manager-contract-list.docx", "manager-contract-list-report.docx", DataSourceInfo(data_source, "managers"))
 ```
-dataSource = ga.data.XmlDataSource(constants.productXmlFile)
-DataSourceInfo = ga.DataSourceInfo(dataSource, "Manager")
-    array = [DataSourceInfo]
-assembler = ga.DocumentAssembler()
-assembler.AssembleDocument(..., array);
+{{< /tab >}}
+{{< tab "manager-contract-list.docx" >}}
+
+The following sample file is used in this example: [manager-contract-list.docx](https://docs.groupdocs.com/assembly/python-net/_sample_files/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/manager-contract-list.docx)
+
+{{< /tab >}}
+{{< tab "managers.xml" >}}
+
+The following sample file is used in this example: [managers.xml](https://docs.groupdocs.com/assembly/python-net/_sample_files/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/managers.xml)
+
+{{< /tab >}}
+{{< tab "manager-contract-list-report.docx" >}}  
+```text
+Binary file (DOCX, 8 KB)
 ```
+[Download full output](https://docs.groupdocs.com/assembly/python-net/_output_files/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/accessing_xml_data_4/manager-contract-list-report.docx)
+{{< /tab >}}
+{{< /tabs >}}
 
 Result document
 
-```
-Manager: John Smith
+```text
+Manager: Mei Tanaka
 Contracts:
-- A Company ($1200000)
-- B Ltd. ($750000)
-- C & D ($350000)
+- Harbourview Hotel ($120000)
+- Quayside Bistro ($75000)
+- Saltmarsh Deli ($35000)
 
-Manager: Tony Anderson
+Manager: Daniel Reyes
 Contracts:
-- E Corp. ($650000)
-- F & Partners ($550000)
+- Lantern Street Café ($65000)
+- Millbrook Market ($55000)
 
-Manager: July James
+Manager: Sofia Marino
 Contracts:
-- G & Co. ($350000)
-- H Group ($250000)
-- I & Sons ($100000)
-- J Ent. ($100000)
+- Pier Nine Kitchen ($35000)
+- The Copper Kettle ($25000)
+- Driftwood Grill ($10000)
+- Tidewater Tavern ($10000)
 ```
 
 ### Accessing JSON Data
 
-To access JSON data while building a report, you can pass a [`JsonDataSource`](/assembly/python-net/groupdocs.assembly.data/jsondatasource/) instance to the engine as a data source.
+To access JSON data while building a report, you can pass a [`JsonDataSource`](/assembly/python-net/groupdocs.assembly.data/jsondatasource/) instance to the engine as a data source. You can also load JSON with `json.load` and pass the resulting dicts and lists, as most examples of this documentation do; then Python's types decide the types of the values, and a date stays a string until your code makes it a `datetime`.
 
 Using of [`JsonDataSource`](/assembly/python-net/groupdocs.assembly.data/jsondatasource/) enables you to work with typed values of JSON elements in template documents. For more convenience, the set of simple JSON types is extended as follows:
 
@@ -298,76 +415,98 @@ If a root JSON element is an object, a [`JsonDataSource`](/assembly/python-net/g
 
 JSON
 
-```
+```json
 {
-   Name: "John Doe",
-   Age: 30,
-   Birth: "1989-04-01 4:00:00 pm",
-   Child: [ "Ann Doe", "Charles Doe" ]
+	"Name": "Amara Osei",
+	"Age": 41,
+	"Birth": "1984-03-12 9:30:00 am",
+	"Certificate": [ "Food safety level 3", "Forklift operation" ]
 }
 ```
 
 Template document
 
-```
+```text
 Name: <<[Name]>>, Age: <<[Age]>>, Date of Birth: <<[Birth]:"dd.MM.yyyy">>
 
-Children:
+Certificates:
 
-<<foreach [in Child]>><<[Child_Text]>>
+<<foreach [in Certificate]>><<[Certificate_Text]>>
 <</foreach>>
 ```
 
 Source code
 
+{{< tabs "example7" >}}
+{{< tab "Python" >}}
+```python
+from groupdocs.assembly import DataSourceInfo, DocumentAssembler
+from groupdocs.assembly.data import JsonDataSource
+
+data_source = JsonDataSource("staff-certificates.json")
+
+assembler = DocumentAssembler()
+assembler.assemble_document("staff-certificates.docx", "staff-certificates-from-json.docx", DataSourceInfo(data_source))
 ```
- dataSource = ga.data.JsonDataSource(constants.customerJsonFile)
-DataSourceInfo = ga.DataSourceInfo(dataSource)
-    array = [DataSourceInfo]
-assembler = ga.DocumentAssembler()
-assembler.AssembleDocument(..., array);
+{{< /tab >}}
+{{< tab "staff-certificates.docx" >}}
+
+The following sample file is used in this example: [staff-certificates.docx](https://docs.groupdocs.com/assembly/python-net/_sample_files/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/staff-certificates.docx)
+
+{{< /tab >}}
+{{< tab "staff-certificates.json" >}}
+
+The following sample file is used in this example: [staff-certificates.json](https://docs.groupdocs.com/assembly/python-net/_sample_files/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/staff-certificates.json)
+
+{{< /tab >}}
+{{< tab "staff-certificates-from-json.docx" >}}  
+```text
+Binary file (DOCX, 7 KB)
 ```
+[Download full output](https://docs.groupdocs.com/assembly/python-net/_output_files/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/accessing_json_data/staff-certificates-from-json.docx)
+{{< /tab >}}
+{{< /tabs >}}
 
 Result document
 
+```text
+Name: Amara Osei, Age: 41, Date of Birth: 12.03.1984
+
+Certificates:
+
+Food safety level 3
+Forklift operation
 ```
-Name: John Doe, Age: 30, Date of Birth: 01.04.1989
 
-Children:
-
-Ann Doe
-Charles Doe
-```
-
-**Note –** To reference a JSON object property that is an array of simple-type values, the name of the property (for example, “Child”) should be used in a template document, whereas the same name with the “_Text” suffix (for example, “Child_Text”) should be used to reference the value of an item of this array.
+**Note –** To reference a JSON object property that is an array of simple-type values, the name of the property (for example, "Certificate") should be used in a template document, whereas the same name with the "_Text" suffix (for example, "Certificate_Text") should be used to reference the value of an item of this array.
 
 If a root JSON element is an array, a [`JsonDataSource`](/assembly/python-net/groupdocs.assembly.data/jsondatasource/) instance should be treated as a sequence of items of this array as shown in the following example.
 
 JSON
 
-```
+```json
 [
-   {
-       Name: "John Doe",
-       Age: 30,
-       Birth: "1989-04-01 4:00:00 pm"
-   },
-   {
-       Name: "Jane Doe",
-       Age: 27,
-       Birth: "1992-01-31 07:00:00 am"
-   },
-   {
-       Name: "John Smith",
-       Age: 51,
-       Birth: "1968-03-08 1:00:00 pm"
-   }
+	{
+		"Name": "Amara Osei",
+		"Age": 41,
+		"Birth": "1984-03-12 9:30:00 am"
+	},
+	{
+		"Name": "Jonas Weber",
+		"Age": 37,
+		"Birth": "1988-07-04 2:00:00 pm"
+	},
+	{
+		"Name": "Lena Park",
+		"Age": 29,
+		"Birth": "1996-11-21 7:45:00 am"
+	}
 ]
 ```
 
 Template document
 
-```
+```text
 <<foreach [in persons]>>Name: <<[Name]>>, Age: <<[Age]>>, Date of Birth: <<[Birth]:"dd.MM.yyyy">>
 <</foreach>>
 
@@ -376,218 +515,215 @@ Average age: <<[persons.Average(p => p.Age)]>>
 
 Source code
 
+{{< tabs "example8" >}}
+{{< tab "Python" >}}
+```python
+from groupdocs.assembly import DataSourceInfo, DocumentAssembler
+from groupdocs.assembly.data import JsonDataSource
+
+data_source = JsonDataSource("staff-ages.json")
+
+assembler = DocumentAssembler()
+assembler.assemble_document("staff-ages.docx", "staff-ages-from-json.docx", DataSourceInfo(data_source, "persons"))
 ```
- dataSource = ga.data.JsonDataSource(constants.customerJsonFile)
-DataSourceInfo = ga.DataSourceInfo(dataSource, "person")
-    array = [DataSourceInfo]
-assembler = ga.DocumentAssembler()
-assembler.AssembleDocument(..., array);
+{{< /tab >}}
+{{< tab "staff-ages.docx" >}}
+
+The following sample file is used in this example: [staff-ages.docx](https://docs.groupdocs.com/assembly/python-net/_sample_files/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/staff-ages.docx)
+
+{{< /tab >}}
+{{< tab "staff-ages.json" >}}
+
+The following sample file is used in this example: [staff-ages.json](https://docs.groupdocs.com/assembly/python-net/_sample_files/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/staff-ages.json)
+
+{{< /tab >}}
+{{< tab "staff-ages-from-json.docx" >}}  
+```text
+Binary file (DOCX, 7 KB)
 ```
+[Download full output](https://docs.groupdocs.com/assembly/python-net/_output_files/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/accessing_json_data_2/staff-ages-from-json.docx)
+{{< /tab >}}
+{{< /tabs >}}
 
 Result document
 
-```
-Name: John Doe, Age: 30, Date of Birth: 01.04.1989
-Name: Jane Doe, Age: 27, Date of Birth: 31.01.1992
-Name: John Smith, Age: 51, Date of Birth: 08.03.1968
+```text
+Name: Amara Osei, Age: 41, Date of Birth: 12.03.1984
+Name: Jonas Weber, Age: 37, Date of Birth: 04.07.1988
+Name: Lena Park, Age: 29, Date of Birth: 21.11.1996
 
-Average age: 36
+Average age: 35.666666666666664
 ```
 
 By default, if a root JSON element is an object having only one property that is an object or array in turn, the engine does not generate an internal root object while loading JSON data. So, in template documents, such a [`JsonDataSource`](/assembly/python-net/groupdocs.assembly.data/jsondatasource/) instance should be treated according to what this property represents instead. For instance, the following JSON snippets can be used to produce the same results in previous examples of this section respectively.
 
-JSON1
+JSON 1
 
-```
+```json
 {
-   Person:
-   {
-       Name: "John Doe",
-       Age: 30,
-       Birth: "1989-04-01 4:00:00 pm",
-       Child: [ "Ann Doe", "Charles Doe" ]
-   }
+	"Person":
+	{
+		"Name": "Amara Osei",
+		"Age": 41,
+		"Birth": "1984-03-12 9:30:00 am",
+		"Certificate": [ "Food safety level 3", "Forklift operation" ]
+	}
 }
 ```
 
 JSON 2
 
-```
+```json
 {
-   Persons:
-   [
-       {
-           Name: "John Doe",
-           Age: 30,
-           Birth: "1989-04-01 4:00:00 pm"
-       },
-       {
-           Name: "Jane Doe",
-           Age: 27,
-           Birth: "1992-01-31 07:00:00 am"
-       },
-       {
-           Name: "John Smith",
-           Age: 51,
-           Birth: "1968-03-08 1:00:00 pm"
-       }
-   ]
+	"Persons":
+	[
+		{
+			"Name": "Amara Osei",
+			"Age": 41,
+			"Birth": "1984-03-12 9:30:00 am"
+		},
+		...
+	]
 }
 ```
 
+The second one, with the template of the previous example:
+
+{{< tabs "example9" >}}
+{{< tab "Python" >}}
+```python
+from groupdocs.assembly import DataSourceInfo, DocumentAssembler
+from groupdocs.assembly.data import JsonDataSource
+
+data_source = JsonDataSource("staff-ages-wrapped.json")
+
+assembler = DocumentAssembler()
+assembler.assemble_document("staff-ages.docx", "staff-ages-wrapped-report.docx", DataSourceInfo(data_source, "persons"))
+```
+{{< /tab >}}
+{{< tab "staff-ages.docx" >}}
+
+The following sample file is used in this example: [staff-ages.docx](https://docs.groupdocs.com/assembly/python-net/_sample_files/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/staff-ages.docx)
+
+{{< /tab >}}
+{{< tab "staff-ages-wrapped.json" >}}
+
+The following sample file is used in this example: [staff-ages-wrapped.json](https://docs.groupdocs.com/assembly/python-net/_sample_files/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/staff-ages-wrapped.json)
+
+{{< /tab >}}
+{{< tab "staff-ages-wrapped-report.docx" >}}  
+```text
+Binary file (DOCX, 7 KB)
+```
+[Download full output](https://docs.groupdocs.com/assembly/python-net/_output_files/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/accessing_json_data_3/staff-ages-wrapped-report.docx)
+{{< /tab >}}
+{{< /tabs >}}
+
 However, if your scenario requires an internal object for a root JSON element to be always generated while loading data to [`JsonDataSource`](/assembly/python-net/groupdocs.assembly.data/jsondatasource/), you can force this as shown in the following code snippet.
 
-```
-options = ga.JsonDataLoadOptions();
-options.AlwaysGenerateRootObject = true;
-dataSource = new JsonDataSource(..., options);
+```python
+from groupdocs.assembly.data import JsonDataLoadOptions, JsonDataSource
+
+options = JsonDataLoadOptions()
+options.always_generate_root_object = True
+data_source = JsonDataSource("staff-ages-wrapped.json", options)
 ```
 
-The following example sums up typical scenarios involving nested JSON objects and arrays.
+The following example sums up typical scenarios involving nested JSON objects and arrays. It reads `managers.json`, the same account managers as `managers.xml` above, with the same template and the same result:
 
 JSON
 
-```
+```json
 [
-   {
-       Name: "John Smith",
-       Contract:
-       [
-           {
-               Client:
-               {
-                   Name: "A Company"
-               },
-               Price: 1200000
-           },
-           {
-               Client:
-               {
-                   Name: "B Ltd."
-               },
-               Price: 750000
-           },
-           {
-               Client:
-               {
-                   Name: "C & D"
-               },
-               Price: 350000
-           }
-       ]
-   },
-   {
-       Name: "Tony Anderson",
-       Contract:
-       [
-           {
-               Client:
-               {
-                   Name: "E Corp."
-               },
-               Price: 650000
-           },
-           {
-               Client:
-               {
-                   Name: "F & Partners"
-               },
-               Price: 550000
-           }
-       ]
-   },
-   {
-       Name: "July James",
-       Contract:
-       [
-           {
-               Client:
-               {
-                   Name: "G & Co."
-               },
-               Price: 350000
-           },
-           {
-               Client:
-               {
-                   Name: "H Group"
-               },
-               Price: 250000
-           },
-           {
-               Client:
-               {
-                   Name: "I & Sons"
-               },
-               Price: 100000
-           },
-           {
-               Client:
-               {
-                   Name: "J Ent."
-               },
-               Price: 100000
-           }
-       ]
-   }
+  {
+    "Name": "Mei Tanaka",
+    "Contract": [
+      { "Client": { "Name": "Harbourview Hotel" }, "Price": 120000 },
+      { "Client": { "Name": "Quayside Bistro" }, "Price": 75000 },
+      { "Client": { "Name": "Saltmarsh Deli" }, "Price": 35000 }
+    ]
+  },
+  ...
 ]
-```
-
-Template document
-
-```
-<<foreach [in managers]>>Manager: <<[Name]>>
-Contracts:
-<<foreach [in Contract]>>- <<[Client.Name]>> ($<<[Price]>>)
-<</foreach>>
-<</foreach>>
 ```
 
 Source code
 
-```
-dataSource = ga.data.JsonDataSource(constants.customerJsonFile)
-DataSourceInfo = ga.DataSourceInfo(dataSource, "managers")
-    array = [DataSourceInfo]
-assembler = ga.DocumentAssembler()
-assembler.AssembleDocument(..., array);
-```
+{{< tabs "example10" >}}
+{{< tab "Python" >}}
+```python
+from groupdocs.assembly import DataSourceInfo, DocumentAssembler
+from groupdocs.assembly.data import JsonDataSource
 
-Result document
+data_source = JsonDataSource("managers.json")
 
+assembler = DocumentAssembler()
+assembler.assemble_document("manager-contract-list.docx", "manager-contract-list-from-json.docx", DataSourceInfo(data_source, "managers"))
 ```
-Manager: John Smith
-Contracts:
-- A Company ($1200000)
-- B Ltd. ($750000)
-- C & D ($350000)
+{{< /tab >}}
+{{< tab "manager-contract-list.docx" >}}
 
-Manager: Tony Anderson
-Contracts:
-- E Corp. ($650000)
-- F & Partners ($550000)
+The following sample file is used in this example: [manager-contract-list.docx](https://docs.groupdocs.com/assembly/python-net/_sample_files/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/manager-contract-list.docx)
 
-Manager: July James
-Contracts:
-- G & Co. ($350000)
-- H Group ($250000)
-- I & Sons ($100000)
-- J Ent. ($100000)
+{{< /tab >}}
+{{< tab "managers.json" >}}
+
+The following sample file is used in this example: [managers.json](https://docs.groupdocs.com/assembly/python-net/_sample_files/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/managers.json)
+
+{{< /tab >}}
+{{< tab "manager-contract-list-from-json.docx" >}}  
+```text
+Binary file (DOCX, 8 KB)
 ```
+[Download full output](https://docs.groupdocs.com/assembly/python-net/_output_files/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/accessing_json_data_4/manager-contract-list-from-json.docx)
+{{< /tab >}}
+{{< /tabs >}}
 
 For recognition of JSON simple values (null, boolean, number, integer, and string), the engine provides two modes: *loose* and *strict*. In the loose mode, types of JSON simple values are determined upon parsing of their string representations. In the strict mode, types of JSON simple values are determined from JSON notation itself. To see the main difference between the modes, consider the following JSON snippet.
 
-`{ prop: "123" }`
+`{ "prop": "123" }`
 
 In the loose mode, the type of `prop` is determined as integer, whereas in the strict mode, it is determined as string.
 
-The loose mode is used by the engine by default to support more typed data representation options. However, in some scenarios, it can be more preferable to disable recognition of numbers and other JSON simple values from strings, for example, when you need to keep leading padding zeros in a string value representing a number. In this case, you can switch to the strict mode as shown in following code snippet.
+The loose mode is used by the engine by default to support more typed data representation options. However, in some scenarios, it can be more preferable to disable recognition of numbers and other JSON simple values from strings, for example, when you need to keep leading padding zeros in a string value representing a number. In this case, you can switch to the strict mode as shown in the following example. It builds the same product list twice: in the loose mode, the code `"00418"` is the number 418; in the strict mode, it stays `00418`.
 
+{{< tabs "example11" >}}
+{{< tab "Python" >}}
+```python
+from groupdocs.assembly import DataSourceInfo, DocumentAssembler
+from groupdocs.assembly.data import JsonDataLoadOptions, JsonDataSource, JsonSimpleValueParseMode
+
+assembler = DocumentAssembler()
+
+# Loose mode (the default): "00418" is read as the number 418
+assembler.assemble_document("product-codes.docx", "product-codes-loose.docx",
+                            DataSourceInfo(JsonDataSource("product-codes.json"), "products"))
+
+# Strict mode: "00418" stays a string
+options = JsonDataLoadOptions()
+options.simple_value_parse_mode = JsonSimpleValueParseMode.STRICT
+assembler.assemble_document("product-codes.docx", "product-codes-strict.docx",
+                            DataSourceInfo(JsonDataSource("product-codes.json", options), "products"))
 ```
-JsonDataLoadOptions options = new JsonDataLoadOptions();
-options.SimpleValueParseMode = JsonSimpleValueParseMode.Strict;
-JsonDataSource dataSource = new JsonDataSource(..., options);
+{{< /tab >}}
+{{< tab "product-codes.docx" >}}
+
+The following sample file is used in this example: [product-codes.docx](https://docs.groupdocs.com/assembly/python-net/_sample_files/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/product-codes.docx)
+
+{{< /tab >}}
+{{< tab "product-codes.json" >}}
+
+The following sample file is used in this example: [product-codes.json](https://docs.groupdocs.com/assembly/python-net/_sample_files/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/product-codes.json)
+
+{{< /tab >}}
+{{< tab "accessing-json-data-5-outputs.zip" >}}  
+```text
+product-codes-loose.docx (7 KB)
+product-codes-strict.docx (7 KB)
 ```
+[Download full output](https://docs.groupdocs.com/assembly/python-net/_output_files/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/accessing_json_data_5/accessing-json-data-5-outputs.zip)
+{{< /tab >}}
+{{< /tabs >}}
 
 **Note –** Parsing of date-time values does not depend on whether the loose or strict mode is used.
 
@@ -599,20 +735,43 @@ Recognition of date-time values is a special case, because [JSON specification](
 4. All date-time formats supported for the English USA culture
 5. All date-time formats supported for the English New Zealand culture
 
-Although this approach is quite flexible, in some scenarios, you may need to restrict strings to be recognized as date-time values. You can achieve this by specifying one or several exact formats in the context of the current culture to be used while parsing date-time values from strings as shown in the following example.
+**Note –** An ISO-8601 date without a time, such as "2015-01-14", is read as midnight UTC and converted to the local time: on a computer two hours ahead of UTC, measured with 26.11, it becomes 13 January 2015, 22:00. Write the time, "2015-01-14T00:00:00", to keep the date as it is.
 
+Although this approach is quite flexible, in some scenarios, you may need to restrict strings to be recognized as date-time values. You can achieve this by specifying one or several exact formats in the context of the current culture to be used while parsing date-time values from strings, as a list of strings. In the following example, strings conforming the format "MM/dd/yyyy" (`Ordered`) are recognized as date-time values while loading JSON, whereas the others (`Delivered`, already formatted as the report should show it) are not (but see the following note):
+
+{{< tabs "example12" >}}
+{{< tab "Python" >}}
+```python
+from groupdocs.assembly import DataSourceInfo, DocumentAssembler
+from groupdocs.assembly.data import JsonDataLoadOptions, JsonDataSource
+
+options = JsonDataLoadOptions()
+options.exact_date_time_parse_formats = ["MM/dd/yyyy"]
+data_source = JsonDataSource("delivery-dates.json", options)
+
+assembler = DocumentAssembler()
+assembler.assemble_document("delivery-dates.docx", "delivery-dates-report.docx", DataSourceInfo(data_source, "deliveries"))
 ```
-List<String> formats = new List<String>();
-formats.Add("MM/dd/yyyy");
+{{< /tab >}}
+{{< tab "delivery-dates.docx" >}}
 
-JsonDataLoadOptions options = new JsonDataLoadOptions();
-options.ExactDateTimeParseFormats = formats;
-JsonDataSource dataSource = new JsonDataSource(..., options);
+The following sample file is used in this example: [delivery-dates.docx](https://docs.groupdocs.com/assembly/python-net/_sample_files/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/delivery-dates.docx)
+
+{{< /tab >}}
+{{< tab "delivery-dates.json" >}}
+
+The following sample file is used in this example: [delivery-dates.json](https://docs.groupdocs.com/assembly/python-net/_sample_files/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/delivery-dates.json)
+
+{{< /tab >}}
+{{< tab "delivery-dates-report.docx" >}}  
+```text
+Binary file (DOCX, 7 KB)
 ```
+[Download full output](https://docs.groupdocs.com/assembly/python-net/_output_files/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/accessing_json_data_6/delivery-dates-report.docx)
+{{< /tab >}}
+{{< /tabs >}}
 
-In this example, strings conforming the format "MM/dd/yyyy" are going to be recognized as date-time values while loading JSON, whereas the others are not (but see the following note).
-
-In some scenarios, you may need to disable recognition of date-time values at all, for example, when you deal with strings containing already formatted date-time values, which you do not want to re-format using the engine. You can achieve this by setting the exact date-time parse formats to an empty list (but see the following note).
+In some scenarios, you may need to disable recognition of date-time values at all, for example, when you deal with strings containing already formatted date-time values, which you do not want to re-format using the engine. You can achieve this by setting the exact date-time parse formats to an empty list, `options.exact_date_time_parse_formats = []` (but see the following note).
 
 **Note –** Strings conforming the Microsoft® JSON date-time format (for example, "/Date(1224043200000)/") are always recognized as date-time values regardless of the exact date-time parse formats.
 
@@ -633,15 +792,15 @@ In template documents, a [`CsvDataSource`](/assembly/python-net/groupdocs.assemb
 
 CSV
 
-```
-John Doe,30,1989-04-01 4:00:00 pm
-Jane Doe,27,1992-01-31 07:00:00 am
-John Smith,51,1968-03-08 1:00:00 pm
+```text
+Amara Osei,41,1984-03-12 9:30:00 am
+Jonas Weber,37,1988-07-04 2:00:00 pm
+Lena Park,29,1996-11-21 7:45:00 am
 ```
 
 Template document
 
-```
+```text
 <<foreach [in persons]>>Name: <<[Column1]>>, Age: <<[Column2]>>, Date of Birth: <<[Column3]:"dd.MM.yyyy">>
 <</foreach>>
 Average age: <<[persons.Average(p => p.Column2)]>>
@@ -649,143 +808,301 @@ Average age: <<[persons.Average(p => p.Column2)]>>
 
 Source code
 
-```
-CsvDataSource dataSource = ... // Loading CSV.
+{{< tabs "example13" >}}
+{{< tab "Python" >}}
+```python
+from groupdocs.assembly import DataSourceInfo, DocumentAssembler
+from groupdocs.assembly.data import CsvDataSource
 
-DocumentAssembler assembler = new DocumentAssembler();
-assembler.AssembleDocument(..., new DataSourceInfo(dataSource, "persons"));
+data_source = CsvDataSource("staff-ages-no-header.csv")
+
+assembler = DocumentAssembler()
+assembler.assemble_document("staff-ages-columns.docx", "staff-ages-columns-report.docx", DataSourceInfo(data_source, "persons"))
 ```
+{{< /tab >}}
+{{< tab "staff-ages-columns.docx" >}}
+
+The following sample file is used in this example: [staff-ages-columns.docx](https://docs.groupdocs.com/assembly/python-net/_sample_files/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/staff-ages-columns.docx)
+
+{{< /tab >}}
+{{< tab "staff-ages-no-header.csv" >}}
+
+The following sample file is used in this example: [staff-ages-no-header.csv](https://docs.groupdocs.com/assembly/python-net/_sample_files/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/staff-ages-no-header.csv)
+
+{{< /tab >}}
+{{< tab "staff-ages-columns-report.docx" >}}  
+```text
+Binary file (DOCX, 7 KB)
+```
+[Download full output](https://docs.groupdocs.com/assembly/python-net/_output_files/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/accessing_csv_data/staff-ages-columns-report.docx)
+{{< /tab >}}
+{{< /tabs >}}
 
 Result document
 
+```text
+Name: Amara Osei, Age: 41, Date of Birth: 12.03.1984
+Name: Jonas Weber, Age: 37, Date of Birth: 04.07.1988
+Name: Lena Park, Age: 29, Date of Birth: 21.11.1996
+Average age: 35.666666666666664
 ```
-Name: John Doe, Age: 30, Date of Birth: 01.04.1989
-Name: Jane Doe, Age: 27, Date of Birth: 31.01.1992
-Name: John Smith, Age: 51, Date of Birth: 08.03.1968
 
-Average age: 36
-```
-
-By default, [`CsvDataSource`](/assembly/python-net/groupdocs.assembly.data/csvdatasource/) uses column names such as “Column1”, “Column2”, and so on, as you can see from the previous example. However, [`CsvDataSource`](/assembly/python-net/groupdocs.assembly.data/csvdatasource/) can be configured to read column names from the first line of CSV data as shown in the following example.
+By default, [`CsvDataSource`](/assembly/python-net/groupdocs.assembly.data/csvdatasource/) uses column names such as "Column1", "Column2", and so on, as you can see from the previous example. However, [`CsvDataSource`](/assembly/python-net/groupdocs.assembly.data/csvdatasource/) can be configured to read column names from the first line of CSV data as shown in the following example.
 
 CSV
 
-```
+```text
 Name,Age,Birth
-John Doe,30,1989-04-01 4:00:00 pm
-Jane Doe,27,1992-01-31 07:00:00 am
-John Smith,51,1968-03-08 1:00:00 pm
+Amara Osei,41,1984-03-12T09:30:00
+Jonas Weber,37,1988-07-04T14:00:00
+Lena Park,29,1996-11-21T07:45:00
 ```
 
 Template document
 
-```
+```text
 <<foreach [in persons]>>Name: <<[Name]>>, Age: <<[Age]>>, Date of Birth: <<[Birth]:"dd.MM.yyyy">>
 <</foreach>>
+
 Average age: <<[persons.Average(p => p.Age)]>>
 ```
 
 Source code
 
-```
-CsvDataLoadOptions options = new CsvDataLoadOptions(true);
-CsvDataSource dataSource = new CsvDataSource(..., options); // Loading CSV.
+{{< tabs "example14" >}}
+{{< tab "Python" >}}
+```python
+from groupdocs.assembly import DataSourceInfo, DocumentAssembler
+from groupdocs.assembly.data import CsvDataLoadOptions, CsvDataSource
 
-DocumentAssembler assembler = new DocumentAssembler();
-assembler.AssembleDocument(..., new DataSourceInfo(dataSource, "persons"));
+options = CsvDataLoadOptions(True)
+data_source = CsvDataSource("persons.csv", options)
+
+assembler = DocumentAssembler()
+assembler.assemble_document("staff-ages.docx", "staff-ages-from-csv.docx", DataSourceInfo(data_source, "persons"))
 ```
+{{< /tab >}}
+{{< tab "staff-ages.docx" >}}
+
+The following sample file is used in this example: [staff-ages.docx](https://docs.groupdocs.com/assembly/python-net/_sample_files/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/staff-ages.docx)
+
+{{< /tab >}}
+{{< tab "persons.csv" >}}
+
+The following sample file is used in this example: [persons.csv](https://docs.groupdocs.com/assembly/python-net/_sample_files/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/persons.csv)
+
+{{< /tab >}}
+{{< tab "staff-ages-from-csv.docx" >}}  
+```text
+Binary file (DOCX, 7 KB)
+```
+[Download full output](https://docs.groupdocs.com/assembly/python-net/_output_files/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/accessing_csv_data_2/staff-ages-from-csv.docx)
+{{< /tab >}}
+{{< /tabs >}}
 
 Result document
 
-```
-Name: John Doe, Age: 30, Date of Birth: 01.04.1989
-Name: Jane Doe, Age: 27, Date of Birth: 31.01.1992
-Name: John Smith, Age: 51, Date of Birth: 08.03.1968
+```text
+Name: Amara Osei, Age: 41, Date of Birth: 12.03.1984
+Name: Jonas Weber, Age: 37, Date of Birth: 04.07.1988
+Name: Lena Park, Age: 29, Date of Birth: 21.11.1996
 
-Average age: 36
+Average age: 35.666666666666664
 ```
 
 Also, you can use [`CsvDataLoadOptions`](/assembly/python-net/groupdocs.assembly.data/csvdataloadoptions/) to customize the following characters playing special roles while loading CSV data:
 
-- Value separator (the default is comma)
-- Single-line comment start (the default is sharp)
-- Quotation mark enabling to use other special characters within a value (the default is double quotes)
+- Value separator, `delimiter` (the default is comma)
+- Single-line comment start, `comment_char` (the default is sharp)
+- Quotation mark enabling to use other special characters within a value, `quote_char` (the default is double quotes)
+
+```python
+from groupdocs.assembly.data import CsvDataLoadOptions, CsvDataSource
+
+options = CsvDataLoadOptions(True)
+options.delimiter = ";"
+options.comment_char = "%"
+options.quote_char = "'"
+data_source = CsvDataSource("staff.csv", options)
+```
 
 ### Setting up Known External Types
 
-GroupDocs.Assembly Engine must be aware of custom external types that you reference in your template before the engine processes the template. You can set up external types known by the engine through the DocumentAssembler.KnownTypes property. The property represents an unordered set (that is, a collection of unique items) of [Type](http://msdn.microsoft.com/en-us/library/system.type(v=vs.110).aspx) objects. Every type in the set must meet requirements declared at [Working with Types](https://docs.groupdocs.com/assembly/python-net/template-syntax-part-1-of-2/#using-types).
+GroupDocs.Assembly Engine must be aware of the external types that you reference in your template before the engine processes the template. In Python, these are .NET types: the classes of the .NET runtime, such as `System.Math` or `System.Convert`, whose static members a template can call. You can set up external types known by the engine through the `DocumentAssembler.known_types` property. The property represents an unordered set (that is, a collection of unique items) of types. Add a type by its full .NET name, `known_types.add("System.Math")`, or by a Python type that has a .NET counterpart: `known_types.add(float)` adds `System.Double`. Every type in the set must meet requirements declared at [Using Types](/assembly/python-net/guides/template-syntax-part-1-of-2/#using-types).
 
-**Note:** Aliases of simple types like int, string, and others are known by the engine by default.
+**Note:** Aliases of simple types like `int`, `double`, `string`, and others are known by the engine by default.
 
-Consider the following example. Given an ImageUtil class declared at your application and a template accessing a static member of this class, you can use the following code to make the engine be aware of the class before processing the template.
+Consider the following example. Given a template that rounds the unit price of each order with the static `Math.Round` method, you can use the following code to make the engine be aware of the `System.Math` class before processing the template.
 
-```csharp
-DocumentAssembler assembler = new DocumentAssembler;
-assembler.KnownTypes.Add(typeof(ImageUtil));
-assembler.AssembleDocument(...);
+```text
+<<foreach [o in customer.Order]>><<[o.OrderNumber]>> | <<[o.Product.ProductName]>> | <<[Math.Round((double)o.Price / o.ProductQuantity, 2)]>><</foreach>>
 ```
+
+{{< tabs "example15" >}}
+{{< tab "Python" >}}
+```python
+import json
+
+from groupdocs.assembly import DataSourceInfo, DocumentAssembler
+
+with open("customer.json", encoding="utf-8") as f:
+    customer = json.load(f)
+
+assembler = DocumentAssembler()
+assembler.known_types.add("System.Math")
+assembler.assemble_document("order-unit-prices.docx", "order-unit-prices-report.docx", DataSourceInfo(customer, "customer"))
+```
+{{< /tab >}}
+{{< tab "order-unit-prices.docx" >}}
+
+The following sample file is used in this example: [order-unit-prices.docx](https://docs.groupdocs.com/assembly/python-net/_sample_files/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/order-unit-prices.docx)
+
+{{< /tab >}}
+{{< tab "customer.json" >}}
+
+The following sample file is used in this example: [customer.json](https://docs.groupdocs.com/assembly/python-net/_sample_files/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/customer.json)
+
+{{< /tab >}}
+{{< tab "order-unit-prices-report.docx" >}}  
+```text
+Binary file (DOCX, 8 KB)
+```
+[Download full output](https://docs.groupdocs.com/assembly/python-net/_output_files/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/setting_up_known_external_types/order-unit-prices-report.docx)
+{{< /tab >}}
+{{< /tabs >}}
+
+A Python class or function cannot be a known type: a template calls .NET code only. Compute such values in Python and put them in the data instead.
 
 ### Accessing Missing Members of Data Objects
 
-By default, GroupDocs.Assembly forbids access to missing members of data objects used to build a report in template expressions, since such access is forbidden by C# Language Specification 5.0. On attempt to use a missing member of a data object, the assembler throws an exception then.
+By default, GroupDocs.Assembly forbids access to missing members of data objects used to build a report in template expressions, since such access is forbidden by C# Language Specification 5.0. On attempt to use a missing member of a data object, the assembler throws an exception then, which reaches Python as a `RuntimeError`: "Can not get the value of member 'Email' on type ...".
 
-But in some scenarios, members of data objects are not exactly known while designing a template. For example, if using a `DataSet` instance loaded from XML without its schema defined, some of expected data members can be missing.
+But in some scenarios, members of data objects are not exactly known while designing a template. For example, if dicts come from a source that leaves a key out when it has no value, some of expected data members can be missing.
+
+**Note –** For Python data, a member is missing only when no dict of its kind has the key. When some dicts of one list have a key and others do not, or hold `None` for it, the member exists and is empty (`null`) where the key is absent.
 
 To support such scenarios, the assembler provides an option to treat missing members of data objects as null literals. You can enable the option as shown in the following example.
 
-```csharp
-DocumentAssembler assembler = new DocumentAssembler();
-assembler.Options |= DocumentAssemblyOptions.AllowMissingMembers;
-assembler.AssembleDocument(...);
+```python
+assembler = DocumentAssembler()
+assembler.options |= DocumentAssemblyOptions.ALLOW_MISSING_MEMBERS
+assembler.assemble_document(...)
 ```
 
-Consider the following example. Given that `r` is a `DataRow` instance that does not have a field `Missing`, by default, the following template expression causes the assembler to throw an exception while building a report.
+Consider the following example. None of the customers of `customers.json` has an `Email` key, so by default, the template expression `<<[c.Email]>>` causes the assembler to throw an exception while building a report. With `DocumentAssemblyOptions.ALLOW_MISSING_MEMBERS` applied, the assembler treats access to such a member as a null literal, so no exception is thrown and simply no value is written to the report then.
 
-```csharp
-<<[r.Missing]>>
+{{< tabs "example16" >}}
+{{< tab "Python" >}}
+```python
+import json
+
+from groupdocs.assembly import DataSourceInfo, DocumentAssembler, DocumentAssemblyOptions
+
+with open("customers.json", encoding="utf-8") as f:
+    customers = json.load(f)
+
+assembler = DocumentAssembler()
+assembler.options |= DocumentAssemblyOptions.ALLOW_MISSING_MEMBERS
+assembler.assemble_document("customer-emails.docx", "customer-emails-report.docx", DataSourceInfo(customers, "customers"))
 ```
+{{< /tab >}}
+{{< tab "customer-emails.docx" >}}
 
-However, if `DocumentAssemblyOptions.AllowMissingMembers` is applied, the assembler treats access to such a field as a null literal, so no exception is thrown and simply no value is written to the report then.
+The following sample file is used in this example: [customer-emails.docx](https://docs.groupdocs.com/assembly/python-net/_sample_files/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/customer-emails.docx)
+
+{{< /tab >}}
+{{< tab "customers.json" >}}
+
+The following sample file is used in this example: [customers.json](https://docs.groupdocs.com/assembly/python-net/_sample_files/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/customers.json)
+
+{{< /tab >}}
+{{< tab "customer-emails-report.docx" >}}  
+```text
+Binary file (DOCX, 7 KB)
+```
+[Download full output](https://docs.groupdocs.com/assembly/python-net/_output_files/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/accessing_missing_members_of_data_objects/customer-emails-report.docx)
+{{< /tab >}}
+{{< /tabs >}}
 
 ### Optimizing Reflection Calls
 
-GroupDocs.Assembly Engine uses reflection calls while accessing members of custom external types. However, reflection calls are much slower than direct calls, which creates a performance overhead.
+GroupDocs.Assembly Engine uses reflection calls while accessing members of the objects it reads, Python dicts included: a dict reaches the engine as an object of a .NET type made from its keys. However, reflection calls are much slower than direct calls, which creates a performance overhead.
 
 Due to the performance overhead, the engine provides a strategy minimizing the reflection usage. The strategy is based upon the runtime type generation. That is, the engine generates a proxy type per an external type. The proxy directly calls members of the corresponding external type, the engine to access these members in a uniform way with no reflection involved. The proxy is [lazily initialized](http://en.wikipedia.org/wiki/Lazy_initialization) and reused in further. Thus, the reflection is used only while building the proxy.
 
 Although this strategy can significantly minimize the reflection usage in a long run, it creates a performance overhead of the runtime type generation. So, if you deal with small data collections all the time while building your reports, consider the disabling of the strategy.
 
-You can control the enabling of the strategy through the `DocumentAssembler.UseReflectionOptimization` static property. By default, the strategy is enabled.
+You can control the enabling of the strategy through the `DocumentAssembler.use_reflection_optimization` static property. By default, the strategy is enabled.
+
+```python
+from groupdocs.assembly import DocumentAssembler
+
+DocumentAssembler.use_reflection_optimization = False
+```
 
 ### Integrating with Native Spreadsheet Data Types
 
 By default, GroupDocs.Assembly outputs expression results as string values regardless of expression types. In most scenarios, this is the best option, since expression results can be formatted through template syntax depending on expression types. However, for Spreadsheet documents, this may interfere calculation of formulas expecting values of types other than string. To overcome this, GroupDocs.Assembly provides integration with native Spreadsheet data types, which can be enabled as shown in the following code snippet.
 
-```csharp
-DocumentAssembler assembler = new DocumentAssembler();
-assembler.Options |= DocumentAssemblyOptions.UseSpreadsheetDataTypes;
-
-assembler.AssembleDocument(...);
+```python
+assembler = DocumentAssembler()
+assembler.options |= DocumentAssemblyOptions.USE_SPREADSHEET_DATA_TYPES
+assembler.assemble_document(...)
 ```
 
 Let us show how it works by using an example. Let `number` be a numeric value. Then, consider the following template for a Spreadsheet cell.
 
-```csharp
+```text
 <<[number]>>
 ```
 
-By default, while assembling a document, GroupDocs.Assembly converts `number` into a string using built-in .NET routines. However, when integration with native Spreadsheet data types is enabled, the cell’s value is written as a number, thus enabling to use it in Spreadsheet formulas expecting numbers.
+By default, while assembling a document, GroupDocs.Assembly converts `number` into a string using built-in .NET routines. However, when integration with native Spreadsheet data types is enabled, the cell's value is written as a number, thus enabling to use it in Spreadsheet formulas expecting numbers.
 
-Integration with native Spreadsheet data types also affects formatting of the cell’s value: If a numeric format is defined for the cell (for example, using “Format Cells” context menu in Microsoft Excel), then the format is applied; otherwise, a default numeric format for cells is applied.
+Integration with native Spreadsheet data types also affects formatting of the cell's value: If a numeric format is defined for the cell (for example, using "Format Cells" context menu in Microsoft Excel), then the format is applied; otherwise, a default numeric format for cells is applied.
 
 **Note –** The same applies to other native Spreadsheet data types such as date-time and Boolean.
 
+In the following example, the order numbers, quantities and prices of `orders.json` become numeric cells of the worksheet:
+
+{{< tabs "example17" >}}
+{{< tab "Python" >}}
+```python
+import json
+
+from groupdocs.assembly import DataSourceInfo, DocumentAssembler, DocumentAssemblyOptions
+
+with open("orders.json", encoding="utf-8") as f:
+    orders = json.load(f)
+
+assembler = DocumentAssembler()
+assembler.options |= DocumentAssemblyOptions.USE_SPREADSHEET_DATA_TYPES
+assembler.assemble_document("order-prices.xlsx", "order-prices-report.xlsx", DataSourceInfo(orders, "orders"))
+```
+{{< /tab >}}
+{{< tab "order-prices.xlsx" >}}
+
+The following sample file is used in this example: [order-prices.xlsx](https://docs.groupdocs.com/assembly/python-net/_sample_files/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/order-prices.xlsx)
+
+{{< /tab >}}
+{{< tab "orders.json" >}}
+
+The following sample file is used in this example: [orders.json](https://docs.groupdocs.com/assembly/python-net/_sample_files/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/orders.json)
+
+{{< /tab >}}
+{{< tab "order-prices-report.xlsx" >}}  
+```text
+Binary file (XLSX, 8 KB)
+```
+[Download full output](https://docs.groupdocs.com/assembly/python-net/_output_files/developer-guide/basic-usage/working-with-groupdocs.assembly-engine/groupdocs.assembly-engine-apis/integrating_with_native_spreadsheet_data_types/order-prices-report.xlsx)
+{{< /tab >}}
+{{< /tabs >}}
+
 The following table describes, in which cases integration with native Spreadsheet data types has no effect even when enabled.
 
-| Cell Template Syntax Example    | Explanation                                              |
-| ----------------------------------- | ------------------------------------------------------------ |
-| `<<[number]:ordinal>>`            | If an expression result is formatted using template syntax, it is written as a string. |
-| `Some text <<[number]>>`          | Presence of text other than template syntax makes a result cell value to become a string. |
+| Cell Template Syntax Example | Explanation |
+| --- | --- |
+| `<<[number]:ordinal>>` | If an expression result is formatted using template syntax, it is written as a string. |
+| `Some text <<[number]>>` | Presence of text other than template syntax makes a result cell value to become a string. |
 | `<<[number]>><<[anotherNumber]>>` | Results of multiple expressions in a single cell are converted to strings and concatenated. |
 
 ## Technical Considerations
@@ -794,72 +1111,24 @@ Here, we will reveal some technical aspects and implementation details related t
 
 ### Implicit Enumeration Determination
 
-If you do not specify the type of an enumeration item in a `foreach` statement or lambda function signature within your template explicitly, the type is implicitly determined by the engine from the type of the enumeration as follows:
+If you do not specify the type of an enumeration item in a `foreach` statement or lambda function signature within your template explicitly, the type is implicitly determined by the engine from the type of the enumeration. For the data a Python application passes, it is as follows:
 
-1.  If the enumeration represents a `DataTable` instance, then the item type is `DataRow`.
-2.  Otherwise, if the enumeration represents a `DataView` instance, then the item type is `DataRowView`.
-3.  Otherwise, if the enumeration implements `IDataReader`, then the item type is `IDataRecord`.
-4.  Otherwise, if the enumeration represents child rows of a `DataRow` instance, then the item type is `DataRow`.
-5.  Otherwise, if the enumeration implements generic `IEnumerable<T>`, then the item type is a type argument corresponding to T. Note, that the engine does not support enumerations that implement `IEnumerable<T>` multiple times using different type arguments.
-6.  Otherwise, the item type is `Object`.
+1.  If the enumeration is a list (or tuple) of dicts, then the item type is the type the engine made from the dicts' keys. All dicts of one list share one type, which has the keys of all of them.
+2.  Otherwise, if the enumeration is a list of values of one kind, such as strings or integers, then the item type is that of the values: `String`, `Int64`, `Double`, `DateTime` and so on.
+3.  Otherwise, if the enumeration is a list of values of different kinds, then the item type is `Object`: the items can be output, but their members cannot be read.
+4.  An empty list has no items to take a type from, so its item type is `Object`, unless the same key holds a non-empty list in another dict of the same kind. A template that reads a member of such an item fails with "Can not get the value of member '...' on type 'System.Object'"; give the data an item, or apply `DocumentAssemblyOptions.ALLOW_MISSING_MEMBERS`.
+5.  If the enumeration is a [`DocumentTable`](/assembly/python-net/groupdocs.assembly.data/documenttable/), or a table of a [`DocumentTableSet`](/assembly/python-net/groupdocs.assembly.data/documenttableset/), then the items are its rows. If it is an array of a [`JsonDataSource`](/assembly/python-net/groupdocs.assembly.data/jsondatasource/), a sequence of elements of an [`XmlDataSource`](/assembly/python-net/groupdocs.assembly.data/xmldatasource/), or a [`CsvDataSource`](/assembly/python-net/groupdocs.assembly.data/csvdatasource/), then the items are the objects the engine made from them.
 
 ### Support for LINQ Providers
 
-The engine does not cooperate with [LINQ providers](http://msdn.microsoft.com/en-us/library/vstudio/bb882640(v=vs.110).aspx). To be aware of consequences of this feature, consider the following example.
+The engine does not cooperate with [LINQ providers](http://msdn.microsoft.com/en-us/library/vstudio/bb882640(v=vs.110).aspx), and the data a Python application passes is already complete in memory: [`DataSourceInfo`](/assembly/python-net/groupdocs.assembly/datasourceinfo/) copies a dict and everything it holds when it is created. So, an expression such as the following one runs over all the persons of the city, whatever source they came from.
 
-Assume, that you have the `City` and `Person` classes defined in your application as follows.
-
-```csharp
-public class City
-{
-    public IList<Person> Persons { get { ... } }
-    ...
-}
-public class Person
-{
-    public String Name { get { ... } }
-    public int Age { get { ... } }
-    ...
-    }
-}
-```
-
-Given that `city` is an instance of the `City` class, consider the evaluation of the following template expression by the engine.
-
-```csharp
+```text
 city.Persons.Where(p => p.Age > 30).OrderBy(p => p.Name)
 ```
 
-If you use an ORM to provide an interaction of your application with an SQL database in conjunction with a LINQ provider for the ORM, then you most likely expect an SQL query like the following one to be performed in the background while evaluating the template expression.
-
-```csharp
-SELECT *
-    FROM Persons
-    WHERE CityId = @CityId AND Age > 30
-    ORDER BY Name
-```
-
-However, since the engine does not cooperate with LINQ providers, the actual SQL query in this case is as follows.
-
-```csharp
-SELECT *
-    FROM Persons
-    WHERE CityId = @CityId
-```
-
-That is, the engine makes an eager call before applying its built-in extension methods. In some cases, this feature can lead to a significant performance overhead. So, if the performance of your application is your primary concern, then consider a preparing of your sequential data outside your templates. That is, pass to the engine a sequential data that is already filtered, ordered, grouped, and so forth.
+If you read the data from a database, the query that loaded it is the one that ran; filtering and ordering in the template come after it. In some cases, this can lead to a significant performance overhead. So, if the performance of your application is your primary concern, then consider a preparing of your sequential data outside your templates. That is, pass to the engine a sequential data that is already filtered, ordered, grouped, and so forth: with a `WHERE` and an `ORDER BY` in the SQL query, or with a list comprehension and `sorted` in Python.
 
 ### Merging GroupDocs.Assembly
 
-You can use a tool like [ILMerge](http://research.microsoft.com/en-us/people/mbarnett/ilmerge.aspx) to merge GroupDocs.Assembly library with another assembly. But in order to use the Engine, please add the following attribute to the target assembly.
-
-```csharp
-[assembly: InternalsVisibleTo(
-    "TargetAssemblyName" +
-    ".ReportingDynamics" +
-    ", PublicKey=TargetAssemblyPublicKey")]
-```
-
-`TargetAssemblyName` and `TargetAssemblyPublicKey` stand for the name of your target assembly and its public key (not a public key token) respectively.
-
-Despite of the `InternalsVisibleTo` attribute applied, you can normally use obfuscation routines on your target assembly, if needed. An obfuscation does not harm a functionality of GroupDocs.Assembly Engine.
+The .NET version of this page describes how to merge the GroupDocs.Assembly assembly into another .NET assembly. GroupDocs.Assembly for Python via .NET ships the engine inside its wheel, so there is nothing to merge.

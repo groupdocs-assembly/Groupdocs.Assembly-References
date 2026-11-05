@@ -61,7 +61,10 @@ assembler.assemble_document("order-table.docx", "order-table-report.docx", [
 ### Guides
 Task guides that use `DocumentAssembler`:
 
+* [Template Syntax - Part 1 of 2](/assembly/python-net/guides/template-syntax-part-1-of-2/)
+* [Template Syntax - Part 2 of 2](/assembly/python-net/guides/template-syntax-part-2-of-2/)
 * [GroupDocs.Assembly Engine APIs](/assembly/python-net/guides/groupdocs.assembly-engine-apis/)
+* [Adding NEXT Field into Template Syntax](/assembly/python-net/guides/adding-next-field-into-template-syntax/)
 
 ### See Also
 * module [`groupdocs.assembly`](/assembly/python-net/groupdocs.assembly/)

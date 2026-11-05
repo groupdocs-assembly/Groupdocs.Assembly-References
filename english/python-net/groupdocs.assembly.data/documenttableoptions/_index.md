@@ -29,5 +29,10 @@ The DocumentTableOptions type exposes the following members:
 | [min_column_index](/assembly/python-net/groupdocs.assembly.data/documenttableoptions/min_column_index/) | The smallest zero-based column index to extract from a document table; a negative default means the index is not limited. |
 | [min_row_index](/assembly/python-net/groupdocs.assembly.data/documenttableoptions/min_row_index/) | The smallest zero-based index of a row to be extracted from a document table. The default value is negative, which means that the smallest row index is not limited. |
 
+### Guides
+Task guides that use `DocumentTableOptions`:
+
+* [Template Syntax - Part 2 of 2](/assembly/python-net/guides/template-syntax-part-2-of-2/)
+
 ### See Also
 * module [`groupdocs.assembly.data`](/assembly/python-net/groupdocs.assembly.data/)
