@@ -1,7 +1,7 @@
 ---
 title: "GroupDocs.Assembly"
 linktitle: "GroupDocs.Assembly"
-description: "GroupDocs.Assembly API reference for .NET, Java, Node.js, and Python — Generate documents and reports from templates and data using LINQ syntax."
+description: "GroupDocs.Assembly API reference for .NET, Java, and Python — Generate documents and reports from templates and data using LINQ syntax."
 keywords: "GroupDocs.Assembly, assembly API, API reference, .NET, Java, Python, document processing"
 additionalTitle: "GroupDocs API References"
 type: docs
@@ -12,27 +12,27 @@ lead: "Generate documents and reports from templates and data using LINQ syntax.
 
 platforms:
   - name: ".NET"
-    version: "25.12.0"
-    versionUrl: "https://www.nuget.org/packages/groupdocs.assembly/25.12.0"
+    version: "26.7.0"
+    versionUrl: "https://www.nuget.org/packages/groupdocs.assembly/26.7.0"
     key: net
     ref: "/net/"
     install: "dotnet add package GroupDocs.Assembly"
   - name: "Java"
-    version: "26.1.0"
-    versionUrl: "https://releases.groupdocs.com/java/repo/com/groupdocs/groupdocs-assembly/26.1/"
+    version: "26.10.1"
+    versionUrl: "https://releases.groupdocs.com/java/repo/com/groupdocs/groupdocs-assembly/26.10.1/"
     key: java
     ref: "/java/"
     install: "com.groupdocs:groupdocs-assembly"
   - name: "Python via .NET"
-    version: "25.5.1"
-    versionUrl: "https://pypi.org/project/groupdocs-assembly-net/25.5.1/"
+    version: "26.11.0"
+    versionUrl: "https://pypi.org/project/groupdocs-assembly-net/26.11.0/"
     key: python
     ref: "/python-net/"
     install: "pip install groupdocs-assembly-net"
 
 formats: ["Word", "Excel", "PowerPoint", "Email", "PDF", "HTML"]
-formatsCount: "50+"
-formatsNote: "…and 40+ more document and web formats."
+formatsCount: "40+"
+formatsNote: "...plus OpenDocument, Markdown, text, XPS, TIFF, SVG and EPUB."
 
 capabilities:
   - "Template-based document generation"
