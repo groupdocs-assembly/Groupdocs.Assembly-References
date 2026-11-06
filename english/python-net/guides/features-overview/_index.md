@@ -33,7 +33,7 @@ Expressions in tags use a subset of C# syntax that works on any data source: ari
 - **Charts**: pie, bubble, scatter and column charts whose series, points, colors and titles come from the data. See [Working with chart reports: pie](https://docs.groupdocs.com/assembly/python-net/working-with-chart-reports-pie/) and [Working with chart series coloring](https://docs.groupdocs.com/assembly/python-net/working-with-chart-series-coloring/).
 - **Images and barcodes**: pictures named by the data, and barcodes generated from it. See [Inserting images dynamically](https://docs.groupdocs.com/assembly/python-net/inserting-images-dynamically/) and [Working with barcode image generation](https://docs.groupdocs.com/assembly/python-net/working-with-barcode-image-generation/).
 - **Hyperlinks, bookmarks, check boxes and other documents**: links and bookmarks built from data, check box and drop-down values, and whole documents inserted into the report. See [Inserting hyperlinks or bookmarks](https://docs.groupdocs.com/assembly/python-net/inserting-hyperlinks-or-bookmarks/), [Set checkbox values dynamically](https://docs.groupdocs.com/assembly/python-net/set-checkbox-values-dynamically/) and [Inserting documents dynamically](https://docs.groupdocs.com/assembly/python-net/inserting-documents-dynamically/).
-- **Email messages**: MSG and EML templates whose sender, recipients, subject and body come from the data. See [Generate email messages](https://docs.groupdocs.com/assembly/python-net/basic-usage-generate-emails/).
+- **Email messages**: MSG and EML templates whose sender, recipients, subject and body come from the data. See [Generate email messages](/assembly/python-net/guides/generate-email-messages/).
 
 ## Formats
 

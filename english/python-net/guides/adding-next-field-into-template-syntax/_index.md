@@ -6,7 +6,7 @@ description: "Adding NEXT Field into Template Syntax with GroupDocs.Assembly for
 type: docs
 url: /python-net/guides/adding-next-field-into-template-syntax/
 is_root: false
-weight: 60
+weight: 80
 ---
 
 

@@ -2,11 +2,11 @@
 title: Supported Document Formats
 linkTitle: "Supported formats"
 second_title: GroupDocs.Assembly for Python via .NET API References
-description: "GroupDocs.Assembly for Python via .NET fills templates of Word, Excel, PowerPoint, OpenDocument, email, HTML, Markdown and text formats, more than 40 in all, and saves reports to them and to PDF, XPS, TIFF, SVG, EPUB and more."
+description: "GroupDocs.Assembly for Python via .NET fills templates of 35 Word, Excel, PowerPoint, OpenDocument, email, HTML, Markdown and text formats, and saves reports to them and to 9 more, PDF, XPS, TIFF, SVG and EPUB among them: more than 40 in all."
 type: docs
 url: /python-net/guides/supported-document-formats/
 is_root: false
-weight: 70
+weight: 90
 ---
 
 

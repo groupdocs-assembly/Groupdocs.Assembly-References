@@ -21,5 +21,7 @@ Task-oriented guides with runnable Python examples.
 | [Template Syntax - Part 1 of 2](/assembly/python-net/guides/template-syntax-part-1-of-2/) | |
 | [Template Syntax - Part 2 of 2](/assembly/python-net/guides/template-syntax-part-2-of-2/) | |
 | [GroupDocs.Assembly Engine APIs](/assembly/python-net/guides/groupdocs.assembly-engine-apis/) | |
+| [Barcodes Syntax and Properties](/assembly/python-net/guides/barcodes-syntax-and-properties/) | |
+| [Generate Email Messages from Data](/assembly/python-net/guides/generate-email-messages/) | |
 | [Adding NEXT Field into Template Syntax](/assembly/python-net/guides/adding-next-field-into-template-syntax/) | |
 | [Supported Document Formats](/assembly/python-net/guides/supported-document-formats/) | |
